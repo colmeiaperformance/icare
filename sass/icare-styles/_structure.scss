@@ -43,11 +43,11 @@ hr {
 	display: block;
 	margin-top: 2.4rem;
 	margin-bottom: 2.4rem;
-	background-color: #555;
+	background-color: $color-gray-555;
 }
 #clu,
 body {
-	background-color: #eee;
+	background-color: $color-gray-eee;
 	scroll-behavior: smooth;
 	text-align: center;
 	font-size: 10px;
@@ -65,7 +65,7 @@ body {
 	left: 0;
 	top: 0;
 	z-index: 1000;
-	background-color: white;
+	background-color: $color-white;
 }
 
 #clu-logo h1 {
@@ -121,7 +121,7 @@ body {
 		width: auto;
 		margin: 0;
 		z-index: 100;
-		background-color: #ffffff;
+		background-color: $color-white;
 	}
 	#clu-navigation:target .navigation-list {
 		position: absolute;
@@ -153,13 +153,13 @@ body {
 	margin-top: 12rem;
 }
 #clu-footer {
-	background-color: #222;
+	background-color: $color-gray-222;
 }
 #clu-footer a:hover {
-	color: #ef6000;
+	color: $color-orange;
 }
 #clu-footer .footer-item dt {
-	color: #ef6000;
+	color: $color-orange;
 }
 #clu-footer .footer-item {
 	vertical-align: top;

@@ -5,8 +5,8 @@
 */
 
 .clu-the.the-highlight {
-	background-color: #ef6000;
-	color: white;
+	background-color: $color-orange;
+	color: $color-white;
 }
 
 /*/////////
@@ -18,7 +18,7 @@
 .clu-the.the-highlight span,
 .clu-the.the-highlight label,
 .clu-the.the-highlight input {
-	color: #fff;
+	color: $color-white;
 }
 
 /*//////////
@@ -35,7 +35,7 @@
 .clu-the.the-highlight h6,
 .clu-the.the-highlight legend,
 .clu-the.the-highlight th {
-	color: #fff;
+	color: $color-white;
 }
 
 /*
@@ -45,7 +45,7 @@
 	*/
 
 .clu-the.the-highlight a {
-	color: #fff;
+	color: $color-white;
 }
 .clu-the.the-highlight a:hover,
 .clu-the.the-highlight a:focus {
@@ -62,25 +62,25 @@
 	*/
 
 .clu-the.the-highlight .clu-but {
-	background-color: white;
-	color: #ef6000;
+	background-color: $color-white;
+	color: $color-orange;
 }
 .clu-the.the-highlight .clu-but:hover,
 .clu-the.the-highlight .clu-but:focus,
 .clu-the.the-highlight a:hover .clu-but,
 .clu-the.the-highlight a:focus .clu-but {
 	background-color: black;
-	color: white;
+	color: $color-white;
 }
 .clu-the.the-highlight .clu-but.but-light {
 	background: transparent;
-	color: #fff;
+	color: $color-white;
 }
 .clu-the.the-highlight .clu-but.but-light:hover,
 .clu-the.the-highlight .clu-but.but-light:focus,
 .clu-the.the-highlight a:hover .clu-but.but-light,
 .clu-the.the-highlight a:focus .clu-but.but-light {
-	background-color: #ef6000;
-	border-color: #ef6000;
-	color: #000;
+	background-color: $color-orange;
+	border-color: $color-orange;
+	color: $color-black
 }

@@ -31,7 +31,7 @@
 }
 
 .clu-sec.sec-testimony#depoimentos {
-	background-color: #233;
+	background-color: $color-gray-222;
 	padding-top: 4.8rem;
 	padding-bottom: 6.4rem;
 }
@@ -62,7 +62,7 @@
 	font-size: 20px;
 }
 .clu-sec.sec-places .item-content * {
-	color: white;
+	color: $color-white;
 }
 
 .clu-sec.sec-places img {
@@ -109,10 +109,10 @@
 }
 
 .clu-sec.sec-plans {
-	background-color: #fff;
+	background-color: $color-white;
 }
 .clu-sec.sec-plans .sec-wrapper {
-	background-color: white;
+	background-color: $color-white;
 	border-radius: 1.6rem;
 }
 .clu-sec.sec-plans .sec-content {
@@ -120,7 +120,7 @@
 	border-radius: 1.6rem;
 }
 .clu-sec.sec-plans .content-header {
-	background-color: #eee;
+	background-color: $color-gray-eee;
 	padding-bottom: 1.6rem;
 }
 .clu-sec.sec-plans .content-geral {
@@ -145,7 +145,7 @@
 	padding-bottom: 4.8rem;
 }
 .clu-sec.sec-plans .sec-content .content-header .content-description b {
-	color: #000;
+	color: $color-black;
 }
 .clu-sec.sec-plans .sec-content .content-itens .content-item {
 	display: flex;

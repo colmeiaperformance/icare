@@ -21,9 +21,9 @@
 	font-size: 1.6em;
 	line-height: 150%;
 	text-decoration: none;
-	color: white;
-	background-color: #ef6000;
-	border: 2px #ef6000 solid;
+	color: $color-white;
+	background-color: $color-orange;
+	border: 2px $color-orange solid;
 	font-weight: bold;
 	letter-spacing: 0.1em;
 	text-align: center;
@@ -33,22 +33,22 @@
 .clu-but:focus,
 a:hover .clu-but,
 a:focus .clu-but {
-	background-color: #333;
-	border-color: #333;
-	color: white;
+	background-color: $color-gray-222;
+	border-color: $color-gray-222;
+	color: $color-white;
 	text-decoration: none;
 }
 .clu-but[disabled] {
-	background-color: gray;
-	border-color: gray;
+	background-color: $color-gray-222;
+	border-color: $color-gray-222;
 }
 .clu-but + .clu-but {
 	margin-left: 1.6rem;
 }
 .clu-but.but-light {
 	background: transparent;
-	color: #ef6000;
+	color: $color-orange;
 }
 .clu-but.but-light:hover {
-	color: #333;
+	color: $color-gray-222;
 }

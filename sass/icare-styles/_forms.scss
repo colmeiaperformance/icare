@@ -8,9 +8,9 @@
   height: 3.5em;
   padding: 0.8em;
   font-size: 1.6em;
-  color: #161616;
+  color: $color-gray-16;
   line-height: 150%;
-  border: 0.2em solid #161616;
+  border: 0.2em solid $color-gray-16;
   font-weight: bold;
 }
 
@@ -26,14 +26,14 @@
   line-height: 150%;
   font-family: sans-serif;
   text-decoration: none;
-  color: #161616;
-  border: 0.1em solid #161616;
+  color: $color-gray-16;
+  border: 0.1em solid $color-gray-16;
   font-weight: bold;
-  background-color: white;
+  background-color: $color-white;
 }
 .cle-for .for-item .item-element:hover,
 .cle-for .for-item .item-element:focus {
-  border-color: #161616;
+  border-color: $color-gray-16;
   text-decoration: none;
 }
 .cle-for .for-item textarea.item-element {

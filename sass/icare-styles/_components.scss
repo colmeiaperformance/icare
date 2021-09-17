@@ -18,7 +18,7 @@
 }
 .clu-com.com-carousel .com-item .item-content {
 	padding: 2.4rem 2.4rem 4.8rem;
-	background-color: rgba(0, 0, 0, 0.67);
+	background-color: $color-black-opc-70;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -30,8 +30,8 @@
 .clu-com.com-card {
 	border-radius: 0.8rem;
 	overflow: hidden;
-	background-color: white;
-	box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.16);
+	background-color: $color-white;
+	box-shadow: 0 0 1.6rem $color-black-opc-20;
 }
 .clu-com.com-card .com-content {
 	padding: 0 1.6rem 1.6rem;
@@ -39,7 +39,7 @@
 }
 .clu-com.com-card .com-title {
 	font-size: 2.4em;
-	color: #ef6000;
+	color: $color-orange;
 }
 .clu-com.com-card .com-footer {
 	padding: 0 1.6rem 3.2rem;
