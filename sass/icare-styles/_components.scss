@@ -1,0 +1,57 @@
+/*
+/////////////////
+////COMPONENTS//
+///////////////
+*/
+
+.clu-com.com-banner {
+	padding-top: 4.8rem;
+	padding-bottom: 6.4rem;
+}
+.clu-com.com-banner .com-header,
+.clu-com.com-banner .com-content,
+.clu-com.com-banner .com-footer {
+	text-align: center;
+}
+.clu-com.com-carousel .com-item {
+	position: relative;
+}
+.clu-com.com-carousel .com-item .item-content {
+	padding: 2.4rem 2.4rem 4.8rem;
+	background-color: rgba(0, 0, 0, 0.67);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.clu-com.com-carousel .com-item .item-description {
+	font-size: 2.4em;
+}
+.clu-com.com-card {
+	border-radius: 0.8rem;
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.16);
+}
+.clu-com.com-card .com-content {
+	padding: 0 1.6rem 1.6rem;
+	min-height: 24rem;
+}
+.clu-com.com-card .com-title {
+	font-size: 2.4em;
+	color: #ef6000;
+}
+.clu-com.com-card .com-footer {
+	padding: 0 1.6rem 3.2rem;
+}
+.clu-com.com-jumper {
+	display: none;
+	position: absolute;
+	right: 1.6rem;
+	top: 2.6rem;
+	line-height: 2.8rem;
+	z-index: 50;
+}
+.clu-com.com-jumper:before {
+	font-size: 2.4em;
+}
