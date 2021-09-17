@@ -5,7 +5,8 @@
         "sass/style.scss",
         "sass/parts/_style-header.scss",
         "sass/parts/_reset.scss",
-        "sass/parts/_normalize.scss"
+        "sass/parts/_normalize.scss",
+        "sass/parts/_default-colmeia.scss"
     ],
     "names": [],
     "file": "style.min.css"
