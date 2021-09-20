@@ -4,6 +4,7 @@ Theme Name: iCare
 Version: 1.0
 Author: Colmeia
 Author URI: www.colmeiaperformance.com.br
+URI: https://github.com/colmeiaperformance/icare.git
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Description: Tema elaborado para servir como base de outros temas WP
@@ -1425,4 +1426,7 @@ h6 {
 /************************************/
 /********* DESKTOP STYLE ************/
 /************************************/
+body {
+  background-color: antiquewhite;
+}
 /*# sourceMappingURL=style.css.map */
