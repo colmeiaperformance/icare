@@ -8,13 +8,13 @@
 	12 COLUMNS//
 	/////////*/
 
-.clu-footer,
-.clu-local-unidade,
-.clu-nav,
+.ica-footer,
+.ica-local-unidade,
+.ica-nav,
 .show-menu,
-.clu-galery-unidade,
-.clu-text-unidade,
-.clu-service-unidade,
+.ica-galery-unidade,
+.ica-text-unidade,
+.ica-service-unidade,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -37,8 +37,8 @@
     10 COLUMNS//
     /////////*/
 
-.clu-com.com-banner .clu-wrapper,
-.clu-unidades,
+.ica-com.com-banner .ica-wrapper,
+.ica-unidades,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -61,8 +61,9 @@
     8 COLUMNS//
     ////////*/
 
-.clu-sec.sec-testimony .sec-item .item-content,
-.clu-map-unidade,
+.ica-sec.sec-testimony .sec-item .item-content,
+.ica-map-unidade,
+#ica-navigation,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -74,6 +75,7 @@
 7 COLUMNS//
     ////////*/
 
+.ica-sec.sec-acting .content-desciption, 
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -84,12 +86,13 @@
 /*//////////
     6 COLUMNS//
     ////////*/
-.clu-sec.sec-plans .sec-wrapper,
-.clu-sec.sec-plans .content-itens,
-.clu-sec.sec-localization .sec-item,
-.clu-sec.sec-what .sec-content .sec-itens,
-.clu-sec.sec-what .sec-content .sec-media,
-.clu-local-text,
+
+.ica-sec.sec-plans .sec-wrapper,
+.ica-sec.sec-plans .content-itens,
+.ica-sec.sec-localization .sec-item,
+.ica-sec.sec-what .sec-content .sec-itens,
+.ica-sec.sec-what .sec-content .sec-media,
+.ica-local-text,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -101,10 +104,9 @@
 5 COLUMNS//
     ////////*/
 
-#clu-shortcuts,
-#clu-navigation,
-.clu-report-item,
-.clu-sec.sec-what .sec-header,
+#ica-shortcuts,
+.ica-report-item,
+.ica-sec.sec-what .sec-header,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -116,8 +118,8 @@
     4 COLUMNS//
     ////////*/
 
-.clu-sec.sec-testimony .sec-item .item-header,
-.clu-secodary-menu,
+.ica-sec.sec-testimony .sec-item .item-header,
+.ica-secodary-menu,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -129,12 +131,12 @@
 3 COLUMNS//
     ////////*/
 
-#clu-footer .footer-item,
-.clu-sec.sec-reasons .sec-item,
-.clu-sec .sec-item,
-.clu-service-item,
-.clu-motivation-item,
-.clu-solution-item,
+#ica-footer .footer-item,
+.ica-sec.sec-acting .sec-item,
+.ica-sec .sec-item,
+.ica-service-item,
+.ica-motivation-item,
+.ica-solution-item,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -146,7 +148,7 @@
     2 COLUMNS//
     ////////*/
 
-#clu-logo,
+#ica-logo,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -158,8 +160,8 @@
     1 COLUMN//
     ///////*/
 
-.clu-home,
-.clu-logo,
+.ica-home,
+.ica-logo,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -171,7 +173,7 @@
 0 COLUMN//
     ///////*/
 
-.clu-sec.sec-testimony .sec-item,
+.ica-sec.sec-testimony .sec-item,
 .clear {
   display: inline-block;
   margin-left: 0;

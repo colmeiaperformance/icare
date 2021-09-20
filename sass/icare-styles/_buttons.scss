@@ -4,16 +4,16 @@
 ////////////
 */
 
-#clu li .clu-but,
-#clu span .clu-but,
-#clu .clu-but span {
+#ica li .ica-but,
+#ica span .ica-but,
+#ica .ica-but span {
 	font-size: 1em;
 	margin-top: 0;
 }
-#clu .clu-but * {
+#ica .ica-but * {
 	color: inherit;
 }
-.clu-but {
+.ica-but {
 	font-family: "Quicksand", sans-serif;
 	display: inline-block;
 	padding: 0.8rem 2.4rem;
@@ -29,26 +29,26 @@
 	text-align: center;
 	border-radius: 10rem;
 }
-.clu-but:hover,
-.clu-but:focus,
-a:hover .clu-but,
-a:focus .clu-but {
+.ica-but:hover,
+.ica-but:focus,
+a:hover .ica-but,
+a:focus .ica-but {
 	background-color: $color-gray-222;
 	border-color: $color-gray-222;
 	color: $color-white;
 	text-decoration: none;
 }
-.clu-but[disabled] {
+.ica-but[disabled] {
 	background-color: $color-gray-222;
 	border-color: $color-gray-222;
 }
-.clu-but + .clu-but {
+.ica-but + .ica-but {
 	margin-left: 1.6rem;
 }
-.clu-but.but-light {
+.ica-but.but-light {
 	background: transparent;
 	color: $color-orange;
 }
-.clu-but.but-light:hover {
+.ica-but.but-light:hover {
 	color: $color-gray-222;
 }

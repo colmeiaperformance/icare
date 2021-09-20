@@ -4,54 +4,55 @@
 /////////////
 */
 
-.clu-sec {
+.ica-sec {
 	padding-top: 4.8rem;
 	padding-bottom: 6.4rem;
 }
-.clu-sec .sec-header {
+.ica-sec .sec-header {
 	text-align: center;
 }
-.clu-sec .sec-content {
+.ica-sec .sec-content {
 	padding-top: 2.4rem;
 }
-.clu-sec .sec-item {
+.ica-sec .sec-item {
 	margin-top: 2.4rem;
 	text-align: center;
 }
 
-.clu-sec.sec-reasons .sec-item .item-header {
+.ica-sec.sec-acting .sec-item .item-header {
 	min-height: 16rem;
 	display: flex;
 }
-.clu-sec.sec-reasons .sec-item .item-media {
-	margin: auto;
-}
-.clu-sec.sec-reasons .sec-item .item-title {
-	min-height: 4.8rem;
+.ica-sec.ica-sec.sec-acting .sec-content{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
 }
 
-.clu-sec.sec-testimony#depoimentos {
+
+.ica-sec.sec-testimony#depoimentos {
 	background-color: $color-gray-222;
 	padding-top: 4.8rem;
 	padding-bottom: 6.4rem;
 }
-.clu-sec.sec-testimony .sec-item {
+.ica-sec.sec-testimony .sec-item {
 	font-size: 125%;
 }
-.clu-sec.sec-places {
+.ica-sec.sec-places {
 	padding-top: 0;
 }
-.clu-sec.sec-places .clu-wrapper {
+.ica-sec.sec-places .ica-wrapper {
 	max-width: 100%;
 	padding-left: 0;
 	padding-right: 0;
 }
-.clu-sec.sec-places .sec-item {
+.ica-sec.sec-places .sec-item {
 	position: relative;
 	width: 49%;
 	margin: 0;
 }
-.clu-sec.sec-places .item-content {
+.ica-sec.sec-places .item-content {
 	background-color: transparent;
 	position: absolute;
 	left: 0;
@@ -61,102 +62,102 @@
 	padding: 4.8rem;
 	font-size: 20px;
 }
-.clu-sec.sec-places .item-content * {
+.ica-sec.sec-places .item-content * {
 	color: $color-white;
 }
 
-.clu-sec.sec-places img {
+.ica-sec.sec-places img {
 	width: 100%;
 	filter: brightness(0.34);
 }
 
-.clu-sec.sec-localization .item-content {
+.ica-sec.sec-localization .item-content {
 	display: flex;
 	padding: 2.4rem 0;
 	text-align: left;
 	align-items: center;
 }
-.clu-sec.sec-localization .item-content .item-media {
+.ica-sec.sec-localization .item-content .item-media {
 	margin-right: 1.6rem;
 }
 
-.clu-sec.sec-what .sec-header {
+.ica-sec.sec-what .sec-header {
 	text-align: left;
 	margin: 0;
 	width: 100%;
 }
-.clu-sec.sec-what .sec-content {
+.ica-sec.sec-what .sec-content {
 	display: flex;
 }
-.clu-sec.sec-what .sec-content .sec-item {
+.ica-sec.sec-what .sec-content .sec-item {
 	display: flex;
 	width: 100%;
 	text-align: left;
 }
-.clu-sec.sec-what .sec-content .sec-itens .sec-item .item-header {
+.ica-sec.sec-what .sec-content .sec-itens .sec-item .item-header {
 	width: 28%;
 }
-.clu-sec.sec-what .sec-content .sec-itens .sec-item .item-content {
+.ica-sec.sec-what .sec-content .sec-itens .sec-item .item-content {
 	width: 46%;
 }
-.clu-sec.sec-what .sec-content .sec-media {
+.ica-sec.sec-what .sec-content .sec-media {
 	display: flex;
 	align-items: center;
 }
 
-.clu-sec.sec-motivation .sec-content {
+.ica-sec.sec-motivation .sec-content {
 	text-align: center;
 }
 
-.clu-sec.sec-plans {
+.ica-sec.sec-plans {
 	background-color: $color-white;
 }
-.clu-sec.sec-plans .sec-wrapper {
+.ica-sec.sec-plans .sec-wrapper {
 	background-color: $color-white;
 	border-radius: 1.6rem;
 }
-.clu-sec.sec-plans .sec-content {
+.ica-sec.sec-plans .sec-content {
 	padding: 0;
 	border-radius: 1.6rem;
 }
-.clu-sec.sec-plans .content-header {
+.ica-sec.sec-plans .content-header {
 	background-color: $color-gray-eee;
 	padding-bottom: 1.6rem;
 }
-.clu-sec.sec-plans .content-geral {
+.ica-sec.sec-plans .content-geral {
 	display: flex;
 }
-.clu-sec.sec-plans .content-itens {
+.ica-sec.sec-plans .content-itens {
 	display: flex;
 	flex-direction: column;
 	padding-top: 1.6rem;
 	text-align: left;
 }
-.clu-sec.sec-plans .content-item {
+.ica-sec.sec-plans .content-item {
 	display: flex;
 	padding: 1rem;
 }
-.clu-sec.sec-plans .content-item img {
+.ica-sec.sec-plans .content-item img {
 	padding-right: 1rem;
 	width: auto;
 }
 
-.clu-sec.sec-plans .sec-header {
+.ica-sec.sec-plans .sec-header {
 	padding-bottom: 4.8rem;
 }
-.clu-sec.sec-plans .sec-content .content-header .content-description b {
+.ica-sec.sec-plans .sec-content .content-header .content-description b {
 	color: $color-black;
 }
-.clu-sec.sec-plans .sec-content .content-itens .content-item {
+.ica-sec.sec-plans .sec-content .content-itens .content-item {
 	display: flex;
 	align-items: center;
 }
-.clu-sec.sec-plans .sec-content .content-itens .content-item .item-media {
+.ica-sec.sec-plans .sec-content .content-itens .content-item .item-media {
 	width: 4em;
 }
-.clu-sec.sec-plans .sec-content .content-itens .content-item p {
+.ica-sec.sec-plans .sec-content .content-itens .content-item p {
 	margin-top: 0;
 }
-.clu-sec.sec-plans .sec-content a {
+.ica-sec.sec-plans .sec-content a {
 	margin: 2.4rem;
 }

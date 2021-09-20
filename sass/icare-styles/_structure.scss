@@ -29,15 +29,15 @@ img {
 hr {
 	display: none;
 }
-#clu {
+#ica {
 	text-align: center;
 }
-.clu-wrapper {
+.ica-wrapper {
 	text-align: left;
 	max-width: 1440px;
 	padding: 2.4rem;
 }
-.clu-line {
+.ica-line {
 	height: 1px;
 	border: none;
 	display: block;
@@ -45,7 +45,7 @@ hr {
 	margin-bottom: 2.4rem;
 	background-color: $color-gray-555;
 }
-#clu,
+#ica,
 body {
 	background-color: $color-gray-eee;
 	scroll-behavior: smooth;
@@ -53,14 +53,14 @@ body {
 	font-size: 10px;
 }
 @media all and (max-width: 1024px) {
-	#clu {
+	#ica {
 		font-size: calc(8px + 3 * ((100vw - 240px) / (1024 - 240)));
 	}
 	body {
 		font-size: calc(7px + 2 * ((100vw - 240px) / (1024 - 240)));
 	}
 }
-#clu-header {
+#ica-header {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -68,50 +68,50 @@ body {
 	background-color: $color-white;
 }
 
-#clu-logo h1 {
+#ica-logo h1 {
 	line-height: 100%;
 	font-size: 2.4rem;
 	margin-top: 0;
 }
 
-.clu-navigation .navigation-item {
+.ica-navigation .navigation-item {
 	display: inline-block;
 	margin-right: 1.6rem;
 	margin-left: 1.6rem;
 	font-size: 1.4em;
 }
-.clu-navigation .navigation-item:first-child {
+.ica-navigation .navigation-item:first-child {
 	margin-left: 0;
 }
-.clu-navigation .navigation-item:last-child {
+.ica-navigation .navigation-item:last-child {
 	margin-right: 0;
 }
-#clu-navigation {
+#ica-navigation {
 	margin-top: 1.2rem;
 }
-#clu-navigation .navigation-item {
+#ica-navigation .navigation-item {
 	margin-right: 2.4rem;
 	margin-left: 2.4rem;
 }
-#clu-shortcuts {
+#ica-shortcuts {
 	text-align: right;
 }
-#clu-shortcuts .navigation-item {
+#ica-shortcuts .navigation-item {
 	margin-right: 0.8rem;
 	margin-left: 0.8rem;
 }
 @media all and (max-width: 1024px) {
-	#clu-shortcuts {
+	#ica-shortcuts {
 		display: none;
 	}
-	#clu-navigation {
+	#ica-navigation {
 		display: none;
 		font-size: 2em;
 	}
-	#clu-navigation + .clu-com.com-jumper.jumper-navigation {
+	#ica-navigation + .ica-com.com-jumper.jumper-navigation {
 		visibility: visible;
 	}
-	#clu-navigation:target {
+	#ica-navigation:target {
 		display: block;
 		position: fixed;
 		left: 0;
@@ -123,7 +123,7 @@ body {
 		z-index: 100;
 		background-color: $color-white;
 	}
-	#clu-navigation:target .navigation-list {
+	#ica-navigation:target .navigation-list {
 		position: absolute;
 		width: 100%;
 		display: block;
@@ -133,35 +133,35 @@ body {
 		transform: translate(0, -50%);
 		margin: 0;
 	}
-	#clu-navigation:target .navigation-item {
+	#ica-navigation:target .navigation-item {
 		display: block;
 		margin-left: 0;
 		margin-right: 0;
 	}
-	#clu-navigation:target .navigation-item a {
+	#ica-navigation:target .navigation-item a {
 		display: block;
 	}
-	#clu-navigation ~ .clu-com.com-jumper.jumper-navigation {
+	#ica-navigation ~ .ica-com.com-jumper.jumper-navigation {
 		display: block;
 	}
-	#clu-navigation:target ~ .clu-com.com-jumper.jumper-top {
+	#ica-navigation:target ~ .ica-com.com-jumper.jumper-top {
 		display: block;
 		z-index: 100;
 	}
 }
-#clu-content {
+#ica-content {
 	margin-top: 12rem;
 }
-#clu-footer {
+#ica-footer {
 	background-color: $color-gray-222;
 }
-#clu-footer a:hover {
+#ica-footer a:hover {
 	color: $color-orange;
 }
-#clu-footer .footer-item dt {
+#ica-footer .footer-item dt {
 	color: $color-orange;
 }
-#clu-footer .footer-item {
+#ica-footer .footer-item {
 	vertical-align: top;
 	margin-top: 2.4rem;
 }

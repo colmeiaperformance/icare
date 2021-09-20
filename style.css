@@ -430,6 +430,32 @@ template {
 /************************************/
 /********** DEFAULT COLMEIA ***************/
 /************************************/
+/*
+//////////////////
+////CLEAR RESET//
+////////////////
+*/
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-spacing: normal;
+}
+
+html, body {
+  height: 100%;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+article, aside, div, footer, header, hgroup, nav, section {
+  vertical-align: top;
+  display: inline-block;
+  word-spacing: -0.4em;
+  width: 100%;
+}
+
 /************************************/
 /********* ICARE STYLES *************/
 /************************************/
@@ -438,18 +464,18 @@ template {
 ////BUTTONS//
 ////////////
 */
-#clu li .clu-but,
-#clu span .clu-but,
-#clu .clu-but span {
+#ica li .ica-but,
+#ica span .ica-but,
+#ica .ica-but span {
   font-size: 1em;
   margin-top: 0;
 }
 
-#clu .clu-but * {
+#ica .ica-but * {
   color: inherit;
 }
 
-.clu-but {
+.ica-but {
   font-family: "Quicksand", sans-serif;
   display: inline-block;
   padding: 0.8rem 2.4rem;
@@ -466,31 +492,31 @@ template {
   border-radius: 10rem;
 }
 
-.clu-but:hover,
-.clu-but:focus,
-a:hover .clu-but,
-a:focus .clu-but {
+.ica-but:hover,
+.ica-but:focus,
+a:hover .ica-but,
+a:focus .ica-but {
   background-color: #222;
   border-color: #222;
   color: #fff;
   text-decoration: none;
 }
 
-.clu-but[disabled] {
+.ica-but[disabled] {
   background-color: #222;
   border-color: #222;
 }
 
-.clu-but + .clu-but {
+.ica-but + .ica-but {
   margin-left: 1.6rem;
 }
 
-.clu-but.but-light {
+.ica-but.but-light {
   background: transparent;
   color: #ef6000;
 }
 
-.clu-but.but-light:hover {
+.ica-but.but-light:hover {
   color: #222;
 }
 
@@ -499,22 +525,22 @@ a:focus .clu-but {
 ////COMPONENTS//
 ///////////////
 */
-.clu-com.com-banner {
+.ica-com.com-banner {
   padding-top: 4.8rem;
   padding-bottom: 6.4rem;
 }
 
-.clu-com.com-banner .com-header,
-.clu-com.com-banner .com-content,
-.clu-com.com-banner .com-footer {
+.ica-com.com-banner .com-header,
+.ica-com.com-banner .com-content,
+.ica-com.com-banner .com-footer {
   text-align: center;
 }
 
-.clu-com.com-carousel .com-item {
+.ica-com.com-carousel .com-item {
   position: relative;
 }
 
-.clu-com.com-carousel .com-item .item-content {
+.ica-com.com-carousel .com-item .item-content {
   padding: 2.4rem 2.4rem 4.8rem;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -523,11 +549,11 @@ a:focus .clu-but {
   right: 0;
 }
 
-.clu-com.com-carousel .com-item .item-description {
+.ica-com.com-carousel .com-item .item-description {
   font-size: 2.4em;
 }
 
-.clu-com.com-card {
+.ica-com.com-card {
   border-radius: 0.8rem;
   overflow: hidden;
   background-color: #fff;
@@ -535,21 +561,21 @@ a:focus .clu-but {
           box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
 }
 
-.clu-com.com-card .com-content {
+.ica-com.com-card .com-content {
   padding: 0 1.6rem 1.6rem;
   min-height: 24rem;
 }
 
-.clu-com.com-card .com-title {
+.ica-com.com-card .com-title {
   font-size: 2.4em;
   color: #ef6000;
 }
 
-.clu-com.com-card .com-footer {
+.ica-com.com-card .com-footer {
   padding: 0 1.6rem 3.2rem;
 }
 
-.clu-com.com-jumper {
+.ica-com.com-jumper {
   display: none;
   position: absolute;
   right: 1.6rem;
@@ -558,7 +584,7 @@ a:focus .clu-but {
   z-index: 50;
 }
 
-.clu-com.com-jumper:before {
+.ica-com.com-jumper:before {
   font-size: 2.4em;
 }
 
@@ -567,7 +593,7 @@ a:focus .clu-but {
 ////FORMS//
 //////////
 */
-.clu-input {
+.ica-input {
   height: 3.5em;
   padding: 0.8em;
   font-size: 1.6em;
@@ -614,13 +640,13 @@ a:focus .clu-but {
 /*///////////
 	12 COLUMNS//
 	/////////*/
-.clu-footer,
-.clu-local-unidade,
-.clu-nav,
+.ica-footer,
+.ica-local-unidade,
+.ica-nav,
 .show-menu,
-.clu-galery-unidade,
-.clu-text-unidade,
-.clu-service-unidade,
+.ica-galery-unidade,
+.ica-text-unidade,
+.ica-service-unidade,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -641,8 +667,8 @@ a:focus .clu-but {
 /*///////////
     10 COLUMNS//
     /////////*/
-.clu-com.com-banner .clu-wrapper,
-.clu-unidades,
+.ica-com.com-banner .ica-wrapper,
+.ica-unidades,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -663,8 +689,9 @@ a:focus .clu-but {
 /*//////////
     8 COLUMNS//
     ////////*/
-.clu-sec.sec-testimony .sec-item .item-content,
-.clu-map-unidade,
+.ica-sec.sec-testimony .sec-item .item-content,
+.ica-map-unidade,
+#ica-navigation,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -675,6 +702,7 @@ a:focus .clu-but {
 /*/ /////////
 7 COLUMNS//
     ////////*/
+.ica-sec.sec-acting .content-desciption,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -685,12 +713,12 @@ a:focus .clu-but {
 /*//////////
     6 COLUMNS//
     ////////*/
-.clu-sec.sec-plans .sec-wrapper,
-.clu-sec.sec-plans .content-itens,
-.clu-sec.sec-localization .sec-item,
-.clu-sec.sec-what .sec-content .sec-itens,
-.clu-sec.sec-what .sec-content .sec-media,
-.clu-local-text,
+.ica-sec.sec-plans .sec-wrapper,
+.ica-sec.sec-plans .content-itens,
+.ica-sec.sec-localization .sec-item,
+.ica-sec.sec-what .sec-content .sec-itens,
+.ica-sec.sec-what .sec-content .sec-media,
+.ica-local-text,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -701,10 +729,9 @@ a:focus .clu-but {
 /*/ /////////
 5 COLUMNS//
     ////////*/
-#clu-shortcuts,
-#clu-navigation,
-.clu-report-item,
-.clu-sec.sec-what .sec-header,
+#ica-shortcuts,
+.ica-report-item,
+.ica-sec.sec-what .sec-header,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -715,8 +742,8 @@ a:focus .clu-but {
 /*//////////
     4 COLUMNS//
     ////////*/
-.clu-sec.sec-testimony .sec-item .item-header,
-.clu-secodary-menu,
+.ica-sec.sec-testimony .sec-item .item-header,
+.ica-secodary-menu,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -727,12 +754,12 @@ a:focus .clu-but {
 /*/ /////////
 3 COLUMNS//
     ////////*/
-#clu-footer .footer-item,
-.clu-sec.sec-reasons .sec-item,
-.clu-sec .sec-item,
-.clu-service-item,
-.clu-motivation-item,
-.clu-solution-item,
+#ica-footer .footer-item,
+.ica-sec.sec-acting .sec-item,
+.ica-sec .sec-item,
+.ica-service-item,
+.ica-motivation-item,
+.ica-solution-item,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -743,7 +770,7 @@ a:focus .clu-but {
 /*//////////
     2 COLUMNS//
     ////////*/
-#clu-logo,
+#ica-logo,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -754,8 +781,8 @@ a:focus .clu-but {
 /*/////////
     1 COLUMN//
     ///////*/
-.clu-home,
-.clu-logo,
+.ica-home,
+.ica-logo,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -766,38 +793,12 @@ a:focus .clu-but {
 /*/ ////////
 0 COLUMN//
     ///////*/
-.clu-sec.sec-testimony .sec-item,
+.ica-sec.sec-testimony .sec-item,
 .clear {
   display: inline-block;
   margin-left: 0;
   margin-right: 0;
   width: 100%;
-}
-
-/*
-//////////////
-////INSPECT//
-////////////
-*/
-*,
-*:before,
-*:after {
-  -webkit-box-shadow: inset 0 0 0 1px #000;
-          box-shadow: inset 0 0 0 1px #000;
-  background-color: rgba(255, 255, 212, 0.6);
-}
-
-article,
-aside,
-div,
-footer,
-header,
-hgroup,
-nav,
-section {
-  -webkit-box-shadow: inset 0 0 0 1px #0000ff;
-          box-shadow: inset 0 0 0 1px #0000ff;
-  background-color: rgba(255, 233, 233, 0.2);
 }
 
 /*
@@ -810,66 +811,71 @@ section {
 ////SECTIONS//
 /////////////
 */
-.clu-sec {
+.ica-sec {
   padding-top: 4.8rem;
   padding-bottom: 6.4rem;
 }
 
-.clu-sec .sec-header {
+.ica-sec .sec-header {
   text-align: center;
 }
 
-.clu-sec .sec-content {
+.ica-sec .sec-content {
   padding-top: 2.4rem;
 }
 
-.clu-sec .sec-item {
+.ica-sec .sec-item {
   margin-top: 2.4rem;
   text-align: center;
 }
 
-.clu-sec.sec-reasons .sec-item .item-header {
+.ica-sec.sec-acting .sec-item .item-header {
   min-height: 16rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.clu-sec.sec-reasons .sec-item .item-media {
-  margin: auto;
+.ica-sec.ica-sec.sec-acting .sec-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.clu-sec.sec-reasons .sec-item .item-title {
-  min-height: 4.8rem;
-}
-
-.clu-sec.sec-testimony#depoimentos {
+.ica-sec.sec-testimony#depoimentos {
   background-color: #222;
   padding-top: 4.8rem;
   padding-bottom: 6.4rem;
 }
 
-.clu-sec.sec-testimony .sec-item {
+.ica-sec.sec-testimony .sec-item {
   font-size: 125%;
 }
 
-.clu-sec.sec-places {
+.ica-sec.sec-places {
   padding-top: 0;
 }
 
-.clu-sec.sec-places .clu-wrapper {
+.ica-sec.sec-places .ica-wrapper {
   max-width: 100%;
   padding-left: 0;
   padding-right: 0;
 }
 
-.clu-sec.sec-places .sec-item {
+.ica-sec.sec-places .sec-item {
   position: relative;
   width: 49%;
   margin: 0;
 }
 
-.clu-sec.sec-places .item-content {
+.ica-sec.sec-places .item-content {
   background-color: transparent;
   position: absolute;
   left: 0;
@@ -880,17 +886,17 @@ section {
   font-size: 20px;
 }
 
-.clu-sec.sec-places .item-content * {
+.ica-sec.sec-places .item-content * {
   color: #fff;
 }
 
-.clu-sec.sec-places img {
+.ica-sec.sec-places img {
   width: 100%;
   -webkit-filter: brightness(0.34);
           filter: brightness(0.34);
 }
 
-.clu-sec.sec-localization .item-content {
+.ica-sec.sec-localization .item-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -901,23 +907,23 @@ section {
           align-items: center;
 }
 
-.clu-sec.sec-localization .item-content .item-media {
+.ica-sec.sec-localization .item-content .item-media {
   margin-right: 1.6rem;
 }
 
-.clu-sec.sec-what .sec-header {
+.ica-sec.sec-what .sec-header {
   text-align: left;
   margin: 0;
   width: 100%;
 }
 
-.clu-sec.sec-what .sec-content {
+.ica-sec.sec-what .sec-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.clu-sec.sec-what .sec-content .sec-item {
+.ica-sec.sec-what .sec-content .sec-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -925,15 +931,15 @@ section {
   text-align: left;
 }
 
-.clu-sec.sec-what .sec-content .sec-itens .sec-item .item-header {
+.ica-sec.sec-what .sec-content .sec-itens .sec-item .item-header {
   width: 28%;
 }
 
-.clu-sec.sec-what .sec-content .sec-itens .sec-item .item-content {
+.ica-sec.sec-what .sec-content .sec-itens .sec-item .item-content {
   width: 46%;
 }
 
-.clu-sec.sec-what .sec-content .sec-media {
+.ica-sec.sec-what .sec-content .sec-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -942,36 +948,36 @@ section {
           align-items: center;
 }
 
-.clu-sec.sec-motivation .sec-content {
+.ica-sec.sec-motivation .sec-content {
   text-align: center;
 }
 
-.clu-sec.sec-plans {
+.ica-sec.sec-plans {
   background-color: #fff;
 }
 
-.clu-sec.sec-plans .sec-wrapper {
+.ica-sec.sec-plans .sec-wrapper {
   background-color: #fff;
   border-radius: 1.6rem;
 }
 
-.clu-sec.sec-plans .sec-content {
+.ica-sec.sec-plans .sec-content {
   padding: 0;
   border-radius: 1.6rem;
 }
 
-.clu-sec.sec-plans .content-header {
+.ica-sec.sec-plans .content-header {
   background-color: #eee;
   padding-bottom: 1.6rem;
 }
 
-.clu-sec.sec-plans .content-geral {
+.ica-sec.sec-plans .content-geral {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.clu-sec.sec-plans .content-itens {
+.ica-sec.sec-plans .content-itens {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -983,27 +989,27 @@ section {
   text-align: left;
 }
 
-.clu-sec.sec-plans .content-item {
+.ica-sec.sec-plans .content-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1rem;
 }
 
-.clu-sec.sec-plans .content-item img {
+.ica-sec.sec-plans .content-item img {
   padding-right: 1rem;
   width: auto;
 }
 
-.clu-sec.sec-plans .sec-header {
+.ica-sec.sec-plans .sec-header {
   padding-bottom: 4.8rem;
 }
 
-.clu-sec.sec-plans .sec-content .content-header .content-description b {
+.ica-sec.sec-plans .sec-content .content-header .content-description b {
   color: #000;
 }
 
-.clu-sec.sec-plans .sec-content .content-itens .content-item {
+.ica-sec.sec-plans .sec-content .content-itens .content-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1012,15 +1018,15 @@ section {
           align-items: center;
 }
 
-.clu-sec.sec-plans .sec-content .content-itens .content-item .item-media {
+.ica-sec.sec-plans .sec-content .content-itens .content-item .item-media {
   width: 4em;
 }
 
-.clu-sec.sec-plans .sec-content .content-itens .content-item p {
+.ica-sec.sec-plans .sec-content .content-itens .content-item p {
   margin-top: 0;
 }
 
-.clu-sec.sec-plans .sec-content a {
+.ica-sec.sec-plans .sec-content a {
   margin: 2.4rem;
 }
 
@@ -1059,17 +1065,17 @@ hr {
   display: none;
 }
 
-#clu {
+#ica {
   text-align: center;
 }
 
-.clu-wrapper {
+.ica-wrapper {
   text-align: left;
   max-width: 1440px;
   padding: 2.4rem;
 }
 
-.clu-line {
+.ica-line {
   height: 1px;
   border: none;
   display: block;
@@ -1078,7 +1084,7 @@ hr {
   background-color: #555;
 }
 
-#clu,
+#ica,
 body {
   background-color: #eee;
   scroll-behavior: smooth;
@@ -1087,7 +1093,7 @@ body {
 }
 
 @media all and (max-width: 1024px) {
-  #clu {
+  #ica {
     font-size: calc(8px + 3 * ((100vw - 240px) / (1024 - 240)));
   }
   body {
@@ -1095,7 +1101,7 @@ body {
   }
 }
 
-#clu-header {
+#ica-header {
   position: fixed;
   left: 0;
   top: 0;
@@ -1103,57 +1109,57 @@ body {
   background-color: #fff;
 }
 
-#clu-logo h1 {
+#ica-logo h1 {
   line-height: 100%;
   font-size: 2.4rem;
   margin-top: 0;
 }
 
-.clu-navigation .navigation-item {
+.ica-navigation .navigation-item {
   display: inline-block;
   margin-right: 1.6rem;
   margin-left: 1.6rem;
   font-size: 1.4em;
 }
 
-.clu-navigation .navigation-item:first-child {
+.ica-navigation .navigation-item:first-child {
   margin-left: 0;
 }
 
-.clu-navigation .navigation-item:last-child {
+.ica-navigation .navigation-item:last-child {
   margin-right: 0;
 }
 
-#clu-navigation {
+#ica-navigation {
   margin-top: 1.2rem;
 }
 
-#clu-navigation .navigation-item {
+#ica-navigation .navigation-item {
   margin-right: 2.4rem;
   margin-left: 2.4rem;
 }
 
-#clu-shortcuts {
+#ica-shortcuts {
   text-align: right;
 }
 
-#clu-shortcuts .navigation-item {
+#ica-shortcuts .navigation-item {
   margin-right: 0.8rem;
   margin-left: 0.8rem;
 }
 
 @media all and (max-width: 1024px) {
-  #clu-shortcuts {
+  #ica-shortcuts {
     display: none;
   }
-  #clu-navigation {
+  #ica-navigation {
     display: none;
     font-size: 2em;
   }
-  #clu-navigation + .clu-com.com-jumper.jumper-navigation {
+  #ica-navigation + .ica-com.com-jumper.jumper-navigation {
     visibility: visible;
   }
-  #clu-navigation:target {
+  #ica-navigation:target {
     display: block;
     position: fixed;
     left: 0;
@@ -1165,7 +1171,7 @@ body {
     z-index: 100;
     background-color: #fff;
   }
-  #clu-navigation:target .navigation-list {
+  #ica-navigation:target .navigation-list {
     position: absolute;
     width: 100%;
     display: block;
@@ -1176,40 +1182,40 @@ body {
             transform: translate(0, -50%);
     margin: 0;
   }
-  #clu-navigation:target .navigation-item {
+  #ica-navigation:target .navigation-item {
     display: block;
     margin-left: 0;
     margin-right: 0;
   }
-  #clu-navigation:target .navigation-item a {
+  #ica-navigation:target .navigation-item a {
     display: block;
   }
-  #clu-navigation ~ .clu-com.com-jumper.jumper-navigation {
+  #ica-navigation ~ .ica-com.com-jumper.jumper-navigation {
     display: block;
   }
-  #clu-navigation:target ~ .clu-com.com-jumper.jumper-top {
+  #ica-navigation:target ~ .ica-com.com-jumper.jumper-top {
     display: block;
     z-index: 100;
   }
 }
 
-#clu-content {
+#ica-content {
   margin-top: 12rem;
 }
 
-#clu-footer {
+#ica-footer {
   background-color: #222;
 }
 
-#clu-footer a:hover {
+#ica-footer a:hover {
   color: #ef6000;
 }
 
-#clu-footer .footer-item dt {
+#ica-footer .footer-item dt {
   color: #ef6000;
 }
 
-#clu-footer .footer-item {
+#ica-footer .footer-item {
   vertical-align: top;
   margin-top: 2.4rem;
 }
@@ -1219,7 +1225,7 @@ body {
 ////THEMES//
 ///////////
 */
-.clu-the.the-highlight {
+.ica-the.the-highlight {
   background-color: #ef6000;
   color: #fff;
 }
@@ -1227,27 +1233,27 @@ body {
 /*/////////
 	//TEXTS//
 	/////*/
-.clu-the.the-highlight p,
-.clu-the.the-highlight li,
-.clu-the.the-highlight span,
-.clu-the.the-highlight label,
-.clu-the.the-highlight input {
+.ica-the.the-highlight p,
+.ica-the.the-highlight li,
+.ica-the.the-highlight span,
+.ica-the.the-highlight label,
+.ica-the.the-highlight input {
   color: #fff;
 }
 
 /*//////////
 	//HEADERS//
 	////////*/
-.clu-the.the-highlight caption,
-.clu-the.the-highlight dt,
-.clu-the.the-highlight h1,
-.clu-the.the-highlight h2,
-.clu-the.the-highlight h3,
-.clu-the.the-highlight h4,
-.clu-the.the-highlight h5,
-.clu-the.the-highlight h6,
-.clu-the.the-highlight legend,
-.clu-the.the-highlight th {
+.ica-the.the-highlight caption,
+.ica-the.the-highlight dt,
+.ica-the.the-highlight h1,
+.ica-the.the-highlight h2,
+.ica-the.the-highlight h3,
+.ica-the.the-highlight h4,
+.ica-the.the-highlight h5,
+.ica-the.the-highlight h6,
+.ica-the.the-highlight legend,
+.ica-the.the-highlight th {
   color: #fff;
 }
 
@@ -1256,16 +1262,16 @@ body {
 	///LINKS//
 	/////////
 	*/
-.clu-the.the-highlight a {
+.ica-the.the-highlight a {
   color: #fff;
 }
 
-.clu-the.the-highlight a:hover,
-.clu-the.the-highlight a:focus {
+.ica-the.the-highlight a:hover,
+.ica-the.the-highlight a:focus {
   color: #000;
 }
 
-.clu-the.the-highlight a.active {
+.ica-the.the-highlight a.active {
   color: #000;
 }
 
@@ -1274,28 +1280,28 @@ body {
 	////BUTTONS//
 	////////////
 	*/
-.clu-the.the-highlight .clu-but {
+.ica-the.the-highlight .ica-but {
   background-color: #fff;
   color: #ef6000;
 }
 
-.clu-the.the-highlight .clu-but:hover,
-.clu-the.the-highlight .clu-but:focus,
-.clu-the.the-highlight a:hover .clu-but,
-.clu-the.the-highlight a:focus .clu-but {
+.ica-the.the-highlight .ica-but:hover,
+.ica-the.the-highlight .ica-but:focus,
+.ica-the.the-highlight a:hover .ica-but,
+.ica-the.the-highlight a:focus .ica-but {
   background-color: black;
   color: #fff;
 }
 
-.clu-the.the-highlight .clu-but.but-light {
+.ica-the.the-highlight .ica-but.but-light {
   background: transparent;
   color: #fff;
 }
 
-.clu-the.the-highlight .clu-but.but-light:hover,
-.clu-the.the-highlight .clu-but.but-light:focus,
-.clu-the.the-highlight a:hover .clu-but.but-light,
-.clu-the.the-highlight a:focus .clu-but.but-light {
+.ica-the.the-highlight .ica-but.but-light:hover,
+.ica-the.the-highlight .ica-but.but-light:focus,
+.ica-the.the-highlight a:hover .ica-but.but-light,
+.ica-the.the-highlight a:focus .ica-but.but-light {
   background-color: #ef6000;
   border-color: #ef6000;
   color: #000;

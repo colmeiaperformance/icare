@@ -4,7 +4,7 @@
 ///////////
 */
 
-.clu-the.the-highlight {
+.ica-the.the-highlight {
 	background-color: $color-orange;
 	color: $color-white;
 }
@@ -13,11 +13,11 @@
 	//TEXTS//
 	/////*/
 
-.clu-the.the-highlight p,
-.clu-the.the-highlight li,
-.clu-the.the-highlight span,
-.clu-the.the-highlight label,
-.clu-the.the-highlight input {
+.ica-the.the-highlight p,
+.ica-the.the-highlight li,
+.ica-the.the-highlight span,
+.ica-the.the-highlight label,
+.ica-the.the-highlight input {
 	color: $color-white;
 }
 
@@ -25,16 +25,16 @@
 	//HEADERS//
 	////////*/
 
-.clu-the.the-highlight caption,
-.clu-the.the-highlight dt,
-.clu-the.the-highlight h1,
-.clu-the.the-highlight h2,
-.clu-the.the-highlight h3,
-.clu-the.the-highlight h4,
-.clu-the.the-highlight h5,
-.clu-the.the-highlight h6,
-.clu-the.the-highlight legend,
-.clu-the.the-highlight th {
+.ica-the.the-highlight caption,
+.ica-the.the-highlight dt,
+.ica-the.the-highlight h1,
+.ica-the.the-highlight h2,
+.ica-the.the-highlight h3,
+.ica-the.the-highlight h4,
+.ica-the.the-highlight h5,
+.ica-the.the-highlight h6,
+.ica-the.the-highlight legend,
+.ica-the.the-highlight th {
 	color: $color-white;
 }
 
@@ -44,14 +44,14 @@
 	/////////
 	*/
 
-.clu-the.the-highlight a {
+.ica-the.the-highlight a {
 	color: $color-white;
 }
-.clu-the.the-highlight a:hover,
-.clu-the.the-highlight a:focus {
+.ica-the.the-highlight a:hover,
+.ica-the.the-highlight a:focus {
 	color: #000;
 }
-.clu-the.the-highlight a.active {
+.ica-the.the-highlight a.active {
 	color: #000;
 }
 
@@ -61,25 +61,25 @@
 	////////////
 	*/
 
-.clu-the.the-highlight .clu-but {
+.ica-the.the-highlight .ica-but {
 	background-color: $color-white;
 	color: $color-orange;
 }
-.clu-the.the-highlight .clu-but:hover,
-.clu-the.the-highlight .clu-but:focus,
-.clu-the.the-highlight a:hover .clu-but,
-.clu-the.the-highlight a:focus .clu-but {
+.ica-the.the-highlight .ica-but:hover,
+.ica-the.the-highlight .ica-but:focus,
+.ica-the.the-highlight a:hover .ica-but,
+.ica-the.the-highlight a:focus .ica-but {
 	background-color: black;
 	color: $color-white;
 }
-.clu-the.the-highlight .clu-but.but-light {
+.ica-the.the-highlight .ica-but.but-light {
 	background: transparent;
 	color: $color-white;
 }
-.clu-the.the-highlight .clu-but.but-light:hover,
-.clu-the.the-highlight .clu-but.but-light:focus,
-.clu-the.the-highlight a:hover .clu-but.but-light,
-.clu-the.the-highlight a:focus .clu-but.but-light {
+.ica-the.the-highlight .ica-but.but-light:hover,
+.ica-the.the-highlight .ica-but.but-light:focus,
+.ica-the.the-highlight a:hover .ica-but.but-light,
+.ica-the.the-highlight a:focus .ica-but.but-light {
 	background-color: $color-orange;
 	border-color: $color-orange;
 	color: $color-black
