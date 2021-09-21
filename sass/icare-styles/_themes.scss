@@ -5,7 +5,22 @@
 */
 
 .ica-the.the-highlight {
-	background-color: $color-orange;
+	background-color:transparent;
+	color: $color-white;
+}
+.ica-the.the-white{
+	background-color: $color-background;
+}
+.ica-the.the-graye8e{
+	background-color: $color-gray-e8e;
+}
+.ica-the.the-green240{
+	background-color: $color-green-240;
+}
+.ica-the.the-green57f{
+	background-color: $color-green-57f;
+}
+.ica-the.the-contrast{
 	color: $color-white;
 }
 
@@ -15,10 +30,12 @@
 
 .ica-the.the-highlight p,
 .ica-the.the-highlight li,
-.ica-the.the-highlight span,
 .ica-the.the-highlight label,
 .ica-the.the-highlight input {
 	color: $color-white;
+}
+span{
+	color: $color-green-8a9;
 }
 
 /*//////////
@@ -45,11 +62,11 @@
 	*/
 
 .ica-the.the-highlight a {
-	color: $color-white;
+	color: $color-green-57f;
 }
 .ica-the.the-highlight a:hover,
 .ica-the.the-highlight a:focus {
-	color: #000;
+	color: $color-white;
 }
 .ica-the.the-highlight a.active {
 	color: #000;
@@ -80,7 +97,7 @@
 .ica-the.the-highlight .ica-but.but-light:focus,
 .ica-the.the-highlight a:hover .ica-but.but-light,
 .ica-the.the-highlight a:focus .ica-but.but-light {
-	background-color: $color-orange;
-	border-color: $color-orange;
-	color: $color-black
+	background-color: $color-green-8a9;
+	border-color: $color-green-8a9;
+	color: $color-black;
 }

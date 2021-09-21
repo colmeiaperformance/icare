@@ -5,11 +5,23 @@
 */
 
 .ica-sec {
-	padding-top: 4.8rem;
-	padding-bottom: 6.4rem;
+	position: relative;
+	padding: 1.6rem 0;
 }
-.ica-sec .sec-header {
+.ica-sec .sec-header{
+	display: flex;
+	justify-content: center;
+}
+.ica-sec .sec-header .sec-title{
 	text-align: center;
+	border-radius: 5rem;
+	text-align: center;
+	align-items: center;
+	display: inline;
+	padding: 0.8rem;
+	position: absolute;
+	top: -4rem;
+	z-index: 900;
 }
 .ica-sec .sec-content {
 	padding-top: 2.4rem;
@@ -19,18 +31,32 @@
 	text-align: center;
 }
 
-.ica-sec.sec-acting .sec-item .item-header {
-	min-height: 16rem;
-	display: flex;
-}
-.ica-sec.ica-sec.sec-acting .sec-content{
+.ica-sec.sec-acting .sec-content{
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	align-items: center;
 }
-
-
+.ica-sec.sec-partners{
+	background-color: $color-background;
+}
+.ica-sec.sec-partners .sec-content{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+}
+.ica-sec.sec-partners .sec-itens{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.ica-sec.sec-partners .item-media{
+	margin: 1.8rem;
+	width: 17em;	
+}
 .ica-sec.sec-testimony#depoimentos {
 	background-color: $color-gray-222;
 	padding-top: 4.8rem;
@@ -41,11 +67,6 @@
 }
 .ica-sec.sec-places {
 	padding-top: 0;
-}
-.ica-sec.sec-places .ica-wrapper {
-	max-width: 100%;
-	padding-left: 0;
-	padding-right: 0;
 }
 .ica-sec.sec-places .sec-item {
 	position: relative;
@@ -108,56 +129,20 @@
 .ica-sec.sec-motivation .sec-content {
 	text-align: center;
 }
-
-.ica-sec.sec-plans {
-	background-color: $color-white;
-}
-.ica-sec.sec-plans .sec-wrapper {
-	background-color: $color-white;
-	border-radius: 1.6rem;
-}
-.ica-sec.sec-plans .sec-content {
-	padding: 0;
-	border-radius: 1.6rem;
-}
-.ica-sec.sec-plans .content-header {
-	background-color: $color-gray-eee;
-	padding-bottom: 1.6rem;
-}
-.ica-sec.sec-plans .content-geral {
+.ica-sec.sec-numbers .sec-content{
 	display: flex;
+	align-items: top;
+	justify-content: space-around;	
+	flex-wrap: wrap;
 }
-.ica-sec.sec-plans .content-itens {
-	display: flex;
-	flex-direction: column;
-	padding-top: 1.6rem;
-	text-align: left;
-}
-.ica-sec.sec-plans .content-item {
-	display: flex;
-	padding: 1rem;
-}
-.ica-sec.sec-plans .content-item img {
-	padding-right: 1rem;
-	width: auto;
-}
-
-.ica-sec.sec-plans .sec-header {
-	padding-bottom: 4.8rem;
-}
-.ica-sec.sec-plans .sec-content .content-header .content-description b {
-	color: $color-black;
-}
-.ica-sec.sec-plans .sec-content .content-itens .content-item {
-	display: flex;
-	align-items: center;
-}
-.ica-sec.sec-plans .sec-content .content-itens .content-item .item-media {
-	width: 4em;
-}
-.ica-sec.sec-plans .sec-content .content-itens .content-item p {
-	margin-top: 0;
-}
-.ica-sec.sec-plans .sec-content a {
+.ica-sec.sec-numbers .sec-content .sec-item{
 	margin: 2.4rem;
+	width: 24em;
 }
+.ica-sec.sec-occupationarea{
+	background-color: $color-green-57f;
+}
+.ica-sec.sec-numbers{
+	background-color: $color-green-240;
+}
+

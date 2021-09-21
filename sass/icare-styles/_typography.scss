@@ -9,19 +9,19 @@
 	///*/
 
 a {
-	color: $color-black;
+	color: $color-white;
 	text-decoration: none;
 }
 a:hover,
 a:focus,
 .hover,
 .focus {
-	color: $color-orange;
+	color: $color-green-57f;
 	text-decoration: underline;
 }
 a:active,
 .active {
-	color: $color-orange;
+	color: $color-green-57f;
 }
 
 /*/////
@@ -31,14 +31,13 @@ a:active,
 p,
 li,
 dd,
-span,
 label,
 input {
 	font-family: "Montserrat", sans-serif;
 	margin-top: 1.6rem;
 	font-size: 1.6em;
 	line-height: 160%;
-	color: $color-gray-666;
+	color: $color-green-57f;
 }
 li {
 	list-style-position: inside;
@@ -59,9 +58,7 @@ small {
 strong {
 	color: $color-gray-222;
 }
-b {
-	color: $color-orange;
-}
+
 
 /*///////
 	HEADER//
@@ -76,10 +73,10 @@ h6,
 dt,
 legend {
 	margin-top: 2.4rem;
-	font-family: "Quicksand", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	letter-spacing: 0.1em;
 	line-height: 120%;
-	color: $color-gray-222;
+	color: $color-green-57f;
 }
 h1 {
 	text-transform: none;
@@ -95,6 +92,7 @@ h2 {
 h3,
 legend {
 	font-size: 2em;
+	font: bold;
 }
 h4 {
 	font-size: 1.6em;

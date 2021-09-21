@@ -47,7 +47,7 @@ hr {
 }
 #ica,
 body {
-	background-color: $color-gray-eee;
+	background-color: $color-gray-e8e;
 	scroll-behavior: smooth;
 	text-align: center;
 	font-size: 10px;
@@ -60,14 +60,29 @@ body {
 		font-size: calc(7px + 2 * ((100vw - 240px) / (1024 - 240)));
 	}
 }
-#ica-header {
+.ica-header {
 	position: fixed;
 	left: 0;
 	top: 0;
 	z-index: 1000;
-	background-color: $color-white;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
 }
-
+.ica-header2 {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	background-color: red;
+}
+#ica-header .ica-wrapper{
+	display: flex;
+	justify-content: space-between;
+	text-align: end;
+	align-items: center;
+	max-width: 100%;
+}
 #ica-logo h1 {
 	line-height: 100%;
 	font-size: 2.4rem;
@@ -78,7 +93,7 @@ body {
 	display: inline-block;
 	margin-right: 1.6rem;
 	margin-left: 1.6rem;
-	font-size: 1.4em;
+	font-size: 1.8em;
 }
 .ica-navigation .navigation-item:first-child {
 	margin-left: 0;
@@ -90,8 +105,8 @@ body {
 	margin-top: 1.2rem;
 }
 #ica-navigation .navigation-item {
-	margin-right: 2.4rem;
-	margin-left: 2.4rem;
+	margin-right: 1.4rem;
+	margin-left: 1.4rem;
 }
 #ica-shortcuts {
 	text-align: right;
@@ -132,6 +147,9 @@ body {
 		left: 0;
 		transform: translate(0, -50%);
 		margin: 0;
+	}
+	#ica-navigation .navigation-list {
+		text-align: end;
 	}
 	#ica-navigation:target .navigation-item {
 		display: block;

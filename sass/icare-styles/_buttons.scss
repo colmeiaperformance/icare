@@ -14,16 +14,16 @@
 	color: inherit;
 }
 .ica-but {
-	font-family: "Quicksand", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	display: inline-block;
 	padding: 0.8rem 2.4rem;
 	margin-top: 1.6rem;
 	font-size: 1.6em;
 	line-height: 150%;
 	text-decoration: none;
-	color: $color-white;
-	background-color: $color-orange;
-	border: 2px $color-orange solid;
+	color: $color-green-8a9;
+	background-color: $color-green-8a9;
+	border: 2px $color-green-8a9 solid;
 	font-weight: bold;
 	letter-spacing: 0.1em;
 	text-align: center;
@@ -34,7 +34,7 @@
 a:hover .ica-but,
 a:focus .ica-but {
 	background-color: $color-gray-222;
-	border-color: $color-gray-222;
+	border-color: $color-white;
 	color: $color-white;
 	text-decoration: none;
 }
@@ -47,8 +47,9 @@ a:focus .ica-but {
 }
 .ica-but.but-light {
 	background: transparent;
-	color: $color-orange;
+	color: $color-white;
 }
 .ica-but.but-light:hover {
-	color: $color-gray-222;
+	color: $color-white;
+	background-color: $color-green-8a9;
 }

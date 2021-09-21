@@ -476,16 +476,16 @@ article, aside, div, footer, header, hgroup, nav, section {
 }
 
 .ica-but {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: inline-block;
   padding: 0.8rem 2.4rem;
   margin-top: 1.6rem;
   font-size: 1.6em;
   line-height: 150%;
   text-decoration: none;
-  color: #fff;
-  background-color: #ef6000;
-  border: 2px #ef6000 solid;
+  color: #b6d8a9;
+  background-color: #b6d8a9;
+  border: 2px #b6d8a9 solid;
   font-weight: bold;
   letter-spacing: 0.1em;
   text-align: center;
@@ -497,7 +497,7 @@ article, aside, div, footer, header, hgroup, nav, section {
 a:hover .ica-but,
 a:focus .ica-but {
   background-color: #222;
-  border-color: #222;
+  border-color: #fff;
   color: #fff;
   text-decoration: none;
 }
@@ -513,11 +513,12 @@ a:focus .ica-but {
 
 .ica-but.but-light {
   background: transparent;
-  color: #ef6000;
+  color: #fff;
 }
 
 .ica-but.but-light:hover {
-  color: #222;
+  color: #fff;
+  background-color: #b6d8a9;
 }
 
 /*
@@ -525,15 +526,30 @@ a:focus .ica-but {
 ////COMPONENTS//
 ///////////////
 */
-.ica-com.com-banner {
-  padding-top: 4.8rem;
-  padding-bottom: 6.4rem;
+.ica-com.com-banner .ica-wrapper {
+  position: relative;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-top: -16rem;
 }
 
-.ica-com.com-banner .com-header,
-.ica-com.com-banner .com-content,
-.ica-com.com-banner .com-footer {
+.ica-com.com-banner .com-content {
+  position: absolute;
   text-align: center;
+  bottom: 0;
+  left: 0;
+  margin: 8rem;
+}
+
+.ica-com.com-carousel {
+  margin-top: -16rem;
 }
 
 .ica-com.com-carousel .com-item {
@@ -542,15 +558,15 @@ a:focus .ica-but {
 
 .ica-com.com-carousel .com-item .item-content {
   padding: 2.4rem 2.4rem 4.8rem;
-  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  margin-bottom: 8rem;
 }
 
-.ica-com.com-carousel .com-item .item-description {
-  font-size: 2.4em;
+.ica-com.com-carousel .com-item .item-content h1 {
+  margin: 0 16rem;
 }
 
 .ica-com.com-card {
@@ -586,6 +602,10 @@ a:focus .ica-but {
 
 .ica-com.com-jumper:before {
   font-size: 2.4em;
+}
+
+.menu-auxiliar {
+  background-color: orange;
 }
 
 /*
@@ -640,7 +660,10 @@ a:focus .ica-but {
 /*///////////
 	12 COLUMNS//
 	/////////*/
+.ica-com.com-banner .ica-wrapper .com-content,
+.ica-com.com-banner .ica-wrapper,
 .ica-footer,
+.ica-sec.sec-partners .sec-itens,
 .ica-local-unidade,
 .ica-nav,
 .show-menu,
@@ -667,7 +690,6 @@ a:focus .ica-but {
 /*///////////
     10 COLUMNS//
     /////////*/
-.ica-com.com-banner .ica-wrapper,
 .ica-unidades,
 .clear {
   display: inline-block;
@@ -679,6 +701,7 @@ a:focus .ica-but {
 /*/ /////////
 9 COLUMNS//
     ////////*/
+#ica-navigation,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -691,7 +714,6 @@ a:focus .ica-but {
     ////////*/
 .ica-sec.sec-testimony .sec-item .item-content,
 .ica-map-unidade,
-#ica-navigation,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -702,7 +724,8 @@ a:focus .ica-but {
 /*/ /////////
 7 COLUMNS//
     ////////*/
-.ica-sec.sec-acting .content-desciption,
+.ica-sec.sec-acting .content-description,
+.ica-sec.sec-partners .content-description,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -730,6 +753,7 @@ a:focus .ica-but {
 5 COLUMNS//
     ////////*/
 #ica-shortcuts,
+.ica-com.com-banner .item-content h1,
 .ica-report-item,
 .ica-sec.sec-what .sec-header,
 .clear {
@@ -755,6 +779,7 @@ a:focus .ica-but {
 3 COLUMNS//
     ////////*/
 #ica-footer .footer-item,
+.ica-sec.sec-numbers .sec-content .sec-item,
 .ica-sec.sec-acting .sec-item,
 .ica-sec .sec-item,
 .ica-service-item,
@@ -812,12 +837,31 @@ a:focus .ica-but {
 /////////////
 */
 .ica-sec {
-  padding-top: 4.8rem;
-  padding-bottom: 6.4rem;
+  position: relative;
+  padding: 1.6rem 0;
 }
 
 .ica-sec .sec-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ica-sec .sec-header .sec-title {
   text-align: center;
+  border-radius: 5rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inline;
+  padding: 0.8rem;
+  position: absolute;
+  top: -4rem;
+  z-index: 900;
 }
 
 .ica-sec .sec-content {
@@ -829,14 +873,7 @@ a:focus .ica-but {
   text-align: center;
 }
 
-.ica-sec.sec-acting .sec-item .item-header {
-  min-height: 16rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.ica-sec.ica-sec.sec-acting .sec-content {
+.ica-sec.sec-acting .sec-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -847,6 +884,42 @@ a:focus .ica-but {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.ica-sec.sec-partners {
+  background-color: #ffffff;
+}
+
+.ica-sec.sec-partners .sec-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ica-sec.sec-partners .sec-itens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ica-sec.sec-partners .item-media {
+  margin: 1.8rem;
+  width: 17em;
 }
 
 .ica-sec.sec-testimony#depoimentos {
@@ -861,12 +934,6 @@ a:focus .ica-but {
 
 .ica-sec.sec-places {
   padding-top: 0;
-}
-
-.ica-sec.sec-places .ica-wrapper {
-  max-width: 100%;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .ica-sec.sec-places .sec-item {
@@ -952,82 +1019,30 @@ a:focus .ica-but {
   text-align: center;
 }
 
-.ica-sec.sec-plans {
-  background-color: #fff;
-}
-
-.ica-sec.sec-plans .sec-wrapper {
-  background-color: #fff;
-  border-radius: 1.6rem;
-}
-
-.ica-sec.sec-plans .sec-content {
-  padding: 0;
-  border-radius: 1.6rem;
-}
-
-.ica-sec.sec-plans .content-header {
-  background-color: #eee;
-  padding-bottom: 1.6rem;
-}
-
-.ica-sec.sec-plans .content-geral {
+.ica-sec.sec-numbers .sec-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.ica-sec.sec-plans .content-itens {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 1.6rem;
-  text-align: left;
-}
-
-.ica-sec.sec-plans .content-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1rem;
-}
-
-.ica-sec.sec-plans .content-item img {
-  padding-right: 1rem;
-  width: auto;
-}
-
-.ica-sec.sec-plans .sec-header {
-  padding-bottom: 4.8rem;
-}
-
-.ica-sec.sec-plans .sec-content .content-header .content-description b {
-  color: #000;
-}
-
-.ica-sec.sec-plans .sec-content .content-itens .content-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ica-sec.sec-plans .sec-content .content-itens .content-item .item-media {
-  width: 4em;
-}
-
-.ica-sec.sec-plans .sec-content .content-itens .content-item p {
-  margin-top: 0;
-}
-
-.ica-sec.sec-plans .sec-content a {
+.ica-sec.sec-numbers .sec-content .sec-item {
   margin: 2.4rem;
+  width: 24em;
+}
+
+.ica-sec.sec-occupationarea {
+  background-color: #13857f;
+}
+
+.ica-sec.sec-numbers {
+  background-color: #204240;
 }
 
 /*
@@ -1086,7 +1101,7 @@ hr {
 
 #ica,
 body {
-  background-color: #eee;
+  background-color: #e8e8e8;
   scroll-behavior: smooth;
   text-align: center;
   font-size: 10px;
@@ -1101,12 +1116,40 @@ body {
   }
 }
 
-#ica-header {
+.ica-header {
   position: fixed;
   left: 0;
   top: 0;
   z-index: 1000;
-  background-color: #fff;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ica-header2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: red;
+}
+
+#ica-header .ica-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
 }
 
 #ica-logo h1 {
@@ -1119,7 +1162,7 @@ body {
   display: inline-block;
   margin-right: 1.6rem;
   margin-left: 1.6rem;
-  font-size: 1.4em;
+  font-size: 1.8em;
 }
 
 .ica-navigation .navigation-item:first-child {
@@ -1135,8 +1178,8 @@ body {
 }
 
 #ica-navigation .navigation-item {
-  margin-right: 2.4rem;
-  margin-left: 2.4rem;
+  margin-right: 1.4rem;
+  margin-left: 1.4rem;
 }
 
 #ica-shortcuts {
@@ -1182,6 +1225,9 @@ body {
             transform: translate(0, -50%);
     margin: 0;
   }
+  #ica-navigation .navigation-list {
+    text-align: end;
+  }
   #ica-navigation:target .navigation-item {
     display: block;
     margin-left: 0;
@@ -1226,7 +1272,27 @@ body {
 ///////////
 */
 .ica-the.the-highlight {
-  background-color: #ef6000;
+  background-color: transparent;
+  color: #fff;
+}
+
+.ica-the.the-white {
+  background-color: #ffffff;
+}
+
+.ica-the.the-graye8e {
+  background-color: #e8e8e8;
+}
+
+.ica-the.the-green240 {
+  background-color: #204240;
+}
+
+.ica-the.the-green57f {
+  background-color: #13857f;
+}
+
+.ica-the.the-contrast {
   color: #fff;
 }
 
@@ -1235,10 +1301,13 @@ body {
 	/////*/
 .ica-the.the-highlight p,
 .ica-the.the-highlight li,
-.ica-the.the-highlight span,
 .ica-the.the-highlight label,
 .ica-the.the-highlight input {
   color: #fff;
+}
+
+span {
+  color: #b6d8a9;
 }
 
 /*//////////
@@ -1263,12 +1332,12 @@ body {
 	/////////
 	*/
 .ica-the.the-highlight a {
-  color: #fff;
+  color: #13857f;
 }
 
 .ica-the.the-highlight a:hover,
 .ica-the.the-highlight a:focus {
-  color: #000;
+  color: #fff;
 }
 
 .ica-the.the-highlight a.active {
@@ -1302,8 +1371,8 @@ body {
 .ica-the.the-highlight .ica-but.but-light:focus,
 .ica-the.the-highlight a:hover .ica-but.but-light,
 .ica-the.the-highlight a:focus .ica-but.but-light {
-  background-color: #ef6000;
-  border-color: #ef6000;
+  background-color: #b6d8a9;
+  border-color: #b6d8a9;
   color: #000;
 }
 
@@ -1316,7 +1385,7 @@ body {
 	LINK//
 	///*/
 a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1324,13 +1393,13 @@ a:hover,
 a:focus,
 .hover,
 .focus {
-  color: #ef6000;
+  color: #13857f;
   text-decoration: underline;
 }
 
 a:active,
 .active {
-  color: #ef6000;
+  color: #13857f;
 }
 
 /*/////
@@ -1339,14 +1408,13 @@ a:active,
 p,
 li,
 dd,
-span,
 label,
 input {
   font-family: "Montserrat", sans-serif;
   margin-top: 1.6rem;
   font-size: 1.6em;
   line-height: 160%;
-  color: #666;
+  color: #13857f;
 }
 
 li {
@@ -1373,10 +1441,6 @@ strong {
   color: #222;
 }
 
-b {
-  color: #ef6000;
-}
-
 /*///////
 	HEADER//
 	/////*/
@@ -1389,10 +1453,10 @@ h6,
 dt,
 legend {
   margin-top: 2.4rem;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 0.1em;
   line-height: 120%;
-  color: #222;
+  color: #13857f;
 }
 
 h1 {
@@ -1412,6 +1476,7 @@ h2 {
 h3,
 legend {
   font-size: 2em;
+  font: bold;
 }
 
 h4 {
@@ -1432,7 +1497,4 @@ h6 {
 /************************************/
 /********* DESKTOP STYLE ************/
 /************************************/
-body {
-  background-color: antiquewhite;
-}
 /*# sourceMappingURL=style.css.map */

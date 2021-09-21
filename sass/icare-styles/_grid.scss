@@ -8,7 +8,10 @@
 	12 COLUMNS//
 	/////////*/
 
+.ica-com.com-banner .ica-wrapper .com-content,
+.ica-com.com-banner .ica-wrapper,
 .ica-footer,
+.ica-sec.sec-partners .sec-itens,
 .ica-local-unidade,
 .ica-nav,
 .show-menu,
@@ -37,7 +40,6 @@
     10 COLUMNS//
     /////////*/
 
-.ica-com.com-banner .ica-wrapper,
 .ica-unidades,
 .clear {
   display: inline-block;
@@ -50,6 +52,7 @@
 9 COLUMNS//
     ////////*/
 
+#ica-navigation,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -63,7 +66,6 @@
 
 .ica-sec.sec-testimony .sec-item .item-content,
 .ica-map-unidade,
-#ica-navigation,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -75,7 +77,8 @@
 7 COLUMNS//
     ////////*/
 
-.ica-sec.sec-acting .content-desciption, 
+.ica-sec.sec-acting .content-description,
+.ica-sec.sec-partners .content-description,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -86,6 +89,7 @@
 /*//////////
     6 COLUMNS//
     ////////*/
+
 
 .ica-sec.sec-plans .sec-wrapper,
 .ica-sec.sec-plans .content-itens,
@@ -105,6 +109,7 @@
     ////////*/
 
 #ica-shortcuts,
+.ica-com.com-banner .item-content h1,
 .ica-report-item,
 .ica-sec.sec-what .sec-header,
 .clear {
@@ -132,6 +137,7 @@
     ////////*/
 
 #ica-footer .footer-item,
+.ica-sec.sec-numbers .sec-content .sec-item,
 .ica-sec.sec-acting .sec-item,
 .ica-sec .sec-item,
 .ica-service-item,
