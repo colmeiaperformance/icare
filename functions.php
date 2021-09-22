@@ -4,12 +4,13 @@
 function loading_styles(){
     wp_enqueue_style( 'swiper-css', get_template_directory_uri() . '/vendor/swiper-js/swiper-bundle.min.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
     wp_enqueue_style( 'style-css', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
+    wp_enqueue_style( 'opensans-font', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap', array(), wp_get_theme()->get( 'Version' ), 'all' );
   
 }
 
 //Scripts
 function loading_scripts(){
-    wp_register_script( 'swiper-js', get_template_directory_uri() . '/vendor/swiper-js/swiper-bundle.min.js', array(), wp_get_theme()->get( 'Version' ), true  );
+    wp_register_script( 'swiper-js', get_template_directory_uri() . '/vendor/swiper-js/swiper-bundle.min.js', array( 'jquery' ), wp_get_theme()->get( 'Version' ), true  );
     wp_register_script( 'main-js', get_template_directory_uri() . '/js/main.js', array(), wp_get_theme()->get( 'Version' ), true  );
   
     wp_enqueue_script( 'swiper-js');
@@ -152,4 +153,26 @@ function get_menu($menu_name = false, $menuID = false)
     $menu_itens["parents"] = $menu;
     $menu_itens["childrens"] = $submenu;
     return $menu_itens;
+}
+
+add_action('acf/init', 'my_acf_op_init');
+function my_acf_op_init() {
+
+    // Check function exists.
+    if( function_exists('acf_add_options_page') ) {
+
+        // Add parent.
+        $parent = acf_add_options_page(array(
+            'page_title'  => __('Theme General Settings'),
+            'menu_title'  => __('Theme Settings'),
+            'redirect'    => false,
+        ));
+
+        // Add sub page.
+        $child = acf_add_options_page(array(
+            'page_title'  => __('Social Settings'),
+            'menu_title'  => __('Social'),
+            'parent_slug' => $parent['menu_slug'],
+        ));
+    }
 }
