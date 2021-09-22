@@ -40,6 +40,16 @@
 							<a href="#" class="ica-but but-light">Áreas de Atuação</a>
 						</div>
 					</div>
+					<div class="com-item swiper-slide">
+						<div class="item-media swiper-slide-img">
+							<img src="images/bg-banner.jpg" alt="" />
+						</div>
+						<div class="item-content ica-the the-highlight">
+							<h1 class="item-title"><span>Consultoria</span> especializada em estratégia e inovação do <span>meio ambiente</span></h1>
+							<a href="#" class="ica-but but-light">Sobre a iCare</a>
+							<a href="#" class="ica-but but-light">Áreas de Atuação</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			
@@ -163,6 +173,22 @@
 		
 		<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper(".swiper-container", {
+				grabCursor: true,
+				loop: true,
+				speed: 300,
+				pagination: {
+					el: ".swiper-pagination",
+					dynamicBullets: true,
+					clickable: true
+				},
+				scrollbar: {
+					el: ".swiper-scrollbar",
+					hide: true,
+				},
+			});
+		</script>
 		<script>
 			const swiper = new Swiper(".ica-sec.sec-testimony .swiper-container", {
 				grabCursor: true,
