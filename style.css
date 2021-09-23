@@ -1954,6 +1954,7 @@ h6 {
   .arrows-left li {
     width: 370px;
     background: #13857f;
+    z-index: 2;
   }
   .arrows-left li::before, .arrows-left li::after {
     display: block;
@@ -1969,6 +1970,7 @@ h6 {
         -ms-flex-align: center;
             align-items: center;
     padding: 1.1rem;
+    z-index: 3;
   }
   .arrows-left li .arrow-container .icon {
     width: 73px;
@@ -1979,6 +1981,30 @@ h6 {
     margin-right: -50px;
     font-size: 1.1em;
     color: #e8e8e8;
+  }
+  .arrows-left li .arrow-container:first-child::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 100px;
+    height: 116.66px;
+    background: black;
+    margin-top: 0;
+    -webkit-transform: skew(25deg);
+            transform: skew(25deg);
+    z-index: 3;
+  }
+  .arrows-left li .arrow-container:last-child::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 100px;
+    height: 116.66px;
+    background: black;
+    margin-top: 0;
+    -webkit-transform: skew(-25deg);
+            transform: skew(-25deg);
+    z-index: 3;
   }
   .arrows-right {
     list-style: none;
