@@ -3,8 +3,11 @@
 <header id="ica-header" class="ica-header">
     <div id="navbar" class="ica-wrapper">
         <div id="ica-logo" class="ica-logo">
-            <h1><a class="logo" href="/"><img width="160" src="<?php echo get_template_directory_uri() . '/images/logo.png' ?>"
-                        alt="icare"></a></h1>
+            <h1>
+                <a class="logo" href="<?php echo home_url(); ?>">
+                    <img width="160" src="<?php echo get_template_directory_uri() . '/images/logo.png' ?>" alt="icare">
+                </a>
+            </h1>
         </div>
         <nav id="ica-navigation" class="ica-navigation">
             <ul class="navigation-list">
@@ -86,8 +89,7 @@
                     <li>
                         <div class="arrow-container">
                             <p class="icon">
-                                <img src="<?php echo get_template_directory_uri() . '/images/icon-folha.png' ?>"
-                                    alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/images/icon-folha.png' ?>" alt="">
                             </p>
                             <h3>Clima</h3>
                         </div>

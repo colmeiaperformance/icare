@@ -46,6 +46,7 @@ function base_setup() {
     register_nav_menus(
         array(
         'main-menu'=> __('Main menu'),
+        'secondary-menu'=> __('Secondary menu'),
         'footer-menu'=> __('Footer menu')
         )
     );
@@ -155,6 +156,7 @@ function get_menu($menu_name = false, $menuID = false)
     return $menu_itens;
 }
 
+/* Criação das páginas de opções do ACF */
 add_action('acf/init', 'my_acf_op_init');
 function my_acf_op_init() {
 
@@ -175,4 +177,11 @@ function my_acf_op_init() {
             'parent_slug' => $parent['menu_slug'],
         ));
     }
+}
+
+/* Remoção do editor do WP */
+add_action('init', 'remove_guttenberg_from_pages', 10);
+function remove_guttenberg_from_pages()
+{
+    remove_post_type_support('page', 'editor');
 }

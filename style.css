@@ -1236,6 +1236,7 @@ body {
 }
 
 #ica-header .ica-wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1495,7 +1496,7 @@ a:focus,
 .hover,
 .focus {
   color: #13857f;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:active,
@@ -1600,6 +1601,15 @@ h6 {
 /********* MOBILE FIRST *************/
 /************************************/
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+#navbar a:focus,
+#navbar a:hover,
+#navbar a:active {
+  color: #13857f;
+}
+
+>>>>>>> Stashed changes
 @media (max-width: 578px) {
   .arrows-left li {
     margin-left: 5vw;
@@ -1625,10 +1635,9 @@ h6 {
 
 @media (max-width: 1024px) {
   #navbar {
-    position: fixed;
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
-    top: 0;
+    background-color: transparent;
     z-index: 1000;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1639,6 +1648,9 @@ h6 {
     color: #707070;
   }
   .scrolling {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     background-color: #fff !important;
     border-bottom: rgba(0, 0, 0, 0.2) solid 1px !important;
     -webkit-transition: 0.3s all ease-in-out;

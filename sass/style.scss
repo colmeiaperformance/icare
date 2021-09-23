@@ -32,8 +32,18 @@
 /************************************/
 /********* MOBILE FIRST *************/
 /************************************/
+<<<<<<< Updated upstream
 
 <<<<<<< Updated upstream
+=======
+#navbar {
+    a:focus,
+    a:hover,
+    a:active {
+        color: $color-default-green;
+    }
+}
+>>>>>>> Stashed changes
 @media (max-width: 578px) {
     .arrows-left {
         li {
@@ -64,9 +74,8 @@
 @media (max-width: 1024px) {
     //Menu
     #navbar {
-        position: fixed;
         transition: 0.3s all ease-in-out;
-        top: 0;
+        background-color: transparent;
         z-index: 1000;
         display: flex;
         border-bottom: none;
@@ -75,6 +84,9 @@
         }
     }
     .scrolling {
+        position: fixed;
+        top: 0;
+        z-index: 1000;
         background-color: $color-white !important;
         border-bottom: $color-black-opc-20 solid 1px !important;
         transition: 0.3s all ease-in-out;

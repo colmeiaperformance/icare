@@ -16,12 +16,12 @@ a:hover,
 a:focus,
 .hover,
 .focus {
-	color: $color-green-57f;
-	text-decoration: underline;
+	color: $color-default-green;
+	text-decoration: none;
 }
 a:active,
 .active {
-	color: $color-green-57f;
+	color: $color-default-green;
 }
 
 /*/////
@@ -37,7 +37,7 @@ input {
 	margin-top: 1.6rem;
 	font-size: 1.6em;
 	line-height: 160%;
-	color: $color-green-57f;
+	color: $color-default-green;
 }
 li {
 	list-style-position: inside;
@@ -79,7 +79,7 @@ legend {
 	font-family: "Open Sans", sans-serif;
 	letter-spacing: 0.1em;
 	line-height: 120%;
-	color: $color-green-57f;
+	color: $color-default-green;
 }
 h1 {
 	text-transform: none;
