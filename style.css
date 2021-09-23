@@ -844,15 +844,6 @@ a:focus .ica-but {
   padding: 1.6rem 0;
 }
 
-.ica-sec .sec-content {
-  padding-top: 2.4rem;
-}
-
-.ica-sec .sec-item {
-  margin-top: 2.4rem;
-  text-align: center;
-}
-
 .ica-sec .sec-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -876,7 +867,6 @@ a:focus .ica-but {
   z-index: 900;
 }
 
-<<<<<<< Updated upstream
 .ica-sec .sec-header .sec-title.ica-the {
   font-size: 1.8em;
 }
@@ -890,8 +880,6 @@ a:focus .ica-but {
   text-align: center;
 }
 
-=======
->>>>>>> Stashed changes
 .ica-sec.sec-acting .sec-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1600,16 +1588,12 @@ h6 {
 /************************************/
 /********* MOBILE FIRST *************/
 /************************************/
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 #navbar a:focus,
 #navbar a:hover,
 #navbar a:active {
   color: #13857f;
 }
 
->>>>>>> Stashed changes
 @media (max-width: 578px) {
   .arrows-left li {
     margin-left: 5vw;
@@ -1656,6 +1640,45 @@ h6 {
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
   }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 867px) and (min-width: 610px) {
+  .ica-sec.sec-numbers .sec-content {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 700px) and (min-width: 610px) {
+  .ica-sec.sec-numbers .sec-content {
+    padding: 0 8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 1323px) and (min-width: 787px) {
+  .ica-sec.sec-partners .sec-itens {
+    padding: 0 8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 1423px) and (min-width: 1062px) {
+  .ica-sec.sec-partners .sec-itens {
+    padding: 0 18rem;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 891px) and (min-width: 301px) {
+  .ica-sec.sec-notice .item-media {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 1023px) and (min-width: 619px) {
+  .ica-sec.sec-notice .sec-itens {
+    padding: 0 18rem;
+  }
+}
+
+@media (max-width: 1024px) {
   /* O que fazemos? */
   .sec-arrows {
     display: block;
@@ -1779,41 +1802,6 @@ h6 {
   .arrows-left li h3,
   .arrows-right li h3 {
     font-size: 2rem;
-=======
-@media screen and (max-width: 867px) and (min-width: 610px) {
-  .ica-sec.sec-numbers .sec-content {
-    padding: 0 10rem;
-  }
-}
-
-@media screen and (max-width: 700px) and (min-width: 610px) {
-  .ica-sec.sec-numbers .sec-content {
-    padding: 0 8rem;
-  }
-}
-
-@media screen and (max-width: 1323px) and (min-width: 787px) {
-  .ica-sec.sec-partners .sec-itens {
-    padding: 0 8rem;
-  }
-}
-
-@media screen and (max-width: 1423px) and (min-width: 1062px) {
-  .ica-sec.sec-partners .sec-itens {
-    padding: 0 18rem;
-  }
-}
-
-@media screen and (max-width: 891px) and (min-width: 301px) {
-  .ica-sec.sec-notice .item-media {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1023px) and (min-width: 619px) {
-  .ica-sec.sec-notice .sec-itens {
-    padding: 0 18rem;
->>>>>>> Stashed changes
   }
 }
 

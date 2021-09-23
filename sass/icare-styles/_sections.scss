@@ -8,7 +8,6 @@
 	position: relative;
 	padding: 1.6rem 0;
 }
-<<<<<<< Updated upstream
 .ica-sec .sec-header{
 	display: flex;
 	justify-content: center;
@@ -41,38 +40,6 @@
 	text-align: center;
 	align-items: center;
 }
-=======
-	.ica-sec .sec-content {
-		padding-top: 2.4rem;
-	}
-	.ica-sec .sec-item {
-		margin-top: 2.4rem;
-		text-align: center;
-	}
-	.ica-sec .sec-header{
-		display: flex;
-		justify-content: center;
-	}
-		.ica-sec .sec-header .sec-title{
-			text-align: center;
-			border-radius: 5rem;
-			text-align: center;
-			align-items: center;
-			display: inline;
-			padding: 0.8rem;
-			position: absolute;
-			top: -4rem;
-			z-index: 900;
-		}
-.ica-sec.sec-acting{
-}
-	.ica-sec.sec-acting .sec-content{
-		display: flex;
-		justify-content: center;
-		text-align: center;
-		align-items: center;
-	}
->>>>>>> Stashed changes
 .ica-sec.sec-partners{
 	background-color: $color-white;
 }
