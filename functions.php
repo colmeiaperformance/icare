@@ -10,8 +10,8 @@ function loading_styles(){
 
 //Scripts
 function loading_scripts(){
-    wp_register_script( 'swiper-js', get_template_directory_uri() . '/vendor/swiper-js/swiper-bundle.min.js', array( 'jquery' ), wp_get_theme()->get( 'Version' ), true  );
-    wp_register_script( 'main-js', get_template_directory_uri() . '/js/main.js', array(), wp_get_theme()->get( 'Version' ), true  );
+    wp_register_script( 'swiper-js', get_template_directory_uri() . '/vendor/swiper-js/swiper-bundle.min.js', array( 'jquery-core' ), wp_get_theme()->get( 'Version' ), true  );
+    wp_register_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery-core' ), wp_get_theme()->get( 'Version' ), true  );
   
     wp_enqueue_script( 'swiper-js');
     wp_enqueue_script( 'main-js');
@@ -163,15 +163,15 @@ function my_acf_op_init() {
 
         // Add parent.
         $parent = acf_add_options_page(array(
-            'page_title'  => __('Theme General Settings'),
-            'menu_title'  => __('Theme Settings'),
+            'page_title'  => __('Opções Gerais'),
+            'menu_title'  => __('Opções Gerais'),
             'redirect'    => false,
         ));
 
         // Add sub page.
         $child = acf_add_options_page(array(
-            'page_title'  => __('Social Settings'),
-            'menu_title'  => __('Social'),
+            'page_title'  => __('Rodapé'),
+            'menu_title'  => __('Rodapé'),
             'parent_slug' => $parent['menu_slug'],
         ));
     }
