@@ -177,7 +177,7 @@ body {
 	margin-top: 12rem;
 }
 #ica-footer {
-	background-color: $color-gray-222;
+	background-color: $color-default-footer;
 }
 #ica-footer a{
 	color: $color-white;
@@ -188,7 +188,88 @@ body {
 #ica-footer .footer-item dt {
 	color: $color-white;
 }
+#ica-footer .footer-item dd a img {
+	margin-right: 0.8rem;
+}
+#ica-footer .footer-item dl {
+	color: $color-white;
+}
 #ica-footer .footer-item {
 	vertical-align: top;
 	margin-top: 2.4rem;
+	min-width: 358px;
+	border-right: 1px solid $color-default-green;
+	height: 340px;
+} 
+#ica-footer .footer-item .footer-icons{
+	display: flex;
+	justify-content: left;
+	margin: 3rem 0;
+}
+#ica-footer .footer-item .footer-icons a{
+	margin-right: 1.6rem;
+}
+#ica-footer .footer-form{
+	display: flex;
+	border: 1px solid $color-default-green;
+	border-radius: 3.6rem;
+	margin-top: 1.8rem;
+	padding: 1rem;
+	color: $color-default-green;
+	justify-content: center;
+}
+#ica-footer .footer-form{
+	max-width: 358px;
+}
+#ica-footer .footer-form form{
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+#ica-footer .footer-form input{
+	margin: 0;
+}
+#ica-footer .footer-form input[type=text]{
+	background-color: transparent;
+	color: $color-white;
+	font-weight: normal;
+}
+#ica-footer .footer-form input[type=submit]{
+	background-color: $color-default-green;
+	font-weight: normal;
+	border-radius: 16rem;
+	padding: 0 2.8rem;
+
+}
+#ica-footer .footer-nav{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	font-size: 1.6em;
+	font-family: "Open Sans", sans-serif;
+	background-color: $color-black-opc-20;
+	width: 100%;
+	margin: 0;
+	padding: 2rem;
+}
+#ica-footer .footer-nav .nav-container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+}
+#ica-footer .footer-nav .nav-container .nav-itens{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#ica-footer .footer-nav .nav-container .nav-item{
+	border-right: 1px solid $color-default-green;
+	width: auto;
+	padding: 0 1rem;
+	margin: 1.6rem 0;
 }

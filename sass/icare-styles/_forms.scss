@@ -5,19 +5,19 @@
 */
 
 .ica-input {
-  height: 3.5em;
-  padding: 0.8em;
+  height: 3rem;
+  padding: 0.8rem;
   font-size: 1.6em;
-  color: $color-gray-16;
+  color: $color-default-green;
   line-height: 150%;
-  border: 0.2em solid $color-gray-16;
+  border:none;
   font-weight: bold;
 }
 
-.cle-for .for-item {
+.ica-for .for-item {
   margin-top: 1.6em;
 }
-.cle-for .for-item .item-element {
+.ica-for .for-item .item-element {
   width: 100%;
   height: 3.2em;
   display: block;
@@ -31,11 +31,11 @@
   font-weight: bold;
   background-color: $color-white;
 }
-.cle-for .for-item .item-element:hover,
-.cle-for .for-item .item-element:focus {
+.ica-for .for-item .item-element:hover,
+.ica-for .for-item .item-element:focus {
   border-color: $color-gray-16;
   text-decoration: none;
 }
-.cle-for .for-item textarea.item-element {
+.ica-for .for-item textarea.item-element {
   height: 4.8em;
 }
