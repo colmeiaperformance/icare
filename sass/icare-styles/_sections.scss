@@ -18,10 +18,13 @@
 	text-align: center;
 	align-items: center;
 	display: inline;
-	padding: 0.8rem;
+	padding: 1.8rem 3rem;
 	position: absolute;
-	top: -4rem;
+	top: -6rem;
 	z-index: 900;
+	&.ica-the{
+		font-size: 1.8em;
+	}
 }
 .ica-sec .sec-content {
 	padding-top: 2.4rem;

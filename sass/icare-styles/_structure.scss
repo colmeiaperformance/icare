@@ -23,6 +23,9 @@
 	white-space: nowrap;
 	border: 0;
 }
+li {
+    list-style: none;
+}
 img {
 	max-width: 100%;
 }
@@ -68,6 +71,8 @@ body {
 	background-color: transparent;
 	display: flex;
 	justify-content: center;
+	transition: .3s all ease-in-out;
+	border-bottom: none;
 }
 .ica-header2 {
 	position: fixed;

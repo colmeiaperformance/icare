@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 
 <header id="ica-header" class="ica-header">
-    <div class="ica-wrapper">
+    <div id="navbar" class="ica-wrapper">
         <div id="ica-logo" class="ica-logo">
-            <h1><a href="/"><img width="160" src="<?php echo get_template_directory_uri() . '/images/logo.png' ?>" alt="icare"></a></h1>
+            <h1><a class="logo" href="/"><img width="160" src="<?php echo get_template_directory_uri() . '/images/logo.png' ?>"
+                        alt="icare"></a></h1>
         </div>
         <nav id="ica-navigation" class="ica-navigation">
             <ul class="navigation-list">
@@ -51,15 +52,78 @@
 
     <section class="ica-sec sec-acting" id="acting">
         <div class="ica-wrapper">
-            <header class="sec-header">
+            <div class="sec-header">
                 <h3 class="sec-title ica-the the-graye8e">O Que Fazemos</h3>
-            </header>
+            </div>
             <div class="sec-content">
                 <div class="content-description">
                     <p> <b>A I Care Brasil</b> possui três áreas de atuação que visam fornecer um conjunto abrangente ed
                         soluções para apoiar o processo de <b>transição ambiental</b> da sua empresa.</p>
                 </div>
 
+            </div>
+            <div class="sec-arrows">
+
+                <ul class="arrows-left">
+                    <li>
+                        <div class="arrow-container">
+                            <p class="icon">
+                                <img src="<?php echo get_template_directory_uri() . '/images/icon-planta.png' ?>"
+                                    alt="">
+                            </p>
+                            <h3>Biodiversidade</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="arrow-container">
+                            <p class="icon">
+                                <img src="<?php echo get_template_directory_uri() . '/images/icon-reciclavel.png' ?>"
+                                    alt="">
+                            </p>
+                            <h3>Finanças Sustentáveis</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="arrow-container">
+                            <p class="icon">
+                                <img src="<?php echo get_template_directory_uri() . '/images/icon-folha.png' ?>"
+                                    alt="">
+                            </p>
+                            <h3>Clima</h3>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="arrows-right">
+                    <li>
+                        <div class="arrow-container">
+                            <p class="icon"><img
+                                    src="<?php echo get_template_directory_uri() . '/images/icon-lampada.png' ?>"
+                                    alt=""></p>
+                            <h3>Entenda</h3>
+                            <p>Através das nossas capacidades para cada área.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="arrow-container">
+                            <p class="icon"><img
+                                    src="<?php echo get_template_directory_uri() . '/images/icon-cogs.png' ?>" alt="">
+                            </p>
+                            <h3>Avalie</h3>
+                            <p>Com nossos diagnósticos e indicadores.</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="arrow-container">
+                            <p class="icon"><img
+                                    src="<?php echo get_template_directory_uri() . '/images/icon-target.png' ?>" alt="">
+                            </p>
+                            <h3>Realize</h3>
+                            <p>Planos de ação ideais para o seu negócio ou projeto.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <img src="<?php echo get_template_directory_uri() . '/images/home.jpg' ?>" alt="">
             <div class="sec-itens">
@@ -69,9 +133,9 @@
     </section>
     <section class="ica-sec sec-partners" id="partners">
         <div class="ica-wrapper">
-            <header class="sec-header">
+            <div class="sec-header">
                 <h3 class="sec-title ica-the the-white">Quem apoiamos</h3>
-            </header>
+            </div>
             <div class="sec-content">
                 <div class="content-description">
                     <p> A I Care Brasil apoia seus <b>clientes, autoridades locais, instituições públicas, empresas e
@@ -87,7 +151,8 @@
                     <img src="<?php echo get_template_directory_uri() . '/images/alstom.png' ?>" alt="alstom">
                 </div>
                 <div class="item-media">
-                    <img src="<?php echo get_template_directory_uri() . '/images/banque-de-france.png' ?>" alt="banque-de-france">
+                    <img src="<?php echo get_template_directory_uri() . '/images/banque-de-france.png' ?>"
+                        alt="banque-de-france">
                 </div>
                 <div class="item-media">
                     <img src="<?php echo get_template_directory_uri() . '/images/bdmg.png' ?>" alt="bdmg">
@@ -103,13 +168,14 @@
     </section>
     <section class="ica-sec sec-numbers" id="numbers">
         <div class="ica-wrapper">
-            <header class="sec-header">
+            <div class="sec-header">
                 <h3 class="sec-title ica-the the-green240 the-contrast">Nossos Números</h3>
-            </header>
+            </div>
             <div class="sec-content">
                 <div class="sec-item ica-the the-highlight">
                     <div class="item-media">
-                        <img src="<?php echo get_template_directory_uri() . '/images/colaboradores.png' ?>" alt="colaboradores">
+                        <img src="<?php echo get_template_directory_uri() . '/images/colaboradores.png' ?>"
+                            alt="colaboradores">
                     </div>
                     <div class="item-title">
                         <h4><span>60 colaboradores</span></h4>
@@ -156,9 +222,9 @@
     </section>
     <section class="ica-sec sec-occupationarea" id="occupationarea">
         <div class="ica-wrapper">
-            <header class="sec-header ">
+            <div class="sec-header ">
                 <h3 class="sec-title ica-the the-green57f the-highlight">Áreas de atuação</h3>
-            </header>
+            </div>
             <div class="sec-content">
                 <img src="<?php echo get_template_directory_uri() . '/images/mapa.png' ?>" alt="">
             </div>
