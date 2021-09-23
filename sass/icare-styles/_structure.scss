@@ -178,11 +178,14 @@ body {
 #ica-footer {
 	background-color: $color-gray-222;
 }
+#ica-footer a{
+	color: $color-white;
+}
 #ica-footer a:hover {
-	color: $color-orange;
+	color: $color-green-8a9;
 }
 #ica-footer .footer-item dt {
-	color: $color-orange;
+	color: $color-white;
 }
 #ica-footer .footer-item {
 	vertical-align: top;

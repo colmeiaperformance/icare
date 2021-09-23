@@ -33,6 +33,7 @@
 /********* MOBILE FIRST *************/
 /************************************/
 
+<<<<<<< Updated upstream
 @media (max-width: 578px) {
     .arrows-left {
         li {
@@ -78,6 +79,39 @@
         border-bottom: $color-black-opc-20 solid 1px !important;
         transition: 0.3s all ease-in-out;
     }
+=======
+@media screen and (max-width: 867px) and (min-width: 610px){
+    .ica-sec.sec-numbers .sec-content{
+        padding:0 10rem;
+    }
+}
+@media screen and (max-width: 700px) and (min-width: 610px){
+    .ica-sec.sec-numbers .sec-content{
+        padding:0 8rem;
+    }
+}
+@media screen and (max-width: 1323px) and (min-width: 787px){
+    .ica-sec.sec-partners .sec-itens{
+        padding: 0 8rem;
+    }
+}
+@media screen and (max-width: 1423px) and (min-width: 1062px){
+    .ica-sec.sec-partners .sec-itens{
+        padding: 0 18rem;
+    }
+}
+@media screen and (max-width: 891px) and (min-width: 301px){
+    .ica-sec.sec-notice .item-media{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1023px) and (min-width: 619px){
+    .ica-sec.sec-notice .sec-itens{
+        padding: 0 18rem;
+    }
+}
+
+>>>>>>> Stashed changes
 
     /* O que fazemos? */
     .sec-arrows {

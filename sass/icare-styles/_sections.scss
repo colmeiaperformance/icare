@@ -8,6 +8,7 @@
 	position: relative;
 	padding: 1.6rem 0;
 }
+<<<<<<< Updated upstream
 .ica-sec .sec-header{
 	display: flex;
 	justify-content: center;
@@ -40,26 +41,104 @@
 	text-align: center;
 	align-items: center;
 }
+=======
+	.ica-sec .sec-content {
+		padding-top: 2.4rem;
+	}
+	.ica-sec .sec-item {
+		margin-top: 2.4rem;
+		text-align: center;
+	}
+	.ica-sec .sec-header{
+		display: flex;
+		justify-content: center;
+	}
+		.ica-sec .sec-header .sec-title{
+			text-align: center;
+			border-radius: 5rem;
+			text-align: center;
+			align-items: center;
+			display: inline;
+			padding: 0.8rem;
+			position: absolute;
+			top: -4rem;
+			z-index: 900;
+		}
+.ica-sec.sec-acting{
+}
+	.ica-sec.sec-acting .sec-content{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+>>>>>>> Stashed changes
 .ica-sec.sec-partners{
-	background-color: $color-background;
+	background-color: $color-white;
 }
-.ica-sec.sec-partners .sec-content{
-	display: flex;
-	justify-content: space-around;
-	text-align: center;
-	align-items: center;
+	.ica-sec.sec-partners .ica-wrapper{
+		padding: 4rem 0;
+	}
+	.ica-sec.sec-partners .sec-content{
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		align-items: center;
+	}
+	.ica-sec.sec-partners .sec-itens{
+		display: flex;
+		text-align: center;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 1.6rem;
+	}
+	.ica-sec.sec-partners .item-media{
+		margin: 3rem;
+		width: 17em;	
+	}
+.ica-sec.sec-notice{
 }
-.ica-sec.sec-partners .sec-itens{
-	display: flex;
-	text-align: center;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.ica-sec.sec-partners .item-media{
-	margin: 1.8rem;
-	width: 17em;	
-}
+	.ica-sec.sec-notice .sec-content{
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		align-items: center;
+	}
+	.ica-sec.sec-notice .item-media .media-title{
+		position: absolute;
+		top: 8rem;
+		width: auto;
+	}
+	.ica-sec.sec-notice .sec-itens{
+		display: flex;
+		text-align: center;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+		.ica-sec.sec-notice .sec-itens .item-content{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 28%;
+			min-width: 28em;
+			margin: 1.6rem;
+			background-color: $color-white-opc-20;
+			border: 1px solid $color-gray-666;
+			border-radius: 1rem;
+		}
+		.ica-sec.sec-notice .sec-itens .item-content img{
+			border-radius: 1rem 1rem 0 0;
+		}
+		.ica-sec.sec-notice .sec-itens .item-content p{
+			color: $color-black;
+		}
+		.ica-sec.sec-notice .sec-itens .item-content .media-footer{
+			padding-bottom: 1.6rem;
+		}
+	
 .ica-sec.sec-testimony#depoimentos {
 	background-color: $color-gray-222;
 	padding-top: 4.8rem;
@@ -71,29 +150,29 @@
 .ica-sec.sec-places {
 	padding-top: 0;
 }
-.ica-sec.sec-places .sec-item {
-	position: relative;
-	width: 49%;
-	margin: 0;
-}
-.ica-sec.sec-places .item-content {
-	background-color: transparent;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	text-align: left;
-	padding: 4.8rem;
-	font-size: 20px;
-}
-.ica-sec.sec-places .item-content * {
-	color: $color-white;
-}
+	.ica-sec.sec-places .sec-item {
+		position: relative;
+		width: 49%;
+		margin: 0;
+	}
+	.ica-sec.sec-places .item-content {
+		background-color: transparent;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		text-align: left;
+		padding: 4.8rem;
+		font-size: 20px;
+	}
+	.ica-sec.sec-places .item-content * {
+		color: $color-white;
+	}
 
-.ica-sec.sec-places img {
-	width: 100%;
-	filter: brightness(0.34);
-}
+	.ica-sec.sec-places img {
+		width: 100%;
+		filter: brightness(0.34);
+	}
 
 .ica-sec.sec-localization .item-content {
 	display: flex;
@@ -132,20 +211,22 @@
 .ica-sec.sec-motivation .sec-content {
 	text-align: center;
 }
-.ica-sec.sec-numbers .sec-content{
-	display: flex;
-	align-items: top;
-	justify-content: space-around;	
-	flex-wrap: wrap;
-}
-.ica-sec.sec-numbers .sec-content .sec-item{
-	margin: 2.4rem;
-	width: 24em;
-}
-.ica-sec.sec-occupationarea{
-	background-color: $color-green-57f;
-}
 .ica-sec.sec-numbers{
 	background-color: $color-green-240;
 }
+	.ica-sec.sec-numbers .sec-content{
+		display: flex;
+		align-items: top;	
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.ica-sec.sec-numbers .sec-content .sec-item{
+		margin: 2.8rem;
+		width: 16%;
+		min-width: 16em;
+	}
+.ica-sec.sec-occupationarea{
+	background-color: $color-green-57f;
+}
+
 

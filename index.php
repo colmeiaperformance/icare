@@ -230,10 +230,80 @@
             </div>
         </div>
     </section>
-
+    <section class="ica-sec sec-notice ica-the the-white" id="notice">
+				<div class="ica-wrapper">
+					<header class="sec-header">
+						<h3 class="sec-title ica-the the-white">Últimas notícias</h3>
+					</header>
+					<div class="sec-itens">
+						<div class="item-content">
+							<div class="item-media">
+								<img src="<?php echo get_template_directory_uri() . '/images/blog-media.jpg' ?>" alt="notice">
+								<p class="media-title"></p>
+							</div>
+							<div class="media-description">
+								<p>A I Care Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a Universidade de São Paulo</p>
+							</div>
+							<div class="media-footer">
+								<a href="#" class="ica-but but-conversion">Leia Mais</a>
+							</div>
+						</div>
+						<div class="item-content">
+							<div class="item-media">
+								<img src="<?php echo get_template_directory_uri() . '/images/blog-media2.jpg' ?>" alt="notice">
+								<p class="media-title"></p>
+							</div>
+							<div class="media-description">
+								<p>A I Care Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a Universidade de São Paulo</p>
+							</div>
+							<div class="media-footer">
+								<a href="#" class="ica-but but-conversion">Leia Mais</a>
+							</div>
+						</div>
+						<div class="item-content">
+							<div class="item-media">
+								<img src="<?php echo get_template_directory_uri() . '/images/blog-media3.jpg' ?>" alt="notice">
+								<p class="media-title"></p>
+							</div>
+							<div class="media-description">
+								<p>A I Care Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a Universidade de São Paulo</p>
+							</div>
+							<div class="media-footer">
+								<a href="#" class="ica-but but-conversion">Leia Mais</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 </main>
 <footer id="ica-footer" class="ica-the the-highlight">
-
-</footer>
+			<div class="ica-wrapper">
+				<dl class="footer-item">
+					<dt>I Care Brasil</dt>
+					<h3>MAPA</h3>
+				</dl>
+				<dl class="footer-item">
+					<dt>Produtos e Projetos</dt>
+					<dd><a href="#">Mesa Rotativa</a></dd>
+					<dd><a href="#">Sala Privativa</a></dd>
+					<dd><a href="#">Sala de Reunião / Auditório</a></dd>
+					<dd><a href="#">Escritório Virtual</a></dd>
+				</dl>
+				<dl class="footer-item">
+					<dt>Fale Com a Gente</dt>
+					<dd><a href="#">Blog</a></dd>
+					<dd><a href="#">Área do Cliente</a></dd>
+					<dd><a href="#">Política de Privacidade</a></dd>
+					<dd><a href="#">Trabalhe Conosco</a></dd>
+					<dd><a href="#">Corretor, Advogado ou Broker</a></dd>
+				</dl>
+				<dl class="footer-item">
+					<dt>Fale Conosco</dt>
+					<dd><a href="#">(11) 5105 - 8205</a></dd>
+					<dd><a href="#">(11) 5105 - 8205</a></dd>
+					<dd><a href="#">contato@clubcoworking.com.br</a></dd>
+				</dl>
+			</div>
+		</footer>
 
 <?php get_footer() ?>

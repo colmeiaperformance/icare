@@ -521,6 +521,12 @@ a:focus .ica-but {
   background-color: #b6d8a9;
 }
 
+.ica-but.but-conversion {
+  color: #fff;
+  background-color: #13857f;
+  border-color: #13857f;
+}
+
 /*
 /////////////////
 ////COMPONENTS//
@@ -779,10 +785,7 @@ a:focus .ica-but {
 3 COLUMNS//
     ////////*/
 #ica-footer .footer-item,
-.ica-sec.sec-numbers .sec-content .sec-item,
 .ica-sec.sec-acting .sec-item,
-.ica-sec .sec-item,
-.ica-service-item,
 .ica-motivation-item,
 .ica-solution-item,
 .clear {
@@ -841,6 +844,15 @@ a:focus .ica-but {
   padding: 1.6rem 0;
 }
 
+.ica-sec .sec-content {
+  padding-top: 2.4rem;
+}
+
+.ica-sec .sec-item {
+  margin-top: 2.4rem;
+  text-align: center;
+}
+
 .ica-sec .sec-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,6 +876,7 @@ a:focus .ica-but {
   z-index: 900;
 }
 
+<<<<<<< Updated upstream
 .ica-sec .sec-header .sec-title.ica-the {
   font-size: 1.8em;
 }
@@ -877,6 +890,8 @@ a:focus .ica-but {
   text-align: center;
 }
 
+=======
+>>>>>>> Stashed changes
 .ica-sec.sec-acting .sec-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -891,7 +906,11 @@ a:focus .ica-but {
 }
 
 .ica-sec.sec-partners {
-  background-color: #ffffff;
+  background-color: #fff;
+}
+
+.ica-sec.sec-partners .ica-wrapper {
+  padding: 4rem 0;
 }
 
 .ica-sec.sec-partners .sec-content {
@@ -919,11 +938,79 @@ a:focus .ica-but {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 1.6rem;
 }
 
 .ica-sec.sec-partners .item-media {
-  margin: 1.8rem;
+  margin: 3rem;
   width: 17em;
+}
+
+.ica-sec.sec-notice .sec-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ica-sec.sec-notice .item-media .media-title {
+  position: absolute;
+  top: 8rem;
+  width: auto;
+}
+
+.ica-sec.sec-notice .sec-itens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ica-sec.sec-notice .sec-itens .item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 28%;
+  min-width: 28em;
+  margin: 1.6rem;
+  background-color: rgba(255, 233, 233, 0.2);
+  border: 1px solid #666;
+  border-radius: 1rem;
+}
+
+.ica-sec.sec-notice .sec-itens .item-content img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.ica-sec.sec-notice .sec-itens .item-content p {
+  color: #000;
+}
+
+.ica-sec.sec-notice .sec-itens .item-content .media-footer {
+  padding-bottom: 1.6rem;
 }
 
 .ica-sec.sec-testimony#depoimentos {
@@ -1023,6 +1110,10 @@ a:focus .ica-but {
   text-align: center;
 }
 
+.ica-sec.sec-numbers {
+  background-color: #204240;
+}
+
 .ica-sec.sec-numbers .sec-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1030,23 +1121,20 @@ a:focus .ica-but {
   -webkit-box-align: top;
       -ms-flex-align: top;
           align-items: top;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .ica-sec.sec-numbers .sec-content .sec-item {
-  margin: 2.4rem;
-  width: 24em;
+  margin: 2.8rem;
+  width: 16%;
+  min-width: 16em;
 }
 
 .ica-sec.sec-occupationarea {
   background-color: #13857f;
-}
-
-.ica-sec.sec-numbers {
-  background-color: #204240;
 }
 
 /*
@@ -1262,12 +1350,16 @@ body {
   background-color: #222;
 }
 
+#ica-footer a {
+  color: #fff;
+}
+
 #ica-footer a:hover {
-  color: #ef6000;
+  color: #b6d8a9;
 }
 
 #ica-footer .footer-item dt {
-  color: #ef6000;
+  color: #fff;
 }
 
 #ica-footer .footer-item {
@@ -1430,6 +1522,10 @@ li {
   list-style-position: inside;
 }
 
+span {
+  font-size: 1em;
+}
+
 p li,
 li p,
 p span,
@@ -1503,6 +1599,7 @@ h6 {
 /************************************/
 /********* MOBILE FIRST *************/
 /************************************/
+<<<<<<< Updated upstream
 @media (max-width: 578px) {
   .arrows-left li {
     margin-left: 5vw;
@@ -1670,6 +1767,41 @@ h6 {
   .arrows-left li h3,
   .arrows-right li h3 {
     font-size: 2rem;
+=======
+@media screen and (max-width: 867px) and (min-width: 610px) {
+  .ica-sec.sec-numbers .sec-content {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 610px) {
+  .ica-sec.sec-numbers .sec-content {
+    padding: 0 8rem;
+  }
+}
+
+@media screen and (max-width: 1323px) and (min-width: 787px) {
+  .ica-sec.sec-partners .sec-itens {
+    padding: 0 8rem;
+  }
+}
+
+@media screen and (max-width: 1423px) and (min-width: 1062px) {
+  .ica-sec.sec-partners .sec-itens {
+    padding: 0 18rem;
+  }
+}
+
+@media screen and (max-width: 891px) and (min-width: 301px) {
+  .ica-sec.sec-notice .item-media {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 619px) {
+  .ica-sec.sec-notice .sec-itens {
+    padding: 0 18rem;
+>>>>>>> Stashed changes
   }
 }
 
