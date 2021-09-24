@@ -1916,7 +1916,7 @@ h6 {
     color: #fff;
   }
   /* O que fazemos? */
-  .arrows-right::after {
+  .arrows-left::after, .arrows-right::after {
     content: "";
     display: table;
     clear: both;
@@ -1936,6 +1936,7 @@ h6 {
     width: 75%;
   }
   .arrows-left {
+    text-align: center;
     position: relative;
     list-style: none;
     height: 416px;
@@ -1955,12 +1956,20 @@ h6 {
     width: 370px;
     background: #13857f;
     z-index: 2;
+    float: left;
+    color: #13857f;
+    position: relative;
+    height: calc(416px / 3);
   }
   .arrows-left li::before, .arrows-left li::after {
+    background: #e8e8e8;
     display: block;
     position: relative;
     height: 133.33333px;
     width: calc(100% - 30px);
+  }
+  .arrows-left li::before, .arrows-left li::after {
+    background-color: #13857f;
   }
   .arrows-left li .arrow-container {
     display: -webkit-box;
@@ -1969,42 +1978,82 @@ h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1.1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     z-index: 3;
+    padding: 2rem;
   }
   .arrows-left li .arrow-container .icon {
-    width: 73px;
     margin-right: 20px;
+    width: 73px;
+    z-index: 5;
   }
   .arrows-left li .arrow-container h3 {
-    margin-top: 0;
+    z-index: 5;
+    margin-top: 0px;
     margin-right: -50px;
     font-size: 1.1em;
     color: #e8e8e8;
   }
-  .arrows-left li .arrow-container:first-child::before {
-    position: absolute;
-    content: "";
-    right: 0;
-    width: 100px;
-    height: 116.66px;
-    background: black;
+  .arrows-left li .arrow-container p {
     margin-top: 0;
-    -webkit-transform: skew(25deg);
-            transform: skew(25deg);
-    z-index: 3;
+    font-size: 1.25em;
+    line-height: 1.2;
   }
-  .arrows-left li .arrow-container:last-child::before {
+  .arrows-left li .arrow-container::before {
     position: absolute;
     content: "";
     right: 0;
-    width: 100px;
-    height: 116.66px;
-    background: black;
-    margin-top: 0;
-    -webkit-transform: skew(-25deg);
-            transform: skew(-25deg);
+    width: 50px;
+    height: 416px;
+    top: 0;
+    margin-top: -5px;
+    background-color: #e8e8e8;
+    z-index: 5;
+    display: none;
+  }
+  .arrows-left li:first-child::before, .arrows-left li:first-child::after {
+    width: 86%;
+    left: 30px;
+    border-right: none;
+  }
+  .arrows-left li:first-child .arrow-container::before {
+    position: absolute;
+    content: '';
     z-index: 3;
+    width: 100px;
+    height: 138.66667px;
+    -webkit-transform: skewX(25deg);
+            transform: skewX(25deg);
+    display: block;
+    right: -60px;
+    top: 0;
+    background: #e8e8e8;
+  }
+  .arrows-left li:last-child::before, .arrows-left li:last-child::after {
+    width: 86%;
+    left: 30px;
+    border-right: none;
+  }
+  .arrows-left li:last-child .arrow-container::before {
+    position: absolute;
+    content: '';
+    z-index: 3;
+    width: 100px;
+    height: 138.66667px;
+    -webkit-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+    display: block;
+    right: -60px;
+    top: 0;
+    background: #e8e8e8;
+  }
+  .arrows-left li::before, .arrows-left li::after,
+  .arrows-left li .arrow-container::before,
+  .arrows-left li .arrow-container::after {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
   }
   .arrows-right {
     list-style: none;
@@ -2027,7 +2076,7 @@ h6 {
     right: 0;
     height: 200px;
     width: calc(100% - 30px);
-    z-index: 1;
+    z-index: 2;
     border-right: 2px solid #13857f;
     border-left: 2px solid #13857f;
   }
