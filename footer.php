@@ -1,55 +1,99 @@
+<?php
+//Variables
+$titulo_coluna1 = get_field('titulo_coluna1', 'option');
+$endereco = get_field('endereco', 'option');
+$titulo_coluna2 = get_field('titulo_coluna2', 'option');
+$titulo_coluna3 = get_field('titulo_coluna3', 'option');
+$icones_dos_contatos = get_field('icones_dos_contatos', 'option');
+$contatos = get_field('contatos', 'option');
+$newsletter = get_field('newsletter', 'option');
+$redes_sociais = get_field('redes_sociais', 'option');
+
+?>
 <footer id="ica-footer" class="ica-the the-highlight">
     <div class="ica-wrapper">
         <dl class="footer-item">
-            <dt>I Care Brasil</dt>
-            <h3>MAPA</h3>
-            <p>Belo Horizonte, Brasil <br>
-                Av. Getúlio Vargas, 1492, 2° andar Svassi
+            <dt>
+                <?php if (!empty( $titulo_coluna1 )) : echo $titulo_coluna1; endif ?>
+            </dt>
+            <h3><?php if (!empty( $endereco['mapa'] )) : echo $endereco['mapa']; endif ?></h3>
+            <p>
+                <?php if (!empty( $endereco['cidade'] )) : echo $endereco['cidade']; endif ?>
+                <?php if (!empty( $endereco['pais'] )) : echo ', ' . $endereco['pais']; endif ?><br>
+                <?php if (!empty( $endereco['rua'] )) : echo $endereco['rua']; endif ?>
+                <?php if (!empty( $endereco['numero'] )) : echo ', ' . $endereco['numero']; endif ?>
+                <?php if (!empty( $endereco['complemento'] )) : echo ', ' . $endereco['complemento']; endif ?>
             </p>
         </dl>
         <dl class="footer-item">
-            <dt>Produtos e Projetos</dt>
+            <dt><?php if (!empty( $titulo_coluna2 )) : echo $titulo_coluna2; endif ?></dt>
             <dd><a href="#">Alinhamento 2 Graus</a></dd>
             <dd><a href="#">Finanças Sustentáveis</a></dd>
             <dd><a href="#">Estratégia e Biodiversidade</a></dd>
-            <dd><a href="#">Analise de Cicli de Vida</a></dd>
+            <dd><a href="#">Analise de Ciclo de Vida</a></dd>
             <dd><a href="#">Objetivos do Desenvolvimento Sustentável (ODS)</a></dd>
             <dt><a href="#">Cadastre Seu Currículo</a></dt>
         </dl>
         <dl class="footer-item">
-            <dt>Fale Com a Gente</dt>
-            <dd>
+            <dt><?php if (!empty( $titulo_coluna3 )) : echo $titulo_coluna3; endif ?></dt>
+            <?php 
 
-                <a href="#"> <img src="<?php echo get_template_directory_uri() . '/images/tel-icon.png' ?>"
-                        alt="tel-icon">+55 (11) 3515-6135</a>
-            </dd>
-            <dd>
+            if( $contatos ) {
+                foreach( $contatos as $c ) { 
+                    
+            if ( $c['tipo_de_contato'] == 'telefone' ) { ?>
 
-                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/email-icon.png' ?>"
-                        alt="email-icon">contato-brasil@i-care-consult.com</a>
+            <dd>
+                <a href="tel:<?php echo $c['texto'] ?>">
+                    <img src="<?php if (!empty( $icones_dos_contatos['telefone'] )) : echo $icones_dos_contatos['telefone']; endif ?>" alt="Telefone: ">
+                    <?php echo $c['texto'] ?>
+                </a>
             </dd>
+
+            <?php } //endif
+            elseif ( $c['tipo_de_contato'] == 'email' ) { ?>
+
+            <dd>
+                <a href="mailto:<?php echo $c['texto'] ?>">
+                    <img src="<?php if (!empty( $icones_dos_contatos['email'] )) : echo $icones_dos_contatos['email']; endif ?>" alt="E-mail: ">
+                    <?php echo $c['texto'] ?>
+                </a>
+            </dd>
+
+            <?php } //end elseif
+             } //end foreach
+            } //endif
+            ?>
+
             <div class="footer-icons">
-                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/linkedin-icon.png' ?>"
-                        alt="linkedin-icon"></a>
-                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/twitter-icon.png' ?>"
-                        alt="twitter-icon"></a>
-                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/instagram-icon.png' ?>"
-                        alt="instagram-icon"></a>
-                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/youtube-icon.png' ?>"
-                        alt="youtube-icon"></a>
+
+                <?php 
+                foreach ($redes_sociais as $r ) { ?>
+
+                <a href="<?php if (!empty( $r['url'] )) : echo $r['url']; endif ?>">
+                    <img src="<?php if (!empty( $r['icone'] )) : echo $r['icone']; endif ?>" alt="Link da rede social">
+                </a>
+
+                <?php } //end foreach               
+                ?>
+
             </div>
-            <dt>Receba Nossa Newsletter</dt>
+            <dt><?php if (!empty( $newsletter['titulo'] )) : echo $newsletter['titulo']; endif ?></dt>
             <div class="footer-form">
                 <form action="" method="post">
-                    <input type="text" name="newsletter" placeholder="e-mail" class="ica-input">
-                    <input type="submit" value="Enviar" class="ica-input">
+                    <input type="text" name="newsletter"
+                        placeholder="<?php if (!empty( $newsletter['placeholder'] )) : echo $newsletter['placeholder']; endif ?>"
+                        class="ica-input">
+                    <input type="submit"
+                        value="<?php if (!empty( $newsletter['rotulo_do_botao'] )) : echo $newsletter['rotulo_do_botao']; endif ?>"
+                        class="ica-input">
                 </form>
             </div>
         </dl>
     </div>
     <div class="footer-nav">
         <div class="nav-container">
-            <p>I Care Brasil 2022</p>
+            <p><?php if ( !empty( get_field('copyright', 'option') ) ) : the_field('copyright', 'option'); endif ?></p>
             <div class="nav-itens">
                 <div class="nav-item">
                     <a href="#">Créditos</a>
