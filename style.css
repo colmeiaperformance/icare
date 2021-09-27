@@ -444,7 +444,6 @@ template {
 }
 
 html, body {
-  height: 100%;
   font-size: 10px;
   overflow-x: hidden;
 }
@@ -1697,6 +1696,33 @@ h6 {
   color: #13857f;
 }
 
+.scrolling {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95) !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 0px 5px !important;
+          box-shadow: rgba(0, 0, 0, 0.2) 1px 0px 5px !important;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  padding: 0.1rem 2rem 2.5rem;
+}
+
+.scrolling a {
+  color: #707070 !important;
+}
+
+.scrolling a:focus,
+.scrolling a:hover,
+.scrolling a:active {
+  color: #13857f !important;
+}
+
+.scrolling .logo {
+  width: 100px !important;
+  padding-top: 25px !important;
+}
+
 @media (max-width: 578px) {
   .arrows-left li {
     margin-left: 5vw;
@@ -1733,15 +1759,6 @@ h6 {
   }
   #navbar a {
     color: #707070;
-  }
-  .scrolling {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    background-color: #fff !important;
-    border-bottom: rgba(0, 0, 0, 0.2) solid 1px !important;
-    -webkit-transition: 0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out;
   }
 }
 
@@ -2020,7 +2037,7 @@ h6 {
   }
   .arrows-left li:first-child .arrow-container::before {
     position: absolute;
-    content: '';
+    content: "";
     z-index: 3;
     width: 100px;
     height: 138.66667px;
@@ -2038,7 +2055,7 @@ h6 {
   }
   .arrows-left li:last-child .arrow-container::before {
     position: absolute;
-    content: '';
+    content: "";
     z-index: 3;
     width: 100px;
     height: 138.66667px;

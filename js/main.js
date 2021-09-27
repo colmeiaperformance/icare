@@ -46,11 +46,15 @@ jQuery(document).ready(function () {
 // });
 
 jQuery(document).ready(function () {
-  jQuery(window).on("scroll", function () {
-    if (jQuery(window).scrollTop() > jQuery(".ica-wrapper").height()) {
-      jQuery(".ica-wrapper").addClass("scrolling");
-    } else {
-      jQuery(".ica-wrapper").removeClass("scrolling");
-    }
+  jQuery(window).scroll(function (e) {
+    jQuery("#navbar")[
+      jQuery(window).scrollTop() >= 150 ? "addClass" : "removeClass"
+    ]("scrolling");
+
+    var value = jQuery(this).scrollTop();
+    if (value > 50) jQuery(".logo").attr("src", logoColorido);
+    else jQuery(".logo").attr("src", logoBranco);
+
+
   });
 });

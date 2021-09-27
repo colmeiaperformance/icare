@@ -8,5 +8,12 @@
 
     <?php wp_head(); ?>
 </head>
+<script>
+//Variáveis para armazenar o logo branco e colorido inserido no painel
+var logoBranco =
+    "<?php if ( !empty( get_field('logo_branco', 'option') ) ) : the_field('logo_branco', 'option'); endif ?>";
+var logoColorido =
+    "<?php if ( !empty( get_field('logo_colorido', 'option') ) ) : the_field('logo_colorido', 'option'); endif ?>";
+</script>
 
 <body <?php body_class(); ?> class="ica-pag" id="pag-home">

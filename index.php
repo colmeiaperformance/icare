@@ -3,11 +3,10 @@
 <header id="ica-header" class="ica-header">
     <div id="navbar" class="ica-wrapper">
         <div id="ica-logo" class="ica-logo">
-            <h1>
-                <a class="logo" href="<?php echo home_url(); ?>">
-                    <img width="160" src="<?php echo get_template_directory_uri() . '/images/logo.png' ?>" alt="icare">
+                <a href="<?php echo home_url(); ?>">
+                    <img class="logo" width="160"
+                        src="<?php echo get_template_directory_uri() . '/images/logo-white.png' ?>" alt="icare">
                 </a>
-            </h1>
         </div>
         <nav id="ica-navigation" class="ica-navigation">
             <ul class="navigation-list">

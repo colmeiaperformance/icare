@@ -39,6 +39,27 @@
         color: $color-default-green;
     }
 }
+.scrolling {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: $color-white-opc-95 !important;
+    box-shadow: $color-black-opc-20 1px 0px 5px !important;
+    transition: 0.3s all ease-in-out;
+    padding: 0.1rem 2rem 2.5rem;
+    a {
+        color: $color-gray-70 !important;
+    }
+    a:focus,
+    a:hover,
+    a:active {
+        color: $color-default-green !important;
+    }
+    .logo{
+        width: 100px!important;
+        padding-top:25px!important;
+    }
+}
 
 @media (max-width: 578px) {
     .arrows-left {
@@ -78,14 +99,6 @@
         a {
             color: $color-gray-70;
         }
-    }
-    .scrolling {
-        position: fixed;
-        top: 0;
-        z-index: 1000;
-        background-color: $color-white !important;
-        border-bottom: $color-black-opc-20 solid 1px !important;
-        transition: 0.3s all ease-in-out;
     }
 
     @media screen and (max-width: 867px) and (min-width: 610px) {
@@ -307,8 +320,9 @@
                 width: calc(100% - 30px);
             }
 
-            &::before, &::after {
-                background-color:  $color-default-green;
+            &::before,
+            &::after {
+                background-color: $color-default-green;
             }
 
             .arrow-container {
@@ -361,7 +375,7 @@
 
                 .arrow-container::before {
                     position: absolute;
-                    content: '';
+                    content: "";
                     z-index: 3;
                     width: 100px;
                     height: $height2 / 3;
@@ -383,7 +397,7 @@
 
                 .arrow-container::before {
                     position: absolute;
-                    content: '';
+                    content: "";
                     z-index: 3;
                     width: 100px;
                     height: $height2 / 3;
