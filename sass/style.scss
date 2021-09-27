@@ -252,7 +252,22 @@
         }
     }
 }
-
+@media screen and (max-width: 1024px) and (min-width: 450px) {
+    .ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-services .service{
+        height: 13em;
+        width: 13em;
+    }
+    .ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-description{
+        padding: 0 1.3rem;
+    }
+}
+@media (max-width: 1407px){
+    .ica-sec.sec-aboutus .ica-wrapper .sec-content .content-complement{
+        justify-content: center;
+        text-align: center;
+        max-width: 680px;
+    }
+}
 /************************************/
 /********* DESKTOP STYLE ************/
 /************************************/

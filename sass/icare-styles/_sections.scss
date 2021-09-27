@@ -64,6 +64,8 @@
 		margin: 3rem;
 		width: 17em;	
 	}
+.ica-sec.sec-notice{
+}
 	.ica-sec.sec-notice .sec-content{
 		display: flex;
 		justify-content: space-around;
@@ -193,5 +195,70 @@
 .ica-sec.sec-occupationarea{
 	background-color: $color-default-green;
 }
+.ica-sec.sec-aboutus{
+}
+	.ica-sec.sec-aboutus .ica-wrapper{
+		padding-bottom: 5rem;
+	}	
+		.ica-sec.sec-aboutus .ica-wrapper .sec-media{
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		.ica-sec.sec-aboutus .ica-wrapper .sec-media p{
+			position: absolute;
+			top: 46%;
+			left: 46%;
+		}
+		.ica-sec.sec-aboutus .ica-wrapper .sec-content{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+			.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item{
+				display: flex;
+				flex-direction: column;
+				width: 49%;
+				min-width: 680px;
+			}
+			.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-services{
+				display: flex;
+				padding-top: 4.8rem;
+				padding-bottom: 1.6rem;
+				justify-content: center;
 
+			}
+			.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-services .service{
+				display: flex;
+				border: 2px solid $color-default-green;
+				justify-content: center;
+				text-align: center;
+				align-items: center;				
+				height: 12em;
+				width: 12em;
+				transform: rotate(45deg);
+				margin: 0 2.5rem;
+			}
+			.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-services .service p{
+				margin: 0;
+				transform: rotate(-45deg);
+				font-weight: bold;
+				font-size: 1.8em;
+			}
+			.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-description{
+				display: flex;
+				justify-content: center;
+				
+			}
+			.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .service-description{
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				padding: 0 1.3rem;
+			}
+			.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-complement{
+				display: flex;
+				padding-top: 1.6rem;
+				
+			}
 
