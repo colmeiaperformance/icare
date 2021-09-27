@@ -5,7 +5,17 @@
         <div id="ica-logo" class="ica-logo">
                 <a href="<?php echo home_url(); ?>">
                     <img class="logo" width="160"
-                        src="<?php echo get_template_directory_uri() . '/images/logo-white.png' ?>" alt="icare">
+                        src="<?php 
+                        $logoBranco = get_field('logo_branco', 'option');
+                        $logoDefault = get_template_directory_uri() . '/images/logo.png';
+                        
+                        if ( !empty($logoBranco) ) {
+                            echo $logoBranco;
+                        } else {
+                            echo $logoDefault;
+                        }
+
+                        ?>" alt="Logo">
                 </a>
         </div>
         <nav id="ica-navigation" class="ica-navigation">
