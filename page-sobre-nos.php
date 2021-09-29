@@ -1,22 +1,27 @@
 <?php get_header(); ?>
+<?php get_template_part('template-parts/header-pages'); ?>
 
 <main id="ica-content">
     <section class="ica-sec sec-aboutus" id="aboutus">
         <div class="ica-wrapper">
-            <div class="sec-media">
-            <img src="<?php echo get_template_directory_uri() . '/images/banner-sobre.jpg' ?>" alt="" />
-                <p class="ica-the the-contrast">SOBRE NÓS</p>
-            </div>
+
             <div class="sec-content">
-                <div class="content-item"> 
-                    <p class="ica-the the-gray-222">A I Care é uma empresa independente de consultoria ambiental que apoia seus clientes (empresas, setores financeiro e público) em seu processo de transição ambiental.<br><br>
+                <div class="content-item">
+                    <p class="ica-the the-gray-222">A I Care é uma empresa independente de consultoria ambiental que
+                        apoia seus clientes (empresas, setores financeiro e público) em seu processo de transição
+                        ambiental.<br><br>
 
-                        Graças à diversidade de nossas áreas de especialização e uma abordagem 360​​°, oferecemos soluções inovadoras, adaptadas e impactantes nos mais diversos temas ambientais. Nosso objetivo é colocar mudanças positivas no centro da estratégia da organização, gerando valor agregado e adicionalidades socioambientais.<br><br>
+                        Graças à diversidade de nossas áreas de especialização e uma abordagem 360​​°, oferecemos
+                        soluções inovadoras, adaptadas e impactantes nos mais diversos temas ambientais. Nosso objetivo
+                        é colocar mudanças positivas no centro da estratégia da organização, gerando valor agregado e
+                        adicionalidades socioambientais.<br><br>
 
-                        Desde 2008 a I Care vem trabalhando para transformar a consultoria ambiental em algo mais acessível, destacando os valores que a estratégia ambiental traz não só para o meio ambiente, mas também para as empresas e territórios.
+                        Desde 2008 a I Care vem trabalhando para transformar a consultoria ambiental em algo mais
+                        acessível, destacando os valores que a estratégia ambiental traz não só para o meio ambiente,
+                        mas também para as empresas e territórios.
                     </p>
                 </div>
-                <div class="content-item"> 
+                <div class="content-item">
                     <div class="item-services">
                         <div class="service">
                             <p>Estratégia</p>
@@ -47,10 +52,11 @@
                     </div>
                 </div>
                 <div class="content-complement">
-                    <p class="ica-the the-gray-222">Hoje, com seus 13 anos de experiência, desenvolvemos nossa expertise com a realização de mais de 1000 missões para 400 clientes diferentes.</p>
+                    <p class="ica-the the-gray-222">Hoje, com seus 13 anos de experiência, desenvolvemos nossa expertise
+                        com a realização de mais de 1000 missões para 400 clientes diferentes.</p>
                 </div>
             </div>
-            <div >
+            <div>
 
             </div>
         </div>

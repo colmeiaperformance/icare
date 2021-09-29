@@ -55,9 +55,9 @@
     a:active {
         color: $color-default-green !important;
     }
-    .logo{
-        width: 100px!important;
-        padding-top:25px!important;
+    .logo {
+        width: 100px !important;
+        padding-top: 25px !important;
     }
 }
 
@@ -253,16 +253,16 @@
     }
 }
 @media screen and (max-width: 1024px) and (min-width: 450px) {
-    .ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-services .service{
+    .ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-services .service {
         height: 13em;
         width: 13em;
     }
-    .ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-description{
+    .ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-description {
         padding: 0 1.3rem;
     }
 }
-@media (max-width: 1407px){
-    .ica-sec.sec-aboutus .ica-wrapper .sec-content .content-complement{
+@media (max-width: 1407px) {
+    .ica-sec.sec-aboutus .ica-wrapper .sec-content .content-complement {
         justify-content: center;
         text-align: center;
         max-width: 680px;
@@ -273,9 +273,70 @@
 /************************************/
 
 @media (min-width: 1025px) {
+    //Navbar
+    nav #menu-menu-principal {
+        position: relative;
+        display: flex;
+        justify-content: end;
+        list-style: none;
+        background: transparent;
+        color: $color-white;
+        margin-top: 1.5rem;
+        &>li {
+            padding-left: 2rem;
+        }
+    }
     #navbar {
         a {
             color: $color-white;
+        }
+    }
+    //Menu dropdown
+
+    header .navigation-list {
+        li {
+            position: relative;
+
+            .sub-menu {
+                display: none;
+                transition: 0.3s all ease-in-out;
+                position: absolute;
+                top: 100%;
+                left: -10%;
+                margin: 0;
+                padding: 0.5rem;
+                list-style-type: none;
+                background: $color-white;
+                border-radius: 2px;
+                box-shadow: 2px 2px 10px $color-black-opc-20;
+                min-width: 250px;
+                width: fit-content;
+
+                .navigation-item{
+                    display:flex;
+                    margin-bottom: 1rem;
+                }
+
+                a {
+                    color: $color-gray-222 !important;
+                    text-align: left;
+                    font-size: 1.65rem;
+                    line-height: 2rem;
+
+                    &:hover {
+                        color: $color-default-green !important;
+                    }
+                }
+            }
+        }
+
+        .menu-item-has-children:hover .sub-menu {
+            display: block !important;
+            transition: 0.3s all ease-in-out;
+
+            &.navigation-item {
+                margin-top: 0;
+            }
         }
     }
 

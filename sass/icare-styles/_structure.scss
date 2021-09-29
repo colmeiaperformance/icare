@@ -36,7 +36,6 @@ hr {
 	text-align: center;
 }
 .ica-wrapper {
-	text-align: left;
 	max-width: 1440px;
 	padding: 2.4rem;
 }
@@ -74,13 +73,6 @@ body {
 	transition: .3s all ease-in-out;
 	border-bottom: none;
 }
-.ica-header2 {
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 1000;
-	background-color: red;
-}
 #ica-header .ica-wrapper{
 	position: relative;
 	display: flex;
@@ -99,7 +91,6 @@ body {
 	display: inline-block;
 	margin-right: 1.6rem;
 	margin-left: 1.6rem;
-	font-size: 1.8em;
 }
 .ica-navigation .navigation-item:first-child {
 	margin-left: 0;
@@ -203,7 +194,7 @@ body {
 } 
 #ica-footer .footer-item .footer-icons{
 	display: flex;
-	justify-content: left;
+	justify-content: center;
 	margin: 3rem 0;
 }
 #ica-footer .footer-item .footer-icons a{

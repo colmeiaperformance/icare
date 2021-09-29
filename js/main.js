@@ -32,20 +32,16 @@ jQuery(document).ready(function () {
   });
 });
 
-//Menu scroll
-
-// jQuery(document).ready(function () {
-//   jQuery(window).bind("scroll", function () {
-//     var navHeight = $(window).height() - 60;
-//     if (jQuery(window).scrollTop() > navHeight) {
-//       jQuery("#navbar").addClass("scrolling");
-//     } else {
-//       jQuery("#navbar").removeClass("scrolling");
-//     }
-//   });
-// });
-
+//Menu scrolling class
 jQuery(document).ready(function () {
+  jQuery("#navbar")[
+    jQuery(window).scrollTop() >= 150 ? "addClass" : "removeClass"
+  ]("scrolling");
+
+  var value = jQuery(this).scrollTop();
+  if (value > 50) jQuery(".logo").attr("src", logoColorido);
+  else jQuery(".logo").attr("src", logoBranco);
+
   jQuery(window).scroll(function (e) {
     jQuery("#navbar")[
       jQuery(window).scrollTop() >= 150 ? "addClass" : "removeClass"
@@ -54,7 +50,5 @@ jQuery(document).ready(function () {
     var value = jQuery(this).scrollTop();
     if (value > 50) jQuery(".logo").attr("src", logoColorido);
     else jQuery(".logo").attr("src", logoBranco);
-
-
   });
 });

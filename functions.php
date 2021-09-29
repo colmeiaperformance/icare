@@ -3,8 +3,8 @@
 //Stylesheets
 function loading_styles(){
     wp_enqueue_style( 'swiper-css', get_template_directory_uri() . '/vendor/swiper-js/swiper-bundle.min.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
-    wp_enqueue_style( 'style-css', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
     wp_enqueue_style( 'opensans-font', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap', array(), wp_get_theme()->get( 'Version' ), 'all' );
+    wp_enqueue_style( 'style-css', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
   
 }
 
@@ -128,33 +128,41 @@ add_action( 'admin_head', 'fix_svg' );
 /**
  * Organiza um menu personalizado para exibição dos itens e subitens
 **/
-function get_menu($menu_name = false, $menuID = false)
-{
-    //Obtem o menu em questão
-    if ($menu_name) {
-        $menuLocations = get_nav_menu_locations();
-        $menuID = $menuLocations[$menu_name];
-    }
+// function get_menu($menu_name = false, $menuID = false){
+//     //Obtem o menu em questão
+//     if ($menu_name) {
+//         $menuLocations = get_nav_menu_locations();
+//         $menuID = $menuLocations[$menu_name];
+//     }
 
-    $itens_menu = wp_get_nav_menu_items($menuID);
-    $menu = array();
-    $submenu = array();
+//     $itens_menu = wp_get_nav_menu_items($menuID);
+//     $menu = array();
+//     $submenu = array();
 
-    foreach ($itens_menu as $item) {
-        if ($item->menu_item_parent == 0) {
-            $menu[] = $item;
-        } else {
-            if (!array_key_exists($item->menu_item_parent, $submenu)) {
-                $submenu[$item->menu_item_parent] = array();
-            }
-            $submenu[$item->menu_item_parent][] = $item;
-        }
+//     foreach ($itens_menu as $item) {
+//         if ($item->menu_item_parent == 0) {
+//             $menu[] = $item;
+//         } else {
+//             if (!array_key_exists($item->menu_item_parent, $submenu)) {
+//                 $submenu[$item->menu_item_parent] = array();
+//             }
+//             $submenu[$item->menu_item_parent][] = $item;
+//         }
+//     }
+//     $menu_itens = array();
+//     $menu_itens["parents"] = $menu;
+//     $menu_itens["children"] = $submenu;
+//     return $menu_itens;
+// }
+
+//Adiciona classe no item do menu
+function add_additional_class_on_li($classes, $item, $args) {
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
     }
-    $menu_itens = array();
-    $menu_itens["parents"] = $menu;
-    $menu_itens["childrens"] = $submenu;
-    return $menu_itens;
+    return $classes;
 }
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
 /* Criação das páginas de opções do ACF */
 add_action('acf/init', 'my_acf_op_init');

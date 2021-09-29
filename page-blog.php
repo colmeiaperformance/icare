@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php get_template_part('template-parts/header-blog'); ?>
+
 <main id="ica-content">
     <div class="ica-com com-carousel swiper-container">
         <div class="swiper-wrapper">
