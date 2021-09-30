@@ -27,11 +27,26 @@ $redes_sociais = get_field('redes_sociais', 'option');
         </dl>
         <dl class="footer-item">
             <dt><?php if (!empty( $titulo_coluna2 )) : echo $titulo_coluna2; endif ?></dt>
-            <dd><a href="#">Alinhamento 2 Graus</a></dd>
+            <?php
+        
+            wp_nav_menu( array(
+                'menu'              => 'secondary-menu', // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
+                'menu_class'        => 'footer-list', // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
+                'container'         => 'dl', // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
+                'container_class'   => 'footer-list', // (string) Class that is applied to the container. Default 'menu-{menu slug}-container'.
+                'fallback_cb'       => false, // (callable|bool) If the menu doesn't exists, a callback function will fire. Default is 'wp_page_menu'. Set to false for no fallback.
+                'depth'             => 1, // (int) How many levels of the hierarchy are to be included. 0 means all. Default 0.
+                'theme_location'    => 'secondary-menu', // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
+                'item_spacing'      => 'preserve', // (string) Whether to preserve whitespace within the menu's HTML. Accepts 'preserve' or 'discard'. Default 'preserve'.
+                'add_li_class'      => 'footer-list-item', //Custom function to add class to menu item
+            ) );
+
+            ?>
+            <!-- <dd><a href="#">Alinhamento 2 Graus</a></dd>
             <dd><a href="#">Finanças Sustentáveis</a></dd>
             <dd><a href="#">Estratégia e Biodiversidade</a></dd>
             <dd><a href="#">Analise de Ciclo de Vida</a></dd>
-            <dd><a href="#">Objetivos do Desenvolvimento Sustentável (ODS)</a></dd>
+            <dd><a href="#">Objetivos do Desenvolvimento Sustentável (ODS)</a></dd> -->
             <dt><a href="#">Cadastre Seu Currículo</a></dt>
         </dl>
         <dl class="footer-item">
@@ -45,7 +60,8 @@ $redes_sociais = get_field('redes_sociais', 'option');
 
             <dd>
                 <a href="tel:<?php echo $c['texto'] ?>">
-                    <img src="<?php if (!empty( $icones_dos_contatos['telefone'] )) : echo $icones_dos_contatos['telefone']; endif ?>" alt="Telefone: ">
+                    <img src="<?php if (!empty( $icones_dos_contatos['telefone'] )) : echo $icones_dos_contatos['telefone']; endif ?>"
+                        alt="Telefone: ">
                     <?php echo $c['texto'] ?>
                 </a>
             </dd>
@@ -55,7 +71,8 @@ $redes_sociais = get_field('redes_sociais', 'option');
 
             <dd>
                 <a href="mailto:<?php echo $c['texto'] ?>">
-                    <img src="<?php if (!empty( $icones_dos_contatos['email'] )) : echo $icones_dos_contatos['email']; endif ?>" alt="E-mail: ">
+                    <img src="<?php if (!empty( $icones_dos_contatos['email'] )) : echo $icones_dos_contatos['email']; endif ?>"
+                        alt="E-mail: ">
                     <?php echo $c['texto'] ?>
                 </a>
             </dd>
@@ -94,7 +111,24 @@ $redes_sociais = get_field('redes_sociais', 'option');
     <div class="footer-nav">
         <div class="nav-container">
             <p><?php if ( !empty( get_field('copyright', 'option') ) ) : the_field('copyright', 'option'); endif ?></p>
-            <div class="nav-itens">
+
+            <?php
+        
+            wp_nav_menu( array(
+                'menu'              => 'footer-menu', // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
+                'menu_class'        => 'nav-footer', // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
+                'container'         => 'div', // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
+                'container_class'   => 'nav-items', // (string) Class that is applied to the container. Default 'menu-{menu slug}-container'.
+                'fallback_cb'       => false, // (callable|bool) If the menu doesn't exists, a callback function will fire. Default is 'wp_page_menu'. Set to false for no fallback.
+                'depth'             => 2, // (int) How many levels of the hierarchy are to be included. 0 means all. Default 0.
+                'theme_location'    => 'footer-menu', // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
+                'item_spacing'      => 'preserve', // (string) Whether to preserve whitespace within the menu's HTML. Accepts 'preserve' or 'discard'. Default 'preserve'.
+                'add_li_class'      => 'nav-footer-item', //Custom function to add class to menu item
+            ) );
+
+        ?>
+
+            <!-- <div class="nav-itens">
                 <div class="nav-item">
                     <a href="#">Créditos</a>
                 </div>
@@ -113,7 +147,7 @@ $redes_sociais = get_field('redes_sociais', 'option');
                 <div class="nav-item">
                     <a href="#">Preferências de Cookies</a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </footer>
