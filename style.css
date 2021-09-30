@@ -1116,7 +1116,7 @@ a:focus .ica-but {
   position: relative;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-media p {
+.ica-sec.sec-header .sec-media p {
   position: absolute;
   top: 46%;
   left: 46%;
