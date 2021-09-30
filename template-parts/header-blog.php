@@ -16,9 +16,11 @@
             </a>
         </div>
         <?php get_template_part('template-parts/menu-pages'); ?>
-        <a class="ica-com com-jumper jumper-navigation ica-ico ico-menu" href="#ica-navigation"><span
-                class="com-title">Navegação</span></a>
-        <a class="ica-com com-jumper jumper-top ica-ico ico-close" href="#ica-header"><span
-                class="com-title ico-title">Topo</span></a>
+        <a class="ica-com com-jumper jumper-navigation ica-ico ico-menu" href="#ica-navigation">
+            <span class="com-title">&#9776;</span>
+        </a>
+        <a class="ica-com com-jumper jumper-top ica-ico ico-close" href="#ica-header">
+            <span class="com-title ico-title">&#x58;</span>
+        </a>
     </div>
 </header>

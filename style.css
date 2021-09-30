@@ -2016,6 +2016,11 @@ h6 {
   color: #13857f;
 }
 
+.com-title {
+  font-family: sans-serif;
+  font-size: 3rem;
+}
+
 .scrolling {
   position: fixed;
   top: 0;
