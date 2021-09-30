@@ -79,6 +79,7 @@
 
 .ica-sec.sec-acting .content-description,
 .ica-sec.sec-partners .content-description,
+.ica-sec.sec-whatwedo .sec-description,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -96,6 +97,10 @@
 .ica-sec.sec-localization .sec-item,
 .ica-sec.sec-what .sec-content .sec-itens,
 .ica-sec.sec-what .sec-content .sec-media,
+.ica-sec.sec-infos .sec-content .content-media,
+.ica-sec.sec-infos .sec-content .content-description,
+.ica-sec.sec-whatwedo .sec-content .sec-item.item-double,
+.ica-sec.sec-whatwedo .sec-content .sec-item .media-aside,
 .ica-local-text,
 .clear {
   display: inline-block;
@@ -125,6 +130,7 @@
 
 #ica-footer .footer-item,
 .ica-sec.sec-testimony .sec-item .item-header,
+.ica-sec.sec-services .item-service,
 .ica-secodary-menu,
 .clear {
   display: inline-block;
@@ -140,6 +146,7 @@
 .ica-sec.sec-acting .sec-item,
 .ica-motivation-item,
 .ica-solution-item,
+.ica-sec.sec-whatwedo .sec-content .sec-item,
 .clear {
   display: inline-block;
   margin-left: 1.5%;

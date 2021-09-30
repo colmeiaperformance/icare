@@ -343,3 +343,50 @@
 	border: 1px solid $color-gray-222;
 	padding-bottom: 1rem;
 }
+.ica-sec.sec-infos .sec-header{
+	text-align: left;
+}
+.ica-sec.sec-infos .sec-content {
+	display: flex;
+	text-align: left;
+	flex-wrap: wrap;
+}
+.ica-sec.sec-infos .sec-content .content-media img{
+	height: 100%;
+}
+.ica-sec.sec-services{
+	padding-bottom: 8rem;
+}
+.ica-sec.sec-services .item-service{
+	border: 1px solid $color-default-green;
+	margin-top: 1.5%;
+	padding: 3rem;
+}
+.ica-sec.sec-services .item-service h4{
+	margin-top: 0;
+}
+.ica-sec.sec-services .item-service img{
+	padding-top: 1.5rem;
+}
+.ica-sec.sec-whatwedo .sec-content{
+	position: relative;
+	margin-bottom: 4rem;
+}
+.ica-sec.sec-whatwedo .sec-content .sec-item{
+	border: 1px solid $color-default-green;
+	padding: 2rem;
+	height: 100%;
+}
+.ica-sec.sec-whatwedo .sec-content .sec-item ul{
+	text-align: left;
+}
+.ica-sec.sec-whatwedo .sec-content .sec-item li{
+	color: $color-gray-222;
+}
+.ica-sec.sec-whatwedo .sec-content .sec-item .media-seta{
+	padding-right: 1rem;
+}
+.ica-sec.sec-whatwedo .sec-content .sec-item .media-aside{
+	text-align: left;
+	padding-right: 1rem;
+}

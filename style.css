@@ -709,6 +709,7 @@ a:focus .ica-but {
     ////////*/
 .ica-sec.sec-acting .content-description,
 .ica-sec.sec-partners .content-description,
+.ica-sec.sec-whatwedo .sec-description,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -724,6 +725,10 @@ a:focus .ica-but {
 .ica-sec.sec-localization .sec-item,
 .ica-sec.sec-what .sec-content .sec-itens,
 .ica-sec.sec-what .sec-content .sec-media,
+.ica-sec.sec-infos .sec-content .content-media,
+.ica-sec.sec-infos .sec-content .content-description,
+.ica-sec.sec-whatwedo .sec-content .sec-item.item-double,
+.ica-sec.sec-whatwedo .sec-content .sec-item .media-aside,
 .ica-local-text,
 .clear {
   display: inline-block;
@@ -751,6 +756,7 @@ a:focus .ica-but {
     ////////*/
 #ica-footer .footer-item,
 .ica-sec.sec-testimony .sec-item .item-header,
+.ica-sec.sec-services .item-service,
 .ica-secodary-menu,
 .clear {
   display: inline-block;
@@ -765,6 +771,7 @@ a:focus .ica-but {
 .ica-sec.sec-acting .sec-item,
 .ica-motivation-item,
 .ica-solution-item,
+.ica-sec.sec-whatwedo .sec-content .sec-item,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -1356,6 +1363,69 @@ a:focus .ica-but {
   text-align: center;
   border: 1px solid #222;
   padding-bottom: 1rem;
+}
+
+.ica-sec.sec-infos .sec-header {
+  text-align: left;
+}
+
+.ica-sec.sec-infos .sec-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ica-sec.sec-infos .sec-content .content-media img {
+  height: 100%;
+}
+
+.ica-sec.sec-services {
+  padding-bottom: 8rem;
+}
+
+.ica-sec.sec-services .item-service {
+  border: 1px solid #13857f;
+  margin-top: 1.5%;
+  padding: 3rem;
+}
+
+.ica-sec.sec-services .item-service h4 {
+  margin-top: 0;
+}
+
+.ica-sec.sec-services .item-service img {
+  padding-top: 1.5rem;
+}
+
+.ica-sec.sec-whatwedo .sec-content {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.ica-sec.sec-whatwedo .sec-content .sec-item {
+  border: 1px solid #13857f;
+  padding: 2rem;
+  height: 100%;
+}
+
+.ica-sec.sec-whatwedo .sec-content .sec-item ul {
+  text-align: left;
+}
+
+.ica-sec.sec-whatwedo .sec-content .sec-item li {
+  color: #222;
+}
+
+.ica-sec.sec-whatwedo .sec-content .sec-item .media-seta {
+  padding-right: 1rem;
+}
+
+.ica-sec.sec-whatwedo .sec-content .sec-item .media-aside {
+  text-align: left;
+  padding-right: 1rem;
 }
 
 /*
