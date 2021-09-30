@@ -282,7 +282,7 @@
         background: transparent;
         color: $color-white;
         margin-top: 1.5rem;
-        &>li {
+        & > li {
             padding-left: 2rem;
         }
     }
@@ -311,9 +311,10 @@
                 box-shadow: 2px 2px 10px $color-black-opc-20;
                 min-width: 250px;
                 width: fit-content;
+                z-index: 5000;
 
-                .navigation-item{
-                    display:flex;
+                .navigation-item {
+                    display: flex;
                     margin-bottom: 1rem;
                 }
 
@@ -330,7 +331,7 @@
             }
         }
 
-        .menu-item-has-children:hover .sub-menu {
+        & > .menu-item-has-children:hover .sub-menu {
             display: block !important;
             transition: 0.3s all ease-in-out;
 
@@ -459,6 +460,47 @@
                     display: block;
                     right: -60px;
                     top: 0;
+                    background: $default-color;
+                }
+            }
+
+            &:nth-child(2) {
+                &::before,
+                &::after {
+                    border-right: none;
+                    background: $color-default-green;
+                    position: absolute;
+                    content: "";
+                    z-index: 2;
+                    width: 100px;
+                    height: 120px;
+                    display: block;
+                    right: -30px;
+                    top: 0;
+                    
+                }
+                .arrow-container::before {
+                    position: absolute;
+                    content: "";
+                    z-index: 3;
+                    width: 100px;
+                    height: $height2 / 3;
+                    transform: skewX(25deg);
+                    display: block;
+                    right: -120px;
+                    top: 0;
+                    background: $default-color;
+                }
+                .arrow-container::after {
+                    position: absolute;
+                    content: "";
+                    z-index: 3;
+                    width: 100px;
+                    height: $height2 / 3;
+                    transform: skewX(-25deg);
+                    display: block;
+                    right: -123px;
+                    bottom: -3px;
                     background: $default-color;
                 }
             }

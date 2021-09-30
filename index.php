@@ -104,10 +104,6 @@
                     </li>
                 </ul>
             </div>
-            <img src="<?php echo get_template_directory_uri() . '/images/home.jpg' ?>" alt="">
-            <div class="sec-itens">
-
-            </div>
         </div>
     </section>
     <section class="ica-sec sec-partners" id="partners">

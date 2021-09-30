@@ -1287,7 +1287,7 @@ a:focus .ica-but {
           flex-direction: column;
 }
 
-.ica-sec.sec-bolg .ica-wrapper .aside-blog .form-news input[type=text] {
+.ica-sec.sec-bolg .ica-wrapper .aside-blog .form-news input[type="text"] {
   width: 100%;
 }
 
@@ -2239,6 +2239,7 @@ h6 {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    z-index: 5000;
   }
   header .navigation-list li .sub-menu .navigation-item {
     display: -webkit-box;
@@ -2255,12 +2256,12 @@ h6 {
   header .navigation-list li .sub-menu a:hover {
     color: #13857f !important;
   }
-  header .navigation-list .menu-item-has-children:hover .sub-menu {
+  header .navigation-list > .menu-item-has-children:hover .sub-menu {
     display: block !important;
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
   }
-  header .navigation-list .menu-item-has-children:hover .sub-menu.navigation-item {
+  header .navigation-list > .menu-item-has-children:hover .sub-menu.navigation-item {
     margin-top: 0;
   }
   /* O que fazemos? */
@@ -2377,6 +2378,44 @@ h6 {
     display: block;
     right: -60px;
     top: 0;
+    background: #e8e8e8;
+  }
+  .arrows-left li:nth-child(2)::before, .arrows-left li:nth-child(2)::after {
+    border-right: none;
+    background: #13857f;
+    position: absolute;
+    content: "";
+    z-index: 2;
+    width: 100px;
+    height: 120px;
+    display: block;
+    right: -30px;
+    top: 0;
+  }
+  .arrows-left li:nth-child(2) .arrow-container::before {
+    position: absolute;
+    content: "";
+    z-index: 3;
+    width: 100px;
+    height: 138.66667px;
+    -webkit-transform: skewX(25deg);
+            transform: skewX(25deg);
+    display: block;
+    right: -120px;
+    top: 0;
+    background: #e8e8e8;
+  }
+  .arrows-left li:nth-child(2) .arrow-container::after {
+    position: absolute;
+    content: "";
+    z-index: 3;
+    width: 100px;
+    height: 138.66667px;
+    -webkit-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+    display: block;
+    right: -123px;
+    bottom: -3px;
     background: #e8e8e8;
   }
   .arrows-left li:last-child::before, .arrows-left li:last-child::after {
