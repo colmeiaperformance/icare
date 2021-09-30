@@ -1442,8 +1442,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
   border-bottom: none;
 }
 
@@ -1636,13 +1636,13 @@ body {
   margin: 0;
 }
 
-#ica-footer .footer-form input[type=text] {
+#ica-footer .footer-form input[type="text"] {
   background-color: transparent;
   color: #fff;
   font-weight: normal;
 }
 
-#ica-footer .footer-form input[type=submit] {
+#ica-footer .footer-form input[type="submit"] {
   background-color: #13857f;
   font-weight: normal;
   border-radius: 16rem;
