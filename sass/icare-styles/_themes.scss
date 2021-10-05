@@ -72,7 +72,7 @@ span{
 	color: $color-white;
 }
 .ica-the.the-highlight a.active {
-	color: #000;
+	color: $color-black;
 }
 
 /*
@@ -89,7 +89,7 @@ span{
 .ica-the.the-highlight .ica-but:focus,
 .ica-the.the-highlight a:hover .ica-but,
 .ica-the.the-highlight a:focus .ica-but {
-	background-color: black;
+	background-color: $color-black;
 	color: $color-white;
 }
 .ica-the.the-highlight .ica-but.but-light {

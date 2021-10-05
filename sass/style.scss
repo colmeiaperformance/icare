@@ -39,13 +39,20 @@
         color: $color-default-green;
     }
 }
-.com-title{
+.logo,
+.logo-blog,
+.logo-pages {
+    width: 125px;
+    padding-top: 25px !important;
+}
+.com-title {
     font-family: sans-serif;
     font-size: 3rem;
 }
 .scrolling {
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 1000;
     background: $color-white-opc-95 !important;
     box-shadow: $color-black-opc-20 1px 0px 5px !important;
@@ -59,10 +66,16 @@
     a:active {
         color: $color-default-green !important;
     }
-    .logo {
-        width: 100px !important;
+    .logo,
+    .logo-blog,
+    .logo-pages {
+        width: 100px;
         padding-top: 25px !important;
     }
+}
+
+#acting {
+    background-color: $default-color;
 }
 
 @media (max-width: 578px) {
@@ -277,6 +290,15 @@
 /************************************/
 
 @media (min-width: 1025px) {
+    //Menu blog
+    .ica-blog,
+    .ica-pages {
+        z-index: 1000;
+    }
+    .navbar-white {
+        background-color: $color-white;
+        padding-bottom: 2.5rem;
+    }
     //Navbar
     nav #menu-menu-principal {
         position: relative;
@@ -288,6 +310,9 @@
         margin-top: 1.5rem;
         & > li {
             padding-left: 2rem;
+        }
+        nav #menu-menu-principal .navigation-list {
+            margin-top: 1rem;
         }
     }
     #navbar {
@@ -664,8 +689,78 @@
         width: auto;
         padding: 0 1rem;
         margin: 1.6rem 0;
-        &:last-child{
+        &:last-child {
             border-right: none;
         }
+    }
+
+    //Header slider blog
+    .blog-content {
+        .ica-com.com-carousel {
+            height: 400px;
+        }
+    }
+    .swiper-slide-img {
+        max-width: 1770px;
+        height: 350px;
+        overflow: hidden;
+        margin-top: 50px;
+        position: relative;
+    }
+    .blog-content .swiper-slide-img {
+        margin-top: 41px;
+    }
+    #blog {
+        text-align: left;
+    }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        .page-numbers {
+            font-size: 2rem;
+            text-align: center;
+            padding: 1rem 1.6rem;
+            border: 1px solid $color-default-green;
+            border-radius: 50%;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            background-color: $color-white;
+            color: $color-default-green;
+            &.current, &:hover {
+                background-color: $color-default-green;
+                color: $color-white;
+            }
+            &.prev,
+            &.next {
+                border: none;
+            }
+        }
+    }
+    #breadcrumb {
+        background-color: $default-color;
+        padding: 2.5rem;
+        font-family: sans-serif;
+        z-index: 999;
+        position: relative;
+    }
+    .breadcrumb {
+        font-size: 1.85rem;
+        list-style: none;
+        color: $color-gray-70;
+        max-width: 1770px;
+    }
+    .itens-breadcrumb {
+        text-align: right;
+    }
+    .breadcrumb-item {
+        color: $color-gray-70;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .breadcrumb a {
+        color: $color-default-green;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        text-decoration: none;
     }
 } //end media query

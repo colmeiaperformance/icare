@@ -337,11 +337,23 @@
 	margin-bottom: 4rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+	align-items:stretch;
 	text-align: center;
 	border: 1px solid $color-gray-222;
 	padding-bottom: 1rem;
+}
+.notice-card-img div{
+	height: 310px;
+	position: relative;
+}
+.notice-card-title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2rem;
+	font-weight: bold;
 }
 .ica-sec.sec-infos .sec-header{
 	text-align: left;

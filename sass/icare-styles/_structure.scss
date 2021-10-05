@@ -49,10 +49,11 @@ hr {
 }
 #ica,
 body {
-	background-color: $color-gray-e8e;
+	background-color: $color-white;
 	scroll-behavior: smooth;
 	text-align: center;
 	font-size: 10px;
+	font-family: 'Open Sans', sans-serif;
 }
 @media all and (max-width: 1024px) {
 	#ica {

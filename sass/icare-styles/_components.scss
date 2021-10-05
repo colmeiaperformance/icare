@@ -4,56 +4,62 @@
 ///////////////
 */
 
-.ica-com.com-banner{
-}
-	.ica-com.com-banner .ica-wrapper{
-		position: relative;
-		text-align: center;
-		justify-content: center;
-		align-items: center;
-		padding: 0;
-		margin: 0;
-		margin-top: -16rem;
-	}
-	.ica-com.com-banner .com-content{
-		position: absolute;
-		text-align: center;
-		bottom:0;
-		left:0;
-		margin: 8rem;
-	}
-.ica-com.com-carousel {
-	margin-top: -16rem;
-}
-	.ica-com.com-carousel .com-item {
-		position: relative;
-	}
-		.ica-com.com-carousel .com-item .item-content {
-			padding: 2.4rem 2.4rem 4.8rem;
+.ica-com {
+	&.com-banner {
+		.ica-wrapper {
+			position: relative;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			padding: 0;
+			margin: 0;
+			margin-top: -16rem;
+		}
+
+		.com-content {
 			position: absolute;
+			text-align: center;
 			bottom: 0;
 			left: 0;
-			right: 0;
-			margin-bottom: 8rem;
+			margin: 8rem;
 		}
-		.ica-com.com-carousel .com-item .item-content h1{
-			margin:0 16rem;
-		}
-			
+	}
 
-.ica-com.com-jumper{
-}
-	.ica-com.com-jumper {
+	&.com-carousel {
+		margin-top: -16rem;
+
+		.com-item {
+			position: relative;
+
+			.item-content {
+				padding: 2.4rem 2.4rem 4.8rem;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin-bottom: 8rem;
+
+				h1 {
+					margin: 0 16rem;
+				}
+			}
+		}
+	}
+
+	&.com-jumper {
 		display: none;
 		position: absolute;
 		right: 1.6rem;
 		top: 2.6rem;
 		line-height: 2.8rem;
 		z-index: 50;
+
+		&:before {
+			font-size: 2.4em;
+		}
 	}
-	.ica-com.com-jumper:before {
-		font-size: 2.4em;
-	}
-	
-	.menu-auxiliar {background-color:orange;}
-	
+}
+
+.menu-auxiliar {
+	background-color: orange;
+}

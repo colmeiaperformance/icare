@@ -1354,15 +1354,30 @@ a:focus .ica-but {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   text-align: center;
   border: 1px solid #222;
   padding-bottom: 1rem;
+}
+
+.notice-card-img div {
+  height: 310px;
+  position: relative;
+}
+
+.notice-card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .ica-sec.sec-infos .sec-header {
@@ -1485,10 +1500,11 @@ hr {
 
 #ica,
 body {
-  background-color: #e8e8e8;
+  background-color: #fff;
   scroll-behavior: smooth;
   text-align: center;
   font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media all and (max-width: 1024px) {
@@ -1870,7 +1886,7 @@ span {
 .ica-the.the-highlight .ica-but:focus,
 .ica-the.the-highlight a:hover .ica-but,
 .ica-the.the-highlight a:focus .ica-but {
-  background-color: black;
+  background-color: #000;
   color: #fff;
 }
 
@@ -1926,7 +1942,7 @@ input {
   margin-top: 1.6rem;
   font-size: 1.6em;
   line-height: 160%;
-  color: #13857f;
+  color: #555;
 }
 
 li {
@@ -2016,6 +2032,13 @@ h6 {
   color: #13857f;
 }
 
+.logo,
+.logo-blog,
+.logo-pages {
+  width: 125px;
+  padding-top: 25px !important;
+}
+
 .com-title {
   font-family: sans-serif;
   font-size: 3rem;
@@ -2024,6 +2047,7 @@ h6 {
 .scrolling {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 1000;
   background: rgba(255, 255, 255, 0.95) !important;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 0px 5px !important;
@@ -2043,9 +2067,15 @@ h6 {
   color: #13857f !important;
 }
 
-.scrolling .logo {
-  width: 100px !important;
+.scrolling .logo,
+.scrolling .logo-blog,
+.scrolling .logo-pages {
+  width: 100px;
   padding-top: 25px !important;
+}
+
+#acting {
+  background-color: #e8e8e8;
 }
 
 @media (max-width: 578px) {
@@ -2274,6 +2304,14 @@ h6 {
 /********* DESKTOP STYLE ************/
 /************************************/
 @media (min-width: 1025px) {
+  .ica-blog,
+  .ica-pages {
+    z-index: 1000;
+  }
+  .navbar-white {
+    background-color: #fff;
+    padding-bottom: 2.5rem;
+  }
   nav #menu-menu-principal {
     position: relative;
     display: -webkit-box;
@@ -2289,6 +2327,9 @@ h6 {
   }
   nav #menu-menu-principal > li {
     padding-left: 2rem;
+  }
+  nav #menu-menu-principal nav #menu-menu-principal .navigation-list {
+    margin-top: 1rem;
   }
   #navbar a {
     color: #fff;
@@ -2632,6 +2673,75 @@ h6 {
   }
   .nav-footer-item:last-child {
     border-right: none;
+  }
+  .blog-content .ica-com.com-carousel {
+    height: 400px;
+  }
+  .swiper-slide-img {
+    max-width: 1770px;
+    height: 350px;
+    overflow: hidden;
+    margin-top: 50px;
+    position: relative;
+  }
+  .blog-content .swiper-slide-img {
+    margin-top: 41px;
+  }
+  #blog {
+    text-align: left;
+  }
+  .pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pagination .page-numbers {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 1.6rem;
+    border: 1px solid #13857f;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: #fff;
+    color: #13857f;
+  }
+  .pagination .page-numbers.current, .pagination .page-numbers:hover {
+    background-color: #13857f;
+    color: #fff;
+  }
+  .pagination .page-numbers.prev, .pagination .page-numbers.next {
+    border: none;
+  }
+  #breadcrumb {
+    background-color: #e8e8e8;
+    padding: 2.5rem;
+    font-family: sans-serif;
+    z-index: 999;
+    position: relative;
+  }
+  .breadcrumb {
+    font-size: 1.85rem;
+    list-style: none;
+    color: #707070;
+    max-width: 1770px;
+  }
+  .itens-breadcrumb {
+    text-align: right;
+  }
+  .breadcrumb-item {
+    color: #707070;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .breadcrumb a {
+    color: #13857f;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-decoration: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

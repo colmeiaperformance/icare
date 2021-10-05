@@ -1,13 +1,13 @@
 <header id="ica-blog">
-    <div id="navbar" class="ica-wrapper">
+    <div id="navbar-blog" class="ica-wrapper-blog navbar-white">
         <div id="ica-logo" class="ica-logo">
             <a href="<?php echo home_url(); ?>">
-                <img class="logo" width="160" src="<?php 
-                        $logoBranco = get_field('logo_branco', 'option');
+                <img class="logo-blog" src="<?php 
+                        $logoColorido = get_field('logo_colorido', 'option');
                         $logoDefault = get_template_directory_uri() . '/images/logo.png';
                         
-                        if ( !empty($logoBranco) ) {
-                            echo $logoBranco;
+                        if ( !empty($logoColorido) ) {
+                            echo $logoColorido;
                         } else {
                             echo $logoDefault;
                         }
@@ -24,3 +24,4 @@
         </a>
     </div>
 </header>
+<?php get_template_part('template-parts/breadcrumb'); ?>
