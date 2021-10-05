@@ -180,6 +180,9 @@ body {
 #ica-footer .footer-item dt {
 	color: $color-white;
 }
+#ica-footer .footer-item p {
+	text-align: center;
+}
 #ica-footer .footer-item dd a img {
 	margin-right: 0.8rem;
 }
@@ -192,10 +195,15 @@ body {
 	min-width: 358px;
 	border-right: 1px solid $color-default-green;
 	height: 340px;
+	margin: 0;
+	text-align: left;
+	padding: 0 3rem;
+}
+#ica-footer .footer-item:last-child {
+	border: 0;
 }
 #ica-footer .footer-item .footer-icons {
-	display: flex;
-	justify-content: center;
+	display: flex;	
 	margin: 3rem 0;
 }
 #ica-footer .footer-item .footer-icons a {
@@ -209,9 +217,7 @@ body {
 	padding: 1rem;
 	color: $color-default-green;
 	justify-content: center;
-}
-#ica-footer .footer-form {
-	max-width: 358px;
+	width: 358px;
 }
 #ica-footer .footer-form form {
 	display: flex;

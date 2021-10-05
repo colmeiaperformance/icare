@@ -730,6 +730,8 @@ a:focus .ica-but {
 .ica-sec.sec-whatwedo .sec-content .sec-item.item-double,
 .ica-sec.sec-whatwedo .sec-content .sec-item .media-aside,
 .ica-local-text,
+.ica-sec.sec-contact .sec-media,
+.ica-sec.sec-contact .sec-form,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -1443,6 +1445,51 @@ a:focus .ica-but {
   padding-right: 1rem;
 }
 
+.ica-sec.sec-contact .sec-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.ica-sec.sec-contact .sec-form form label {
+  color: #13857f;
+  font-weight: bold;
+}
+
+.ica-sec.sec-contact .sec-form form label:first-child {
+  margin-top: 0;
+}
+
+.ica-sec.sec-contact .sec-form form textarea {
+  margin-top: 1.6rem;
+  border-radius: 0.6rem;
+  padding: 0.6rem 1rem;
+  font-size: 1.6em;
+  border: 2px solid #13857f;
+}
+
+.ica-sec.sec-contact .sec-form form input[type=submit] {
+  width: 180px;
+  border: 2px solid #13857f;
+}
+
+.ica-sec.sec-contact .sec-form form input[type=text] {
+  border-radius: 0.6rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid #13857f;
+}
+
+.ica-sec.sec-contact .sec-form form input[type=email] {
+  border-radius: 0.6rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid #13857f;
+}
+
 /*
 ////////////////
 ////STRUCTURE//
@@ -1660,6 +1707,10 @@ body {
   color: #fff;
 }
 
+#ica-footer .footer-item p {
+  text-align: center;
+}
+
 #ica-footer .footer-item dd a img {
   margin-right: 0.8rem;
 }
@@ -1674,15 +1725,19 @@ body {
   min-width: 358px;
   border-right: 1px solid #13857f;
   height: 340px;
+  margin: 0;
+  text-align: left;
+  padding: 0 3rem;
+}
+
+#ica-footer .footer-item:last-child {
+  border: 0;
 }
 
 #ica-footer .footer-item .footer-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 3rem 0;
 }
 
@@ -1702,10 +1757,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-#ica-footer .footer-form {
-  max-width: 358px;
+  width: 358px;
 }
 
 #ica-footer .footer-form form {
@@ -1937,7 +1989,8 @@ p,
 li,
 dd,
 label,
-input {
+input,
+textarea {
   font-family: "Open Sans", sans-serif;
   margin-top: 1.6rem;
   font-size: 1.6em;

@@ -69,7 +69,7 @@ Template Name: Template Atuação
             
         </div>
     </section>
-    <section class="ica-sec sec-whatwedo" id="whatwedo">
+    <section class="ica-sec sec-whatwedo ica-the the-graye8e" id="whatwedo">
         <div class="ica-wrapper">
             <div class="sec-header">
                 <h3 class="sec-title ica-the the-graye8e the-contrast">O que fazemos</h3>
