@@ -16,4 +16,4 @@ var logoColorido =
     "<?php if ( !empty( get_field('logo_colorido', 'option') ) ) : the_field('logo_colorido', 'option'); endif ?>";
 </script>
 
-<body <?php body_class(); ?> class="ica-pag" id="pag-home">
+<body <?php body_class(); ?>>
