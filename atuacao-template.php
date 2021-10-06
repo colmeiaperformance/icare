@@ -9,7 +9,7 @@ Template Name: Template Atuação
 <?php get_header(); ?>
 <?php get_template_part('template-parts/header-pages'); ?>
 
-<main id="ica-content">
+<main>
     
     <section class="ica-sec sec-infos ica-the the-white" id="infos">
         <div class="ica-wrapper">

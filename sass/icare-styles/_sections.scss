@@ -380,14 +380,17 @@
 .ica-sec.sec-services .item-service img{
 	padding-top: 1.5rem;
 }
+
+.ica-sec.sec-whatwedo{
+}
 .ica-sec.sec-whatwedo .sec-content{
-	position: relative;
 	margin-bottom: 4rem;
+	display: flex;
+	min-height: 516px;
 }
 .ica-sec.sec-whatwedo .sec-content .sec-item{
 	border: 1px solid $color-default-green;
 	padding: 2rem;
-	height: 100%;
 }
 .ica-sec.sec-whatwedo .sec-content .sec-item ul{
 	text-align: left;
@@ -438,4 +441,39 @@
 			padding: 0.6rem 1rem;
 			border: 2px solid $color-default-green;
 		}
-		
+
+.ica-sec.sec-equipe{
+}
+.ica-sec.sec-equipe .sec-description {
+	text-align: left;
+}
+.ica-sec.sec-equipe .sec-members{
+	margin-top: 4rem;
+}
+.ica-sec.sec-equipe .sec-members .members-column{
+
+}
+.ica-sec.sec-equipe .sec-members .members-column .member{	
+	border: 1px solid $color-default-green;
+	border-radius: 10rem;
+	display: flex;
+	padding: 1.6rem;
+	text-align: left;
+	margin-bottom: 3.2rem;
+}
+.ica-sec.sec-equipe .sec-members .members-column .member .member-media{
+	margin: 0;
+}
+.ica-sec.sec-equipe .sec-members .members-column .member .member-description{
+	margin: 0 2rem;
+	text-align: left;
+	max-width: 400px;
+	word-wrap: break-word;
+}
+.ica-sec.sec-equipe .sec-members .members-column .member .member-media img{
+	border-radius: 12rem;
+}
+.ica-sec.sec-equipe .sec-members .members-column .member .member-function{
+	font-weight: bold;
+}
+

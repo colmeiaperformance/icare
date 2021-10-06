@@ -78,12 +78,6 @@
     background-color: $default-color;
 }
 
-//Banner páginas que não são home e blog
-.img-pages{
-    width: 100%;
-    height: 300px;
-}
-
 @media (max-width: 578px) {
     .arrows-left {
         li {
@@ -291,6 +285,11 @@
         max-width: 680px;
     }
 }
+
+// Single Post
+
+
+
 /************************************/
 /********* DESKTOP STYLE ************/
 /************************************/
@@ -697,20 +696,6 @@
         margin: 1.6rem 0;
         &:last-child {
             border-right: none;
-        }
-    }
-    .footer-list{
-        li {
-            position: relative;
-            a:before{
-                position: absolute;
-                top: 0;
-                left: 0;
-                content: '>';
-            }
-            a{
-                margin-left: 20px;
-            }
         }
     }
 
