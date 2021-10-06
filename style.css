@@ -2131,6 +2131,11 @@ h6 {
   background-color: #e8e8e8;
 }
 
+.img-pages {
+  width: 100%;
+  height: 300px;
+}
+
 @media (max-width: 578px) {
   .arrows-left li {
     margin-left: 5vw;
@@ -2726,6 +2731,18 @@ h6 {
   }
   .nav-footer-item:last-child {
     border-right: none;
+  }
+  .footer-list li {
+    position: relative;
+  }
+  .footer-list li a:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '>';
+  }
+  .footer-list li a {
+    margin-left: 20px;
   }
   .blog-content .ica-com.com-carousel {
     height: 400px;
