@@ -103,7 +103,7 @@ $redes_sociais = get_field('redes_sociais', 'option');
                         class="ica-input">
                     <input type="submit"
                         value="<?php if (!empty( $newsletter['rotulo_do_botao'] )) : echo $newsletter['rotulo_do_botao']; endif ?>"
-                        class="ica-input">
+                        class="ica-input ica-the the-highlight ica-but">
                 </form>
             </div>
         </dl>

@@ -2,10 +2,10 @@
 <?php get_template_part('template-parts/header-home'); ?>
 
 <main id="ica-content">
-    <div class="ica-com com-carousel swiper-container">
+    <div class="ica-com com-carousel com-home swiper-container">
         <div class="swiper-wrapper">
             <div class="com-item swiper-slide">
-                <div class="item-media swiper-slide-img">
+                <div class="item-media swiper-slide-img-home">
                     <img src="<?php echo get_template_directory_uri() . '/images/bg-banner.jpg' ?>" alt="" />
                 </div>
                 <div class="item-content ica-the the-highlight">
@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="com-item swiper-slide">
-                <div class="item-media swiper-slide-img">
+                <div class="item-media swiper-slide-img-home">
                     <img src="<?php echo get_template_directory_uri() . '/images/bg-banner.jpg' ?>" alt="" />
                 </div>
                 <div class="item-content ica-the the-highlight">

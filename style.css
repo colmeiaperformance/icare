@@ -592,6 +592,15 @@ a:focus .ica-but {
   background-color: orange;
 }
 
+.ica-com.com-carousel.com-home .com-item .item-content {
+  padding: 2.4rem 20rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 28rem;
+}
+
 /*
 ////////////
 ////FORMS//
@@ -1774,7 +1783,6 @@ body {
 }
 
 #ica-footer .footer-form input[type="submit"] {
-  background-color: #13857f;
   font-weight: normal;
   border-radius: 16rem;
   padding: 0 2.8rem;
@@ -1983,8 +1991,8 @@ span {
 	////////////
 	*/
 .ica-the.the-highlight .ica-but {
-  background-color: #fff;
-  color: #ef6000;
+  background-color: #13857f;
+  color: #fff;
 }
 
 .ica-the.the-highlight .ica-but:hover,

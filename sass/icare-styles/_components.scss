@@ -63,3 +63,20 @@
 .menu-auxiliar {
 	background-color: orange;
 }
+
+.ica-com{
+	&.com-carousel{
+		&.com-home{
+			.com-item{
+				.item-content{
+					padding: 2.4rem 20rem;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					margin-bottom: 28rem;
+				}
+			}
+		}
+	}
+}
