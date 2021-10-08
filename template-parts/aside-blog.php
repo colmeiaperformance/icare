@@ -7,20 +7,26 @@
     </div>
 
     <dl class="footer-item">
-        <dt>Mais Lidas</dt>
-        <dd><a href="#">Lorem ipsum</a></dd>
-        <dd><a href="#">Lorem ipsum</a></dd>
-        <dd><a href="#">Lorem ipsum</a></dd>
-        <dd><a href="#">Lorem ipsum</a></dd>
+        <?php
+        if ( function_exists('wpp_get_mostpopular') ) { ?>
+            <dt>Mais Lidas</dt>
+            <?php
+            /* Get up to the top 5 commented posts from the last 7 days */
+            wpp_get_mostpopular(array(
+                'limit'     => 5,
+                'post_html' => '<dd><a href="{url}">{title}</a></dd>'
+            ));
+        }
+        ?>
     </dl>
     <dl class="footer-item">
         <dt>Categorias</dt>
 
         <?php wp_list_categories( array(
-                'title_li'    => '',
-                'hide_empty'  => false
-                ) );
-            ?>
+            'title_li'    => '',
+            'hide_empty'  => false
+            ) );
+        ?>
 
     </dl>
     <dl class="footer-item">

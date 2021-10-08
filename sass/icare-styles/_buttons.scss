@@ -32,6 +32,8 @@
 	letter-spacing: 0.1em;
 	text-align: center;
 	border-radius: 10rem;
+	transform: scale(1);
+	transition: all ease-in-out .2s;
 	& + .ica-but {
 		margin-left: 1.6rem;
 	}
@@ -58,6 +60,8 @@ a:focus .ica-but {
 	color: $color-white;
 	text-decoration: none;
 	cursor: pointer;
+	transform: scale(1.1);
+	transition: all ease-in-out .2s;
 }
 .ica-but[disabled] {
 	background-color: $color-gray-222;

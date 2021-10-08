@@ -25,9 +25,11 @@
 </div>
 
 <?php endwhile; 
-            else: 
-                _e( '' ); 
-            endif; 
+            else: ?>
+<div class="blog-alert">
+    <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+</div>
+<?php endif; 
             
-            wp_reset_postdata(); 
+wp_reset_postdata(); 
             

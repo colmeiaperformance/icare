@@ -92,10 +92,10 @@
 
                     wp_reset_postdata(); 
                     
-                    else : ?>
-
-                    <?php _e('Sorry, no posts matched your criteria.'); ?>
-
+                    else: ?>
+                    <div class="blog-alert">
+                        <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+                    </div>
                     <?php endif; ?>
 
 
@@ -105,7 +105,7 @@
 
             <?php get_template_part( '/template-parts/aside-blog' ) ?>
 
-        </div>
+                </div>
     </section>
 
 </main>

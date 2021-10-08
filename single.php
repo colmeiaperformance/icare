@@ -6,7 +6,7 @@
     <section class="ica-sec sec-bolg" id="blog">
         <div class="ica-wrapper">
             <div class="sec-notice">
-                <div class="first-notice">
+                <div class="single-notice">
 
                     <?php 
                     if ( have_posts() ) : 
@@ -23,21 +23,21 @@
                             <?php the_content( '<p>', '</p>' ); ?>
                         </div>
                     </div>
-                    
-                    <?php endwhile; 
-                    else: 
-                        _e( 'Sorry, no posts matched your criteria.', 'textdomain' ); 
-                    endif; 
-                    ?>
 
-                    <div>Outros posts</div>
+                    <?php endwhile; 
+                    else: ?>
+                    <div class="blog-alert">
+                        <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+                    </div>
+                    <?php endif; 
+                    ?>
 
                 </div>
             </div>
-            
+
 
             <?php get_template_part( '/template-parts/aside-blog' ) ?>
-            
+
         </div>
     </section>
 

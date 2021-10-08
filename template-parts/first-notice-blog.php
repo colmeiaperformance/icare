@@ -11,10 +11,10 @@ if ( $header_query->have_posts() ) :
             if ( has_post_thumbnail() ) { 
                 echo the_post_thumbnail_url();
             }
-                else { 
-                    echo get_template_directory_uri() . '/images/blog-media.jpg';
-                    } ?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
-        
+            else { 
+                echo get_template_directory_uri() . '/images/blog-media.jpg';
+                } ?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
+
     </div>
     <div class="notice-content">
         <div class="content-title">
@@ -32,8 +32,10 @@ if ( $header_query->have_posts() ) :
 </div>
 
 <?php endwhile; 
-else: 
-    _e( '' ); 
-endif; 
+else: ?>
+<div class="blog-alert">
+    <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+</div>
+<?php endif;
 
 wp_reset_postdata(); 

@@ -451,7 +451,6 @@ html, body {
 article, aside, div, footer, header, hgroup, nav, section {
   vertical-align: top;
   display: inline-block;
-  word-spacing: -0.4em;
   width: 100%;
 }
 
@@ -489,6 +488,10 @@ article, aside, div, footer, header, hgroup, nav, section {
   letter-spacing: 0.1em;
   text-align: center;
   border-radius: 10rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
 }
 
 .ica-but + .ica-but {
@@ -520,6 +523,10 @@ a:focus .ica-but {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
 }
 
 .ica-but[disabled] {
@@ -2844,6 +2851,23 @@ h6 {
   }
   .pagination .page-numbers.prev, .pagination .page-numbers.next {
     border: none;
+  }
+  .single-notice img {
+    width: 100%;
+    height: auto;
+    max-width: 70%;
+  }
+  .blog-alert {
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    color: #222;
+    background-color: #e8e8e8;
+    border-color: #707070;
+    border-radius: .25rem;
+    font-size: 2rem;
+    width: 98%;
   }
   #breadcrumb {
     background-color: #e8e8e8;
