@@ -14,7 +14,7 @@ if ( $header_query->have_posts() ) :
                 else { 
                     echo get_template_directory_uri() . '/images/blog-media.jpg';
                     } ?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
-        <?php ( the_post_thumbnail() ) ? the_post_thumbnail() : get_template_directory_uri() . '/images/banner-sobre.jpg'; ?>
+        
     </div>
     <div class="notice-content">
         <div class="content-title">

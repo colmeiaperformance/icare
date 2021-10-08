@@ -14,7 +14,7 @@
         <div class="ica-wrapper">
             <div class="sec-notice">
 
-                <?php get_template_part( 'template-parts/first-notice-blog' ) ?> ?>
+                <?php get_template_part( 'template-parts/first-notice-blog' ) ?>
 
                 <div class="secondary-notices">
 

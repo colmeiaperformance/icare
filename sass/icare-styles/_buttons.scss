@@ -10,8 +10,12 @@
 	font-size: 1em;
 	margin-top: 0;
 }
-#ica .ica-but * {
-	color: inherit;
+#ica {
+	.ica-but {
+		* {
+			color: inherit;
+		}
+	}
 }
 .ica-but {
 	font-family: "Montserrat", sans-serif;
@@ -28,33 +32,34 @@
 	letter-spacing: 0.1em;
 	text-align: center;
 	border-radius: 10rem;
+	& + .ica-but {
+		margin-left: 1.6rem;
+	}
+	&.but-light {
+		background: transparent;
+		color: $color-white;
+		&:hover {
+			color: $color-white;
+			background-color: $color-green-8a9;
+		}
+	}
+	&.but-conversion {
+		color: $color-white;
+		background-color: $color-default-green;
+		border-color: $color-default-green;
+	}
 }
 .ica-but:hover,
 .ica-but:focus,
 a:hover .ica-but,
 a:focus .ica-but {
 	background-color: $color-gray-222;
-	border-color: $color-white;
+	border-color: $color-gray-222;
 	color: $color-white;
 	text-decoration: none;
+	cursor: pointer;
 }
 .ica-but[disabled] {
 	background-color: $color-gray-222;
 	border-color: $color-gray-222;
-}
-.ica-but + .ica-but {
-	margin-left: 1.6rem;
-}
-.ica-but.but-light {
-	background: transparent;
-	color: $color-white;
-}
-.ica-but.but-light:hover {
-	color: $color-white;
-	background-color: $color-green-8a9;
-}
-.ica-but.but-conversion{
-	color: $color-white;
-	background-color: $color-default-green;
-	border-color: $color-default-green;
 }

@@ -11,15 +11,26 @@
 a {
 	color: $color-gray-70;
 	text-decoration: none;
+	&:hover {
+		color: $color-default-green;
+		text-decoration: none;
+	}
+	&:focus {
+		color: $color-default-green;
+		text-decoration: none;
+	}
+	&:active {
+		color: $color-default-green;
+	}
 }
-a:hover,
-a:focus,
-.hover,
+.hover {
+	color: $color-default-green;
+	text-decoration: none;
+}
 .focus {
 	color: $color-default-green;
 	text-decoration: none;
 }
-a:active,
 .active {
 	color: $color-default-green;
 }
@@ -42,8 +53,11 @@ textarea {
 }
 li {
 	list-style-position: inside;
+	li {
+		margin-left: 3.2rem;
+	}
 }
-span{
+span {
 	font-size: 1em;
 }
 p li,
@@ -53,16 +67,12 @@ li span,
 li li {
 	font-size: 1em;
 }
-li li {
-	margin-left: 3.2rem;
-}
 small {
 	font-size: 0.8em;
 }
 strong {
 	color: $color-gray-222;
 }
-
 
 /*///////
 	HEADER//

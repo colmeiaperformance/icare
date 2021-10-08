@@ -15,10 +15,13 @@
     </dl>
     <dl class="footer-item">
         <dt>Categorias</dt>
-        <dd><a href="#">Biodiversidade</a></dd>
-        <dd><a href="#">Clima</a></dd>
-        <dd><a href="#">Finanças Sustentáveis</a></dd>
-        <dd><a href="#">Escritório Virtual</a></dd>
+
+        <?php wp_list_categories( array(
+                'title_li'    => '',
+                'hide_empty'  => false
+                ) );
+            ?>
+
     </dl>
     <dl class="footer-item">
         <dt>Assine nossa newsletter</dt>
