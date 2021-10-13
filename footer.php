@@ -8,6 +8,7 @@ $icones_dos_contatos = get_field('icones_dos_contatos', 'option');
 $contatos = get_field('contatos', 'option');
 $newsletter = get_field('newsletter', 'option');
 $redes_sociais = get_field('redes_sociais', 'option');
+$vagas = get_field('vagas', 'option');
 
 ?>
 <footer id="ica-footer" class="ica-the the-highlight">
@@ -16,7 +17,9 @@ $redes_sociais = get_field('redes_sociais', 'option');
             <dt>
                 <?php if (!empty( $titulo_coluna1 )) : echo $titulo_coluna1; endif ?>
             </dt>
-            <h3><?php if (!empty( $endereco['mapa'] )) : echo $endereco['mapa']; endif ?></h3>
+            <div class="map-responsive">
+                <?php if (!empty( $endereco['mapa'] )) : echo $endereco['mapa']; endif ?>
+            </div>
             <p>
                 <?php if (!empty( $endereco['cidade'] )) : echo $endereco['cidade']; endif ?>
                 <?php if (!empty( $endereco['pais'] )) : echo ', ' . $endereco['pais']; endif ?><br>
@@ -42,12 +45,10 @@ $redes_sociais = get_field('redes_sociais', 'option');
             ) );
 
             ?>
-            <!-- <dd><a href="#">Alinhamento 2 Graus</a></dd>
-            <dd><a href="#">Finanças Sustentáveis</a></dd>
-            <dd><a href="#">Estratégia e Biodiversidade</a></dd>
-            <dd><a href="#">Analise de Ciclo de Vida</a></dd>
-            <dd><a href="#">Objetivos do Desenvolvimento Sustentável (ODS)</a></dd> -->
-            <dt><a href="#">Cadastre Seu Currículo</a></dt>
+
+            <dt><a
+                    href="<?php if (!empty( $vagas['link'] )) : echo $vagas['link']; endif ?>"><?php if (!empty( $vagas['rotulo'] )) : echo $vagas['rotulo']; endif ?></a>
+            </dt>
         </dl>
         <dl class="footer-item">
             <dt><?php if (!empty( $titulo_coluna3 )) : echo $titulo_coluna3; endif ?></dt>

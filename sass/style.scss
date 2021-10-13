@@ -77,7 +77,55 @@
 #acting {
     background-color: $default-color;
 }
+//Template Atuação
+.whatwedo-list {
+    & .whatwedo-list-item {
+        position: relative;
+        margin-left: 15px;
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            content: ">";
+            color: $color-default-green;
+            margin-left: -15px;
+        }
+    }
+}
+#whatwedo {
+    .sec-item {
+        position: relative;
+        background: $default-color;
+        border: 1px solid $color-default-green;
+    }
+    .sec-item:after,
+    .sec-item:before {
+        left: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: "";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
 
+    .sec-item:after {
+        border-color: rgba(232, 232, 232, 0);
+        border-left-color: $default-color;
+        border-width: 30px;
+        margin-top: -30px;
+    }
+    .sec-item:before {
+        border-color: rgba(19, 133, 127, 0);
+        border-left-color: $color-default-green;
+        border-width: 31px;
+        margin-top: -31px;
+    }
+}
+
+//Setas da home
 @media (max-width: 578px) {
     .arrows-left {
         li {
@@ -681,6 +729,22 @@
     }
 
     //Footer Menu
+
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+
+        iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    }
+
     .nav-footer {
         display: flex;
         justify-content: center;
@@ -740,8 +804,8 @@
             }
         }
     }
-    .single-notice{
-        img{
+    .single-notice {
+        img {
             width: 100%;
             height: auto;
             max-width: 70%;
@@ -755,7 +819,7 @@
         color: $color-gray-222;
         background-color: $color-gray-e8e;
         border-color: $color-gray-70;
-        border-radius: .25rem;
+        border-radius: 0.25rem;
         font-size: 2rem;
         width: 98%;
     }
