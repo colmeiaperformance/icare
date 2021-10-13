@@ -1518,6 +1518,9 @@ a:focus .ica-but {
 
 .ica-sec.sec-equipe .sec-members {
   margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .ica-sec.sec-equipe .sec-members .members-column .member {
@@ -1548,6 +1551,50 @@ a:focus .ica-but {
 
 .ica-sec.sec-equipe .sec-members .members-column .member .member-function {
   font-weight: bold;
+}
+
+.ica-sec.sec-erro {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.ica-sec.sec-erro .sec-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ica-sec.sec-erro .sec-wrapper h1 {
+  font-size: 16em;
+  margin: 0;
+}
+
+.ica-sec.sec-erro .sec-wrapper h2 {
+  font-size: 6em;
+  text-transform: none;
+  margin-top: 0;
+}
+
+.ica-sec.sec-erro .sec-wrapper p {
+  font-size: 2.4em;
+}
+
+.ica-sec.sec-erro .sec-wrapper a {
+  margin-top: 5rem;
 }
 
 /*

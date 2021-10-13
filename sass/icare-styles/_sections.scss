@@ -472,6 +472,7 @@
 	}
 	.sec-members {
 		margin-top: 4rem;
+		display: flex;
 		.members-column {
 			.member {
 				border: 1px solid $color-default-green;
@@ -496,6 +497,35 @@
 					font-weight: bold;
 				}
 			}
+		}
+	}
+}
+
+.ica-sec.sec-erro{
+	height: 100vh;
+	display: flex;
+	text-align: center;
+	.sec-wrapper{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		
+		h1{
+			font-size: 16em;
+			margin: 0;
+		}
+		h2{
+			font-size: 6em;
+			text-transform: none;
+			margin-top: 0;
+		}
+		p{
+			font-size: 2.4em;
+		}
+		a{
+			margin-top: 5rem;
 		}
 	}
 }
