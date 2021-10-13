@@ -1,0 +1,34 @@
+@media (min-width: 1025px) {
+  //Footer Menu
+  
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    
+    iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  }
+  
+  .nav-footer {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .nav-footer-item {
+    margin-left: 2rem;
+    border-right: 1px solid $color-default-green;
+    width: auto;
+    padding: 0 1rem;
+    margin: 1.6rem 0;
+    &:last-child {
+      border-right: none;
+    }
+  }
+}

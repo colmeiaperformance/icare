@@ -16,7 +16,15 @@
         "sass/icare-styles/_sections.scss",
         "sass/icare-styles/_structure.scss",
         "sass/icare-styles/_themes.scss",
-        "sass/icare-styles/_typography.scss"
+        "sass/icare-styles/_typography.scss",
+        "sass/icare-styles/_menu.scss",
+        "sass/icare-styles/_about-what-we-do.scss",
+        "sass/icare-styles/_footer.scss",
+        "sass/icare-styles/_breadcrumb.scss",
+        "sass/icare-styles/_swiper.scss",
+        "sass/icare-styles/_pagination.scss",
+        "sass/icare-styles/_blog.scss",
+        "sass/icare-styles/_single.scss"
     ],
     "names": [],
     "file": "style.min.css"
