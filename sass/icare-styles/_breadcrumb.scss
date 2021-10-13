@@ -1,0 +1,30 @@
+@media (min-width: 1025px) { 
+  #breadcrumb {
+    background-color: $default-color;
+    padding: 2.5rem;
+    font-family: sans-serif;
+    z-index: 999;
+    position: relative;
+  }
+  .breadcrumb {
+    font-size: 1.85rem;
+    list-style: none;
+    color: $color-gray-70;
+    max-width: 1770px;
+  }
+  .itens-breadcrumb {
+    text-align: right;
+  }
+  .breadcrumb-item {
+    color: $color-gray-70;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .breadcrumb a {
+    color: $color-default-green;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-decoration: none;
+  }
+  
+}

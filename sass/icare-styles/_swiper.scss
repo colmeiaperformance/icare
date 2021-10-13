@@ -1,0 +1,40 @@
+//Setas da home
+@media (max-width: 578px) {
+    .arrows-left {
+        li {
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+        & li:last-child::before {
+            left: 5rem;
+        }
+        & li:last-child::before {
+            right: 5rem;
+        }
+    }
+    .arrows-right {
+        li {
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+        & li:first-child::before {
+            left: 5rem;
+        }
+        & li:first-child::before {
+            right: 5rem;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .swiper-slide-img {
+        max-width: 1770px;
+        height: 350px;
+        overflow: hidden;
+        margin-top: 50px;
+        position: relative;
+    }
+    .blog-content .swiper-slide-img {
+        margin-top: 41px;
+    }
+}

@@ -1,0 +1,130 @@
+.scrolling {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: $color-white-opc-95 !important;
+    box-shadow: $color-black-opc-20 1px 0px 5px !important;
+    transition: 0.3s all ease-in-out;
+    padding: 0.1rem 2rem 2.5rem;
+    a {
+        color: $color-gray-70 !important;
+    }
+    a:focus,
+    a:hover,
+    a:active {
+        color: $color-default-green !important;
+    }
+    .logo,
+    .logo-blog,
+    .logo-pages {
+        width: 100px;
+        padding-top: 25px !important;
+    }
+}
+
+#navbar {
+    a:focus,
+    a:hover,
+    a:active {
+        color: $color-default-green;
+    }
+}
+
+.logo,
+.logo-blog,
+.logo-pages {
+    width: 125px;
+    padding-top: 25px !important;
+}
+.com-title {
+    font-family: sans-serif;
+    font-size: 3rem;
+}
+
+@media (max-width: 1024px) {
+    //Menu
+    #navbar {
+        transition: 0.3s all ease-in-out;
+        background-color: transparent;
+        z-index: 1000;
+        display: flex;
+        border-bottom: none;
+        a {
+            color: $color-gray-70;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    //Navbar
+    nav #menu-menu-principal {
+        position: relative;
+        display: flex;
+        justify-content: end;
+        list-style: none;
+        background: transparent;
+        color: $color-white;
+        margin-top: 1.5rem;
+        & > li {
+            padding-left: 2rem;
+        }
+        nav #menu-menu-principal .navigation-list {
+            margin-top: 1rem;
+        }
+    }
+    #navbar {
+        a {
+            color: $color-white;
+        }
+    }
+    //Menu dropdown
+    
+    header .navigation-list {
+        li {
+            position: relative;
+            
+            .sub-menu {
+                display: none;
+                transition: 0.3s all ease-in-out;
+                position: absolute;
+                top: 100%;
+                left: -10%;
+                margin: 0;
+                padding: 0.5rem;
+                list-style-type: none;
+                background: $color-white;
+                border-radius: 2px;
+                box-shadow: 2px 2px 10px $color-black-opc-20;
+                min-width: 250px;
+                width: fit-content;
+                z-index: 5000;
+                
+                .navigation-item {
+                    display: flex;
+                    margin-bottom: 1rem;
+                }
+                
+                a {
+                    color: $color-gray-222 !important;
+                    text-align: left;
+                    font-size: 1.65rem;
+                    line-height: 2rem;
+                    
+                    &:hover {
+                        color: $color-default-green !important;
+                    }
+                }
+            }
+        }
+        
+        & > .menu-item-has-children:hover .sub-menu {
+            display: block !important;
+            transition: 0.3s all ease-in-out;
+            
+            &.navigation-item {
+                margin-top: 0;
+            }
+        }
+    }
+}

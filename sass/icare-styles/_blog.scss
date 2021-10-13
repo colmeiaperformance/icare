@@ -1,0 +1,33 @@
+@media (min-width: 1025px) {
+  //Menu blog
+  .ica-blog,
+  .ica-pages {
+    z-index: 1000;
+  }
+  .navbar-white {
+    background-color: $color-white;
+    padding-bottom: 2.5rem;
+  }
+  
+  //Header slider blog
+  .blog-content {
+    .ica-com.com-carousel {
+      height: 400px;
+    }
+  }
+  #blog {
+    text-align: left;
+  }
+  .blog-alert {
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    color: $color-gray-222;
+    background-color: $color-gray-e8e;
+    border-color: $color-gray-70;
+    border-radius: 0.25rem;
+    font-size: 2rem;
+    width: 98%;
+  }
+}
