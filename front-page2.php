@@ -1,6 +1,14 @@
 <?php
 //Variables
-$banner_home = get_field('banner_home', 'option');
+$titulo_coluna1 = get_field('titulo_coluna1', 'option');
+$endereco = get_field('endereco', 'option');
+$titulo_coluna2 = get_field('titulo_coluna2', 'option');
+$titulo_coluna3 = get_field('titulo_coluna3', 'option');
+$icones_dos_contatos = get_field('icones_dos_contatos', 'option');
+$contatos = get_field('contatos', 'option');
+$newsletter = get_field('newsletter', 'option');
+$redes_sociais = get_field('redes_sociais', 'option');
+$vagas = get_field('vagas', 'option');
 ?>
 
 <?php get_header(); ?>
@@ -9,30 +17,28 @@ $banner_home = get_field('banner_home', 'option');
 <main id="ica-content">
     <div class="ica-com com-carousel com-home swiper-container">
         <div class="swiper-wrapper">
-              <?php 
-                foreach ($banner_home as $r ) { ?>
             <div class="com-item swiper-slide">
                 <div class="item-media swiper-slide-img-home">
-                    <?php if( get_field('imagem_banner_home') ): ?>
-                        <img src="<?php the_field('imagem_banner_home'); ?>" />
-                    <?php endif; ?>
+                    <img src="<?php echo get_template_directory_uri() . '/images/bg-banner.jpg' ?>" alt="" />
                 </div>
                 <div class="item-content ica-the the-highlight">
-                    <h1 class="item-title">
-                      <?php if (!empty( $titulo_banner_home )) : echo $titulo_banner_home; endif ?>
-                    </h1>
-                    <?php 
-                      foreach ($banner_home as $r ) { ?>
-                        <a href="<?php if (!empty( $r['url_botoes_banner_home'] )) : echo $r['url_botoes_banner_home']; endif ?>" class="ica-but but-light">
-                            <?php if (!empty( $rotulo_botoes_banner_home )) : echo $rotulo_botoes_banner_home; endif ?>
-                        </a>
-                    <?php } //end foreach               
-                        ?>
+                    <h1 class="item-title"><span>Consultoria</span> especializada em estratégia e inovação do <span>meio
+                            ambiente</span></h1>
+                    <a href="#" class="ica-but but-light">Sobre a iCare</a>
+                    <a href="#" class="ica-but but-light">Áreas de Atuação</a>
                 </div>
             </div>
-
-            <?php } //end foreach               
-            ?>
+            <div class="com-item swiper-slide">
+                <div class="item-media swiper-slide-img-home">
+                    <img src="<?php echo get_template_directory_uri() . '/images/bg-banner.jpg' ?>" alt="" />
+                </div>
+                <div class="item-content ica-the the-highlight">
+                    <h1 class="item-title"><span>Consultoria</span> especializada em estratégia e inovação do <span>meio
+                            ambiente</span></h1>
+                    <a href="#" class="ica-but but-light">Sobre a iCare</a>
+                    <a href="#" class="ica-but but-light">Áreas de Atuação</a>
+                </div>
+            </div>
         </div>
     </div>
 
