@@ -175,6 +175,7 @@
                         foram apoiadas: </p>
                 </div>
             </div>
+            
             <div class="sec-itens">
                 <div class="item-media">
                     <img src="<?php echo get_template_directory_uri() . '/images/afd.png' ?>" alt="afd">
