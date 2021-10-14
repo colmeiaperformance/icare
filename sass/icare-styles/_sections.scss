@@ -472,6 +472,7 @@
 	}
 	.sec-members {
 		margin-top: 4rem;
+		display: flex;
 		.members-column {
 			.member {
 				border: 1px solid $color-default-green;
@@ -500,52 +501,31 @@
 	}
 }
 
-@media (max-width: 1024px) {
-
-    @media screen and (max-width: 867px) and (min-width: 610px) {
-        .ica-sec.sec-numbers .sec-content {
-            padding: 0 10rem;
-        }
-    }
-    @media screen and (max-width: 700px) and (min-width: 610px) {
-        .ica-sec.sec-numbers .sec-content {
-            padding: 0 8rem;
-        }
-    }
-    @media screen and (max-width: 1323px) and (min-width: 787px) {
-        .ica-sec.sec-partners .sec-itens {
-            padding: 0 8rem;
-        }
-    }
-    @media screen and (max-width: 1423px) and (min-width: 1062px) {
-        .ica-sec.sec-partners .sec-itens {
-            padding: 0 18rem;
-        }
-    }
-    @media screen and (max-width: 891px) and (min-width: 301px) {
-        .ica-sec.sec-notice .item-media {
-            width: 100%;
-        }
-    }
-    @media screen and (max-width: 1023px) and (min-width: 619px) {
-        .ica-sec.sec-notice .sec-itens {
-            padding: 0 18rem;
-        }
-    }
-}
-@media screen and (max-width: 1024px) and (min-width: 450px) {
-    .ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-services .service {
-        height: 13em;
-        width: 13em;
-    }
-    .ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-description {
-        padding: 0 1.3rem;
-    }
-}
-@media (max-width: 1407px) {
-    .ica-sec.sec-aboutus .ica-wrapper .sec-content .content-complement {
-        justify-content: center;
-        text-align: center;
-        max-width: 680px;
-    }
+.ica-sec.sec-erro{
+	height: 100vh;
+	display: flex;
+	text-align: center;
+	.sec-wrapper{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		
+		h1{
+			font-size: 16em;
+			margin: 0;
+		}
+		h2{
+			font-size: 6em;
+			text-transform: none;
+			margin-top: 0;
+		}
+		p{
+			font-size: 2.4em;
+		}
+		a{
+			margin-top: 5rem;
+		}
+	}
 }
