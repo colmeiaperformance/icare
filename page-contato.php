@@ -1,12 +1,18 @@
 <?php get_header(); ?>
 <?php get_template_part('template-parts/header-pages'); ?>
 
+<?php
+//Variables
+$imagem_contato = get_field('imagem_contato', 'option');
+$posicao_da_imagem_contato = get_field('posicao_da_imagem_contato', 'option');
+
+?>
 <!-- O conteúdo vai aqui -->
 <main>
     <section class="ica-sec sec-contact">
         <div class="ica-wrapper">
             <div class="sec-media">
-                <img src="<?php echo get_template_directory_uri() . '/images/contact.jpg' ?>" alt="" />
+                <img src="<?php the_field('imagem_contato'); ?>" alt="" />
             </div>
             <div class="sec-form">
                 <form action="">
