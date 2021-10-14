@@ -1,6 +1,10 @@
 <?php
 //Variables
-$banner_home = get_field('banner_home', 'option');
+$imagem_banner_home = get_field('imagem_banner_home', 'option');
+$titulo_banner_home = get_field('titulo_banner_home', 'option');
+$rotulo_botoes_banner_home = get_field('rotulo_botoes_banner_home', 'option');
+$url_botoes_banner_home = get_field('url_botoes_banner_home', 'option');
+
 ?>
 
 <?php get_header(); ?>
