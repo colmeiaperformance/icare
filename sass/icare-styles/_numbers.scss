@@ -1,0 +1,14 @@
+.ica-sec.sec-numbers {
+	background-color: $color-green-240;
+	.sec-content {
+		display: flex;
+		align-items: top;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.sec-item {
+			margin: 2.8rem;
+			width: 16%;
+			min-width: 16em;
+		}
+	}
+}

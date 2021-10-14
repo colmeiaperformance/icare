@@ -583,3 +583,28 @@
         }
     }
 }
+
+.ica-sec.sec-whatwedo {
+	.sec-content {
+		margin-bottom: 4rem;
+		display: flex;
+		min-height: 516px;
+		.sec-item {
+			border: 1px solid $color-default-green;
+			padding: 2rem;
+			ul {
+				text-align: left;
+			}
+			li {
+				color: $color-gray-222;
+			}
+			.media-seta {
+				padding-right: 1rem;
+			}
+			.media-aside {
+				text-align: left;
+				padding-right: 1rem;
+			}
+		}
+	}
+}
