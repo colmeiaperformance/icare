@@ -1,9 +1,19 @@
+.sec-notice{
+    .single-notice{
+        text-align: center;
+        border-left: 1px solid #13857f;
+        .notice-content{
+            text-align: left;
+        } 
+    }
+}
+
 @media (min-width: 1025px) {
     .single-notice {
         img {
             width: 100%;
             height: auto;
-            max-width: 70%;
+            max-width: 100%;
         }
     }
 }

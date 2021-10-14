@@ -31,6 +31,12 @@
 	//TEXTS//
 	/////*/
 
+*{
+	::selection {
+		background: $color-default-green;
+		color: $color-white;
+	}
+}
 .ica-the.the-highlight p,
 .ica-the.the-highlight li,
 .ica-the.the-highlight label,

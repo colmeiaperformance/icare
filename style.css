@@ -715,6 +715,7 @@ a:focus .ica-but {
     ////////*/
 .ica-sec.sec-testimony .sec-item .item-content,
 .ica-map-unidade,
+.single-notice,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -1902,6 +1903,15 @@ body {
 /*/////////
 	//TEXTS//
 	/////*/
+* ::-moz-selection {
+  background: #13857f;
+  color: #fff;
+}
+* ::selection {
+  background: #13857f;
+  color: #fff;
+}
+
 .ica-the.the-highlight p,
 .ica-the.the-highlight li,
 .ica-the.the-highlight label,
@@ -3006,11 +3016,20 @@ h6 {
   }
 }
 
+.sec-notice .single-notice {
+  text-align: center;
+  border-left: 1px solid #13857f;
+}
+
+.sec-notice .single-notice .notice-content {
+  text-align: left;
+}
+
 @media (min-width: 1025px) {
   .single-notice img {
     width: 100%;
     height: auto;
-    max-width: 70%;
+    max-width: 100%;
   }
 }
 
