@@ -1,16 +1,3 @@
-<?php
-//Variables
-$titulo_coluna1 = get_field('titulo_coluna1', 'option');
-$endereco = get_field('endereco', 'option');
-$titulo_coluna2 = get_field('titulo_coluna2', 'option');
-$titulo_coluna3 = get_field('titulo_coluna3', 'option');
-$icones_dos_contatos = get_field('icones_dos_contatos', 'option');
-$contatos = get_field('contatos', 'option');
-$newsletter = get_field('newsletter', 'option');
-$redes_sociais = get_field('redes_sociais', 'option');
-$vagas = get_field('vagas', 'option');
-?>
-
 <?php get_header(); ?>
 <?php get_template_part('template-parts/header-home'); ?>
 
