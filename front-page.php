@@ -1,16 +1,3 @@
-<?php
-//Variables
-$titulo_coluna1 = get_field('titulo_coluna1', 'option');
-$endereco = get_field('endereco', 'option');
-$titulo_coluna2 = get_field('titulo_coluna2', 'option');
-$titulo_coluna3 = get_field('titulo_coluna3', 'option');
-$icones_dos_contatos = get_field('icones_dos_contatos', 'option');
-$contatos = get_field('contatos', 'option');
-$newsletter = get_field('newsletter', 'option');
-$redes_sociais = get_field('redes_sociais', 'option');
-$vagas = get_field('vagas', 'option');
-?>
-
 <?php get_header(); ?>
 <?php get_template_part('template-parts/header-home'); ?>
 
@@ -54,13 +41,13 @@ $vagas = get_field('vagas', 'option');
                 </div>
 
             </div>
-            <div class="sec-arrows">
+            <!-- <div class="sec-arrows">
 
                 <ul class="arrows-left">
                     <li>
                         <div class="arrow-container">
                             <p class="icon">
-                                <img src="<?php echo get_template_directory_uri() . '/images/icon-planta.png' ?>"
+                                <img src="<?php // echo get_template_directory_uri() . '/images/icon-planta.png' ?>"
                                     alt="">
                             </p>
                             <h3>Biodiversidade</h3>
@@ -69,7 +56,7 @@ $vagas = get_field('vagas', 'option');
                     <li>
                         <div class="arrow-container">
                             <p class="icon">
-                                <img src="<?php echo get_template_directory_uri() . '/images/icon-reciclavel.png' ?>"
+                                <img src="<?php // echo get_template_directory_uri() . '/images/icon-reciclavel.png' ?>"
                                     alt="">
                             </p>
                             <h3>Finanças Sustentáveis</h3>
@@ -78,7 +65,7 @@ $vagas = get_field('vagas', 'option');
                     <li>
                         <div class="arrow-container">
                             <p class="icon">
-                                <img src="<?php echo get_template_directory_uri() . '/images/icon-folha.png' ?>" alt="">
+                                <img src="<?php // echo get_template_directory_uri() . '/images/icon-folha.png' ?>" alt="">
                             </p>
                             <h3>Clima</h3>
                         </div>
@@ -89,7 +76,7 @@ $vagas = get_field('vagas', 'option');
                     <li>
                         <div class="arrow-container">
                             <p class="icon"><img
-                                    src="<?php echo get_template_directory_uri() . '/images/icon-lampada.png' ?>"
+                                    src="<?php // echo get_template_directory_uri() . '/images/icon-lampada.png' ?>"
                                     alt=""></p>
                             <h3>Entenda</h3>
                             <p>Através das nossas capacidades para cada área.</p>
@@ -98,7 +85,7 @@ $vagas = get_field('vagas', 'option');
                     <li>
                         <div class="arrow-container">
                             <p class="icon"><img
-                                    src="<?php echo get_template_directory_uri() . '/images/icon-cogs.png' ?>" alt="">
+                                    src="<?php // echo get_template_directory_uri() . '/images/icon-cogs.png' ?>" alt="">
                             </p>
                             <h3>Avalie</h3>
                             <p>Com nossos diagnósticos e indicadores.</p>
@@ -108,13 +95,71 @@ $vagas = get_field('vagas', 'option');
                     <li>
                         <div class="arrow-container">
                             <p class="icon"><img
-                                    src="<?php echo get_template_directory_uri() . '/images/icon-target.png' ?>" alt="">
+                                    src="<?php // echo get_template_directory_uri() . '/images/icon-target.png' ?>" alt="">
                             </p>
                             <h3>Realize</h3>
                             <p>Planos de ação ideais para o seu negócio ou projeto.</p>
                         </div>
                     </li>
                 </ul>
+            </div> -->
+
+            <div class="sec-atuacao">
+                <div class="atuacao-items">
+                    <div class="atuacao-item">
+                        <p class="icon">
+                            <img class="atuacao-img"
+                                src="<?php echo get_template_directory_uri() . '/images/icon-planta.png' ?>" alt="">
+                        </p>
+                        <h3>Biodiversidade</h3>
+                    </div>
+                    <div class="atuacao-item">
+                        <p class="icon">
+                            <img class="atuacao-img"
+                                src="<?php echo get_template_directory_uri() . '/images/icon-reciclavel.png' ?>" alt="">
+                        </p>
+                        <h3>Finanças Sustentáveis</h3>
+                    </div>
+                    <div class="atuacao-item">
+                        <p class="icon">
+                            <img class="atuacao-img"
+                                src="<?php echo get_template_directory_uri() . '/images/icon-folha.png' ?>" alt="">
+                        </p>
+                        <h3>Clima</h3>
+                    </div>
+                </div>
+                <div class="atuacao-process">
+                    <div class="process-item">
+                        <p class="icon">
+                            <img class="process-img"
+                                src="<?php echo get_template_directory_uri() . '/images/icon-lampada.png' ?>" alt="">
+                        </p>
+                        <div class="item-content">
+                            <h3>Entenda</h3>
+                            <p>Através das nossas capacidades para cada área.</p>
+                        </div>
+                    </div>
+                    <div class="process-item">
+                        <p class="icon">
+                            <img class="process-img"
+                                src="<?php echo get_template_directory_uri() . '/images/icon-cogs.png' ?>" alt="">
+                        </p>
+                        <div class="item-content">
+                            <h3>Avalie</h3>
+                            <p>Com nossos diagnósticos e indicadores.</p>
+                        </div>
+                    </div>
+                    <div class="process-item">
+                        <p class="icon">
+                            <img class="process-img"
+                                src="<?php echo get_template_directory_uri() . '/images/icon-target.png' ?>" alt="">
+                        </p>
+                        <div class="item-content">
+                            <h3>Realize</h3>
+                            <p>Planos de ação ideais para o seu negócio ou projeto.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
