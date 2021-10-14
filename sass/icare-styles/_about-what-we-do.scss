@@ -33,7 +33,7 @@
         position: absolute;
         pointer-events: none;
     }
-    
+
     .sec-item:after {
         border-color: rgba(232, 232, 232, 0);
         border-left-color: $default-color;
@@ -48,12 +48,116 @@
     }
 }
 
+.sec-atuacao {
+    display: block;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    .atuacao-items {
+        width: 100%;
+        display: flex;
+        .atuacao-item {
+            background-color: $color-default-green;
+            width: calc(100% / 3);
+            padding: 1rem 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 0.6rem;
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+            .icon {
+                margin-top: 0;
+            }
+            h3 {
+                color: $default-color;
+                margin-top: 0;
+            }
+            .atuacao-img {
+                width: 50%;
+            }
+        }
+    }
+}
+.atuacao-process {
+    border: 3px solid $color-default-green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    .process-item {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        .icon {
+            width: 20%;
+            .process-img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .item-content{
+            p{
+                margin-top:0;
+            }
+        }
+    }
+}
 
 @media (min-width: 1025px) {
     /* O que fazemos? */
-    
+
+    .sec-atuacao {
+        display: flex;
+        .atuacao-items {
+            width: 25vw;
+            display: block;
+            margin-right: 10px;
+            .atuacao-item {
+                width: 100%;
+                font-size: 1rem;
+                padding: 2rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .atuacao-img {
+                    width: 25%;
+                }
+            }
+        }
+    }
+    .atuacao-process {
+        padding-top: auto;
+        padding-bottom: auto;
+        .process-item {
+            display: flex;
+            width: 55%;
+            .icon {
+                width: 18%;
+                .process-img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .item-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h3 {
+                    margin-top: 0;
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-size: 1.75rem;
+                }
+            }
+        }
+    }
+
     //Setas
-    
+
     //Arrows on the right
     %clearfix {
         &::after {
@@ -62,7 +166,7 @@
             clear: both;
         }
     }
-    
+
     .sec-arrows {
         display: flex;
         margin-top: 50px;
@@ -75,7 +179,7 @@
             width: 75%;
         }
     }
-    
+
     // Setas da esquerda
     .arrows-left {
         @extend %clearfix;
@@ -87,7 +191,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
+
         li {
             width: $height - 30px;
             background: $color-default-green;
@@ -96,7 +200,7 @@
             color: $text-color;
             position: relative;
             height: calc(416px / 3);
-            
+
             &::before,
             &::after {
                 background: $default-color;
@@ -105,25 +209,25 @@
                 height: $height / 3;
                 width: calc(100% - 30px);
             }
-            
+
             &::before,
             &::after {
                 background-color: $color-default-green;
             }
-            
+
             .arrow-container {
                 display: flex;
                 align-items: center;
                 justify-content: start;
                 z-index: 3;
                 padding: 2rem;
-                
+
                 .icon {
                     margin-right: 20px;
                     width: 73px;
                     z-index: 5;
                 }
-                
+
                 h3 {
                     z-index: 5;
                     margin-top: 0px;
@@ -136,7 +240,7 @@
                     font-size: 1.25em;
                     line-height: 1.2;
                 }
-                
+
                 &::before {
                     position: absolute;
                     content: "";
@@ -150,7 +254,7 @@
                     display: none;
                 }
             }
-            
+
             &:first-child {
                 &::before,
                 &::after {
@@ -158,7 +262,7 @@
                     left: 30px;
                     border-right: none;
                 }
-                
+
                 .arrow-container::before {
                     position: absolute;
                     content: "";
@@ -172,7 +276,7 @@
                     background: $default-color;
                 }
             }
-            
+
             &:nth-child(2) {
                 &::before,
                 &::after {
@@ -212,7 +316,7 @@
                     background: $default-color;
                 }
             }
-            
+
             &:last-child {
                 &::before,
                 &::after {
@@ -220,7 +324,7 @@
                     left: 30px;
                     border-right: none;
                 }
-                
+
                 .arrow-container::before {
                     position: absolute;
                     content: "";
@@ -234,7 +338,7 @@
                     background: $default-color;
                 }
             }
-            
+
             &::before,
             &::after,
             .arrow-container::before,
@@ -243,14 +347,14 @@
             }
         }
     }
-    
+
     // Setas da direita
     .arrows-right {
         @extend %clearfix;
         list-style: none;
         padding: 0;
         text-align: center;
-        
+
         li {
             float: left;
             width: calc(100% / 3);
@@ -258,7 +362,7 @@
             position: relative;
             height: $height;
             line-height: $height;
-            
+
             &::before,
             &::after {
                 background: $default-color;
@@ -272,32 +376,32 @@
                 border-right: $arrow-size solid $color-default-green;
                 border-left: $arrow-size solid $color-default-green;
             }
-            
+
             &::before {
                 transform: skew(25deg);
                 top: 0;
                 border-top: $arrow-size solid $color-default-green;
             }
-            
+
             &::after {
                 transform: skew(-25deg);
                 bottom: 0;
                 border-bottom: $arrow-size solid $color-default-green;
             }
-            
+
             .arrow-container {
                 display: block;
                 height: 100%;
                 position: relative;
                 z-index: 4;
                 padding: 7rem 5rem 7rem 10rem;
-                
+
                 .icon {
                     margin-left: auto;
                     margin-right: auto;
                     width: 78px;
                 }
-                
+
                 h3,
                 p {
                     position: relative;
@@ -312,7 +416,7 @@
                     font-size: 1.25em;
                     line-height: 1.2;
                 }
-                
+
                 &::before {
                     content: "";
                     position: absolute;
@@ -323,7 +427,7 @@
                     display: none;
                 }
             }
-            
+
             &:last-child {
                 &::before,
                 &::after {
@@ -331,7 +435,7 @@
                     left: 30px;
                     border-right: none;
                 }
-                
+
                 .arrow-container::before {
                     position: absolute;
                     z-index: 3;
@@ -347,7 +451,7 @@
                     border-bottom-right-radius: $height / 100;
                 }
             }
-            
+
             &::before,
             &::after,
             .arrow-container::before,
@@ -358,13 +462,12 @@
     }
 }
 
-
 @media (max-width: 1024px) {
     /* O que fazemos? */
     .sec-arrows {
         display: block;
     }
-    
+
     .arrows-left {
         position: relative;
         z-index: 2;
@@ -397,7 +500,7 @@
         }
         li {
             background: $color-default-green;
-            
+
             h3 {
                 position: relative;
                 z-index: 5;
