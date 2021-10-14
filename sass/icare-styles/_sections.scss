@@ -264,15 +264,7 @@
 		}
 	}
 }
-.ica-sec.sec-header {
-	.sec-media {
-		p {
-			position: absolute;
-			top: 46%;
-			left: 46%;
-		}
-	}
-}
+
 .ica-sec.sec-bolg {
 	display: flex;
 	justify-content: center;
@@ -425,77 +417,6 @@
 			.media-aside {
 				text-align: left;
 				padding-right: 1rem;
-			}
-		}
-	}
-}
-.ica-sec.sec-contact {
-	.sec-form {
-		form {
-			display: flex;
-			flex-direction: column;
-			text-align: left;
-			label {
-				color: $color-default-green;
-				font-weight: bold;
-				&:first-child {
-					margin-top: 0;
-				}
-			}
-			textarea {
-				margin-top: 1.6rem;
-				border-radius: 0.6rem;
-				padding: 0.6rem 1rem;
-				font-size: 1.6em;
-				border: 2px solid $color-default-green;
-			}
-			input[type="submit"] {
-				width: 180px;
-				border: 2px solid $color-default-green;
-			}
-			input[type="text"] {
-				border-radius: 0.6rem;
-				padding: 0.6rem 1rem;
-				border: 2px solid $color-default-green;
-			}
-			input[type="email"] {
-				border-radius: 0.6rem;
-				padding: 0.6rem 1rem;
-				border: 2px solid $color-default-green;
-			}
-		}
-	}
-}
-.ica-sec.sec-equipe {
-	.sec-description {
-		text-align: left;
-	}
-	.sec-members {
-		margin-top: 4rem;
-		display: flex;
-		.members-column {
-			.member {
-				border: 1px solid $color-default-green;
-				border-radius: 10rem;
-				display: flex;
-				padding: 1.6rem;
-				text-align: left;
-				margin-bottom: 3.2rem;
-				.member-media {
-					margin: 0;
-					img {
-						border-radius: 12rem;
-					}
-				}
-				.member-description {
-					margin: 0 2rem;
-					text-align: left;
-					max-width: 400px;
-					word-wrap: break-word;
-				}
-				.member-function {
-					font-weight: bold;
-				}
 			}
 		}
 	}

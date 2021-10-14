@@ -670,7 +670,7 @@ a:focus .ica-but {
 .ica-galery-unidade,
 .ica-text-unidade,
 .ica-service-unidade,
-.ica-sec.sec-equipe .sec-members .members-column .member,
+.ica-sec.sec-equipe .sec-members,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -765,7 +765,7 @@ a:focus .ica-but {
 .ica-com.com-banner .item-content h1,
 .ica-report-item,
 .ica-sec.sec-what .sec-header,
-.ica-sec.sec-equipe .sec-members .members-column .member .member-media,
+.ica-sec.sec-equipe .sec-members,
 .clear {
   display: inline-block;
   margin-left: 1.5%;
@@ -1233,12 +1233,6 @@ a:focus .ica-but {
   padding-top: 1.6rem;
 }
 
-.ica-sec.sec-header .sec-media p {
-  position: absolute;
-  top: 46%;
-  left: 46%;
-}
-
 .ica-sec.sec-bolg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1465,92 +1459,6 @@ a:focus .ica-but {
 .ica-sec.sec-whatwedo .sec-content .sec-item .media-aside {
   text-align: left;
   padding-right: 1rem;
-}
-
-.ica-sec.sec-contact .sec-form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: left;
-}
-
-.ica-sec.sec-contact .sec-form form label {
-  color: #13857f;
-  font-weight: bold;
-}
-
-.ica-sec.sec-contact .sec-form form label:first-child {
-  margin-top: 0;
-}
-
-.ica-sec.sec-contact .sec-form form textarea {
-  margin-top: 1.6rem;
-  border-radius: 0.6rem;
-  padding: 0.6rem 1rem;
-  font-size: 1.6em;
-  border: 2px solid #13857f;
-}
-
-.ica-sec.sec-contact .sec-form form input[type="submit"] {
-  width: 180px;
-  border: 2px solid #13857f;
-}
-
-.ica-sec.sec-contact .sec-form form input[type="text"] {
-  border-radius: 0.6rem;
-  padding: 0.6rem 1rem;
-  border: 2px solid #13857f;
-}
-
-.ica-sec.sec-contact .sec-form form input[type="email"] {
-  border-radius: 0.6rem;
-  padding: 0.6rem 1rem;
-  border: 2px solid #13857f;
-}
-
-.ica-sec.sec-equipe .sec-description {
-  text-align: left;
-}
-
-.ica-sec.sec-equipe .sec-members {
-  margin-top: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.ica-sec.sec-equipe .sec-members .members-column .member {
-  border: 1px solid #13857f;
-  border-radius: 10rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.6rem;
-  text-align: left;
-  margin-bottom: 3.2rem;
-}
-
-.ica-sec.sec-equipe .sec-members .members-column .member .member-media {
-  margin: 0;
-}
-
-.ica-sec.sec-equipe .sec-members .members-column .member .member-media img {
-  border-radius: 12rem;
-}
-
-.ica-sec.sec-equipe .sec-members .members-column .member .member-description {
-  margin: 0 2rem;
-  text-align: left;
-  max-width: 400px;
-  word-wrap: break-word;
-}
-
-.ica-sec.sec-equipe .sec-members .members-column .member .member-function {
-  font-weight: bold;
 }
 
 .ica-sec.sec-erro {
@@ -3104,5 +3012,137 @@ h6 {
     height: auto;
     max-width: 70%;
   }
+}
+
+.ica-sec.sec-contact .sec-media {
+  margin-bottom: 20px;
+}
+
+.ica-sec.sec-contact .sec-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.ica-sec.sec-contact .sec-form form label {
+  color: #13857f;
+  font-weight: bold;
+}
+
+.ica-sec.sec-contact .sec-form form label:first-child {
+  margin-top: 0;
+}
+
+.ica-sec.sec-contact .sec-form form textarea {
+  margin-top: 1.6rem;
+  border-radius: 0.6rem;
+  padding: 0.6rem 1rem;
+  font-size: 1.6em;
+  border: 2px solid #13857f;
+}
+
+.ica-sec.sec-contact .sec-form form input[type="submit"] {
+  width: 180px;
+  border: 2px solid #13857f;
+}
+
+.ica-sec.sec-contact .sec-form form input[type="text"] {
+  border-radius: 0.6rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid #13857f;
+}
+
+.ica-sec.sec-contact .sec-form form input[type="email"] {
+  border-radius: 0.6rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid #13857f;
+}
+
+.ica-sec.sec-equipe .sec-description {
+  text-align: left;
+}
+
+.ica-sec.sec-equipe .sec-description strong {
+  color: #555;
+}
+
+.ica-sec.sec-equipe .sec-members {
+  margin-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 50px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.ica-sec.sec-equipe .sec-members .member {
+  border: 1px solid #13857f;
+  border-radius: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.6rem;
+  text-align: left;
+  margin-bottom: 3.2rem;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  width: 97%;
+}
+
+.ica-sec.sec-equipe .sec-members .member .member-media {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin: 0;
+  width: 135px;
+}
+
+.ica-sec.sec-equipe .sec-members .member .member-media img {
+  border-radius: 12rem;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 135px;
+}
+
+.ica-sec.sec-equipe .sec-members .member .member-description {
+  margin: 0 2rem;
+  text-align: left;
+  word-wrap: break-word;
+  width: auto;
+}
+
+.ica-sec.sec-equipe .sec-members .member .member-description .member-name {
+  text-transform: none;
+}
+
+.ica-sec.sec-equipe .sec-members .member .member-function {
+  font-weight: bold;
+}
+
+@media (max-width: 1025px) {
+  .ica-sec.sec-equipe .sec-members {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+}
+
+.ica-sec.sec-header .sec-media p {
+  position: absolute;
+  top: 46%;
+  left: 46%;
 }
 /*# sourceMappingURL=style.css.map */
