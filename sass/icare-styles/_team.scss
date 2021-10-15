@@ -6,10 +6,11 @@
 		}
 	}
 	.sec-members {
-		margin-top: 4rem;
 		display: grid;
 		gap: 50px;
 		grid-template-columns: repeat(2, 1fr);
+		margin: 0 auto;
+		margin-top: 4rem;
 		width: 100%;
 		.member {
 			border: 1px solid $color-default-green;
@@ -18,8 +19,6 @@
 			padding: 1.6rem;
 			text-align: left;
 			margin-bottom: 3.2rem;
-			margin-left: 1.5%;
-			margin-right: 1.5%;
 			width: 97%;
 			.member-media {
 				align-items: center;

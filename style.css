@@ -2874,12 +2874,13 @@ h6 {
 }
 
 .ica-sec.sec-equipe .sec-members {
-  margin-top: 4rem;
   display: -ms-grid;
   display: grid;
   gap: 50px;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  margin-top: 4rem;
   width: 100%;
 }
 
@@ -2892,8 +2893,6 @@ h6 {
   padding: 1.6rem;
   text-align: left;
   margin-bottom: 3.2rem;
-  margin-left: 1.5%;
-  margin-right: 1.5%;
   width: 97%;
 }
 
