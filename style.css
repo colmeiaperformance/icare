@@ -1345,6 +1345,15 @@ body {
 /*/////////
 	//TEXTS//
 	/////*/
+* ::-moz-selection {
+  background: #13857f;
+  color: #fff;
+}
+* ::selection {
+  background: #13857f;
+  color: #fff;
+}
+
 .ica-the.the-highlight p,
 .ica-the.the-highlight li,
 .ica-the.the-highlight label,
@@ -2790,11 +2799,20 @@ h6 {
   font-weight: bold;
 }
 
+.sec-notice .single-notice {
+  text-align: center;
+  border-left: 1px solid #13857f;
+}
+
+.sec-notice .single-notice .notice-content {
+  text-align: left;
+}
+
 @media (min-width: 1025px) {
   .single-notice img {
     width: 100%;
     height: auto;
-    max-width: 70%;
+    max-width: 100%;
   }
 }
 
@@ -2990,139 +3008,11 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
-  text-align: center;
-}
-
-#ica-footer .footer-nav .nav-container .nav-item {
-  border-right: 1px solid #13857f;
-  width: auto;
-  padding: 0 1rem;
-  margin: 1.6rem 0;
-}
-
-@media all and (max-width: 1024px) {
-  #ica {
-    font-size: calc(8px + 3 * ((100vw - 240px) / (1024 - 240)));
-  }
-  body {
-    font-size: calc(7px + 2 * ((100vw - 240px) / (1024 - 240)));
-  }
-  #ica-shortcuts {
-    display: none;
-  }
-  #ica-navigation {
-    display: none;
-    font-size: 2em;
-  }
-  #ica-navigation + .ica-com.com-jumper.jumper-navigation {
-    visibility: visible;
-  }
-  #ica-navigation:target {
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: auto;
-    margin: 0;
-    z-index: 100;
-    background-color: #fff;
-  }
-  #ica-navigation:target .navigation-list {
-    position: absolute;
-    width: 100%;
-    display: block;
-    text-align: center;
-    top: 50%;
-    left: 0;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-    margin: 0;
-  }
-  #ica-navigation:target .navigation-item {
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  #ica-navigation:target .navigation-item a {
-    display: block;
-  }
-  #ica-navigation:target ~ .ica-com.com-jumper.jumper-top {
-    display: block;
-    z-index: 100;
-  }
-  #ica-navigation .navigation-list {
-    text-align: end;
-  }
-  #ica-navigation ~ .ica-com.com-jumper.jumper-navigation {
-    display: block;
-  }
-}
-
-/*
-/////////////
-////THEMES//
-///////////
-*/
-.ica-the.the-highlight {
-  background-color: transparent;
-  color: #fff;
-}
-
-.ica-the.the-white {
-  background-color: #ffffff;
-}
-
-.ica-the.the-graye8e {
-  background-color: #e8e8e8;
-}
-
-.ica-the.the-green240 {
-  background-color: #204240;
-}
-
-.ica-the.the-green57f {
-  background-color: #13857f;
-}
-
-.ica-the.the-contrast {
-  color: #fff;
-}
-
-.ica-the.the-gray-222 {
-  color: #222;
-}
-
-/*/////////
-	//TEXTS//
-	/////*/
-* ::-moz-selection {
-  background: #13857f;
-  color: #fff;
-}
-* ::selection {
-  background: #13857f;
-  color: #fff;
-}
-
-.ica-the.the-highlight p,
-.ica-the.the-highlight li,
-.ica-the.the-highlight label,
-.ica-the.the-highlight input {
-  color: #fff;
-}
-
-span {
-  color: #b6d8a9;
-=======
   height: 12em;
   width: 12em;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   margin: 0 2.5rem;
->>>>>>> task-integracao-acf
 }
 
 .ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-services .service p {
@@ -4052,26 +3942,8 @@ span {
   text-align: left;
 }
 
-<<<<<<< HEAD
-.sec-notice .single-notice {
-  text-align: center;
-  border-left: 1px solid #13857f;
-}
-
-.sec-notice .single-notice .notice-content {
-  text-align: left;
-}
-
-@media (min-width: 1025px) {
-  .single-notice img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-  }
-=======
 .ica-sec.sec-whatwedo .sec-content .sec-item li {
   color: #222;
->>>>>>> task-integracao-acf
 }
 
 .ica-sec.sec-whatwedo .sec-content .sec-item .media-seta {
@@ -4168,22 +4040,5 @@ span {
 
 .ica-sec.sec-localization .item-content .item-media {
   margin-right: 1.6rem;
-}
-
-/*
-//////////////
-////INSPECT//
-////////////
-*/
-*, *:before, *:after {
-  -webkit-box-shadow: inset 0 0 0 1px #000;
-          box-shadow: inset 0 0 0 1px #000;
-  background-color: rgba(255, 255, 212, 0.6);
-}
-
-article, aside, div, footer, header, hgroup, nav, section {
-  -webkit-box-shadow: inset 0 0 0 1px #0000ff;
-          box-shadow: inset 0 0 0 1px #0000ff;
-  background-color: rgba(255, 233, 233, 0.2);
 }
 /*# sourceMappingURL=style.css.map */
