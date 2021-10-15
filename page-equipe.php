@@ -12,11 +12,8 @@ $imagem_membro = get_field('imagem_membro');
 <main>
     <section class="ica-sec sec-equipe">
         <div class="ica-wrapper">
-            <div class="page-featured-image">
-                <img src="<?php the_field('imagem_equipe'); ?>" alt="<?php the_field('titulo_equipe'); ?>" />
-            </div>
             <div class="sec-description">
-                <p><?php the_field('descricao_equipe'); ?></p>
+                <?php if(get_field('descricao_equipe')) { echo '<p>' . get_field('descricao_equipe') . '</p>'; } ?>
             </div>
             <div class="sec-members">
                       <?php 
@@ -28,7 +25,7 @@ $imagem_membro = get_field('imagem_membro');
                                 <div class="member-description">
                                     <h2 class="member-name"><?php echo $m['nome_membro'] ?></h2>
                                     <p class="member-function">
-                                        <?php echo $m['cargo_membro'] ?> - <?php echo $m['formacao_membro'] ?> 
+                                        <?php if (!empty( $m['cargo_membro'] )) : echo $m['cargo_membro']; endif ?> - <?php if (!empty( $m['formacao_membro'] )) : echo $m['formacao_membro']; endif ?>                                        
                                     </p>                          
                                 </div>
                             </div>
@@ -38,4 +35,5 @@ $imagem_membro = get_field('imagem_membro');
         </div>
     </section>
 </main>
+
 <?php get_footer() ?>
