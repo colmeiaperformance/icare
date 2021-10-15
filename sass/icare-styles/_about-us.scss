@@ -1,0 +1,58 @@
+.ica-sec.sec-aboutus {
+	.ica-wrapper {
+		padding-bottom: 5rem;
+		.sec-media {
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		.sec-content {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			.content-item {
+				display: flex;
+				flex-direction: column;
+				width: 49%;
+				min-width: 680px;
+				.item-services {
+					display: flex;
+					padding-top: 4.8rem;
+					padding-bottom: 1.6rem;
+					justify-content: center;
+					.service {
+						display: flex;
+						border: 2px solid $color-default-green;
+						justify-content: center;
+						text-align: center;
+						align-items: center;
+						height: 12em;
+						width: 12em;
+						transform: rotate(45deg);
+						margin: 0 2.5rem;
+						p {
+							margin: 0;
+							transform: rotate(-45deg);
+							font-weight: bold;
+							font-size: 1.8em;
+						}
+					}
+				}
+				.item-description {
+					display: flex;
+					justify-content: center;
+				}
+				.service-description {
+					display: flex;
+					justify-content: center;
+					text-align: center;
+					padding: 0 1.3rem;
+				}
+			}
+			.content-complement {
+				display: flex;
+				padding-top: 1.6rem;
+			}
+		}
+	}
+}

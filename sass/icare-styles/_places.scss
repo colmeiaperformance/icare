@@ -1,0 +1,25 @@
+.ica-sec.sec-places {
+	padding-top: 0;
+	.sec-item {
+		position: relative;
+		width: 49%;
+		margin: 0;
+	}
+	.item-content {
+		background-color: transparent;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		text-align: left;
+		padding: 4.8rem;
+		font-size: 20px;
+		* {
+			color: $color-white;
+		}
+	}
+	img {
+		width: 100%;
+		filter: brightness(0.34);
+	}
+}

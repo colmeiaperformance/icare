@@ -1,0 +1,38 @@
+.ica-sec.sec-acting {
+	.sec-content {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+}
+
+.ica-sec.sec-what {
+	.sec-header {
+		text-align: left;
+		margin: 0;
+		width: 100%;
+	}
+	.sec-content {
+		display: flex;
+		.sec-item {
+			display: flex;
+			width: 100%;
+			text-align: left;
+		}
+		.sec-itens {
+			.sec-item {
+				.item-header {
+					width: 28%;
+				}
+				.item-content {
+					width: 46%;
+				}
+			}
+		}
+		.sec-media {
+			display: flex;
+			align-items: center;
+		}
+	}
+}

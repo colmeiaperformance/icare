@@ -1,0 +1,43 @@
+.ica-sec.sec-notice {
+	.sec-content {
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		align-items: center;
+	}
+	.item-media {
+		.media-title {
+			position: absolute;
+			top: 8rem;
+			width: auto;
+		}
+	}
+	.sec-itens {
+		display: flex;
+		text-align: center;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		.item-content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 28%;
+			min-width: 28em;
+			margin: 1.6rem;
+			background-color: $color-white-opc-20;
+			border: 1px solid $color-gray-666;
+			border-radius: 1rem;
+			img {
+				border-radius: 1rem 1rem 0 0;
+			}
+			p {
+				color: $color-black;
+			}
+			.media-footer {
+				padding-bottom: 1.6rem;
+			}
+		}
+	}
+}
