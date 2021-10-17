@@ -24,8 +24,16 @@
                         </div>
                     </div>
 
-                    <?php endwhile; 
-                    else: ?>
+                    <?php endwhile; ?>
+
+                    <!-- Add the pagination functions here. -->
+                    <div class="pagination">
+                        <?php previous_post_link( '%link', '%title'); ?>
+                        <?php next_post_link( '%link', '%title' ); ?>
+                    </div>
+
+
+                    <?php else: ?>
                     <div class="blog-alert">
                         <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
                     </div>
