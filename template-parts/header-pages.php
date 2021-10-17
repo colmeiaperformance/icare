@@ -25,14 +25,8 @@
     </div>
 </header>
 <?php get_template_part('template-parts/breadcrumb'); ?>
-
-<section>
-    <div class="img-pages" style="background:url('<?php 
-    if ( has_post_thumbnail() ) {
-        echo get_the_post_thumbnail_url(); 
-    } else {
-        echo get_template_directory_uri() . '/images/banner-sobre.jpg';
-    }
-        ?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
-    </div>
-</section>
+<?php
+ if ( is_page() ) {
+    get_template_part('template-parts/thumbnail-pages');
+}
+?>
