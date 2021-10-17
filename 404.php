@@ -12,7 +12,7 @@
 			<p>
 				Desculpe, a página que você está procurando não existe.
 			</p>
-			<a href="#" class="ica-but but-conversion">
+			<a href="<?php echo home_url(); ?>" class="ica-but but-conversion">
 				Voltar para Home
 			</a>
 		</div>
