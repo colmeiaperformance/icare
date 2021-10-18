@@ -58,7 +58,9 @@
                             <p><?php the_excerpt(); ?></p>
                         </div>
                         <div class="media-footer">
-                            <a href="<?php the_permalink(); ?>" class="ica-but but-conversion">Leia Mais</a>
+                            <a href="<?php the_permalink(); ?>" class="ica-but but-conversion">
+                                <?php if(get_field('texto_dos_botoes_leia_mais')) { echo '' . get_field('texto_dos_botoes_leia_mais') . ''; } ?>
+                            </a>
                         </div>
                     </div>
 

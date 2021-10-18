@@ -12,9 +12,6 @@ $imagem_membro = get_field('imagem_membro');
 <main>
     <section class="ica-sec sec-equipe">
         <div class="ica-wrapper">
-            <div class="page-featured-image">
-                <img src="<?php the_field('imagem_equipe'); ?>" alt="<?php the_field('titulo_equipe'); ?>" />
-            </div>
             <div class="sec-description">
                 <p><?php the_field('descricao_equipe'); ?></p>
             </div>
