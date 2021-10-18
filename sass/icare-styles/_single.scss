@@ -6,6 +6,24 @@
             text-align: left;
         } 
     }
+    .pagination { 
+        width: 100%;
+        margin: 20px 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+        gap: 20px;
+        justify-content: space-between;
+        .ica-but {
+            font-size: 1em;
+            padding: 0.8rem 2.4rem;
+            margin-top: 0;
+            a {
+                color: #fff;
+                font-weight: 800;
+            }
+        }
+        
+    }
 }
 
 @media (min-width: 1025px) {
