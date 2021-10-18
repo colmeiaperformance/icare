@@ -227,6 +227,33 @@ body {
 	}
 }
 @media all and (max-width: 1024px) {
+
+        .menu-item-has-children a::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+    }
+
+    .sub-menu{
+        display: block;
+        background: #b6d8a9;
+        border-radius: 8px;
+        width: 60%;
+        margin: 0 auto;
+        a {
+            color: #fff!important;
+            font-size: 0.5em;
+            &::after {
+                display: none;
+            } 
+        }
+    }
+
 	#ica {
 		font-size: calc(8px + 3 * ((100vw - 240px) / (1024 - 240)));
 	}
