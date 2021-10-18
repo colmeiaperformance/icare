@@ -28,12 +28,8 @@
 
                     <!-- Add the pagination functions here. -->
                     <div class="pagination">
-                        <div class="ica-but but-conversion">
-                          <?php previous_post_link( '%link', '%title'); ?>
-                        </div>
-                         <div class="ica-but but-conversion">
-                            <?php next_post_link( '%link', '%title' ); ?> 
-                        </div>
+                        <?php previous_post_link( '%link', '%title'); ?>
+                        <?php next_post_link( '%link', '%title' ); ?> 
                     </div>
 
                     <?php else: ?>
