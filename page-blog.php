@@ -91,25 +91,19 @@
 
 
                     <?php
-
                     wp_reset_postdata(); 
-                    
                     else: ?>
                     <div class="blog-alert">
                         <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
                     </div>
                     <?php endif; ?>
 
-
                 </div>
             </div>
-            
 
             <?php get_template_part( '/template-parts/aside-blog' ) ?>
-
                 </div>
     </section>
-
 </main>
 
 <?php get_footer() ?>
