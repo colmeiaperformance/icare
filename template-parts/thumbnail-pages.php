@@ -1,4 +1,4 @@
-<section>
+<section class="ica-wrapper">
 
     <?php   
             if ( have_posts() ) : 

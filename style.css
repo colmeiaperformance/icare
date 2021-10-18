@@ -861,6 +861,26 @@ a:focus .ica-but {
   color: #fff;
 }
 
+.img-pages .img-pages-content .img-pages-content-title:before {
+  background: #fff;
+  content: "";
+  display: inline-block;
+  width: 50px;
+  margin: 0 .5em 0 -50px;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+}
+
+.img-pages .img-pages-content .img-pages-content-title:after {
+  background: #fff;
+  content: "";
+  display: inline-block;
+  width: 50px;
+  margin: 0 -50px 0 .5em;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+}
+
 /*
 ///////////////
 ////SECTIONS//
