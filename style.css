@@ -2629,7 +2629,6 @@ h6 {
       -ms-flex-align: stretch;
           align-items: stretch;
   text-align: center;
-  border: 1px solid #222;
   padding-bottom: 1rem;
 }
 
@@ -2777,7 +2776,6 @@ h6 {
       -ms-flex-align: stretch;
           align-items: stretch;
   text-align: center;
-  border: 1px solid #222;
   padding-bottom: 1rem;
 }
 
@@ -3258,7 +3256,6 @@ h6 {
   min-width: 28em;
   margin: 1.6rem;
   background-color: rgba(255, 233, 233, 0.2);
-  border: 1px solid #666;
   border-radius: 1rem;
 }
 
