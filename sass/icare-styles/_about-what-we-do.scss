@@ -627,21 +627,43 @@
                 }
 			}
             .setinha {
-                // border-color: rgba(19, 133, 127, 0);
-                // border: 1px solid #13857f;
-                // border-width: 1px;
-                // margin-top: -150px;
-                // left: -26px;
-                // top: 51%;
-                // border-left: 0;
-                // border-bottom: 0;
-                // /* background: #e8e8e8; */
-                // content: "";
-                // height: 52px;
-                // width: 52px;
-                // position: absolute;
-                // pointer-events: none;
-                // transform: rotate(45deg);
+                &::before {
+                    border-left: 0;
+                    border: solid transparent;
+                    height: 0;
+                    width: 0;
+                    border-bottom: 0;
+                    content: "";
+                    pointer-events: none;
+                    border-color: rgba(19, 133, 127, 0);
+                    border-top-color: #e8e8e8;
+                    border-width: 42px;
+                    position: absolute;
+                    margin-left: -23px;
+                    left: 0;
+                    top: 104px;
+                    z-index: 11111;
+                    transform: rotate( -90deg);
+                }
+
+                &::after {
+                    border-left: 0;
+                    border: solid transparent;
+                    height: 0;
+                    width: 0;
+                    border-bottom: 0;
+                    content: "";
+                    pointer-events: none;
+                    border-color: rgba(19, 133, 127, 0);
+                    border-top-color: #1e8580;
+                    border-width: 42px;
+                    position: absolute;
+                    margin-left: -22px;
+                    left: 0;
+                    top: 104px;
+                    z-index: 1;
+                    transform: rotate(-90deg);
+                }
             }
             .item-media {
                 color:  $color-default-green;
