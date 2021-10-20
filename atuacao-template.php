@@ -96,22 +96,23 @@ Template Name: Template Atuação
     <section class="ica-sec sec-whatwedo ica-the the-graye8e" id="whatwedo">
         <div class="ica-wrapper">
             <div class="sec-header">
-                <h3 class="sec-title ica-the the-graye8e the-contrast">O que fazemos</h3>
+                <h3 class="sec-title ica-the the-graye8e">O que fazemos</h3>
             </div>
             <div class="sec-description">
                 <p>
                     A I Care Brasil possui três áreas de atuação que visam fornecer um conjunto abrangente
-                    de soluções para apoiar o processo de transição ambiental da sua empresa.
+                    de soluções para apoiar o processo de <strong>transição ambiental</strong> da sua empresa.
                 </p>
             </div>
             <div class="sec-content">
-                <div class="sec-item ">
+                <div class="sec-item">
                     <div class="item-media">
                         <img src="<?php echo get_template_directory_uri() . '/images/entenda.png' ?>" alt="Entenda">
                         <h3>Entenda</h3>
                         <p>
                             Através das nossas capacitações para cada área.
                         </p>
+                        <div class="seta"></div>
                         <ul class="whatwedo-list">
                             <li class="whatwedo-list-item">Mudança do Clima</li>
                             <li class="whatwedo-list-item">Metas Climáticas (ACT, SBT)</li>
@@ -120,29 +121,33 @@ Template Name: Template Atuação
                         </ul>
                     </div>
                 </div>
-                <div class="sec-item item-double ">
+                <div class="sec-item item-double">
                     <div class="item-media">
                         <img src="<?php echo get_template_directory_uri() . '/images/avalie.png' ?>" alt="Avalie">
                         <h3>Avalie</h3>
                         <p>
                             Com nossos diagnósticos e indicadores
                         </p>
-                        <div class="media-aside">
-                            <h3>Diagnósticos</h3>
-                            <ul class="whatwedo-list">
-                                <li class="whatwedo-list-item">Pegada Carbono - Inventário de Emissões</li>
-                                <li class="whatwedo-list-item">Avaliação de Risco</li>
-                            </ul>
-                        </div>
-                        <div class="media-aside">
-                            <h3>Indicadores / Reporte</h3>
-                            <ul class="whatwedo-list">
-                                <li class="whatwedo-list-item">Avaliação Estratégia de Descarbonização (ACT)</li>
-                                <li class="whatwedo-list-item">Relatório de Emissões (CDP)</li>
-                                <li class="whatwedo-list-item">Alinhamento de Metas 2°C Baseadas na Ciência (SBT)</li>
-                            </ul>
+                        <div class="seta"></div>
+                        <div class="item-double_container"> 
+                            <div class="media-aside">
+                                <h3>Diagnósticos</h3>
+                                <ul class="whatwedo-list">
+                                    <li class="whatwedo-list-item">Pegada Carbono - Inventário de Emissões</li>
+                                    <li class="whatwedo-list-item">Avaliação de Risco</li>
+                                </ul>
+                            </div>
+                            <div class="media-aside">
+                                <h3>Indicadores / Reporte</h3>
+                                <ul class="whatwedo-list">
+                                    <li class="whatwedo-list-item">Avaliação Estratégia de Descarbonização (ACT)</li>
+                                    <li class="whatwedo-list-item">Relatório de Emissões (CDP)</li>
+                                    <li class="whatwedo-list-item">Alinhamento de Metas 2°C Baseadas na Ciência (SBT)</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                    <div class="setinha"></div>
                 </div>
                 <div class="sec-item ">
                     <div class="item-media">
@@ -151,10 +156,12 @@ Template Name: Template Atuação
                         <p>
                             Planos de ação ideais para o seu negócio ou projeto.
                         </p>
+                        <div class="seta"></div>
                         <ul class="whatwedo-list">
                             <li class="whatwedo-list-item">Planos de Ação</li>
                         </ul>
                     </div>
+                    <div class="setinha"></div>
                 </div>
 
             </div>
