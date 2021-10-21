@@ -652,6 +652,10 @@ a:focus .ica-but {
   text-decoration: none;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 /*
 ///////////
 ////GRID//
