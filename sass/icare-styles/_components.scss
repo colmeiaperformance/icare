@@ -69,12 +69,21 @@
 		&.com-home{
 			.com-item{
 				.item-content{
-					padding: 2.4rem 20rem;
+					display: flex;
+					padding: 8rem;
 					position: absolute;
 					bottom: 0;
 					left: 0;
 					right: 0;
-					margin-bottom: 28rem;
+					h1 {
+						margin: 0;
+					}
+					.content-left{
+						font-size: 1.5em;
+						text-align: left;
+						margin-top: 7rem;	
+					}	
+					
 				}
 			}
 		}

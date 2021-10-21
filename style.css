@@ -600,12 +600,24 @@ a:focus .ica-but {
 }
 
 .ica-com.com-carousel.com-home .com-item .item-content {
-  padding: 2.4rem 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8rem;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  margin-bottom: 28rem;
+}
+
+.ica-com.com-carousel.com-home .com-item .item-content h1 {
+  margin: 0;
+}
+
+.ica-com.com-carousel.com-home .com-item .item-content .content-left {
+  font-size: 1.5em;
+  text-align: left;
+  margin-top: 7rem;
 }
 
 /*
@@ -3391,11 +3403,15 @@ h6 {
 }
 
 .ica-sec.sec-occupationarea {
-  background-color: #13857f;
+  background-color: #fff;
 }
 
 .ica-sec.sec-motivation .sec-content {
   text-align: center;
+}
+
+.ica-sec.sec-notice {
+  background-color: #e8e8e8;
 }
 
 .ica-sec.sec-notice .sec-content {
@@ -3453,7 +3469,7 @@ h6 {
 }
 
 .ica-sec.sec-notice .sec-itens .item-content img {
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 4rem;
 }
 
 .ica-sec.sec-notice .sec-itens .item-content p {
@@ -3465,7 +3481,7 @@ h6 {
 }
 
 .ica-sec.sec-numbers {
-  background-color: #204240;
+  background-color: #e8e8e8;
 }
 
 .ica-sec.sec-numbers .sec-content {
@@ -3487,6 +3503,19 @@ h6 {
   min-width: 16em;
 }
 
+.ica-sec.sec-numbers .sec-content .item-title h1 {
+  margin-bottom: 1rem;
+}
+
+.ica-sec.sec-numbers .sec-content .item-title h3 {
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.ica-sec.sec-numbers .sec-content .item-description p {
+  margin-top: 1rem;
+}
+
 .ica-sec.sec-acting .sec-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3498,6 +3527,77 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.ica-sec.sec-acting .acting-content .flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border-radius: 16rem;
+  padding: 3rem;
+}
+
+.ica-sec.sec-acting .acting-content .flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.ica-sec.sec-acting .acting-content .flip-box:hover .flip-box-inner {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.ica-sec.sec-acting .acting-content .flip-box-front, .ica-sec.sec-acting .acting-content .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.ica-sec.sec-acting .acting-content .flip-box-front h2:first-child, .ica-sec.sec-acting .acting-content .flip-box-back h2:first-child {
+  margin-top: 0;
+}
+
+.ica-sec.sec-acting .acting-content .flip-box-front {
+  position: absolute;
+  left: 0;
+  background-color: #bbb;
+  color: black;
+  border-radius: 16rem;
+}
+
+.ica-sec.sec-acting .acting-content .flip-box-back {
+  position: absolute;
+  left: 0;
+  background-color: dodgerblue;
+  color: white;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  border-radius: 16rem;
 }
 
 .ica-sec.sec-what .sec-header {

@@ -9,10 +9,15 @@
                     <img src="<?php echo get_template_directory_uri() . '/images/bg-banner.jpg' ?>" alt="" />
                 </div>
                 <div class="item-content ica-the the-highlight">
-                    <h1 class="item-title"><span>Consultoria</span> especializada em estratégia e inovação do <span>meio
-                            ambiente</span></h1>
-                    <a href="#" class="ica-but but-light">Sobre a iCare</a>
-                    <a href="#" class="ica-but but-light">Áreas de Atuação</a>
+                    <div class=content-left>
+                        <h1 class="item-title"><span>Consultoria</span> especializada em estratégia e inovação do <span>meio
+                                ambiente</span></h1>
+                        <a href="#" class="ica-but but-light">Sobre a iCare</a>
+                        <a href="#" class="ica-but but-light">Áreas de Atuação</a>
+                    </div>
+                    <div class="content-right">
+                        <img src="<?php echo get_template_directory_uri() . '/images/logo-banner.png' ?>" alt="" />
+                    </div>
                 </div>
             </div>
             <div class="com-item swiper-slide">
@@ -20,10 +25,15 @@
                     <img src="<?php echo get_template_directory_uri() . '/images/bg-banner.jpg' ?>" alt="" />
                 </div>
                 <div class="item-content ica-the the-highlight">
-                    <h1 class="item-title"><span>Consultoria</span> especializada em estratégia e inovação do <span>meio
-                            ambiente</span></h1>
-                    <a href="#" class="ica-but but-light">Sobre a iCare</a>
-                    <a href="#" class="ica-but but-light">Áreas de Atuação</a>
+                    <div class=content-left>
+                        <h1 class="item-title"><span>Consultoria</span> especializada em estratégia e inovação do <span>meio
+                                ambiente</span></h1>
+                        <a href="#" class="ica-but but-light">Sobre a iCare</a>
+                        <a href="#" class="ica-but but-light">Áreas de Atuação</a>
+                    </div>
+                    <div class="content-right">
+                        <img src="<?php echo get_template_directory_uri() . '/images/logo-banner.png' ?>" alt="" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -31,16 +41,16 @@
 
     <section class="ica-sec sec-acting" id="acting">
         <div class="ica-wrapper">
-            <div class="sec-header">
+            <!-- <div class="sec-header">
                 <h3 class="sec-title ica-the the-graye8e">O Que Fazemos</h3>
-            </div>
+            </div> -->
             <div class="sec-content">
                 <div class="content-description">
                     <p> <b>A I Care Brasil</b> possui três áreas de atuação que visam fornecer um conjunto abrangente ed
                         soluções para apoiar o processo de <b>transição ambiental</b> da sua empresa.</p>
                 </div>
-
             </div>
+
             <!-- <div class="sec-arrows">
 
                 <ul class="arrows-left">
@@ -104,7 +114,7 @@
                 </ul>
             </div> -->
 
-            <div class="sec-atuacao">
+            <!-- <div class="sec-atuacao">
                 <div class="atuacao-items">
                     <div class="atuacao-item">
                         <p class="icon">
@@ -160,14 +170,58 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+            <div class="acting-content">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Front Side</h2>
+                            <h2>Front Side</h2>
+                            <h2>Front Side</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Back Side</h2>
+                            <h2>Back Side</h2>
+                            <h2>Back Side</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Front Side</h2>
+                            <h2>Front Side</h2>
+                            <h2>Front Side</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Back Side</h2>
+                            <h2>Back Side</h2>
+                            <h2>Back Side</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Front Side</h2>
+                            <h2>Front Side</h2>
+                            <h2>Front Side</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Back Side</h2>
+                            <h2>Back Side</h2>
+                            <h2>Back Side</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="ica-sec sec-partners" id="partners">
         <div class="ica-wrapper">
-            <div class="sec-header">
+            <!-- <div class="sec-header">
                 <h3 class="sec-title ica-the the-white">Quem apoiamos</h3>
-            </div>
+            </div> -->
             <div class="sec-content">
                 <div class="content-description">
                     <p> A I Care Brasil apoia seus <b>clientes, autoridades locais, instituições públicas, empresas e
@@ -201,73 +255,82 @@
     </section>
     <section class="ica-sec sec-numbers" id="numbers">
         <div class="ica-wrapper">
-            <div class="sec-header">
+            <!-- <div class="sec-header">
                 <h3 class="sec-title ica-the the-green240 the-contrast">Nossos Números</h3>
-            </div>
+            </div> -->
             <div class="sec-content">
-                <div class="sec-item ica-the the-highlight">
+
+            <div class="sec-item">
                     <div class="item-media">
-                        <img src="<?php echo get_template_directory_uri() . '/images/colaboradores.png' ?>"
-                            alt="colaboradores">
+                        <img src="<?php echo get_template_directory_uri() . '/images/paises-green.png' ?>" alt="paises">
                     </div>
                     <div class="item-title">
-                        <h4><span>60 colaboradores</span></h4>
-                    </div>
-                    <div class="item-description">
-                        <p>distribuídos nos escritórios da França (Paris e Lyon) e no Brasil (Belo Horizonte)</p>
-                    </div>
-                </div>
-                <div class="sec-item ica-the the-highlight">
-                    <div class="item-media">
-                        <img src="<?php echo get_template_directory_uri() . '/images/missoes.png' ?>" alt="missoes">
-                    </div>
-                    <div class="item-title">
-                        <h4><span>Cerca de 1000 missões</span></h4>
-                    </div>
-                    <div class="item-description">
-                        <p>já realizadas em diversos países do mundo</p>
-                    </div>
-                </div>
-                <div class="sec-item ica-the the-highlight">
-                    <div class="item-media">
-                        <img src="<?php echo get_template_directory_uri() . '/images/clientes.png' ?>" alt="clientes">
-                    </div>
-                    <div class="item-title">
-                        <h4><span>Mais de 120 clientes</span></h4>
-                    </div>
-                    <div class="item-description">
-                        <p>públicos e privados no mundo com ferramentas e projetos desenvolvidos por nós</p>
-                    </div>
-                </div>
-                <div class="sec-item ica-the the-highlight">
-                    <div class="item-media">
-                        <img src="<?php echo get_template_directory_uri() . '/images/paises.png' ?>" alt="paises">
-                    </div>
-                    <div class="item-title">
-                        <h4><span>20 países </span></h4>
+                        <h1>20</h1>
+                        <h3>países</h3>
                     </div>
                     <div class="item-description">
                         <p>onde trabalhamos em projetos e missões</p>
                     </div>
                 </div>
+
+                <div class="sec-item">
+                    <div class="item-media">
+                        <img src="<?php echo get_template_directory_uri() . '/images/colaboradores-green.png' ?>"
+                            alt="colaboradores">
+                    </div>
+                    <div class="item-title">
+                        <h1>60</h1>
+                        <h3>colaboradores</h3>
+                    </div>
+                    <div class="item-description">
+                        <p>distribuídos nos escritórios da França (Paris e Lyon) e no Brasil (Belo Horizonte)</p>
+                    </div>
+                </div>
+                
+                <div class="sec-item">
+                    <div class="item-media">
+                        <img src="<?php echo get_template_directory_uri() . '/images/clientes-green.png' ?>" alt="clientes">
+                    </div>
+                    <div class="item-title">
+                        <h1>+ 120</h1>
+                        <h3>clientes</h3>
+                    </div>
+                    <div class="item-description">
+                        <p>públicos e privados no mundo com ferramentas e projetos desenvolvidos por nós</p>
+                    </div>
+                </div>
+
+                <div class="sec-item">
+                    <div class="item-media">
+                        <img src="<?php echo get_template_directory_uri() . '/images/missoes-green.png' ?>" alt="missoes">
+                    </div>
+                    <div class="item-title">
+                        <h1>1000</h1>
+                        <h3>missões</h3>
+                    </div>
+                    <div class="item-description">
+                        <p>já realizadas em diversos países do mundo</p>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
     <section class="ica-sec sec-occupationarea" id="occupationarea">
         <div class="ica-wrapper">
-            <div class="sec-header ">
+            <!-- <div class="sec-header ">
                 <h3 class="sec-title ica-the the-green57f the-highlight">Áreas de atuação</h3>
-            </div>
+            </div> -->
             <div class="sec-content">
                 <img src="<?php echo get_template_directory_uri() . '/images/mapa.png' ?>" alt="">
             </div>
         </div>
     </section>
-    <section class="ica-sec sec-notice ica-the the-white" id="notice">
+    <section class="ica-sec sec-notice" id="notice">
         <div class="ica-wrapper">
-            <header class="sec-header">
+            <!-- <header class="sec-header">
                 <h3 class="sec-title ica-the the-white">Últimas notícias</h3>
-            </header>
+            </header> -->
             <div class="sec-itens">
                 <div class="item-content">
                     <div class="item-media">
@@ -278,9 +341,7 @@
                         <p>A I Care Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a
                             Universidade de São Paulo</p>
                     </div>
-                    <div class="media-footer">
-                        <a href="#" class="ica-but but-conversion">Leia Mais</a>
-                    </div>
+                    
                 </div>
                 <div class="item-content">
                     <div class="item-media">
@@ -291,9 +352,7 @@
                         <p>A I Care Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a
                             Universidade de São Paulo</p>
                     </div>
-                    <div class="media-footer">
-                        <a href="#" class="ica-but but-conversion">Leia Mais</a>
-                    </div>
+                    
                 </div>
                 <div class="item-content">
                     <div class="item-media">
@@ -304,9 +363,7 @@
                         <p>A I Care Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a
                             Universidade de São Paulo</p>
                     </div>
-                    <div class="media-footer">
-                        <a href="#" class="ica-but but-conversion">Leia Mais</a>
-                    </div>
+                    
                 </div>
             </div>
         </div>

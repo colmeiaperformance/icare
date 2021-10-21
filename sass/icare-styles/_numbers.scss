@@ -1,5 +1,5 @@
 .ica-sec.sec-numbers {
-	background-color: $color-green-240;
+	background-color: $color-gray-e8e;
 	.sec-content {
 		display: flex;
 		align-items: top;
@@ -9,6 +9,20 @@
 			margin: 2.8rem;
 			width: 16%;
 			min-width: 16em;
+		}
+		.item-title{
+			h1{
+				margin-bottom: 1rem;
+			}
+			h3{
+				font-weight: normal;
+				margin-top: 0;
+			}
+		}
+		.item-description{
+			p{
+				margin-top: 1rem;
+			}
 		}
 	}
 }
