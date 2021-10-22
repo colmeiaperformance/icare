@@ -174,33 +174,44 @@
             <div class="acting-content">
                 <div class="flip-box">
                     <div class="flip-box-inner">
-                        <div class="flip-box-front" style="background-image:url('<?php echo get_template_directory_uri() . '/images/biodiversidade.png'?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
-                            
+                        <div class="content-image">
+                             <img src="https://geobrandesign.com/wp-content/themes/geo_wp2020/timthumb.php?src=https://geobrandesign.com/wp-content/uploads/2021/07/aplicacao-1-1.png&amp;h=350&amp;w=350&amp;zc=1" alt="">
                         </div>
-                        <div class="flip-box-back" style="background-image:url('<?php echo get_template_directory_uri() . '/images/biodiversidade-h.png'?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
-                            
+                             <div class="content-details fadeIn-bottom">
+                                <h2 class="content-title">Biodiversidade</h2>
+                            </div>
+                             <div class="content-details fadeIn-top">
+                                <h2 class="content-title">Avalie, avalie, avalie</h2>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flip-box">
+
+                  <div class="flip-box">
                     <div class="flip-box-inner">
-                        <div class="flip-box-front" style="background-image:url('<?php echo get_template_directory_uri() . '/images/finanças.png'?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
-                            
+                        <div class="content-image">
+                             <img src="https://media.gettyimages.com/photos/blue-headed-parrot-close-up-picture-id1304160299" alt="">
                         </div>
-                        <div class="flip-box-back" style="background-image:url('<?php echo get_template_directory_uri() . '/images/finanças-h.png'?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
-                            
+                             <div class="content-details fadeIn-bottom">
+                                <h2 class="content-title">Biodiversidade</h2>
+                            </div>
+                             <div class="content-details fadeIn-top">
+                                <h2 class="content-title">Avalie, avalie, avalie</h2>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flip-box">
+
+                  <div class="flip-box">
                     <div class="flip-box-inner">
-                        <div class="flip-box-front" style="background-image:url('<?php echo get_template_directory_uri() . '/images/clima.png'?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
-                            
+                        <div class="content-image">
+                             <img src="https://geobrandesign.com/wp-content/themes/geo_wp2020/timthumb.php?src=https://geobrandesign.com/wp-content/uploads/2021/07/aplicacao-1-1.png&amp;h=350&amp;w=350&amp;zc=1" alt="">
                         </div>
-                        <div class="flip-box-back" style="background-image:url('<?php echo get_template_directory_uri() . '/images/clima-h.png'?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
-                            
+                             <div class="content-details fadeIn-bottom">
+                                <h2 class="content-title">Biodiversidade</h2>
+                            </div>
+                             <div class="content-details fadeIn-top">
+                                <h2 class="content-title">Avalie, avalie, avalie</h2>
+                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>

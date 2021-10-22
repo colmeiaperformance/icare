@@ -66,3 +66,16 @@ jQuery(document).ready(function () {
 
   });
 });
+
+jQuery(document).ready(function () {
+  jQuery(".navbar-white")[
+    jQuery(window).scrollTop() >= 150 ? "addClass" : "removeClass"
+  ]("scrolling");
+
+  jQuery(window).scroll(function (e) {
+    jQuery(".navbar-white")[
+      jQuery(window).scrollTop() >= 150 ? "addClass" : "removeClass"
+    ]("scrolling");
+
+  });
+});

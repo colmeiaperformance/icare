@@ -3598,68 +3598,62 @@ h6 {
   width: 100%;
   height: 100%;
   text-align: center;
-  -webkit-transition: -webkit-transform 0s;
-  transition: -webkit-transform 0s;
-  transition: transform 0s;
-  transition: transform 0s, -webkit-transform 0s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-animation: toper 100ms ease backwards;
-          animation: toper 100ms ease backwards;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
 }
 
-.ica-sec.sec-acting .acting-content .flip-box:hover .flip-box-inner {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  -webkit-animation: top 0ms ease backwards;
-          animation: top 0ms ease backwards;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+.ica-sec.sec-acting .acting-content .fadeIn-bottom {
+  opacity: 1;
 }
 
-.ica-sec.sec-acting .acting-content .flip-box-front, .ica-sec.sec-acting .acting-content .flip-box-back {
+.ica-sec.sec-acting .acting-content .fadeIn-top {
+  opacity: 0;
+}
+
+.ica-sec.sec-acting .acting-content .content-details {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  /* Safari */
-  backface-visibility: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
-.ica-sec.sec-acting .acting-content .flip-box-front h2:first-child, .ica-sec.sec-acting .acting-content .flip-box-back h2:first-child {
-  margin-top: 0;
+.ica-sec.sec-acting .acting-content .flip-box:hover .fadeIn-top {
+  opacity: 1;
 }
 
-.ica-sec.sec-acting .acting-content .flip-box-front {
-  position: absolute;
-  left: 0;
-  color: #fff;
+.ica-sec.sec-acting .acting-content .flip-box:hover .fadeIn-bottom {
+  opacity: 0;
+}
+
+.ica-sec.sec-acting .acting-content .content-image {
+  width: 25em;
+  height: 25em;
+}
+
+.ica-sec.sec-acting .acting-content .content-image img {
   border-radius: 16rem;
+  width: 100%;
+  height: 25em;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.ica-sec.sec-acting .acting-content .flip-box-back {
-  position: absolute;
-  left: 0;
-  color: #fff;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+.ica-sec.sec-acting .acting-content .flip-box:hover .content-image::after {
+  content: "";
+  background-size: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(156, 211, 209, 0.9)), color-stop(50%, rgba(208, 221, 129, 0.9)), to(#d0dd81));
+  background: linear-gradient(to bottom, rgba(156, 211, 209, 0.9) 0%, rgba(208, 221, 129, 0.9) 50%, #d0dd81);
+  bottom: 0;
   border-radius: 16rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .ica-sec.sec-what .sec-header {
