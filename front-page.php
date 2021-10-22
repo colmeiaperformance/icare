@@ -192,10 +192,10 @@
                              <img src="https://media.gettyimages.com/photos/blue-headed-parrot-close-up-picture-id1304160299" alt="">
                         </div>
                              <div class="content-details fadeIn-bottom">
-                                <h2 class="content-title">Biodiversidade</h2>
+                                <h2 class="content-title">Finanças sustentáveis</h2>
                             </div>
                              <div class="content-details fadeIn-top">
-                                <h2 class="content-title">Avalie, avalie, avalie</h2>
+                                <h2 class="content-title">Entenda, avalie, realize</h2>
                             </div>
                         </div>
                     </div>
