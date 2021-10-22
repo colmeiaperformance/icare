@@ -73,11 +73,6 @@
             margin-top: 1rem;
         }
     }
-    #navbar {
-        a {
-            color: $color-white;
-        }
-    }
     //Menu dropdown
     
     header .navigation-list {
@@ -106,7 +101,7 @@
                 }
                 
                 a {
-                    color: $color-gray-222 !important;
+                    color: $color-gray-222;
                     text-align: left;
                     font-size: 1.65rem;
                     line-height: 2rem;
