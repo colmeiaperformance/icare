@@ -1,41 +1,30 @@
 <?php get_header(); ?>
-
 <?php get_template_part('template-parts/header-blog'); ?>
 
 <main id="ica-content" class="blog-content">
     <div class="ica-com com-carousel swiper-container">
         <div class="swiper-wrapper">
-
             <?php get_template_part( 'template-parts/carousel-blog' ) ?>
-
         </div>
     </div>
     <section class="ica-sec sec-bolg" id="blog">
         <div class="ica-wrapper">
             <div class="sec-notice">
-
                 <?php get_template_part( 'template-parts/first-notice-blog' ) ?>
 
                 <div class="secondary-notices">
-
                     <?php
-                    
                     //Protect against arbitrary paged values
                     $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
-                    
                     $args = array(
                         'posts_per_page' => 3,
                         'paged' => $paged,
                     );
-                     $wp_query = new WP_Query( $args );
-                    
+                     $wp_query = new WP_Query( $args );   
                     if ( $wp_query->have_posts() ) : ?>
-
                     <!-- Add the pagination functions here. -->
-
                     <!-- Start of the main loop. -->
                     <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
-
 
                     <div class="notice-card">
                         <a class="notice-card-img" href="<?php the_permalink(); ?>">
@@ -53,17 +42,13 @@
                             </div>
                         </a>
 
-
                         <div class="media-description">
                             <p><?php the_excerpt(); ?></p>
                         </div>
                         <div class="media-footer">
-                            <a href="<?php the_permalink(); ?>" class="ica-but but-conversion">
-                                <?php if(get_field('texto_dos_botoes_leia_mais')) { echo '' . get_field('texto_dos_botoes_leia_mais') . ''; } ?>
-                            </a>
+                            <a href="<?php the_permalink(); ?>" class="ica-but but-conversion">Leia mais</a>
                         </div>
                     </div>
-
 
                     <?php endwhile; ?>
                     <!-- End of the main loop -->
@@ -97,10 +82,8 @@
                         <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
                     </div>
                     <?php endif; ?>
-
                 </div>
             </div>
-
             <?php get_template_part( '/template-parts/aside-blog' ) ?>
                 </div>
     </section>
