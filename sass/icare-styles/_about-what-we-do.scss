@@ -474,7 +474,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media all and (max-width: 1024px) {
     /* O que fazemos? */
     .sec-arrows {
         display: block;

@@ -2253,7 +2253,7 @@ h6 {
   }
 }
 
-@media (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   /* O que fazemos? */
   .sec-arrows {
     display: block;
@@ -2677,6 +2677,12 @@ h6 {
           justify-content: center;
 }
 
+@media all and (max-width: 1024px) {
+  .ica-sec.sec-bolg .ica-wrapper {
+    display: block;
+  }
+}
+
 .ica-sec.sec-bolg .ica-wrapper .aside-blog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2720,13 +2726,7 @@ h6 {
   border-radius: 8rem;
   background-color: transparent;
   height: 48px;
-  width: 130px;
-}
-
-@media all and (max-width: 1024px) {
-  .ica-sec.sec-bolg .ica-wrapper .aside-blog .aside-search .form-search .ica-input {
-    width: auto;
-  }
+  width: calc(98% - 120px);
 }
 
 .ica-sec.sec-bolg .ica-wrapper .aside-blog .aside-search .form-search input {
@@ -2755,10 +2755,26 @@ h6 {
   background-color: transparent;
 }
 
+@media all and (max-width: 1024px) {
+  .ica-sec.sec-bolg .ica-wrapper .aside-blog {
+    width: 100%;
+  }
+}
+
 .ica-sec.sec-bolg .ica-wrapper .sec-notice {
   width: 74%;
   margin-right: 1rem;
   border-right: 1px solid #13857f;
+  padding-right: 1rem;
+}
+
+@media all and (max-width: 1024px) {
+  .ica-sec.sec-bolg .ica-wrapper .sec-notice {
+    width: 98%;
+    border-right: 0;
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
 }
 
 .ica-sec.sec-bolg .ica-wrapper .sec-notice .secondary-notices {
@@ -2768,6 +2784,12 @@ h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 2rem;
+}
+
+@media all and (max-width: 576px) {
+  .ica-sec.sec-bolg .ica-wrapper .sec-notice .secondary-notices {
+    display: block;
+  }
 }
 
 .ica-sec.sec-bolg .ica-wrapper .sec-notice .secondary-notices .notice-card {
@@ -2791,16 +2813,44 @@ h6 {
   padding-bottom: 1rem;
 }
 
+@media all and (max-width: 576px) {
+  .ica-sec.sec-bolg .ica-wrapper .sec-notice .secondary-notices .notice-card {
+    width: 100%;
+  }
+}
+
 .ica-sec.sec-bolg .ica-wrapper .first-notice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.ica-sec.sec-bolg .ica-wrapper .first-notice img {
+@media all and (max-width: 768px) {
+  .ica-sec.sec-bolg .ica-wrapper .first-notice .notice-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+}
+
+.ica-sec.sec-bolg .ica-wrapper .first-notice .first-notice-item-media {
   width: 100%;
-  height: 100%;
-  max-height: 294px;
+}
+
+@media all and (max-width: 768px) {
+  .ica-sec.sec-bolg .ica-wrapper .first-notice .first-notice-item-media {
+    margin-bottom: 2rem;
+    height: 294px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .ica-sec.sec-bolg .ica-wrapper .first-notice {
+    display: block;
+  }
 }
 
 .ica-sec.sec-bolg .first-notice .notice-content {
@@ -2812,6 +2862,16 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 2rem;
+}
+
+@media all and (max-width: 768px) {
+  .ica-sec.sec-bolg .first-notice .notice-content {
+    margin: 0;
+  }
+}
+
+.ica-sec.sec-bolg .first-notice .notice-content h1 {
+  margin-top: 0;
 }
 
 .notice-card-img div {
@@ -4050,7 +4110,7 @@ h6 {
   }
 }
 
-@media (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   /* O que fazemos? */
   .sec-arrows {
     display: block;
