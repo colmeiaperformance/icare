@@ -16,16 +16,6 @@ $posicao_da_imagem_contato = get_field('posicao_da_imagem_contato', 'option');
             </div>
             <div class="sec-form">
             <?php echo do_shortcode('[contact-form-7 id="273" title="Formulário de contato"]'); ?>
-                <!-- <form action="">
-                    <label for="">Nome e Sobrenome</label>
-                    <input type="text" required>
-                    <label for="">E-mail</label>
-                    <input type="email" required>
-                    <label for="">Mensagem</label>
-                    <textarea name="" id="" cols="30" rows="7"></textarea>
-                    <input type="submit" value="Enviar" class="ica-but but-conversion">
-                </form> -->
-                
             </div>
         </div>
     </section>

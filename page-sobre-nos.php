@@ -7,7 +7,7 @@
 
             <div class="sec-content">
                 <div class="content-item">
-                    <p class="ica-the the-gray-222">A I Care é uma empresa independente de consultoria ambiental que
+                    <p class="ica-the the-gray-222">A iCare é uma empresa independente de consultoria ambiental que
                         apoia seus clientes (empresas, setores financeiro e público) em seu processo de transição
                         ambiental.<br><br>
 
@@ -47,13 +47,12 @@
                             <p>Integração de conhecimentos em função da demanda</p>
                         </div>
                         <div class="service-description">
-                            <p>de território a produtos e do setor público ao setor privado</p>
+                            <p>De território a produtos e do setor público ao setor privado</p>
                         </div>
                     </div>
                 </div>
                 <div class="content-complement">
-                    <p class="ica-the the-gray-222">Hoje, com seus 13 anos de experiência, desenvolvemos nossa expertise
-                        com a realização de mais de 1000 missões para 400 clientes diferentes.</p>
+                    <p class="ica-the the-gray-222">Hoje, com seus 13 anos de experiência, desenvolvemos nossa expertise com a realização de mais de 1000 missões para 400 clientes diferentes.</p>
                 </div>
             </div>
             <div>
@@ -76,7 +75,7 @@
                         <h4><span>60 colaboradores</span></h4>
                     </div>
                     <div class="item-description">
-                        <p>distribuídos nos escritórios da França (Paris e Lyon) e no Brasil (Belo Horizonte)</p>
+                        <p>Distribuídos nos escritórios da França (Paris e Lyon) e no Brasil (Belo Horizonte)</p>
                     </div>
                 </div>
                 <div class="sec-item ica-the the-highlight">
@@ -87,7 +86,7 @@
                         <h4><span>Cerca de 1000 missões</span></h4>
                     </div>
                     <div class="item-description">
-                        <p>já realizadas em diversos países do mundo</p>
+                        <p>Já realizadas em diversos países do mundo</p>
                     </div>
                 </div>
                 <div class="sec-item ica-the the-highlight">
@@ -98,7 +97,7 @@
                         <h4><span>Mais de 120 clientes</span></h4>
                     </div>
                     <div class="item-description">
-                        <p>públicos e privados no mundo com ferramentas e projetos desenvolvidos por nós</p>
+                        <p>Públicos e privados no mundo com ferramentas e projetos desenvolvidos por nós</p>
                     </div>
                 </div>
                 <div class="sec-item ica-the the-highlight">
@@ -109,7 +108,7 @@
                         <h4><span>20 países </span></h4>
                     </div>
                     <div class="item-description">
-                        <p>onde trabalhamos em projetos e missões</p>
+                        <p>Onde trabalhamos em projetos e missões</p>
                     </div>
                 </div>
             </div>

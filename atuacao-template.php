@@ -31,7 +31,7 @@ Template Name: Template Atuação
             </div>
             <div class="sec-content">
                 <div class="content-media">
-                    <img src="<?php echo get_template_directory_uri() . '/images/content-clima.jpg' ?>" alt="clima">
+                    <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-23.jpg" alt="clima">
                 </div>
                 <div class="content-description">
                     <p class="ica-the the-gray-222">
@@ -175,12 +175,13 @@ Template Name: Template Atuação
             <div class="sec-itens">
                 <div class="item-content">
                     <div class="item-media">
-                        <img src="<?php echo get_template_directory_uri() . '/images/blog-media.jpg' ?>" alt="notice">
-                        <p class="media-title"></p>
+                       <a href="#">
+                            <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-23.jpg" alt="notice">
+                            <h5 class="media-title">iCare realiza estudo em parceria com a USP</h5>
+                        </a>
                     </div>
                     <div class="media-description">
-                        <p>A I Care Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a
-                            Universidade de São Paulo</p>
+                        <p>A iCare Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a Universidade de São Paulo</p>
                     </div>
                     <div class="media-footer">
                         <a href="#" class="ica-but but-conversion">Leia Mais</a>
@@ -188,12 +189,13 @@ Template Name: Template Atuação
                 </div>
                 <div class="item-content">
                     <div class="item-media">
-                        <img src="<?php echo get_template_directory_uri() . '/images/blog-media2.jpg' ?>" alt="notice">
-                        <p class="media-title"></p>
+                     <a href="#">
+                            <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-21.jpg" alt="notice">
+                            <h5 class="media-title">iCare realiza estudo em parceria com a USP</h5>
+                        </a>
                     </div>
                     <div class="media-description">
-                        <p>A I Care Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a
-                            Universidade de São Paulo</p>
+                            <p>A iCare Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a Universidade de São Paulo</p>
                     </div>
                     <div class="media-footer">
                         <a href="#" class="ica-but but-conversion">Leia Mais</a>
@@ -201,12 +203,13 @@ Template Name: Template Atuação
                 </div>
                 <div class="item-content">
                     <div class="item-media">
-                        <img src="<?php echo get_template_directory_uri() . '/images/blog-media3.jpg' ?>" alt="notice">
-                        <p class="media-title"></p>
+                        <a href="#">
+                            <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-23.jpg" alt="notice">
+                            <h5 class="media-title">iCare realiza estudo em parceria com a USP</h5>
+                        </a>
                     </div>
                     <div class="media-description">
-                        <p>A I Care Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a
-                            Universidade de São Paulo</p>
+                        <p>A iCare Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a Universidade de São Paulo</p>
                     </div>
                     <div class="media-footer">
                         <a href="#" class="ica-but but-conversion">Leia Mais</a>
