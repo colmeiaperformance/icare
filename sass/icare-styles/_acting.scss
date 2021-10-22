@@ -1,3 +1,24 @@
+
+@keyframes top {
+	0% {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+	90% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+@keyframes toper {
+	0% {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+	90% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
 .ica-sec.sec-acting {
 	.sec-content {
 		display: flex;
@@ -7,63 +28,68 @@
 	}
 	.acting-content{
 		
-		.flip-box {
-			background-color: transparent;
-			width: 300px;
-			height: 300px;
-			border-radius: 16rem;
-			padding: 3rem;
-		}
-
-		.flip-box-inner {
-			position: relative;
-			width: 100%;
-			height: 100%;
-			text-align: center;
-			transition: transform 0.8s;
-			transform-style: preserve-3d;	
-		}
-
-		.flip-box:hover  {
-			.flip-box-inner{
-				transform: rotateX(180deg);
-			}
-		}
-
-
-		.flip-box-front, .flip-box-back {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			-webkit-backface-visibility: hidden; /* Safari */
-			backface-visibility: hidden;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-			h2:first-child{
-				margin-top: 0;
-			} 
-		}
-
-
-		.flip-box-front {
-			position: absolute;
-			left: 0;
-			background-color: #bbb;
-			color: black;
-			border-radius: 16rem;
-		}
-
-		.flip-box-back {
-			position: absolute;
-			left: 0;
-			background-color: dodgerblue;
+	.flip-box {
+		background-color: transparent;
+		width: 25em;
+		height: 25em;
+		border-radius: 16rem;
+		margin: 4rem 2rem;
+		h2{
 			color: white;
-			transform: rotateX(180deg);
-			border-radius: 16rem;
 		}
+	}
+
+	.flip-box-inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0s;
+		transform-style: preserve-3d;
+		animation: toper 100ms ease backwards;
+		animation-delay: 0s;	
+	}
+
+	.flip-box:hover  {
+		.flip-box-inner{
+			transform: rotateY(180deg);
+			animation: top 0ms ease backwards;
+			animation-delay: 0.2s;
+		}
+	}
+
+
+	.flip-box-front, .flip-box-back {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden; /* Safari */
+		backface-visibility: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		h2:first-child{
+			margin-top: 0;
+		} 
+	}
+
+
+	.flip-box-front {
+		position: absolute;
+		left: 0;
+		color: $color-white;
+		border-radius: 16rem;
+	}
+
+	.flip-box-back {
+		position: absolute;
+		left: 0;
+		color: $color-white;
+		transform: rotateY(180deg);
+		border-radius: 16rem;
+	}
 	}
 }
 

@@ -174,43 +174,31 @@
             <div class="acting-content">
                 <div class="flip-box">
                     <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <h2>Front Side</h2>
-                            <h2>Front Side</h2>
-                            <h2>Front Side</h2>
+                        <div class="flip-box-front" style="background-image:url('<?php echo get_template_directory_uri() . '/images/biodiversidade.png'?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
+                            
                         </div>
-                        <div class="flip-box-back">
-                            <h2>Back Side</h2>
-                            <h2>Back Side</h2>
-                            <h2>Back Side</h2>
+                        <div class="flip-box-back" style="background-image:url('<?php echo get_template_directory_uri() . '/images/biodiversidade-h.png'?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
+                            
                         </div>
                     </div>
                 </div>
                 <div class="flip-box">
                     <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <h2>Front Side</h2>
-                            <h2>Front Side</h2>
-                            <h2>Front Side</h2>
+                        <div class="flip-box-front" style="background-image:url('<?php echo get_template_directory_uri() . '/images/finanças.png'?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
+                            
                         </div>
-                        <div class="flip-box-back">
-                            <h2>Back Side</h2>
-                            <h2>Back Side</h2>
-                            <h2>Back Side</h2>
+                        <div class="flip-box-back" style="background-image:url('<?php echo get_template_directory_uri() . '/images/finanças-h.png'?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
+                            
                         </div>
                     </div>
                 </div>
                 <div class="flip-box">
                     <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <h2>Front Side</h2>
-                            <h2>Front Side</h2>
-                            <h2>Front Side</h2>
+                        <div class="flip-box-front" style="background-image:url('<?php echo get_template_directory_uri() . '/images/clima.png'?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
+                            
                         </div>
-                        <div class="flip-box-back">
-                            <h2>Back Side</h2>
-                            <h2>Back Side</h2>
-                            <h2>Back Side</h2>
+                        <div class="flip-box-back" style="background-image:url('<?php echo get_template_directory_uri() . '/images/clima-h.png'?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
+                            
                         </div>
                     </div>
                 </div>
