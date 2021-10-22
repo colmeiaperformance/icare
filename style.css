@@ -3590,6 +3590,7 @@ h6 {
 }
 
 .ica-sec.sec-acting .acting-content .flip-box h2 {
+  margin-top: 0.5rem;
   color: white;
 }
 
@@ -3646,8 +3647,8 @@ h6 {
 .ica-sec.sec-acting .acting-content .flip-box:hover .content-image::after {
   content: "";
   background-size: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(156, 211, 209, 0.9)), color-stop(50%, rgba(208, 221, 129, 0.9)), to(#d0dd81));
-  background: linear-gradient(to bottom, rgba(156, 211, 209, 0.9) 0%, rgba(208, 221, 129, 0.9) 50%, #d0dd81);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(19, 133, 127, 0.8)), color-stop(50%, rgba(19, 133, 127, 0.8)), to(rgba(19, 133, 127, 0.8)));
+  background: linear-gradient(to bottom, rgba(19, 133, 127, 0.8) 0%, rgba(19, 133, 127, 0.8) 50%, rgba(19, 133, 127, 0.8));
   bottom: 0;
   border-radius: 16rem;
   left: 0;

@@ -175,41 +175,47 @@
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="content-image">
-                             <img src="https://geobrandesign.com/wp-content/themes/geo_wp2020/timthumb.php?src=https://geobrandesign.com/wp-content/uploads/2021/07/aplicacao-1-1.png&amp;h=350&amp;w=350&amp;zc=1" alt="">
+                            <img src="https://geobrandesign.com/wp-content/themes/geo_wp2020/timthumb.php?src=https://geobrandesign.com/wp-content/uploads/2021/07/aplicacao-1-1.png&amp;h=350&amp;w=350&amp;zc=1" alt="">
                         </div>
-                             <div class="content-details fadeIn-bottom">
+                            <div class="content-details fadeIn-bottom">
                                 <h2 class="content-title">Biodiversidade</h2>
                             </div>
-                             <div class="content-details fadeIn-top">
-                                <h2 class="content-title">Avalie, avalie, avalie</h2>
+                            <div class="content-details fadeIn-top">
+                                <h2 class="content-title">entenda</h2>
+                                <h2 class="content-title">avalie</h2>
+                                <h2 class="content-title">realize</h2>
                             </div>
                         </div>
                     </div>
 
-                  <div class="flip-box">
+                <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="content-image">
-                             <img src="https://media.gettyimages.com/photos/blue-headed-parrot-close-up-picture-id1304160299" alt="">
+                            <img src="https://media.gettyimages.com/photos/blue-headed-parrot-close-up-picture-id1304160299" alt="">
                         </div>
-                             <div class="content-details fadeIn-bottom">
-                                <h2 class="content-title">Biodiversidade</h2>
+                            <div class="content-details fadeIn-bottom">
+                                <h2 class="content-title">Finanças sustentáveis</h2>
                             </div>
-                             <div class="content-details fadeIn-top">
-                                <h2 class="content-title">Avalie, avalie, avalie</h2>
+                            <div class="content-details fadeIn-top">
+                                <h2 class="content-title">entenda</h2>
+                                <h2 class="content-title">avalie</h2>
+                                <h2 class="content-title">realize</h2>
                             </div>
                         </div>
                     </div>
 
-                  <div class="flip-box">
+                <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="content-image">
-                             <img src="https://geobrandesign.com/wp-content/themes/geo_wp2020/timthumb.php?src=https://geobrandesign.com/wp-content/uploads/2021/07/aplicacao-1-1.png&amp;h=350&amp;w=350&amp;zc=1" alt="">
+                            <img src="https://geobrandesign.com/wp-content/themes/geo_wp2020/timthumb.php?src=https://geobrandesign.com/wp-content/uploads/2021/07/aplicacao-1-1.png&amp;h=350&amp;w=350&amp;zc=1" alt="">
                         </div>
-                             <div class="content-details fadeIn-bottom">
-                                <h2 class="content-title">Biodiversidade</h2>
+                            <div class="content-details fadeIn-bottom">
+                                <h2 class="content-title">Clima</h2>
                             </div>
-                             <div class="content-details fadeIn-top">
-                                <h2 class="content-title">Avalie, avalie, avalie</h2>
+                            <div class="content-details fadeIn-top">
+                                <h2 class="content-title">entenda</h2>
+                                <h2 class="content-title">avalie</h2>
+                                <h2 class="content-title">realize</h2>
                             </div>
                         </div>
                 </div>
