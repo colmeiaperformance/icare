@@ -1,42 +1,21 @@
 <?php get_header(); ?>
-
 <?php get_template_part('template-parts/header-blog'); ?>
 
 <main id="ica-content" class="blog-content">
     <div class="ica-com com-carousel swiper-container">
         <div class="swiper-wrapper">
-
             <?php get_template_part( 'template-parts/carousel-blog' ) ?>
-
         </div>
     </div>
     <section class="ica-sec sec-bolg" id="blog">
         <div class="ica-wrapper">
             <div class="sec-notice">
-
-                <?php get_template_part( 'template-parts/first-notice-blog' ) ?>
-
+                <h3 class="section-title">
+                  Resultado da pesquisa
+                </h3>
                 <div class="secondary-notices">
-
-                    <?php
-                    
-                    //Protect against arbitrary paged values
-                    $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
-                    
-                    $args = array(
-                        'posts_per_page' => 3,
-                        'paged' => $paged,
-                    );
-                     $wp_query = new WP_Query( $args );
-                    
-                    if ( $wp_query->have_posts() ) : ?>
-
-                    <!-- Add the pagination functions here. -->
-
-                    <!-- Start of the main loop. -->
-                    <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
-
-
+                  <?php if (have_posts()) : ?>
+                    <?php while (have_posts()) : the_post(); ?>
                     <div class="notice-card">
                         <a class="notice-card-img" href="<?php the_permalink(); ?>">
                             <div class="item-media"
@@ -53,61 +32,25 @@
                             </div>
                         </a>
 
-
                         <div class="media-description">
                             <p><?php the_excerpt(); ?></p>
                         </div>
                         <div class="media-footer">
-                            <a href="<?php the_permalink(); ?>" class="ica-but but-conversion">Leia Mais</a>
+                            <a href="<?php the_permalink(); ?>" class="ica-but but-conversion">Leia mais</a>
                         </div>
                     </div>
 
-
-                    <?php endwhile; ?>
-                    <!-- End of the main loop -->
-
-                    <!-- Add the pagination functions here. -->
-                    <div class="pagination">
-                        <?php 
-                        echo paginate_links( array(
-                            'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
-                            'current'      => max( 1, get_query_var( 'paged' ) ),
-                            'format'       => '?paged=%#%',
-                            'show_all'     => false,
-                            'total'        => $wp_query->max_num_pages,
-                            'type'         => 'plain',
-                            'end_size'     => 2,
-                            'mid_size'     => 1,
-                            'prev_next'    => false,
-                            'prev_text'    => sprintf( '<i></i> %1$s', __( 'Newer Posts', 'text-domain' ) ),
-                            'next_text'    => sprintf( '%1$s <i></i>', __( 'Older Posts', 'text-domain' ) ),
-                            'add_args'     => false,
-                            'add_fragment' => '',
-                        ) );
-                        ?>
-                    </div>
-
-
-                    <?php
-
-                    wp_reset_postdata(); 
-                    
-                    else: ?>
+                  <?php endwhile; ?>
+									<?php else : ?>
                     <div class="blog-alert">
-                        <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+                        <?php _e( 'Desculpe, nenhum post foi encontrado.' ); ?>
                     </div>
                     <?php endif; ?>
-
-
                 </div>
             </div>
-            
-
             <?php get_template_part( '/template-parts/aside-blog' ) ?>
-
                 </div>
     </section>
-
 </main>
 
 <?php get_footer() ?>

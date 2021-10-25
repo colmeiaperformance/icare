@@ -1,8 +1,8 @@
 <aside class="aside-blog">
     <div class="aside-search">
         <form method="get" role="search" id="searchform" class="form-search" action="<?php bloginfo('home'); ?>/">
-            <input type="text" name="search" id="search" class="ica-input">
-            <input type="submit" id="searchside" value="Buscar" class="ica-but but-conversion">
+            <input type="text" name="s" id="s"  class="ica-input">
+            <input type="submit" name="submit"  id="search-button" value="Buscar" class="ica-but but-conversion">
         </form>
     </div>
 
