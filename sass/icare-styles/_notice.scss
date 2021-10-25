@@ -7,11 +7,18 @@
 		align-items: center;
 	}
 	.item-media {
-		
 		.media-title {
 			position: absolute;
-			top: 8rem;
-			width: auto;
+			top: 45%;
+			right: 10px;
+			left: 10px;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 1.8rem;
+			margin: 0 auto;
 		}
 	}
 	.sec-itens {
@@ -38,9 +45,13 @@
 					filter: brightness(1);
 				}
 			}
-			// p {
-			// 	color: $color-black;
-			// }
+			.item-media {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				margin: 0 auto;
+			}
 			.media-footer {
 				padding-bottom: 1.6rem;
 			}

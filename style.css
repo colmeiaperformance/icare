@@ -3342,8 +3342,22 @@ h6 {
 
 .ica-sec.sec-notice .item-media .media-title {
   position: absolute;
-  top: 8rem;
-  width: auto;
+  top: 45%;
+  right: 10px;
+  left: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0 auto;
 }
 
 .ica-sec.sec-notice .sec-itens {
@@ -3393,6 +3407,20 @@ h6 {
 .ica-sec.sec-notice .sec-itens .item-content img:hover {
   -webkit-filter: brightness(1);
           filter: brightness(1);
+}
+
+.ica-sec.sec-notice .sec-itens .item-content .item-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin: 0 auto;
 }
 
 .ica-sec.sec-notice .sec-itens .item-content .media-footer {
