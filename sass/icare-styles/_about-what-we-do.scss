@@ -24,6 +24,10 @@
         position: relative;
         background: $default-color;
         border: 1px solid $color-default-green;
+        @media all and (max-width: 1120px) { 
+            width: 100%;
+            margin: 20px 0;
+        }
     }
     .sec-item:after,
     .sec-item:before {
@@ -35,8 +39,11 @@
         width: 0;
         position: absolute;
         pointer-events: none;
+        @media all and (max-width: 1120px) {
+            display: none;
+        }
     }
-
+    
     .sec-item:after {
         border-color: rgba(232, 232, 232, 0);
         border-left-color: $default-color;
@@ -119,7 +126,7 @@
 
 @media (min-width: 1025px) {
     /* O que fazemos? */
-
+    
     .sec-atuacao {
         display: flex;
         .atuacao-items {
@@ -167,9 +174,9 @@
             }
         }
     }
-
+    
     //Setas
-
+    
     //Arrows on the right
     %clearfix {
         &::after {
@@ -178,7 +185,7 @@
             clear: both;
         }
     }
-
+    
     .sec-arrows {
         display: flex;
         margin-top: 50px;
@@ -191,7 +198,7 @@
             width: 75%;
         }
     }
-
+    
     // Setas da esquerda
     .arrows-left {
         @extend %clearfix;
@@ -203,7 +210,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
+        
         li {
             width: $height - 30px;
             background: $color-default-green;
@@ -212,7 +219,7 @@
             color: $text-color;
             position: relative;
             height: calc(416px / 3);
-
+            
             &::before,
             &::after {
                 background: $default-color;
@@ -221,25 +228,25 @@
                 height: $height / 3;
                 width: calc(100% - 30px);
             }
-
+            
             &::before,
             &::after {
                 background-color: $color-default-green;
             }
-
+            
             .arrow-container {
                 display: flex;
                 align-items: center;
                 justify-content: start;
                 z-index: 3;
                 padding: 2rem;
-
+                
                 .icon {
                     margin-right: 20px;
                     width: 73px;
                     z-index: 5;
                 }
-
+                
                 h3 {
                     z-index: 5;
                     margin-top: 0px;
@@ -252,7 +259,7 @@
                     font-size: 1.25em;
                     line-height: 1.2;
                 }
-
+                
                 &::before {
                     position: absolute;
                     content: "";
@@ -266,7 +273,7 @@
                     display: none;
                 }
             }
-
+            
             &:first-child {
                 &::before,
                 &::after {
@@ -274,7 +281,7 @@
                     left: 30px;
                     border-right: none;
                 }
-
+                
                 .arrow-container::before {
                     position: absolute;
                     content: "";
@@ -288,7 +295,7 @@
                     background: $default-color;
                 }
             }
-
+            
             &:nth-child(2) {
                 &::before,
                 &::after {
@@ -328,7 +335,7 @@
                     background: $default-color;
                 }
             }
-
+            
             &:last-child {
                 &::before,
                 &::after {
@@ -336,7 +343,7 @@
                     left: 30px;
                     border-right: none;
                 }
-
+                
                 .arrow-container::before {
                     position: absolute;
                     content: "";
@@ -350,7 +357,7 @@
                     background: $default-color;
                 }
             }
-
+            
             &::before,
             &::after,
             .arrow-container::before,
@@ -359,14 +366,14 @@
             }
         }
     }
-
+    
     // Setas da direita
     .arrows-right {
         @extend %clearfix;
         list-style: none;
         padding: 0;
         text-align: center;
-
+        
         li {
             float: left;
             width: calc(100% / 3);
@@ -374,7 +381,7 @@
             position: relative;
             height: $height;
             line-height: $height;
-
+            
             &::before,
             &::after {
                 background: $default-color;
@@ -388,32 +395,32 @@
                 border-right: $arrow-size solid $color-default-green;
                 border-left: $arrow-size solid $color-default-green;
             }
-
+            
             &::before {
                 transform: skew(25deg);
                 top: 0;
                 border-top: $arrow-size solid $color-default-green;
             }
-
+            
             &::after {
                 transform: skew(-25deg);
                 bottom: 0;
                 border-bottom: $arrow-size solid $color-default-green;
             }
-
+            
             .arrow-container {
                 display: block;
                 height: 100%;
                 position: relative;
                 z-index: 4;
                 padding: 7rem 5rem 7rem 10rem;
-
+                
                 .icon {
                     margin-left: auto;
                     margin-right: auto;
                     width: 78px;
                 }
-
+                
                 h3,
                 p {
                     position: relative;
@@ -428,7 +435,7 @@
                     font-size: 1.25em;
                     line-height: 1.2;
                 }
-
+                
                 &::before {
                     content: "";
                     position: absolute;
@@ -439,7 +446,7 @@
                     display: none;
                 }
             }
-
+            
             &:last-child {
                 &::before,
                 &::after {
@@ -447,7 +454,7 @@
                     left: 30px;
                     border-right: none;
                 }
-
+                
                 .arrow-container::before {
                     position: absolute;
                     z-index: 3;
@@ -463,7 +470,7 @@
                     border-bottom-right-radius: $height / 100;
                 }
             }
-
+            
             &::before,
             &::after,
             .arrow-container::before,
@@ -479,7 +486,7 @@
     .sec-arrows {
         display: block;
     }
-
+    
     .arrows-left {
         position: relative;
         z-index: 2;
@@ -512,7 +519,7 @@
         }
         li {
             background: $color-default-green;
-
+            
             h3 {
                 position: relative;
                 z-index: 5;
@@ -597,35 +604,50 @@
 }
 
 .ica-sec.sec-whatwedo {
-	.sec-content {
-		margin-bottom: 4rem;
-		display: flex;
-		min-height: 516px;
-		.sec-item {
-			border: 1px solid $color-default-green;
-			padding: 2rem;
-			ul {
-				text-align: left;
-			}
-			li {
-				color: #555;
-			}
-			.media-seta {
-				padding-right: 1rem;
-			}
+    .sec-content {
+        margin-bottom: 4rem;
+        display: flex;
+        min-height: 516px;
+        @media all and (max-width: 1120px) { 
+            width: 100%;
+            height: auto;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .sec-item {
+            border: 1px solid $color-default-green;
+            padding: 2rem;
+            ul {
+                text-align: left;
+            }
+            li {
+                color: #555;
+            }
+            .media-seta {
+                padding-right: 1rem;
+            }
             .item-double_container {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                @media all and (max-width: 546px) { 
+                    display: block;
+                }
             }
-			.media-aside {
-				text-align: left;
-				padding-right: 1rem;
+            .media-aside {
+                text-align: left;
+                padding-right: 1rem;
                 width: auto;
                 color: #555;
+                @media all and (max-width: 546px) { 
+                    margin: 0 auto;
+                    padding: 0;
+                    width: 100%;
+                }
                 h3 {
                     margin-bottom: 5px;
                 }
-			}
+            }
             .setinha {
                 &::before {
                     border-left: 0;
@@ -642,10 +664,9 @@
                     margin-left: -23px;
                     left: 0;
                     top: 104px;
-                    z-index: 11111;
+                    z-index: 999;
                     transform: rotate( -90deg);
                 }
-
                 &::after {
                     border-left: 0;
                     border: solid transparent;
@@ -664,6 +685,9 @@
                     z-index: 1;
                     transform: rotate(-90deg);
                 }
+                @media all and (max-width: 1120px) {
+                    display: none;
+                }
             }
             .item-media {
                 color:  $color-default-green;
@@ -675,22 +699,12 @@
                     margin-top: 0;
                 }
                 .seta {
-                    position: relative;
-                    width: 100%;
-                    height: auto;
-                    margin-bottom: 25px;
-                     &::after {
-                        position: absolute;
-                        content: ">";
-                        color: #13857f;
-                        top: 0;
-                        left: 50%;
-                        transform: rotate(90deg);
-                        font-weight: bold;
-                        font-size: 15px;
+                    img {
+                        width: 20px;
+                        height: auto;
                     }
                 }
             }
-		}
-	}
+        }
+    }
 }

@@ -17,7 +17,6 @@
 			align-items: center;
 			justify-content: center;
 			color: #fff;
-			font-size: 1.8rem;
 			margin: 0 auto;
 		}
 	}
@@ -39,7 +38,7 @@
 			border-radius: 1rem;
 			img {
 				border-radius: 4rem;
-				filter: brightness(0.7);
+				filter: brightness(0.6);
 				transition: all 0.3s ease-in-out 0s;
 				&:hover {
 					filter: brightness(1);

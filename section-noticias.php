@@ -3,7 +3,7 @@
     <div class="item-media">
         <a href="#">
             <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-23.jpg" alt="notice">
-            <h5 class="media-title">iCare realiza estudo em parceria com a USP</h5>
+            <h3 class="media-title">iCare realiza estudo em parceria com a USP</h3>
         </a>
     </div>
     <div class="media-description">
@@ -15,7 +15,7 @@
     <div class="item-media">
             <a href="#">
             <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-21.jpg" alt="notice">
-            <h5 class="media-title">iCare realiza estudo em parceria com a USP</h5>
+            <h3 class="media-title">iCare realiza estudo em parceria com a USP</h3>
         </a>
     </div>
     <div class="media-description">
@@ -27,7 +27,7 @@
     <div class="item-media">
         <a href="#">
             <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-16.jpg" alt="notice">
-            <h5 class="media-title">iCare realiza estudo em parceria com a USP</h5>
+            <h3 class="media-title">iCare realiza estudo em parceria com a USP</h3>
         </a>
     </div>
     <div class="media-description">

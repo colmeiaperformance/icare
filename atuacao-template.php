@@ -55,40 +55,35 @@ Template Name: Template Atuação
                     empresas aos objetivos do
                     Acordo de Paris
                 </h3>
-                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>"
-                        alt="seta"></a>
+                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></a>
             </div>
             <div class="item-service">
                 <h3>Desenvolvimento de
                     Estratégias Climáticas
                     para Territórios
                 </h3>
-                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>"
-                        alt="seta"></a>
+                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></a>
             </div>
             <div class="item-service">
                 <h3>Ações e estratégias
                     focadas para o desenvolvimento
                     de cidades inteligentes
                 </h3>
-                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>"
-                        alt="seta"></a>
+                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></a>
             </div>
             <div class="item-service">
                 <h3>Apoio técnico para gestão
                     de projetos e linhas de
                     financiamento sustentáveis
                 </h3>
-                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>"
-                        alt="seta"></a>
+                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></a>
             </div>
             <div class="item-service">
                 <h3>Avaliação de
                     riscos físicos e climáticos
                     sobre empresas e negócios
                 </h3>
-                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>"
-                        alt="seta"></a>
+                <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></a>
             </div>
 
         </div>
@@ -112,7 +107,7 @@ Template Name: Template Atuação
                         <p>
                             Através das nossas capacitações para cada área.
                         </p>
-                        <div class="seta"></div>
+                        <div class="seta"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></div>
                         <ul class="whatwedo-list">
                             <li class="whatwedo-list-item">Mudança do Clima</li>
                             <li class="whatwedo-list-item">Metas Climáticas (ACT, SBT)</li>
@@ -128,7 +123,7 @@ Template Name: Template Atuação
                         <p>
                             Com nossos diagnósticos e indicadores
                         </p>
-                        <div class="seta"></div>
+                        <div class="seta"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></div>
                         <div class="item-double_container"> 
                             <div class="media-aside">
                                 <h3>Diagnósticos</h3>
@@ -156,7 +151,7 @@ Template Name: Template Atuação
                         <p>
                             Planos de ação ideais para o seu negócio ou projeto.
                         </p>
-                        <div class="seta"></div>
+                        <div class="seta"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></div>
                         <ul class="whatwedo-list">
                             <li class="whatwedo-list-item">Planos de Ação</li>
                         </ul>
@@ -177,7 +172,7 @@ Template Name: Template Atuação
                     <div class="item-media">
                        <a href="#">
                             <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-23.jpg" alt="notice">
-                            <h5 class="media-title">iCare realiza estudo em parceria com a USP</h5>
+                            <h3 class="media-title">iCare realiza estudo em parceria com a USP</h3>
                         </a>
                     </div>
                     <div class="media-description">
@@ -191,7 +186,7 @@ Template Name: Template Atuação
                     <div class="item-media">
                      <a href="#">
                             <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-21.jpg" alt="notice">
-                            <h5 class="media-title">iCare realiza estudo em parceria com a USP</h5>
+                            <h3 class="media-title">iCare realiza estudo em parceria com a USP</h3>
                         </a>
                     </div>
                     <div class="media-description">
@@ -205,7 +200,7 @@ Template Name: Template Atuação
                     <div class="item-media">
                         <a href="#">
                             <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-23.jpg" alt="notice">
-                            <h5 class="media-title">iCare realiza estudo em parceria com a USP</h5>
+                            <h3 class="media-title">iCare realiza estudo em parceria com a USP</h3>
                         </a>
                     </div>
                     <div class="media-description">
