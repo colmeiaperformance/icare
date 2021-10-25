@@ -117,7 +117,7 @@
             }
         }
         .item-content{
-            p{
+            p {
                 margin-top:0;
             }
         }
@@ -630,7 +630,7 @@
             .item-double_container {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                @media all and (max-width: 546px) { 
+                @media all and (max-width: 576px) { 
                     display: block;
                 }
             }
@@ -639,7 +639,7 @@
                 padding-right: 1rem;
                 width: auto;
                 color: #555;
-                @media all and (max-width: 546px) { 
+                @media all and (max-width: 576px) { 
                     margin: 0 auto;
                     padding: 0;
                     width: 100%;

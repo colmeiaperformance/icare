@@ -26,6 +26,9 @@
 		align-items: center;
 		flex-wrap: wrap;
 		justify-content: center;
+		@media all and (max-width: 576px) {  
+			display: block;
+		}
 		.item-content {
 			display: flex;
 			flex-direction: column;
@@ -36,6 +39,11 @@
 			margin: 1.6rem;
 			background-color: $color-white-opc-20;
 			border-radius: 1rem;
+			@media all and (max-width: 576px) { 
+				max-width: 85%;
+				width: 85%;
+				margin: 0 auto;
+			}
 			img {
 				border-radius: 4rem;
 				filter: brightness(0.6);
