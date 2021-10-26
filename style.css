@@ -965,10 +965,6 @@ a:focus .ica-but {
       flex-wrap: wrap;
 }
 
-.ica-sec.sec-infos .sec-content .content-media img {
-  height: 100%;
-}
-
 @media all and (max-width: 768px) {
   .ica-sec.sec-infos .sec-content .content-media {
     width: 100%;
@@ -3510,6 +3506,7 @@ h6 {
     max-width: 85%;
     width: 85%;
     margin: 0 auto;
+    margin-bottom: 15px;
   }
 }
 
