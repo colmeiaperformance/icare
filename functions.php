@@ -414,7 +414,7 @@ function get_breadcrumb() {
     } else if ( is_search() ) {
   
       // Search results page
-      echo '<span class="breadcrumb-item"> . _e("Search results for:", "icare") . '. get_search_query() .'</span>';
+      echo '<span class="breadcrumb-item">' . _e(' Search results for:', 'icare') . get_search_query() .'</span>';
   
     } else if ( is_404() ) {
   
