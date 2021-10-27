@@ -124,7 +124,7 @@
     }
 }
 
-@media (min-width: 1025px) {
+@media all and (min-width: 1025px) {
     /* O que fazemos? */
     
     .sec-atuacao {
@@ -618,6 +618,14 @@
         .sec-item {
             border: 1px solid $color-default-green;
             padding: 2rem;
+            &:last-child { 
+                &::before {
+                    display: none;
+                }
+                &::after {
+                    display: none;
+                }
+            }
             ul {
                 text-align: left;
             }

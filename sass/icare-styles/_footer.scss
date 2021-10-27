@@ -11,7 +11,7 @@
     position: absolute;
   }
 }
-@media (min-width: 1025px) {
+@media all and (min-width: 1025px) {
   //Footer Menu
   .nav-footer {
     display: flex;

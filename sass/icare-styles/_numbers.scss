@@ -1,10 +1,11 @@
 .ica-sec.sec-numbers {
-	background-color: $color-gray-e8e;
+	background-color: $color-default-green;
 	.sec-content {
 		display: flex;
 		align-items: top;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		padding-top: 0;
 		.sec-item {
 			margin: 2.8rem;
 			width: 16%;

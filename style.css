@@ -1728,7 +1728,7 @@ h6 {
   font-size: 3rem;
 }
 
-@media (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   #navbar {
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
@@ -1744,7 +1744,7 @@ h6 {
   }
 }
 
-@media (min-width: 1025px) {
+@media all and (min-width: 1025px) {
   nav #menu-menu-principal {
     position: relative;
     display: -webkit-box;
@@ -1973,7 +1973,7 @@ h6 {
   margin-top: 0;
 }
 
-@media (min-width: 1025px) {
+@media all and (min-width: 1025px) {
   /* O que fazemos? */
   .sec-atuacao {
     display: -webkit-box;
@@ -2466,6 +2466,14 @@ h6 {
   padding: 2rem;
 }
 
+.ica-sec.sec-whatwedo .sec-content .sec-item:last-child::before {
+  display: none;
+}
+
+.ica-sec.sec-whatwedo .sec-content .sec-item:last-child::after {
+  display: none;
+}
+
 .ica-sec.sec-whatwedo .sec-content .sec-item ul {
   text-align: left;
 }
@@ -2588,7 +2596,7 @@ h6 {
   position: absolute;
 }
 
-@media (min-width: 1025px) {
+@media all and (min-width: 1025px) {
   .nav-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3180,7 +3188,7 @@ h6 {
   font-weight: bold;
 }
 
-@media (max-width: 1025px) {
+@media all and (max-width: 1025px) {
   .ica-sec.sec-equipe .sec-members {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
@@ -3195,10 +3203,26 @@ h6 {
 }
 
 .ica-sec.sec-aboutus .ica-wrapper {
+  padding-top: 0;
   padding-bottom: 5rem;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-media {
+.ica-sec.sec-aboutus .items-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 44% 56%;
+      grid-template-columns: 44% 56%;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+@media all and (max-width: 1025px) {
+  .ica-sec.sec-aboutus .items-block {
+    display: block;
+  }
+}
+
+.ica-sec.sec-aboutus .sec-media {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -3208,7 +3232,7 @@ h6 {
   position: relative;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content {
+.ica-sec.sec-aboutus .sec-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3219,7 +3243,7 @@ h6 {
       flex-wrap: wrap;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item {
+.ica-sec.sec-aboutus .content-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3227,22 +3251,24 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 49%;
-  min-width: 680px;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-services {
+.ica-sec.sec-aboutus .content-item p {
+  text-align: left;
+}
+
+.ica-sec.sec-aboutus .item-services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 4.8rem;
-  padding-bottom: 1.6rem;
+  padding-bottom: 4.8rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-services .service {
+.ica-sec.sec-aboutus .item-services .service {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3259,17 +3285,19 @@ h6 {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   margin: 0 2.5rem;
+  margin-bottom: 20px;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-services .service p {
+.ica-sec.sec-aboutus .item-services .service p {
   margin: 0;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   font-weight: bold;
   font-size: 1.8em;
+  color: #13857f;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-description {
+.ica-sec.sec-aboutus .item-services .item-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3278,7 +3306,7 @@ h6 {
           justify-content: center;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .service-description {
+.ica-sec.sec-aboutus .item-services .service-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3286,10 +3314,61 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding: 0 1.3rem;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-complement {
+.ica-sec.sec-aboutus .item-services .service-description p {
+  color: #13857f;
+  text-align: center;
+}
+
+.ica-sec.sec-aboutus .seta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  border-bottom: 3px solid #13857f;
+  width: 97%;
+}
+
+.ica-sec.sec-aboutus .seta .arrow.is-right {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  position: relative;
+  display: inline-block;
+}
+
+.ica-sec.sec-aboutus .seta .arrow.is-triangle::after {
+  border-style: solid;
+  border-width: 0 0 20px 20px;
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-bottom-color: #13857f;
+  margin-left: -13px;
+  margin-top: -10px;
+}
+
+.ica-sec.sec-aboutus .seta .arrow::after {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-right-style: solid;
+  border-right-width: 2px;
+  content: "";
+  display: inline-block;
+  height: 12px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 12px;
+  border-color: #13857f;
+}
+
+.ica-sec.sec-aboutus .content-complement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3307,10 +3386,26 @@ h6 {
 }
 
 .ica-sec.sec-aboutus .ica-wrapper {
+  padding-top: 0;
   padding-bottom: 5rem;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-media {
+.ica-sec.sec-aboutus .items-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 44% 56%;
+      grid-template-columns: 44% 56%;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+@media all and (max-width: 1025px) {
+  .ica-sec.sec-aboutus .items-block {
+    display: block;
+  }
+}
+
+.ica-sec.sec-aboutus .sec-media {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -3320,7 +3415,7 @@ h6 {
   position: relative;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content {
+.ica-sec.sec-aboutus .sec-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3331,7 +3426,7 @@ h6 {
       flex-wrap: wrap;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item {
+.ica-sec.sec-aboutus .content-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3339,22 +3434,24 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 49%;
-  min-width: 680px;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-services {
+.ica-sec.sec-aboutus .content-item p {
+  text-align: left;
+}
+
+.ica-sec.sec-aboutus .item-services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 4.8rem;
-  padding-bottom: 1.6rem;
+  padding-bottom: 4.8rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-services .service {
+.ica-sec.sec-aboutus .item-services .service {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3371,17 +3468,19 @@ h6 {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   margin: 0 2.5rem;
+  margin-bottom: 20px;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-services .service p {
+.ica-sec.sec-aboutus .item-services .service p {
   margin: 0;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   font-weight: bold;
   font-size: 1.8em;
+  color: #13857f;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .item-description {
+.ica-sec.sec-aboutus .item-services .item-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3390,7 +3489,7 @@ h6 {
           justify-content: center;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-item .service-description {
+.ica-sec.sec-aboutus .item-services .service-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3398,10 +3497,61 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding: 0 1.3rem;
 }
 
-.ica-sec.sec-aboutus .ica-wrapper .sec-content .content-complement {
+.ica-sec.sec-aboutus .item-services .service-description p {
+  color: #13857f;
+  text-align: center;
+}
+
+.ica-sec.sec-aboutus .seta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  border-bottom: 3px solid #13857f;
+  width: 97%;
+}
+
+.ica-sec.sec-aboutus .seta .arrow.is-right {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  position: relative;
+  display: inline-block;
+}
+
+.ica-sec.sec-aboutus .seta .arrow.is-triangle::after {
+  border-style: solid;
+  border-width: 0 0 20px 20px;
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-bottom-color: #13857f;
+  margin-left: -13px;
+  margin-top: -10px;
+}
+
+.ica-sec.sec-aboutus .seta .arrow::after {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-right-style: solid;
+  border-right-width: 2px;
+  content: "";
+  display: inline-block;
+  height: 12px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 12px;
+  border-color: #13857f;
+}
+
+.ica-sec.sec-aboutus .content-complement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3563,7 +3713,7 @@ h6 {
 }
 
 .ica-sec.sec-numbers {
-  background-color: #e8e8e8;
+  background-color: #13857f;
 }
 
 .ica-sec.sec-numbers .sec-content {
@@ -3577,6 +3727,7 @@ h6 {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-top: 0;
 }
 
 .ica-sec.sec-numbers .sec-content .sec-item {
@@ -3949,7 +4100,7 @@ h6 {
   margin-top: 0;
 }
 
-@media (min-width: 1025px) {
+@media all and (min-width: 1025px) {
   /* O que fazemos? */
   .sec-atuacao {
     display: -webkit-box;
@@ -4440,6 +4591,14 @@ h6 {
 .ica-sec.sec-whatwedo .sec-content .sec-item {
   border: 1px solid #13857f;
   padding: 2rem;
+}
+
+.ica-sec.sec-whatwedo .sec-content .sec-item:last-child::before {
+  display: none;
+}
+
+.ica-sec.sec-whatwedo .sec-content .sec-item:last-child::after {
+  display: none;
 }
 
 .ica-sec.sec-whatwedo .sec-content .sec-item ul {
