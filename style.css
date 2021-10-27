@@ -3202,6 +3202,10 @@ h6 {
   left: 46%;
 }
 
+.about-us .ica-sec.sec-numbers {
+  background-color: #13857f !important;
+}
+
 .ica-sec.sec-aboutus .ica-wrapper {
   padding-top: 0;
   padding-bottom: 5rem;
@@ -3383,6 +3387,10 @@ h6 {
 
 .ica-sec.sec-testimony .sec-item {
   font-size: 125%;
+}
+
+.about-us .ica-sec.sec-numbers {
+  background-color: #13857f !important;
 }
 
 .ica-sec.sec-aboutus .ica-wrapper {
@@ -3713,7 +3721,7 @@ h6 {
 }
 
 .ica-sec.sec-numbers {
-  background-color: #13857f;
+  background-color: #e8e8e8;
 }
 
 .ica-sec.sec-numbers .sec-content {

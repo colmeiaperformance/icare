@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php get_template_part('template-parts/header-pages'); ?>
-<main>
+<main class="about-us">
   <section class="ica-sec sec-aboutus" id="aboutus">
     <div class="ica-wrapper">
       <div class="sec-content">
