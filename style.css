@@ -3043,6 +3043,27 @@ h6 {
 
 .ica-sec.sec-contact .sec-media {
   margin-bottom: 20px;
+  width: 100%;
+}
+
+.ica-sec.sec-contact .contact__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  border-top: 2px solid #13857f;
+  padding-top: 60px;
+}
+
+@media all and (max-width: 992px) {
+  .ica-sec.sec-contact .contact__inner {
+    display: block;
+  }
+}
+
+.ica-sec.sec-contact .sec-form {
+  width: 100%;
 }
 
 .ica-sec.sec-contact .sec-form form {
@@ -3518,11 +3539,6 @@ h6 {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.ica-sec.sec-notice .sec-itens .item-content img:hover {
-  -webkit-filter: brightness(1);
-          filter: brightness(1);
-}
-
 .ica-sec.sec-notice .sec-itens .item-content .item-media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3539,6 +3555,11 @@ h6 {
 
 .ica-sec.sec-notice .sec-itens .item-content .media-footer {
   padding-bottom: 1.6rem;
+}
+
+.ica-sec.sec-notice .sec-itens .item-content:hover img {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
 }
 
 .ica-sec.sec-numbers {

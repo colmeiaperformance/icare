@@ -1,8 +1,20 @@
 .ica-sec.sec-contact {
   .sec-media {
     margin-bottom: 20px;
+		width: 100%;
   }
+	.contact__inner {
+		display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+		border-top: 2px solid $color-default-green;
+		padding-top: 60px;
+		@media all and (max-width: 992px) { 
+			display: block;
+		}
+	}
 	.sec-form {
+		width: 100%;
 		form {
 			display: flex;
 			flex-direction: column;

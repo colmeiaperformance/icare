@@ -197,7 +197,7 @@
     <section class="ica-sec sec-notice" id="notice">
         <div class="ica-wrapper">
             <div class="sec-itens">
-                <?php get_template_part('section-noticias'); ?>
+                <?php get_template_part('/template-parts/section-noticias'); ?>
             </div>
         </div>
     </div>

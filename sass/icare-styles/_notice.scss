@@ -49,9 +49,6 @@
 				border-radius: 4rem;
 				filter: brightness(0.6);
 				transition: all 0.3s ease-in-out 0s;
-				&:hover {
-					filter: brightness(1);
-				}
 			}
 			.item-media {
 				display: flex;
@@ -63,6 +60,11 @@
 			.media-footer {
 				padding-bottom: 1.6rem;
 			}
+			&:hover {
+					img {
+							filter: brightness(1);
+					}
+				}
 		}
 	}
 }
