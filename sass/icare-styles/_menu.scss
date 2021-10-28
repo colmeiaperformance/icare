@@ -8,7 +8,7 @@
     transition: 0.3s all ease-in-out;
     padding: 0.1rem 2rem 2.8rem;
     a {
-        color: $color-gray-70!important;
+        color: $color-gray-70;
     }
     a:focus,
     a:hover,
@@ -21,18 +21,74 @@
         width: 100px;
         padding-top: 30px;
     }
-    .com-title {
-        color: #b6d8a9;
+    .logo-blog,
+    .logo-pages {
+        width: 100px;
+        padding-top: 35px;
+    }
+}
+
+.com-title {
+    font-family: sans-serif;
+    font-size: 3rem;
+    color:#b6d8a9;
+}
+
+#navbar-blog {
+    .scrolling {
+        .com-title {
+            color: #b6d8a9;
+        }
     }
 }
 
 #navbar {
+    a {
+        color : #fff;
+        @media all and (max-width: 1024px) { 
+            color: $color-gray-70;
+        }
+    }
     a:focus,
     a:hover,
     a:active {
         color: $color-default-green;
+    }    
+    .scrolling {
+        .com-title {
+            font-family: sans-serif;
+            font-size: 3rem;
+            color:#fff;
+        }
+        
+        .ico-title {
+            color:#b6d8a9;
+        }
+        
+    }
+    .sub-menu {
+        a {
+            color: $color-gray-70;
+            @media all and (max-width: 1024px) { 
+                color: #fff;
+            }
+        }
     }
 }
+
+#navbar-pages{
+    .com-title {
+        color: #b6d8a9;
+    }
+    .ico-title {
+        color:#b6d8a9;
+    }
+    .scrolling {
+        .com-title {
+            color: #b6d8a9;
+        }
+    }
+}  
 
 .logo,
 .logo-blog, .logo-pages{
@@ -46,37 +102,6 @@
     }
 }
 
-#navbar {
-    a {
-        color: #fff;
-    }
-}
-
-#navbar-pages{
-    .com-title {
-        color: #b6d8a9;
-    }
-    .ico-title {
-        color:#b6d8a9;
-    }
-    .scrolling  {
-        .com-title {
-            color: #fff;
-        }
-    }
-    a {
-        color: $color-gray-70;
-    }
-}
-.com-title {
-    font-family: sans-serif;
-    font-size: 3rem;
-    color:#fff;
-}
-
-.ico-title {
-    color:#b6d8a9;
-}
 
 @media all and (max-width: 1024px) {
     //Menu
@@ -155,16 +180,6 @@
             
             &.navigation-item {
                 margin-top: 0;
-            }
-        }
-    }
-    #navbar {
-        a {
-            color: #fff;
-        }
-        .sub-menu {
-            a {
-                color: $color-gray-70;
             }
         }
     }

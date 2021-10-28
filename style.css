@@ -569,26 +569,26 @@ a:focus .ica-but {
   position: relative;
 }
 
-.ica-com.com-carousel .com-item .item-media {
+.ica-com.com-carousel .com-item .swiper-slide-img-home {
   height: 100vh;
   width: 100%;
   display: block;
 }
 
 @media all and (max-width: 992px) {
-  .ica-com.com-carousel .com-item .item-media {
+  .ica-com.com-carousel .com-item .swiper-slide-img-home {
     display: none;
   }
 }
 
-.ica-com.com-carousel .com-item .item-media-mobile {
+.ica-com.com-carousel .com-item .swiper-slide-img-home-mobile {
   height: 100vh;
   width: 100%;
   display: none;
 }
 
 @media all and (max-width: 992px) {
-  .ica-com.com-carousel .com-item .item-media-mobile {
+  .ica-com.com-carousel .com-item .swiper-slide-img-home-mobile {
     display: block;
   }
 }
@@ -1722,7 +1722,7 @@ h6 {
 }
 
 .scrolling a {
-  color: #707070 !important;
+  color: #707070;
 }
 
 .scrolling a:focus,
@@ -1738,14 +1738,68 @@ h6 {
   padding-top: 30px;
 }
 
-.scrolling .com-title {
+.scrolling .logo-blog,
+.scrolling .logo-pages {
+  width: 100px;
+  padding-top: 35px;
+}
+
+.com-title {
+  font-family: sans-serif;
+  font-size: 3rem;
   color: #b6d8a9;
+}
+
+#navbar-blog .scrolling .com-title {
+  color: #b6d8a9;
+}
+
+#navbar a {
+  color: #fff;
+}
+
+@media all and (max-width: 1024px) {
+  #navbar a {
+    color: #707070;
+  }
 }
 
 #navbar a:focus,
 #navbar a:hover,
 #navbar a:active {
   color: #13857f;
+}
+
+#navbar .scrolling .com-title {
+  font-family: sans-serif;
+  font-size: 3rem;
+  color: #fff;
+}
+
+#navbar .scrolling .ico-title {
+  color: #b6d8a9;
+}
+
+#navbar .sub-menu a {
+  color: #707070;
+}
+
+@media all and (max-width: 1024px) {
+  #navbar .sub-menu a {
+    color: #fff;
+  }
+}
+
+#navbar-pages .com-title {
+  color: #b6d8a9;
+}
+
+#navbar-pages .ico-title {
+  color: #b6d8a9;
+}
+
+#navbar-pages .scrolling .com-title {
+  color: #b6d8a9;
 }
 
 .logo,
@@ -1758,36 +1812,6 @@ h6 {
   .logo {
     padding-top: 0;
   }
-}
-
-#navbar a {
-  color: #fff;
-}
-
-#navbar-pages .com-title {
-  color: #b6d8a9;
-}
-
-#navbar-pages .ico-title {
-  color: #b6d8a9;
-}
-
-#navbar-pages .scrolling .com-title {
-  color: #fff;
-}
-
-#navbar-pages a {
-  color: #707070;
-}
-
-.com-title {
-  font-family: sans-serif;
-  font-size: 3rem;
-  color: #fff;
-}
-
-.ico-title {
-  color: #b6d8a9;
 }
 
 @media all and (max-width: 1024px) {
@@ -1871,12 +1895,6 @@ h6 {
   }
   header .navigation-list > .menu-item-has-children:hover .sub-menu.navigation-item {
     margin-top: 0;
-  }
-  #navbar a {
-    color: #fff;
-  }
-  #navbar .sub-menu a {
-    color: #707070;
   }
 }
 
@@ -2752,7 +2770,7 @@ h6 {
 }
 
 .blog-content .swiper-slide-img {
-  margin-top: 40px;
+  margin-top: 0;
 }
 
 .pagination {
@@ -2795,8 +2813,17 @@ h6 {
   padding-bottom: 2.5rem;
 }
 
+.blog-content {
+  margin-top: 0 !important;
+}
+
 .blog-content .ica-com.com-carousel {
   height: 400px;
+  margin-top: 0;
+}
+
+.blog-content .item-content {
+  margin-top: 5rem;
 }
 
 #blog {

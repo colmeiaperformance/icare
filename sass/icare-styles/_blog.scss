@@ -10,8 +10,13 @@
 	
 	//Header slider blog
 	.blog-content {
+		margin-top: 0!important;
 		.ica-com.com-carousel {
 			height: 400px;
+			margin-top: 0;
+		}
+		.item-content {
+			margin-top: 5rem;
 		}
 	}
 	#blog {
