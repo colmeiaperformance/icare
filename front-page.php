@@ -5,38 +5,29 @@
     <div class="ica-com com-carousel com-home swiper-container">
         <div class="swiper-wrapper">
             <div class="com-item swiper-slide">
-                <div class="item-media swiper-slide-img-home">
-                    <img src="<?php echo get_template_directory_uri() . '/images/bg-banner.jpg' ?>" alt="" />
+                <div class="item-media swiper-slide-img-home" style="background-image: url('<?php echo get_template_directory_uri() . '/images/header.png' ?>');background-position: center;background-repeat: no-repeat; background-size: cover;">
+                </div>
+                 <div class="item-media-mobile swiper-slide-img-home" style="background-image: url('<?php echo get_template_directory_uri() . '/images/header-mobile.png' ?>');background-position: center;background-repeat: no-repeat; background-size: cover;">
                 </div>
                 <div class="item-content ica-the the-highlight">
-                    <div class=content-left>
                         <h1 class="item-title"><span>Consultoria</span> especializada em estratégia e inovação do <span>meio ambiente</span></h1>
                         <a href="#" class="ica-but but-light">Sobre a iCare</a>
                         <a href="#" class="ica-but but-light">Áreas de Atuação</a>
-                    </div>
-                    <div class="content-right">
-                        <img src="<?php echo get_template_directory_uri() . '/images/logo-banner.png' ?>" alt="" />
-                    </div>
                 </div>
             </div>
             <div class="com-item swiper-slide">
-                <div class="item-media swiper-slide-img-home">
-                    <img src="<?php echo get_template_directory_uri() . '/images/bg-banner.jpg' ?>" alt="" />
+                <div class="item-media swiper-slide-img-home" style="background-image: url('<?php echo get_template_directory_uri() . '/images/header.png' ?>');background-position: center;background-repeat: no-repeat; background-size: cover;">
+                </div>
+                <div class="item-media-mobile swiper-slide-img-home" style="background-image: url('<?php echo get_template_directory_uri() . '/images/header-mobile.png' ?>');background-position: center;background-repeat: no-repeat; background-size: cover;">
                 </div>
                 <div class="item-content ica-the the-highlight">
-                    <div class=content-left>
                         <h1 class="item-title"><span>Consultoria</span> especializada em estratégia e inovação do <span>meio ambiente</span></h1>
                         <a href="#" class="ica-but but-light">Sobre a iCare</a>
                         <a href="#" class="ica-but but-light">Áreas de Atuação</a>
-                    </div>
-                    <div class="content-right">
-                        <img src="<?php echo get_template_directory_uri() . '/images/logo-banner.png' ?>" alt="" />
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-
     <section class="ica-sec sec-acting" id="acting">
         <div class="ica-wrapper">
             <div class="sec-content">
@@ -193,14 +184,13 @@
             </div>
         </div>
     </section>
-   
     <section class="ica-sec sec-notice" id="notice">
         <div class="ica-wrapper">
             <div class="sec-itens">
                 <?php get_template_part('/template-parts/section-noticias'); ?>
             </div>
         </div>
-    </div>
+    </section>
 </main>
 
 <?php get_footer() ?>

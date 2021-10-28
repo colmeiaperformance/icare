@@ -536,7 +536,7 @@ a:focus .ica-but {
 
 /*
 /////////////////
-////COMPONENTS//
+////SLIDER HOME//
 ///////////////
 */
 .ica-com.com-banner .ica-wrapper {
@@ -550,7 +550,7 @@ a:focus .ica-but {
           align-items: center;
   padding: 0;
   margin: 0;
-  margin-top: -16rem;
+  margin-top: -12rem;
 }
 
 .ica-com.com-banner .com-content {
@@ -562,32 +562,34 @@ a:focus .ica-but {
 }
 
 .ica-com.com-carousel {
-  margin-top: -16rem;
+  margin-top: -12rem;
 }
 
 .ica-com.com-carousel .com-item {
   position: relative;
 }
 
-.ica-com.com-carousel .com-item .item-content {
-  padding: 2.4rem 2.4rem 4.8rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 60px;
-}
-
-.ica-com.com-carousel .com-item .item-content h1 {
-  margin: 0 16rem;
+.ica-com.com-carousel .com-item .item-media {
+  height: 100vh;
+  width: 100%;
+  display: block;
 }
 
 @media all and (max-width: 992px) {
-  .ica-com.com-carousel .com-item .item-content {
-    top: 30px;
+  .ica-com.com-carousel .com-item .item-media {
+    display: none;
   }
-  .ica-com.com-carousel .com-item .item-content h1 {
-    font-size: 2.2rem;
+}
+
+.ica-com.com-carousel .com-item .item-media-mobile {
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+
+@media all and (max-width: 992px) {
+  .ica-com.com-carousel .com-item .item-media-mobile {
+    display: block;
   }
 }
 
@@ -604,29 +606,55 @@ a:focus .ica-but {
   font-size: 2.4em;
 }
 
-.menu-auxiliar {
-  background-color: orange;
-}
-
 .ica-com.com-carousel.com-home .com-item .item-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 8rem;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  top: 130px;
+  text-align: left;
+  width: 65%;
+}
+
+@media all and (max-width: 992px) {
+  .ica-com.com-carousel.com-home .com-item .item-content {
+    top: 200px;
+    width: 100%;
+  }
 }
 
 .ica-com.com-carousel.com-home .com-item .item-content h1 {
-  margin: 0;
+  font-size: 5rem;
+  margin: 0 auto;
 }
 
-.ica-com.com-carousel.com-home .com-item .item-content .content-left {
-  font-size: 1.5em;
-  text-align: left;
-  margin-top: 7rem;
+@media all and (max-width: 992px) {
+  .ica-com.com-carousel.com-home .com-item .item-content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .ica-com.com-carousel.com-home .com-item .item-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.ica-com.com-carousel.com-home .com-item .item-content .ica-but {
+  font-size: 1.6rem;
+}
+
+@media all and (max-width: 992px) {
+  .ica-com.com-carousel.com-home .com-item .item-content .ica-but {
+    margin: 1.6rem 1.6rem 0 auto;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .ica-com.com-carousel.com-home .com-item .item-content .ica-but {
+    width: 100%;
+  }
 }
 
 /*

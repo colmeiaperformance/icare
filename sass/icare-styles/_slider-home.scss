@@ -1,0 +1,104 @@
+/*
+/////////////////
+////SLIDER HOME//
+///////////////
+*/
+
+.ica-com {
+	&.com-banner {
+		.ica-wrapper {
+			position: relative;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			padding: 0;
+			margin: 0;
+			margin-top: -12rem;
+		}
+		.com-content {
+			position: absolute;
+			text-align: center;
+			bottom: 0;
+			left: 0;
+			margin: 8rem;
+		}
+	}
+	
+	&.com-carousel {
+		margin-top: -12rem;
+		.com-item {
+			position: relative;
+			.item-media {
+				height: 100vh;
+				width: 100%;
+				display: block;
+				@media all and (max-width: 992px) {
+					display: none;
+				}
+			}
+			.item-media-mobile {
+				height: 100vh;
+				width: 100%;
+				display: none;
+				@media all and (max-width: 992px) {
+					display: block;
+				}
+			}
+		}
+	}
+	
+	&.com-jumper {
+		display: none;
+		position: absolute;
+		right: 1.6rem;
+		top: 2.6rem;
+		line-height: 2.8rem;
+		z-index: 50;
+		&:before {
+			font-size: 2.4em;
+		}
+	}
+}
+
+.ica-com{
+	&.com-carousel{
+		&.com-home{
+			.com-item{
+				.item-content{
+					padding: 8rem;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					top: 130px;
+					text-align: left;
+					width: 65%;
+					// max-width: 750px;
+					@media all and (max-width: 992px) {  
+						top: 200px;
+						width: 100%;
+					}
+					h1 {
+						font-size: 5rem;
+						margin: 0 auto;
+						@media all and (max-width: 992px) {  
+							font-size: 3rem;
+						}
+						@media all and (max-width: 576px) {  
+							font-size: 2.5rem;
+						}
+					}
+					.ica-but {
+						font-size: 1.6rem;
+						@media all and (max-width: 992px) {   
+							margin: 1.6rem 1.6rem 0 auto;
+						}
+						@media all and (max-width: 576px) {  
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
