@@ -1722,7 +1722,7 @@ h6 {
 }
 
 .scrolling a {
-  color: #707070;
+  color: #707070 !important;
 }
 
 .scrolling a:focus,
@@ -1760,6 +1760,10 @@ h6 {
   }
 }
 
+#navbar a {
+  color: #fff;
+}
+
 #navbar-pages .com-title {
   color: #b6d8a9;
 }
@@ -1770,6 +1774,10 @@ h6 {
 
 #navbar-pages .scrolling .com-title {
   color: #fff;
+}
+
+#navbar-pages a {
+  color: #707070;
 }
 
 .com-title {
@@ -1863,6 +1871,12 @@ h6 {
   }
   header .navigation-list > .menu-item-has-children:hover .sub-menu.navigation-item {
     margin-top: 0;
+  }
+  #navbar a {
+    color: #fff;
+  }
+  #navbar .sub-menu a {
+    color: #707070;
   }
 }
 

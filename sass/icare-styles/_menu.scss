@@ -8,7 +8,7 @@
     transition: 0.3s all ease-in-out;
     padding: 0.1rem 2rem 2.8rem;
     a {
-        color: $color-gray-70;
+        color: $color-gray-70!important;
     }
     a:focus,
     a:hover,
@@ -41,8 +41,14 @@
 }
 
 .logo {
-     @media all and (max-width: 1024px) { 
+    @media all and (max-width: 1024px) { 
         padding-top: 0;
+    }
+}
+
+#navbar {
+    a {
+        color: #fff;
     }
 }
 
@@ -51,12 +57,15 @@
         color: #b6d8a9;
     }
     .ico-title {
-    color:#b6d8a9;
+        color:#b6d8a9;
     }
     .scrolling  {
         .com-title {
-          color: #fff;
+            color: #fff;
         }
+    }
+    a {
+        color: $color-gray-70;
     }
 }
 .com-title {
@@ -146,6 +155,16 @@
             
             &.navigation-item {
                 margin-top: 0;
+            }
+        }
+    }
+    #navbar {
+        a {
+            color: #fff;
+        }
+        .sub-menu {
+            a {
+                color: $color-gray-70;
             }
         }
     }
