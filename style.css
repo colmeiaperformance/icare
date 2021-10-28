@@ -612,7 +612,7 @@ a:focus .ica-but {
   bottom: 0;
   left: 0;
   right: 0;
-  top: 130px;
+  top: 13rem;
   text-align: left;
   width: 65%;
 }
@@ -1718,7 +1718,7 @@ h6 {
           box-shadow: rgba(0, 0, 0, 0.2) 1px 0px 5px !important;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
-  padding: 0.1rem 2rem 2.5rem;
+  padding: 0.1rem 2rem 2.8rem;
 }
 
 .scrolling a {
@@ -1735,7 +1735,11 @@ h6 {
 .scrolling .logo-blog,
 .scrolling .logo-pages {
   width: 100px;
-  padding-top: 25px !important;
+  padding-top: 30px;
+}
+
+.scrolling .com-title {
+  color: #b6d8a9;
 }
 
 #navbar a:focus,
@@ -1745,15 +1749,37 @@ h6 {
 }
 
 .logo,
-.logo-blog,
-.logo-pages {
+.logo-blog, .logo-pages {
   width: 125px;
-  padding-top: 25px !important;
+  padding-top: 30px;
+}
+
+@media all and (max-width: 1024px) {
+  .logo {
+    padding-top: 0;
+  }
+}
+
+#navbar-pages .com-title {
+  color: #b6d8a9;
+}
+
+#navbar-pages .ico-title {
+  color: #b6d8a9;
+}
+
+#navbar-pages .scrolling .com-title {
+  color: #fff;
 }
 
 .com-title {
   font-family: sans-serif;
   font-size: 3rem;
+  color: #fff;
+}
+
+.ico-title {
+  color: #b6d8a9;
 }
 
 @media all and (max-width: 1024px) {

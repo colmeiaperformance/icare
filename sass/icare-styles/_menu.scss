@@ -6,7 +6,7 @@
     background: $color-white-opc-95 !important;
     box-shadow: $color-black-opc-20 1px 0px 5px !important;
     transition: 0.3s all ease-in-out;
-    padding: 0.1rem 2rem 2.5rem;
+    padding: 0.1rem 2rem 2.8rem;
     a {
         color: $color-gray-70;
     }
@@ -19,7 +19,10 @@
     .logo-blog,
     .logo-pages {
         width: 100px;
-        padding-top: 25px !important;
+        padding-top: 30px;
+    }
+    .com-title {
+        color: #b6d8a9;
     }
 }
 
@@ -32,14 +35,38 @@
 }
 
 .logo,
-.logo-blog,
-.logo-pages {
+.logo-blog, .logo-pages{
     width: 125px;
-    padding-top: 25px !important;
+    padding-top: 30px;
+}
+
+.logo {
+     @media all and (max-width: 1024px) { 
+        padding-top: 0;
+    }
+}
+
+#navbar-pages{
+    .com-title {
+        color: #b6d8a9;
+    }
+    .ico-title {
+    color:#b6d8a9;
+    }
+    .scrolling  {
+        .com-title {
+          color: #fff;
+        }
+    }
 }
 .com-title {
     font-family: sans-serif;
     font-size: 3rem;
+    color:#fff;
+}
+
+.ico-title {
+    color:#b6d8a9;
 }
 
 @media all and (max-width: 1024px) {
