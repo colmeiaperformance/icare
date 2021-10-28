@@ -30,7 +30,18 @@ jQuery(document).ready(function () {
       hide: true,
     },
   });
+
+   var swiper3 = new Swiper(".sec-itens", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
 });
+
 
 //Menu scrolling class
 jQuery(document).ready(function () {
