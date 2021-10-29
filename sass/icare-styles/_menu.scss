@@ -40,14 +40,14 @@
 #navbar-blog {
     .scrolling {
         .com-title {
-            color: #b6d8a9;
+            color: $color-green-8a9;
         }
     }
 }
 
 #navbar {
     a {
-        color: #fff;
+        color: $color-white;
     }
     a:focus,
     a:hover,
@@ -55,14 +55,14 @@
         color: $color-default-green;
     }
     .com-title {
-        color: #fff;
+        color:  $color-white;
     }
     .scrolling {
         .com-title {
-            color: #b6d8a9;
+            color: $color-green-8a9;
         }
         .ico-title {
-            color: #b6d8a9;
+            color: $color-green-8a9;
         }
         a {
             color: $color-gray-70 !important;
@@ -72,7 +72,7 @@
         a {
             color: $color-gray-70;
             @media all and (max-width: 1024px) {
-                color: #fff;
+                color:  $color-white;
             }
         }
     }
@@ -80,14 +80,14 @@
 
 #navbar-pages {
     .com-title {
-        color: #b6d8a9;
+        color: $color-green-8a9;
     }
     .ico-title {
-        color: #b6d8a9;
+        color: $color-green-8a9;
     }
     .scrolling {
         .com-title {
-            color: #b6d8a9;
+            color: $color-green-8a9;
         }
     }
 }

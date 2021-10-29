@@ -630,7 +630,7 @@
                 text-align: left;
             }
             li {
-                color: #555;
+                color: $color-gray-555;
             }
             .media-seta {
                 padding-right: 1rem;
@@ -646,7 +646,7 @@
                 text-align: left;
                 padding-right: 1rem;
                 width: auto;
-                color: #555;
+                color: $color-gray-555;
                 @media all and (max-width: 576px) { 
                     margin: 0 auto;
                     padding: 0;
@@ -666,7 +666,7 @@
                     content: "";
                     pointer-events: none;
                     border-color: rgba(19, 133, 127, 0);
-                    border-top-color: #e8e8e8;
+                    border-top-color: $color-gray-e8e;
                     border-width: 42px;
                     position: absolute;
                     margin-left: -23px;
@@ -684,7 +684,7 @@
                     content: "";
                     pointer-events: none;
                     border-color: rgba(19, 133, 127, 0);
-                    border-top-color: #1e8580;
+                    border-top-color: $color-green-240;
                     border-width: 42px;
                     position: absolute;
                     margin-left: -22px;

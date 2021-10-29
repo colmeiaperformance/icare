@@ -19,7 +19,7 @@
         .img-pages-content-title{
             color: $color-white;
             &:before {
-                background: #fff;
+                background: $color-white;
                 content: "";
                 display: inline-block;
                 width: 50px;
@@ -28,7 +28,7 @@
                 border-bottom: 1px solid;
             }
              &:after {
-                background: #fff;
+                background: $color-white;
                 content: "";
                 display: inline-block;
                 width: 50px;
