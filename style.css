@@ -1744,6 +1744,10 @@ h6 {
   padding-top: 35px;
 }
 
+.scrolling .com-title {
+  color: #707070 !important;
+}
+
 .com-title,
 .ico-title {
   font-family: sans-serif;
@@ -1803,7 +1807,8 @@ h6 {
 }
 
 .logo,
-.logo-blog, .logo-pages {
+.logo-blog,
+.logo-pages {
   width: 125px;
   padding-top: 30px;
 }
@@ -1895,6 +1900,9 @@ h6 {
   }
   header .navigation-list > .menu-item-has-children:hover .sub-menu.navigation-item {
     margin-top: 0;
+  }
+  .scrolling a {
+    color: #707070 !important;
   }
 }
 
@@ -4861,9 +4869,11 @@ h6 {
 .ica-sec.sec-partners .swiper {
   width: 100%;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.ica-sec.sec-partners .swiper-slide {
+.ica-sec.sec-partners .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;

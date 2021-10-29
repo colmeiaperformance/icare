@@ -2,8 +2,14 @@ jQuery(document).ready(function () {
   //Banner header
   const swiper = new Swiper(".swiper-container", {
     grabCursor: true,
+    effect: "fade",
     loop: true,
+    loopFillGroupWithBlank: true,
     speed: 300,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
@@ -30,9 +36,34 @@ jQuery(document).ready(function () {
       hide: true,
     },
   });
-  
-});
 
+  //Slider logotipos
+  const swiper3 = new Swiper(".swiperLogos", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+    },
+  });
+});
 
 //Menu scrolling class
 jQuery(document).ready(function () {
@@ -65,6 +96,5 @@ jQuery(document).ready(function () {
     jQuery(".navbar-white")[
       jQuery(window).scrollTop() >= 150 ? "addClass" : "removeClass"
     ]("scrolling");
-
   });
 });

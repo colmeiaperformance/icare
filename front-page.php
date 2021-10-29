@@ -20,9 +20,9 @@
         <div class="item-media swiper-slide-img-home-mobile" style="background-image: url('<?php echo get_template_directory_uri() . '/images/header-mobile.png' ?>');background-position: center;background-repeat: no-repeat; background-size: cover;">
         </div>
         <div class="item-content ica-the the-highlight">
-          <h1 class="item-title"><span>Consultoria</span> especializada em estratégia e inovação do <span>meio ambiente</span></h1>
-          <a href="#" class="ica-but but-light">Sobre a iCare</a>
-          <a href="#" class="ica-but but-light">Áreas de Atuação</a>
+          <h1 class="item-title"><span>Assessoria</span> especializada em estratégia e inovação da <span>Natureza</span></h1>
+          <a href="#" class="ica-but but-light">Nossos Produtos</a>
+          <a href="#" class="ica-but but-light">Entre em Contato</a>
         </div>
       </div>
     </div>
@@ -90,25 +90,27 @@
           <p> A iCare Brasil apoia seus <b>clientes, autoridades locais, instituições públicas, empresas e investidores</b>, em seu processo de transição ambiental. Conheça algumas das marcas que já foram apoiadas: </p>
         </div>
       </div>
-      <div class="swiper sec-itens">
-        <div class="item-media swiper-slide">
-          <img src="<?php echo get_template_directory_uri() . '/images/afd.png' ?>" alt="afd">
-        </div>
-        <div class="item-media swiper-slide">
-          <img src="<?php echo get_template_directory_uri() . '/images/alstom.png' ?>" alt="alstom">
-        </div>
-        <div class="item-media swiper-slide">
-          <img src="<?php echo get_template_directory_uri() . '/images/banque-de-france.png' ?>"
-            alt="banque-de-france">
-        </div>
-        <div class="item-media swiper-slide">
-          <img src="<?php echo get_template_directory_uri() . '/images/bdmg.png' ?>" alt="bdmg">
-        </div>
-        <div class="item-media swiper-slide">
-          <img src="<?php echo get_template_directory_uri() . '/images/bnp.png' ?>" alt="bnp">
-        </div>
-        <div class="item-media swiper-slide">
-          <img src="<?php echo get_template_directory_uri() . '/images/brde.png' ?>" alt="brde">
+      <div class="swiper swiperLogos sec-itens">
+        <div class="swiper-wrapper">
+          <div class="item-media swiper-slide">
+            <img src="<?php echo get_template_directory_uri() . '/images/afd.png' ?>" alt="afd">
+          </div>
+          <div class="item-media swiper-slide">
+            <img src="<?php echo get_template_directory_uri() . '/images/alstom.png' ?>" alt="alstom">
+          </div>
+          <div class="item-media swiper-slide">
+            <img src="<?php echo get_template_directory_uri() . '/images/banque-de-france.png' ?>"
+              alt="banque-de-france">
+          </div>
+          <div class="item-media swiper-slide">
+            <img src="<?php echo get_template_directory_uri() . '/images/bdmg.png' ?>" alt="bdmg">
+          </div>
+          <div class="item-media swiper-slide">
+            <img src="<?php echo get_template_directory_uri() . '/images/bnp.png' ?>" alt="bnp">
+          </div>
+          <div class="item-media swiper-slide">
+            <img src="<?php echo get_template_directory_uri() . '/images/brde.png' ?>" alt="brde">
+          </div>
         </div>
       </div>
     </div>
