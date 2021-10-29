@@ -42,6 +42,7 @@ jQuery(document).ready(function () {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    grabCursor: true,
     loopFillGroupWithBlank: true,
     pagination: {
       el: ".swiper-pagination",
@@ -52,11 +53,14 @@ jQuery(document).ready(function () {
       disableOnInteraction: false,
     },
     breakpoints: {
-      640: {
+      576: {
         slidesPerView: 1,
       },
-      768: {
+      640: {
         slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
       },
       1024: {
         slidesPerView: 4,
