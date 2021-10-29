@@ -1744,10 +1744,10 @@ h6 {
   padding-top: 35px;
 }
 
-.com-title {
+.com-title,
+.ico-title {
   font-family: sans-serif;
   font-size: 3rem;
-  color: #b6d8a9;
 }
 
 #navbar-blog .scrolling .com-title {
@@ -1758,26 +1758,26 @@ h6 {
   color: #fff;
 }
 
-@media all and (max-width: 1024px) {
-  #navbar a {
-    color: #707070;
-  }
-}
-
 #navbar a:focus,
 #navbar a:hover,
 #navbar a:active {
   color: #13857f;
 }
 
-#navbar .scrolling .com-title {
-  font-family: sans-serif;
-  font-size: 3rem;
+#navbar .com-title {
   color: #fff;
+}
+
+#navbar .scrolling .com-title {
+  color: #b6d8a9;
 }
 
 #navbar .scrolling .ico-title {
   color: #b6d8a9;
+}
+
+#navbar .scrolling a {
+  color: #707070 !important;
 }
 
 #navbar .sub-menu a {
@@ -2822,7 +2822,7 @@ h6 {
   margin-top: 0;
 }
 
-.blog-content .item-content {
+.blog-content .ica-com.com-carousel .item-content {
   margin-top: 5rem;
 }
 

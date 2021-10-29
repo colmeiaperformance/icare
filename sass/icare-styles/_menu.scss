@@ -28,10 +28,10 @@
     }
 }
 
-.com-title {
+.com-title,
+.ico-title  {
     font-family: sans-serif;
     font-size: 3rem;
-    color:#b6d8a9;
 }
 
 #navbar-blog {
@@ -45,26 +45,25 @@
 #navbar {
     a {
         color : #fff;
-        @media all and (max-width: 1024px) { 
-            color: $color-gray-70;
-        }
     }
     a:focus,
     a:hover,
     a:active {
         color: $color-default-green;
     }    
+    .com-title {
+      color:#fff;
+    }
     .scrolling {
         .com-title {
-            font-family: sans-serif;
-            font-size: 3rem;
-            color:#fff;
+            color: #b6d8a9 ;
         }
-        
         .ico-title {
             color:#b6d8a9;
         }
-        
+        a {
+            color:  $color-gray-70!important;
+        }
     }
     .sub-menu {
         a {
