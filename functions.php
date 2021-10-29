@@ -124,37 +124,6 @@ function fix_svg() {
 }
 add_action( 'admin_head', 'fix_svg' );
 
-
-/**
- * Organiza um menu personalizado para exibição dos itens e subitens
-**/
-// function get_menu($menu_name = false, $menuID = false){
-//     //Obtem o menu em questão
-//     if ($menu_name) {
-//         $menuLocations = get_nav_menu_locations();
-//         $menuID = $menuLocations[$menu_name];
-//     }
-
-//     $itens_menu = wp_get_nav_menu_items($menuID);
-//     $menu = array();
-//     $submenu = array();
-
-//     foreach ($itens_menu as $item) {
-//         if ($item->menu_item_parent == 0) {
-//             $menu[] = $item;
-//         } else {
-//             if (!array_key_exists($item->menu_item_parent, $submenu)) {
-//                 $submenu[$item->menu_item_parent] = array();
-//             }
-//             $submenu[$item->menu_item_parent][] = $item;
-//         }
-//     }
-//     $menu_itens = array();
-//     $menu_itens["parents"] = $menu;
-//     $menu_itens["children"] = $submenu;
-//     return $menu_itens;
-// }
-
 //Adiciona classe no item do menu
 function add_additional_class_on_li($classes, $item, $args) {
     if(isset($args->add_li_class)) {
