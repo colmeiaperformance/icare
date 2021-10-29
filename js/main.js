@@ -67,6 +67,8 @@ jQuery(document).ready(function () {
       },
     },
   });
+
+  
 });
 
 //Menu scrolling class

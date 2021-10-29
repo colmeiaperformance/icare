@@ -83,6 +83,8 @@
       </div>
     </div>
   </section>
+
+  <!-- Slider de logotipos -->
   <section class="ica-sec sec-partners" id="partners">
     <div class="ica-wrapper">
       <div class="sec-content">
