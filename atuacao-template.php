@@ -162,48 +162,25 @@
         <h3 class="sec-title ica-the the-white">Últimas notícias</h3>
       </header>
       <div class="sec-itens">
+        <?php $query = new WP_Query( 'posts_per_page=3' ); ?>
+        <?php while($query->have_posts()) : $query->the_post(); ?>  
         <div class="item-content">
           <div class="item-media">
-            <a href="#">
-              <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-23.jpg" alt="notice">
-              <h3 class="media-title">iCare realiza estudo em parceria com a USP</h3>
+            <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark">
+              <?php the_post_thumbnail(); ?>
+              <h3 class="media-title">
+              <?php if (strlen($post->post_title) > 75) {echo substr(the_title($before = '', $after = '', FALSE), 0, 75) . '...'; } else {the_title();} ?>
+              </h3>
             </a>
           </div>
           <div class="media-description">
-            <p>A iCare Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a Universidade de São Paulo</p>
+            <p><?php the_excerpt(); ?></p>
           </div>
           <div class="media-footer">
-            <a href="#" class="ica-but but-conversion">Leia Mais</a>
+            <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark" class="ica-but but-conversion">Leia Mais</a>
           </div>
         </div>
-        <div class="item-content">
-          <div class="item-media">
-            <a href="#">
-              <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-21.jpg" alt="notice">
-              <h3 class="media-title">iCare realiza estudo em parceria com a USP</h3>
-            </a>
-          </div>
-          <div class="media-description">
-            <p>A iCare Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a Universidade de São Paulo</p>
-          </div>
-          <div class="media-footer">
-            <a href="#" class="ica-but but-conversion">Leia Mais</a>
-          </div>
-        </div>
-        <div class="item-content">
-          <div class="item-media">
-            <a href="#">
-              <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-23.jpg" alt="notice">
-              <h3 class="media-title">iCare realiza estudo em parceria com a USP</h3>
-            </a>
-          </div>
-          <div class="media-description">
-            <p>A iCare Brasil acaba de concluir um estudo, em parceria com o Observatório Nacional e a Universidade de São Paulo</p>
-          </div>
-          <div class="media-footer">
-            <a href="#" class="ica-but but-conversion">Leia Mais</a>
-          </div>
-        </div>
+        <?php endwhile; wp_reset_postdata();?>
       </div>
     </div>
   </section>

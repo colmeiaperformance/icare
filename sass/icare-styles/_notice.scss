@@ -23,7 +23,7 @@
 	.sec-itens {
 		display: flex;
 		text-align: center;
-		align-items: center;
+		align-items: baseline;
 		flex-wrap: wrap;
 		justify-content: center;
 		@media all and (max-width: 576px) {  
@@ -49,6 +49,9 @@
 				border-radius: 4rem;
 				filter: brightness(0.6);
 				transition: all 0.3s ease-in-out 0s;
+				width: 100%;
+				height: 100%;
+				max-width: 375px;
 			}
 			.item-media {
 				display: flex;

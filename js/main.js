@@ -16,7 +16,7 @@ jQuery(document).ready(function () {
   });
 
   //Script testimonial
-  const swiper2 = new Swiper(".ica-sec.sec-testimony .swiper-container", {
+  const swiper2 = new Swiper(".sec-itens .swiper-container", {
     grabCursor: true,
     loop: true,
     speed: 300,
@@ -30,16 +30,7 @@ jQuery(document).ready(function () {
       hide: true,
     },
   });
-
-   var swiper3 = new Swiper(".sec-itens", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        freeMode: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
+  
 });
 
 
