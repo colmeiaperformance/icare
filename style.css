@@ -934,6 +934,29 @@ a:focus .ica-but {
   border-bottom: 1px solid;
 }
 
+.order-reverse span {
+  display: inline-block;
+  white-space: normal;
+}
+
+.order-reverse .left {
+  float: left;
+}
+
+.order-reverse .right {
+  float: right;
+}
+
+.oval img {
+  width: 100%;
+  height: auto;
+}
+
+span {
+  padding: 2rem;
+  display: inline-block;
+}
+
 /*
 ///////////////
 ////SECTIONS//
