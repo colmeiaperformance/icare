@@ -3,16 +3,15 @@
 
 <?php
 //Variables
-$imagem_contato = get_field('imagem_contato', 'option');
-$posicao_da_imagem_contato = get_field('posicao_da_imagem_contato', 'option');
-
+$posicao_da_imagem_contato = get_field('posicao_da_imagem_contato');
+$pic = $posicao_da_imagem_contato['value'];
 ?>
 <!-- O conteúdo vai aqui -->
 <main>
     <section class="ica-sec sec-contact">
         <div class="ica-wrapper">
             <div class="contact__inner">
-                <div class="sec-media">
+                <div class="sec-media <?php echo $pic; ?>">
                 <img src="<?php the_field('imagem_contato'); ?>" alt="" />
             </div>
             <div class="sec-form">

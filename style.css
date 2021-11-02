@@ -3176,17 +3176,10 @@ h6 {
   transition: all ease-in-out .2s;
 }
 
-.ica-sec.sec-contact .sec-media {
-  margin-bottom: 20px;
-  width: 100%;
-}
-
 .ica-sec.sec-contact .contact__inner {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-top: 2px solid #13857f;
   padding-top: 60px;
 }
@@ -3197,11 +3190,31 @@ h6 {
   }
 }
 
-.ica-sec.sec-contact .sec-form {
+.ica-sec.sec-contact .contact__inner .left {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.ica-sec.sec-contact .contact__inner .right {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.ica-sec.sec-contact .contact__inner .sec-media {
+  margin-bottom: 20px;
   width: 100%;
 }
 
-.ica-sec.sec-contact .sec-form form {
+.ica-sec.sec-contact .contact__inner .sec-form {
+  width: 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.ica-sec.sec-contact .contact__inner .sec-form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3212,16 +3225,16 @@ h6 {
   text-align: left;
 }
 
-.ica-sec.sec-contact .sec-form form label {
+.ica-sec.sec-contact .contact__inner .sec-form form label {
   color: #13857f;
   font-weight: bold;
 }
 
-.ica-sec.sec-contact .sec-form form label:first-child {
+.ica-sec.sec-contact .contact__inner .sec-form form label:first-child {
   margin-top: 0;
 }
 
-.ica-sec.sec-contact .sec-form form textarea {
+.ica-sec.sec-contact .contact__inner .sec-form form textarea {
   margin-top: 1.6rem;
   border-radius: 0.6rem;
   padding: 0.6rem 1rem;
@@ -3229,18 +3242,18 @@ h6 {
   border: 2px solid #13857f;
 }
 
-.ica-sec.sec-contact .sec-form form input[type="submit"] {
+.ica-sec.sec-contact .contact__inner .sec-form form input[type="submit"] {
   width: 180px;
   border: 2px solid #13857f;
 }
 
-.ica-sec.sec-contact .sec-form form input[type="text"] {
+.ica-sec.sec-contact .contact__inner .sec-form form input[type="text"] {
   border-radius: 0.6rem;
   padding: 0.6rem 1rem;
   border: 2px solid #13857f;
 }
 
-.ica-sec.sec-contact .sec-form form input[type="email"] {
+.ica-sec.sec-contact .contact__inner .sec-form form input[type="email"] {
   border-radius: 0.6rem;
   padding: 0.6rem 1rem;
   border: 2px solid #13857f;

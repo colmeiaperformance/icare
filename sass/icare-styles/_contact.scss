@@ -1,51 +1,59 @@
 .ica-sec.sec-contact {
-  .sec-media {
-    margin-bottom: 20px;
-		width: 100%;
-  }
 	.contact__inner {
-		display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
+		// display: grid;
+		// grid-template-columns: repeat(2, 1fr);
+		// gap: 5rem;
+		display: flex;
 		border-top: 2px solid $color-default-green;
 		padding-top: 60px;
-		@media all and (max-width: 992px) { 
+		@media all and (max-width: 992px) {
 			display: block;
 		}
-	}
-	.sec-form {
-		width: 100%;
-		form {
-			display: flex;
-			flex-direction: column;
-			text-align: left;
-			label {
-				color: $color-default-green;
-				font-weight: bold;
-				&:first-child {
-					margin-top: 0;
+		.left{
+			order: 1;
+		}
+		.right{
+			order: 3;
+		}
+		.sec-media {
+			margin-bottom: 20px;
+			width: 100%;
+		}
+		.sec-form {
+			width: 100%;
+			order: 2;
+			form {
+				display: flex;
+				flex-direction: column;
+				text-align: left;
+				label {
+					color: $color-default-green;
+					font-weight: bold;
+					&:first-child {
+						margin-top: 0;
+					}
 				}
-			}
-			textarea {
-				margin-top: 1.6rem;
-				border-radius: 0.6rem;
-				padding: 0.6rem 1rem;
-				font-size: 1.6em;
-				border: 2px solid $color-default-green;
-			}
-			input[type="submit"] {
-				width: 180px;
-				border: 2px solid $color-default-green;
-			}
-			input[type="text"] {
-				border-radius: 0.6rem;
-				padding: 0.6rem 1rem;
-				border: 2px solid $color-default-green;
-			}
-			input[type="email"] {
-				border-radius: 0.6rem;
-				padding: 0.6rem 1rem;
-				border: 2px solid $color-default-green;
+				textarea {
+					margin-top: 1.6rem;
+					border-radius: 0.6rem;
+					padding: 0.6rem 1rem;
+					font-size: 1.6em;
+					border: 2px solid $color-default-green;
+				}
+				input[type="submit"] {
+					width: 180px;
+					border: 2px solid $color-default-green;
+				}
+				input[type="text"] {
+					border-radius: 0.6rem;
+					padding: 0.6rem 1rem;
+					border: 2px solid $color-default-green;
+				}
+				input[type="email"] {
+					border-radius: 0.6rem;
+					padding: 0.6rem 1rem;
+					border: 2px solid $color-default-green;
+				}
 			}
 		}
 	}
