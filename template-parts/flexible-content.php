@@ -31,7 +31,7 @@ if( have_rows('conteudo') ):
         if( get_row_layout() == 'galeria_de_imagens' ):
     $cores_gi = get_sub_field('cores_gi'); ?>
 
-<section class="ica-sec sec-partners" style="background-color:<?php echo $cores_gi['fundo']  ?>">
+<section class="ica-sec sec-gallery" style="background-color:<?php echo $cores_gi['fundo']  ?>">
     <div class="ica-wrapper">
         <div class="sec-content">
             <div class="content-description">
