@@ -51,7 +51,7 @@
 		display: none;
 		position: absolute;
 		right: 1.6rem;
-		top: 2.6rem;
+		top: 1.3rem;
 		line-height: 2.8rem;
 		z-index: 50;
 		&:before {
@@ -63,6 +63,9 @@
 .ica-com{
 	&.com-carousel{
 		&.com-home{
+			span.swiper-notification {
+				display: none;
+			}
 			.com-item{
 				.item-content{
 					padding: 8rem;
