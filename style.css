@@ -5040,6 +5040,30 @@ h6 {
 
 .ica-sec.sec-gallery .item-media {
   margin: 3rem 0;
-  width: 17em;
+  width: 25%;
+  padding: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 191px;
+}
+
+.ica-sec.sec-gallery .item-media img {
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media all and (max-width: 1025px) {
+  .ica-sec.sec-gallery .item-media {
+    width: 50%;
+    max-height: 300px;
+  }
+  .ica-sec.sec-gallery .item-media img {
+    height: auto;
+    max-height: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
