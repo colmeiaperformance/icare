@@ -3308,7 +3308,15 @@ h6 {
   margin: 0;
   width: 123px;
   height: 123;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .ica-sec.sec-equipe .sec-members .member .member-media img {
