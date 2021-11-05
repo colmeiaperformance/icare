@@ -16,6 +16,9 @@
 			order: 3;
 		}
 		.sec-media {
+			@media all and (max-width: 992px) {
+				display: none;
+			}
 			margin-bottom: 20px;
 			width: 100%;
 		}
@@ -41,8 +44,12 @@
 					border: 2px solid $color-default-green;
 				}
 				input[type="submit"] {
-					width: 180px;
 					border: 2px solid $color-default-green;
+					float: right;
+					font-size: 1.8rem;
+					@media all and (max-width: 992px) {
+						font-size: 1.2rem;
+					}
 				}
 				input[type="text"] {
 					border-radius: 0.6rem;
