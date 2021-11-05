@@ -34,5 +34,7 @@ $imagem_membro = get_field('imagem_membro');
             </div>
         </div>
     </section>
+
+    <?php get_template_part( 'template-parts/flexible-content' ) ?>
 </main>
 <?php get_footer() ?>
