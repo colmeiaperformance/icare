@@ -13,7 +13,7 @@
         <div class="flip-box">
           <div class="flip-box-inner">
             <div class="content-image">
-              <img src="https://colmeia.link/I Care/wp-content/uploads/2021/10/I Care-placeholders-1.jpg" alt="">
+              <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-1.jpeg" alt="">
             </div>
             <div class="content-details fadeIn-bottom">
               <h2 class="content-title">Biodiversidade</h2>
@@ -28,7 +28,7 @@
         <div class="flip-box">
           <div class="flip-box-inner">
             <div class="content-image">
-              <img src="https://colmeia.link/I Care/wp-content/uploads/2021/10/I Care-placeholders-18.jpg" alt="">
+              <img src="https://colmeia.link/icare/wp-content/uploads/2021/11/icare-placeholders-18.jpeg" alt="">
             </div>
             <div class="content-details fadeIn-bottom">
               <h2 class="content-title">Finanças sustentáveis</h2>
@@ -43,7 +43,7 @@
         <div class="flip-box">
           <div class="flip-box-inner">
             <div class="content-image">
-              <img src="https://colmeia.link/I Care/wp-content/uploads/2021/10/I Care-placeholders-12.jpg" alt="">
+              <img src="https://colmeia.link/icare/wp-content/uploads/2021/11/icare-placeholders-12.jpeg" alt="">
             </div>
             <div class="content-details fadeIn-bottom">
               <h2 class="content-title">Clima</h2>

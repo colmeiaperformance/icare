@@ -2975,6 +2975,10 @@ h6 {
   width: 100%;
 }
 
+.ica-sec.sec-bolg .ica-wrapper .aside-blog .form-news .but-conversion {
+  float: right;
+}
+
 .ica-sec.sec-bolg .ica-wrapper .aside-blog .input-news {
   border-radius: 8rem;
   border: 1px solid #13857f;
@@ -3061,6 +3065,10 @@ h6 {
         -ms-flex-pack: right;
             justify-content: right;
   }
+}
+
+.ica-sec.sec-bolg .ica-wrapper .first-notice .notice-footer .but-conversion {
+  float: right;
 }
 
 .ica-sec.sec-bolg .ica-wrapper .first-notice .first-notice-item-media {

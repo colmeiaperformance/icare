@@ -85,6 +85,10 @@
 					input[type="text"] {
 						width: 100%;
 					}
+					.but-conversion {
+						float: right;
+					}
+
 				}
 				.input-news {
 					border-radius: 8rem;
@@ -136,6 +140,9 @@
 					@media all and (max-width: 768px) {  
 						display: flex;
 						justify-content: right;
+					}
+					.but-conversion {
+   					 float: right;
 					}
 				}
 				.first-notice-item-media {
