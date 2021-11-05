@@ -151,6 +151,9 @@
       </div>
     </div>
   </section>
+  
+  <?php get_template_part( 'template-parts/flexible-content' ) ?>
+  
   <section class="ica-sec sec-notice ica-the the-white" id="notice">
     <div class="ica-wrapper">
       <header class="sec-header">
@@ -180,6 +183,5 @@
     </div>
   </section>
 
-  <?php get_template_part( 'template-parts/flexible-content' ) ?>
 </main>
 <?php get_footer() ?>
