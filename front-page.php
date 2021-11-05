@@ -6,14 +6,14 @@
     <div class="ica-wrapper">
       <div class="sec-content">
         <div class="content-description">
-          <p> <b>A iCare Brasil</b> possui três áreas de atuação que visam fornecer um conjunto abrangente e soluções para apoiar o processo de <b>transição ambiental</b> da sua empresa.</p>
+          <p> <b>A I Care Brasil</b> possui três áreas de atuação que visam fornecer um conjunto abrangente e soluções para apoiar o processo de <b>transição ambiental</b> da sua empresa.</p>
         </div>
       </div>
       <div class="acting-content">
         <div class="flip-box">
           <div class="flip-box-inner">
             <div class="content-image">
-              <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-1.jpg" alt="">
+              <img src="https://colmeia.link/I Care/wp-content/uploads/2021/10/I Care-placeholders-1.jpg" alt="">
             </div>
             <div class="content-details fadeIn-bottom">
               <h2 class="content-title">Biodiversidade</h2>
@@ -28,7 +28,7 @@
         <div class="flip-box">
           <div class="flip-box-inner">
             <div class="content-image">
-              <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-18.jpg" alt="">
+              <img src="https://colmeia.link/I Care/wp-content/uploads/2021/10/I Care-placeholders-18.jpg" alt="">
             </div>
             <div class="content-details fadeIn-bottom">
               <h2 class="content-title">Finanças sustentáveis</h2>
@@ -43,7 +43,7 @@
         <div class="flip-box">
           <div class="flip-box-inner">
             <div class="content-image">
-              <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-12.jpg" alt="">
+              <img src="https://colmeia.link/I Care/wp-content/uploads/2021/10/I Care-placeholders-12.jpg" alt="">
             </div>
             <div class="content-details fadeIn-bottom">
               <h2 class="content-title">Clima</h2>
@@ -64,7 +64,7 @@
     <div class="ica-wrapper">
       <div class="sec-content">
         <div class="content-description">
-          <p> A iCare Brasil apoia seus <b>clientes, autoridades locais, instituições públicas, empresas e investidores</b>, em seu processo de transição ambiental. Conheça algumas das marcas que já foram apoiadas: </p>
+          <p> A I Care Brasil apoia seus <b>clientes, autoridades locais, instituições públicas, empresas e investidores</b>, em seu processo de transição ambiental. Conheça algumas das marcas que já foram apoiadas: </p>
         </div>
       </div>
       <div class="swiper swiperLogos sec-itens">

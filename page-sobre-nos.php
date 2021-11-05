@@ -6,7 +6,7 @@
       <div class="sec-content">
         <div class="items-block">
           <div class="content-item">
-            <p class="ica-the the-gray-222">A iCare é uma empresa independente de consultoria ambiental que
+            <p class="ica-the the-gray-222">A I Care é uma empresa independente de consultoria ambiental que
               apoia seus clientes (empresas, setores financeiro e público) em seu processo de transição
               ambiental.<br><br>
               Graças à diversidade de nossas áreas de especialização e uma abordagem 360​​°, oferecemos

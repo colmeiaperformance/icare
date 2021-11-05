@@ -13,7 +13,7 @@
                 <div class="item-content ica-the the-highlight">
                     <h1 class="item-title"><span>Consultoria</span> especializada em estratégia e inovação do <span>meio
                             ambiente</span></h1>
-                    <a href="#" class="ica-but but-light">Sobre a iCare</a>
+                    <a href="#" class="ica-but but-light">Sobre a I Care</a>
                     <a href="#" class="ica-but but-light">Áreas de Atuação</a>
                 </div>
             </div>

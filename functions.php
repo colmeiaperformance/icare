@@ -383,12 +383,12 @@ function get_breadcrumb() {
     } else if ( is_search() ) {
   
       // Search results page
-      echo '<span class="breadcrumb-item">' . _e(' Search results for:', 'icare') . get_search_query() .'</span>';
+      echo '<span class="breadcrumb-item">' . _e(' Search results for:', 'I Care') . get_search_query() .'</span>';
   
     } else if ( is_404() ) {
   
       // 404 page
-      echo '<span class="breadcrumb-item">' . _e('Error 404', 'icare') . '</span>';
+      echo '<span class="breadcrumb-item">' . _e('Error 404', 'I Care') . '</span>';
   
     }
   

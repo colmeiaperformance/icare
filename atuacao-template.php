@@ -27,7 +27,7 @@
       </div>
       <div class="sec-content">
         <div class="content-media">
-          <img src="https://colmeia.link/icare/wp-content/uploads/2021/10/icare-placeholders-23.jpg" alt="clima">
+          <img src="https://colmeia.link/I Care/wp-content/uploads/2021/10/I Care-placeholders-23.jpg" alt="clima">
         </div>
         <div class="content-description">
           <p class="ica-the the-gray-222">
