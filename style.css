@@ -3218,6 +3218,12 @@ h6 {
   width: 100%;
 }
 
+@media all and (max-width: 992px) {
+  .ica-sec.sec-contact .contact__inner .sec-media {
+    display: none;
+  }
+}
+
 .ica-sec.sec-contact .contact__inner .sec-form {
   width: 100%;
   -webkit-box-ordinal-group: 3;
@@ -3254,8 +3260,15 @@ h6 {
 }
 
 .ica-sec.sec-contact .contact__inner .sec-form form input[type="submit"] {
-  width: 180px;
   border: 2px solid #13857f;
+  float: right;
+  font-size: 1.8rem;
+}
+
+@media all and (max-width: 992px) {
+  .ica-sec.sec-contact .contact__inner .sec-form form input[type="submit"] {
+    font-size: 1.2rem;
+  }
 }
 
 .ica-sec.sec-contact .contact__inner .sec-form form input[type="text"] {
@@ -3290,7 +3303,6 @@ h6 {
 }
 
 .ica-sec.sec-equipe .sec-members .member {
-  border: 1px solid #13857f;
   border-radius: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3307,7 +3319,7 @@ h6 {
           justify-content: left;
   margin: 0;
   width: 123px;
-  height: 123;
+  height: 123px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3317,10 +3329,11 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 100px;
 }
 
 .ica-sec.sec-equipe .sec-members .member .member-media img {
-  border-radius: 16rem;
+  border-radius: 100px;
   width: 100%;
   height: 123px;
   -o-object-fit: cover;
