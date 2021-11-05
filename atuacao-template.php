@@ -7,7 +7,7 @@
 <?php get_header(); ?>
 <?php get_template_part('template-parts/header-pages'); ?>
 <main>
-  <section class="ica-sec sec-infos ica-the the-white" id="infos">
+  <!-- <section class="ica-sec sec-infos ica-the the-white" id="infos">
     <div class="ica-wrapper">
       <div class="sec-header">
         <p class="ica-the the-gray-222">
@@ -150,7 +150,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   
   <?php get_template_part( 'template-parts/flexible-content' ) ?>
   
