@@ -1,15 +1,19 @@
 .ica-sec.sec-services {
 	padding-bottom: 8rem;
 	.item-service {
-		// border: 1px solid $color-default-green;
-		margin-top: 1.5%;
-	  padding: 3rem;
+		border: 1px solid #13857f;
+    margin-top: 1.5%;
+    padding: 3rem;
     width: 30%;
-    min-height: 230px;
-    display: inline-grid;
+    min-height: 190px;
 		@media all and (max-width: 768px) { 
 			width: 100%;
 			min-height: auto;
+			height: 100%;
+			h3 {
+				padding: 0;
+		  	margin: 0;
+			}
 		}
 
 		h4 {

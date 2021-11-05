@@ -3805,18 +3805,22 @@ h6 {
 }
 
 .ica-sec.sec-services .item-service {
+  border: 1px solid #13857f;
   margin-top: 1.5%;
   padding: 3rem;
   width: 30%;
-  min-height: 230px;
-  display: -ms-inline-grid;
-  display: inline-grid;
+  min-height: 190px;
 }
 
 @media all and (max-width: 768px) {
   .ica-sec.sec-services .item-service {
     width: 100%;
     min-height: auto;
+    height: 100%;
+  }
+  .ica-sec.sec-services .item-service h3 {
+    padding: 0;
+    margin: 0;
   }
 }
 
