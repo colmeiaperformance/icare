@@ -68,18 +68,23 @@
 			}
 			.com-item{
 				.item-content{
-					padding: 8rem;
+					padding: 0 8rem;
 					position: absolute;
 					bottom: 0;
 					left: 0;
 					right: 0;
-					top: 13rem;
+					top: 33vh;
 					text-align: left;
-					width: 65%;
-					// max-width: 750px;
+					width: 65vw;
+					max-width: 900px;
 					@media all and (max-width: 992px) {  
-						top: 200px;
+						top: 310px;
 						width: 100%;
+						max-width: 100%;
+						text-align: center;
+					}
+					span {
+						padding: 0;
 					}
 					h1 {
 						font-size: 5rem;
