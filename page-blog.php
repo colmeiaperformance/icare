@@ -35,7 +35,7 @@
                           } ?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
                 <div class="item-content ica-the the-highlight">
                   <p class="notice-card-title">
-                    <?php if (strlen($post->post_title) > 70) {echo substr(the_title($before = '', $after = '', FALSE), 0, 70) . '...'; } else {the_title();} ?>
+                    <?php if (strlen($post->post_title) > 70) {echo substr(the_title($before = '', $after = '', FALSE), 0, 70) . '[...]'; } else {the_title();} ?>
                   </p>
                 </div>
               </div>
