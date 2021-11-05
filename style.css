@@ -636,7 +636,7 @@ a:focus .ica-but {
 }
 
 .ica-com.com-carousel.com-home .com-item .item-content h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin: 0 auto;
 }
 
@@ -648,7 +648,7 @@ a:focus .ica-but {
 
 @media all and (max-width: 576px) {
   .ica-com.com-carousel.com-home .com-item .item-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -659,6 +659,7 @@ a:focus .ica-but {
 @media all and (max-width: 992px) {
   .ica-com.com-carousel.com-home .com-item .item-content .ica-but {
     margin: 1.6rem 1.6rem 0 auto;
+    font-size: 1.3rem;
   }
 }
 

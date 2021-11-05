@@ -27,7 +27,7 @@
       </div>
       <div class="sec-content">
         <div class="content-media">
-          <img src="https://colmeia.link/I Care/wp-content/uploads/2021/10/I Care-placeholders-23.jpg" alt="clima">
+          <img src="https://colmeia.link/icare/wp-content/uploads/2021/11/banner-sobre.jpeg" alt="clima">
         </div>
         <div class="content-description">
           <p class="ica-the the-gray-222">
@@ -51,35 +51,30 @@
           empresas aos objetivos do
           Acordo de Paris
         </h3>
-        <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></a>
       </div>
       <div class="item-service">
         <h3>Desenvolvimento de
           Estratégias Climáticas
           para Territórios
         </h3>
-        <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></a>
       </div>
       <div class="item-service">
         <h3>Ações e estratégias
           focadas para o desenvolvimento
           de cidades inteligentes
         </h3>
-        <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></a>
       </div>
       <div class="item-service">
         <h3>Apoio técnico para gestão
           de projetos e linhas de
           financiamento sustentáveis
         </h3>
-        <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></a>
       </div>
       <div class="item-service">
         <h3>Avaliação de
           riscos físicos e climáticos
           sobre empresas e negócios
         </h3>
-        <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></a>
       </div>
     </div>
   </section>

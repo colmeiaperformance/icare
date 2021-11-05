@@ -263,7 +263,6 @@ elseif ( get_row_layout() == 'area_texto' ) :
             <h3 style="color:<?php echo $cores_cts['cor_texto_cts'] ?>;">
                 <?php echo $t_cts['texto_cts']; ?>
             </h3>
-            <div><img src="<?php the_sub_field('imagem_da_seta'); ?>"></div>
         </div>
 
         <?php }
