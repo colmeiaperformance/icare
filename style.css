@@ -3302,18 +3302,13 @@ h6 {
 }
 
 .ica-sec.sec-equipe .sec-members .member .member-media {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
   margin: 0;
   width: 123px;
-  height: 123px;
+  height: 123;
+  display: block;
 }
 
 .ica-sec.sec-equipe .sec-members .member .member-media img {
@@ -3328,7 +3323,7 @@ h6 {
   margin: 0 2rem;
   text-align: left;
   word-wrap: break-word;
-  width: auto;
+  width: calc(100% - 123px - 4rem);
 }
 
 .ica-sec.sec-equipe .sec-members .member .member-description .member-name {

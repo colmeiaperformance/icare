@@ -21,12 +21,11 @@
 			margin-bottom: 3.2rem;
 			width: 97%;
 			.member-media {
-				align-items: center;
-				display: flex;
 				justify-content: left;
 				margin: 0;
 				width: 123px;
-				height: 123px;
+				height: 123;
+				display: block;
 				img {
 				  border-radius: 16rem;
 					width: 100%;
@@ -38,7 +37,7 @@
 				margin: 0 2rem;
 				text-align: left;
 				word-wrap: break-word;
-				width: auto;
+				width: calc(100% - 123px - 4rem);
 				.member-name {
 					text-transform: none;
 				}
