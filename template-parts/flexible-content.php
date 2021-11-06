@@ -77,16 +77,21 @@ elseif( get_row_layout() == 'icones_titulo_descricao' ):
         if (is_array($grupo_de_estatisticas) || is_object($grupo_de_estatisticas)) {
             foreach ($grupo_de_estatisticas as $ge) { ?>
 
-            <div class="sec-item ica-the the-highlight">
+            <div class="sec-item">
                 <div class="item-media">
                     <img src="<?php echo $ge['icone']['url']; ?>" alt="colaboradores">
                 </div>
                 <div class="item-title">
-                    <h4>
+                    <h1>
+                        <span style="color:<?php echo $cores_itd['subtitulo'] ?>;">
+                            <?php echo $ge['estatistica']; ?>
+                        </span>
+                    </h1>
+                    <h3>
                         <span style="color:<?php echo $cores_itd['titulo'] ?>;">
                             <?php echo $ge['texto']; ?>
                         </span>
-                    </h4>
+                    </h3>
                 </div>
                 <div class="item-description">
                     <p style="color:<?php echo $cores_itd['texto'] ?>">
