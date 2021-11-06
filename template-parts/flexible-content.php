@@ -196,7 +196,7 @@ $cores_cc = get_sub_field('cores_cc'); ?>
             <?php 
             if (is_array($colaborador) || is_object($colaborador)) {
             foreach ($colaborador as $c) { ?>
-            <div class="member" style="border:1px solid <?php echo $cores_cc['bordas']; ?>;">
+            <div class="member">
                 <div class="member-media">
                     <img src="<?php if (!empty( $c['foto_colaborador'] )) : echo $c['foto_colaborador']; endif ?>"
                         alt="Imagem de <?php echo $c['nome_colaborador'] ?>">
