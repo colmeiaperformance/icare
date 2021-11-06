@@ -65,7 +65,7 @@ elseif( get_row_layout() == 'icones_titulo_descricao' ):
 
 <section class="ica-sec sec-numbers" style="background-color:<?php echo $cores_itd['fundo']; ?>">
     <div class="ica-wrapper">
-        <div class="numbers-header">
+        <div class="sec-header" style="background-color:<?php echo $cores_itd['fundo']; ?>">
             <h3 class="sec-title ica-the the-contrast" style="color:<?php echo $cores_itd['titulo'] ?>;">
                 <?php the_sub_field('titulo_itd'); ?>
             </h3>
@@ -91,7 +91,7 @@ elseif( get_row_layout() == 'icones_titulo_descricao' ):
                     <?php } ?>
 
                     <h3>
-                        <span style="color:<?php echo $cores_itd['titulo'] ?>;">
+                        <span style="color:<?php echo $cores_itd['subtitulo'] ?>;">
                             <?php echo $ge['texto']; ?>
                         </span>
                     </h3>
