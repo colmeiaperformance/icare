@@ -19,7 +19,7 @@
         }
     }
 }
-#whatwedo {
+.sec-whatwedo {
     .sec-item {
         position: relative;
         background: $default-color;
@@ -603,7 +603,7 @@
     }
 }
 
-.ica-sec.sec-whatwedo {
+.sec-whatwedo {
     .sec-content {
         margin-bottom: 4rem;
         display: flex;
