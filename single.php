@@ -28,8 +28,8 @@
 
                     <!-- Add the pagination functions here. -->
                     <div class="pagination">
-                        <?php previous_post_link( '%link', '%title'); ?>
-                        <?php next_post_link( '%link', '%title' ); ?> 
+                        <?php next_post_link( '%link', 'Artigo Anterior' ); ?> 
+                        <?php previous_post_link( '%link', 'Próximo Artigo'); ?>
                     </div>
 
                     <?php else: ?>
