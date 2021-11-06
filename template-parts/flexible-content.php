@@ -82,11 +82,14 @@ elseif( get_row_layout() == 'icones_titulo_descricao' ):
                     <img src="<?php echo $ge['icone']['url']; ?>" alt="colaboradores">
                 </div>
                 <div class="item-title">
+                    <?php if ( $ge['estatistica'] ) { ?>
                     <h1>
                         <span style="color:<?php echo $cores_itd['subtitulo'] ?>;">
                             <?php echo $ge['estatistica']; ?>
                         </span>
                     </h1>
+                    <?php } ?>
+
                     <h3>
                         <span style="color:<?php echo $cores_itd['titulo'] ?>;">
                             <?php echo $ge['texto']; ?>
