@@ -28,15 +28,17 @@
 
                     <!-- Add the pagination functions here. -->
                     <div class="pagination">
-                        <?php next_post_link( '%link', 'Artigo Anterior' ); ?> 
-                        <?php previous_post_link( '%link', 'Próximo Artigo'); ?>
+                        <?php next_post_link( '%link', 'Próximo Artigo' ); ?> 
+                        <?php previous_post_link( '%link', 'Artigo Anterior'); ?>
                     </div>
 
                     <?php else: ?>
                     <div class="blog-alert">
                         <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
                     </div>
-                    <?php endif; 
+                    <?php 
+                    wp_reset_postdata();     
+                    endif; 
                     ?>
 
                 </div>
