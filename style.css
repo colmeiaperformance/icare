@@ -4001,10 +4001,11 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 2.4rem;
 }
 
 .ica-sec.sec-numbers .sec-content .item-title h1 {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .ica-sec.sec-numbers .sec-content .item-title h3 {
