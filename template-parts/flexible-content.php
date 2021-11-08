@@ -207,6 +207,9 @@ $cores_cc = get_sub_field('cores_cc'); ?>
                     <p class="member-function" style="color:<?php echo $cores_cc['cargo_formacao']; ?>;">
                         <?php echo $c['cargo_colaborador'] ?> - <?php echo $c['formacao_colaborador'] ?>
                     </p>
+                    <div class="descricao-colaborador">
+                        <?php echo $c['descricao']; ?>
+                    </div>
                 </div>
             </div>
             <?php } //end foreach               
@@ -446,6 +449,7 @@ elseif ( get_row_layout() == 'area_texto' ) :
             <?php 
             $card_ch = get_sub_field('card_ch');
 
+            if (is_array($card_ch) || is_object($card_ch)) {
             foreach ($card_ch as $cch) { ?>
 
             <div class="flip-box">
@@ -459,13 +463,13 @@ elseif ( get_row_layout() == 'area_texto' ) :
                     <div class="content-details fadeIn-top">
                         <h2 class="content-title"><?php echo $cch['item1_ch'] ?></h2>
                         <h2 class="content-title"><?php echo $cch['item2_ch'] ?></h2>
-                        <h2 class="content-title"><?php echo $cch['item2_ch'] ?></h2>
+                        <h2 class="content-title"><?php echo $cch['item3_ch'] ?></h2>
                     </div>
                 </div>
             </div>
 
             <?php }
-            ?>
+        } ?>
 
         </div>
     </div>
