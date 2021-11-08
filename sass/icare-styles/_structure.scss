@@ -254,14 +254,12 @@ body {
 		
 		.sub-menu{
 			display: block;
-			background: $color-green-8a9;
-			border-radius: 8px;
-			width: 60%;
 			margin: 0 auto;
 			a {
-				color:$color-white!important;
-				font-size: 1.2rem;
-				padding: 1rem 0;
+				color: $color-gray-333!important;
+				font-size: 1.2rem!important;
+				padding: 0.5rem 0;
+				font-weight: 300!important;
 				&::after {
 					display: none;
 				} 

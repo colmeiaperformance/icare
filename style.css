@@ -1414,15 +1414,13 @@ body {
 @media all and (max-width: 1024px) {
   .sub-menu {
     display: block;
-    background: #b6d8a9;
-    border-radius: 8px;
-    width: 60%;
     margin: 0 auto;
   }
   .sub-menu a {
-    color: #fff !important;
-    font-size: 1.2rem;
-    padding: 1rem 0;
+    color: #333 !important;
+    font-size: 1.2rem !important;
+    padding: 0.5rem 0;
+    font-weight: 300 !important;
   }
   .sub-menu a::after {
     display: none;
@@ -1867,7 +1865,9 @@ h6 {
     border-bottom: none;
   }
   #navbar a {
+    font-size: 1.9rem;
     color: #707070;
+    font-weight: 500;
   }
 }
 
@@ -1974,8 +1974,8 @@ h6 {
 
 @media all and (max-width: 1120px) {
   .sec-whatwedo .sec-item {
-    width: 100%;
-    margin: 20px 0;
+    width: 100% !important;
+    margin: 20px 0 !important;
   }
 }
 
@@ -2579,8 +2579,7 @@ h6 {
   .sec-whatwedo .sec-content {
     width: 100%;
     height: auto;
-    display: -ms-grid;
-    display: grid;
+    display: block;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2655,7 +2654,7 @@ h6 {
   border-bottom: 0;
   content: "";
   pointer-events: none;
-  border-color: #13857f;
+  border-color: transparent;
   border-top-color: #e8e8e8;
   border-width: 42px;
   position: absolute;
@@ -2676,7 +2675,7 @@ h6 {
   content: "";
   pointer-events: none;
   border-color: rgba(19, 133, 127, 0);
-  border-top-color: #204240;
+  border-top-color: #13857f;
   border-width: 42px;
   position: absolute;
   margin-left: -22px;
@@ -3247,6 +3246,12 @@ h6 {
           order: 2;
 }
 
+.ica-sec.sec-contact .contact__inner .sec-form .wpcf7 span {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
 .ica-sec.sec-contact .contact__inner .sec-form form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3334,8 +3339,8 @@ h6 {
       -ms-flex-pack: left;
           justify-content: left;
   margin: 0;
-  width: 123px;
-  height: 123px;
+  width: 170px;
+  height: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3351,7 +3356,7 @@ h6 {
 .ica-sec.sec-equipe .sec-members .member .member-media img {
   border-radius: 100px;
   width: 100%;
-  height: 123px;
+  height: 170px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -3360,7 +3365,7 @@ h6 {
   margin: 0 2rem;
   text-align: left;
   word-wrap: break-word;
-  width: calc(100% - 123px - 4rem);
+  width: calc(100% - 170px - 4rem);
 }
 
 .ica-sec.sec-equipe .sec-members .member .member-description .member-name {
@@ -3985,6 +3990,19 @@ h6 {
   min-width: 16em;
 }
 
+.ica-sec.sec-numbers .sec-content .sec-item .item-media {
+  height: 126px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .ica-sec.sec-numbers .sec-content .item-title h1 {
   margin-bottom: 1rem;
 }
@@ -4230,8 +4248,8 @@ h6 {
 
 @media all and (max-width: 1120px) {
   .sec-whatwedo .sec-item {
-    width: 100%;
-    margin: 20px 0;
+    width: 100% !important;
+    margin: 20px 0 !important;
   }
 }
 
@@ -4835,8 +4853,7 @@ h6 {
   .sec-whatwedo .sec-content {
     width: 100%;
     height: auto;
-    display: -ms-grid;
-    display: grid;
+    display: block;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -4911,7 +4928,7 @@ h6 {
   border-bottom: 0;
   content: "";
   pointer-events: none;
-  border-color: #13857f;
+  border-color: transparent;
   border-top-color: #e8e8e8;
   border-width: 42px;
   position: absolute;
@@ -4932,7 +4949,7 @@ h6 {
   content: "";
   pointer-events: none;
   border-color: rgba(19, 133, 127, 0);
-  border-top-color: #204240;
+  border-top-color: #13857f;
   border-width: 42px;
   position: absolute;
   margin-left: -22px;

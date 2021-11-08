@@ -25,8 +25,8 @@
         background: $default-color;
         border: 1px solid $color-default-green;
         @media all and (max-width: 1120px) { 
-            width: 100%;
-            margin: 20px 0;
+            width: 100%!important;
+            margin: 20px 0!important;
         }
     }
     .sec-item:after,
@@ -611,7 +611,7 @@
         @media all and (max-width: 1120px) { 
             width: 100%;
             height: auto;
-            display: grid;
+            display: block;
             align-items: center;
             justify-content: center;
         }
@@ -665,7 +665,7 @@
                     border-bottom: 0;
                     content: "";
                     pointer-events: none;
-                    border-color: $color-default-green;
+                    border-color: transparent;
                     border-top-color: $color-gray-e8e;
                     border-width: 42px;
                     position: absolute;
@@ -684,7 +684,7 @@
                     content: "";
                     pointer-events: none;
                     border-color: rgba(19, 133, 127, 0);
-                    border-top-color: $color-green-240;
+                    border-top-color: $color-default-green;
                     border-width: 42px;
                     position: absolute;
                     margin-left: -22px;

@@ -22,8 +22,8 @@
 			.member-media {
 				justify-content: left;
 				margin: 0;
-				width: 123px;
-				height: 123px;
+				width: 170px;
+				height: 170px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -31,7 +31,7 @@
 				img {
 				  border-radius: 100px;
 					width: 100%;
-					height: 123px;
+					height: 170px;
 					object-fit: cover;
 				}
 			}
@@ -39,7 +39,7 @@
 				margin: 0 2rem;
 				text-align: left;
 				word-wrap: break-word;
-				width: calc(100% - 123px - 4rem);
+				width: calc(100% - 170px - 4rem);
 				.member-name {
 					text-transform: none;
 				}
