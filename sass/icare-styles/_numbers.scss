@@ -20,15 +20,19 @@
 		}
 		.item-title{
 			h1{
-				margin-bottom: 1rem;
+				margin-bottom: 0;
 			}
 			h3{
 				font-weight: normal;
-				margin-top: 0;
+				margin-top: 1rem;
+			}
+			span {
+    	padding: 0;
 			}
 		}
-		.item-description{
-			p{
+		.item-description {
+   		margin-top: 1rem;
+			p {
 				margin-top: 1rem;
 			}
 		}
