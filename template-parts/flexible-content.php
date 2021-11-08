@@ -65,7 +65,7 @@ elseif( get_row_layout() == 'icones_titulo_descricao' ):
 
 <section class="ica-sec sec-numbers" style="background-color:<?php echo $cores_itd['fundo']; ?>">
     <div class="ica-wrapper">
-        <div class="numbers-header">
+        <div class="sec-header" style="background-color:<?php echo $cores_itd['fundo']; ?>">
             <h3 class="sec-title ica-the the-contrast" style="color:<?php echo $cores_itd['titulo'] ?>;">
                 <?php the_sub_field('titulo_itd'); ?>
             </h3>
@@ -91,7 +91,7 @@ elseif( get_row_layout() == 'icones_titulo_descricao' ):
                     <?php } ?>
 
                     <h3>
-                        <span style="color:<?php echo $cores_itd['titulo'] ?>;">
+                        <span style="color:<?php echo $cores_itd['subtitulo'] ?>;">
                             <?php echo $ge['texto']; ?>
                         </span>
                     </h3>
@@ -196,7 +196,7 @@ $cores_cc = get_sub_field('cores_cc'); ?>
             <?php 
             if (is_array($colaborador) || is_object($colaborador)) {
             foreach ($colaborador as $c) { ?>
-            <div class="member" style="border:1px solid <?php echo $cores_cc['bordas']; ?>;">
+            <div class="member">
                 <div class="member-media">
                     <img src="<?php if (!empty( $c['foto_colaborador'] )) : echo $c['foto_colaborador']; endif ?>"
                         alt="Imagem de <?php echo $c['nome_colaborador'] ?>">
