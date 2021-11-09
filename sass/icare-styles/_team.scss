@@ -56,12 +56,10 @@
 				width: calc(100% - 155px - 4rem);
 				@media all and (max-width: 576px) {  
 					width: 100%;
+					margin: 0 auto;
 				}
 				.member-name {
 					text-transform: none;
-					@media all and (max-width: 576px) {  
-						text-align:center;
-					}
 				}
 				.descricao-colaborador {
 					font-size: 1.2rem;
@@ -74,9 +72,6 @@
 			.member-function {
 				font-weight: bold;
 				margin-top: 0px;
-				@media all and (max-width: 576px) {  
-					text-align:center;
-				}
 			}
 		}
 		@media all and (max-width: 1025px) { 

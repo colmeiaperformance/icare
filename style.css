@@ -3397,17 +3397,12 @@ h6 {
 @media all and (max-width: 576px) {
   .ica-sec.sec-equipe .sec-members .member .member-description {
     width: 100%;
+    margin: 0 auto;
   }
 }
 
 .ica-sec.sec-equipe .sec-members .member .member-description .member-name {
   text-transform: none;
-}
-
-@media all and (max-width: 576px) {
-  .ica-sec.sec-equipe .sec-members .member .member-description .member-name {
-    text-align: center;
-  }
 }
 
 .ica-sec.sec-equipe .sec-members .member .member-description .descricao-colaborador {
@@ -3421,12 +3416,6 @@ h6 {
 .ica-sec.sec-equipe .sec-members .member .member-function {
   font-weight: bold;
   margin-top: 0px;
-}
-
-@media all and (max-width: 576px) {
-  .ica-sec.sec-equipe .sec-members .member .member-function {
-    text-align: center;
-  }
 }
 
 @media all and (max-width: 1025px) {
