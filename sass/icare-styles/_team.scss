@@ -19,46 +19,120 @@
 			text-align: left;
 			margin-bottom: 3.2rem;
 			width: 97%;
+			@media all and (max-width: 576px) {  
+				display: grid;
+				align-items: center;
+				justify-content: center;
+			}
 			.member-media {
 				justify-content: left;
 				margin: 0;
-				width: 170px;
-				height: 170px;
+				width: 155px;
+				height: 155px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				border-radius: 100px;
 				img {
-				  border-radius: 100px;
+					border-radius: 100px;
 					width: 100%;
-					height: 170px;
+					height: 155px;
 					object-fit: cover;
+				}
+				@media all and (max-width: 576px) {  
+					height: 120px;
+					width: 120px;
+					display: block;
+					margin: 0 auto;
+					img {
+						height: 120px;
+					}
 				}
 			}
 			.member-description {
 				margin: 0 2rem;
 				text-align: left;
 				word-wrap: break-word;
-				width: calc(100% - 170px - 4rem);
+				width: calc(100% - 155px - 4rem);
+				@media all and (max-width: 576px) {  
+					width: 100%;
+				}
 				.member-name {
 					text-transform: none;
+					@media all and (max-width: 576px) {  
+						text-align:center;
+					}
 				}
 				.descricao-colaborador {
 					font-size: 1.2rem;
 					letter-spacing: 0px;
 					margin-top: 10px;
 					color: $color-gray-555;
+					padding: 0;
 				}
 			}
 			.member-function {
 				font-weight: bold;
 				margin-top: 0px;
+				@media all and (max-width: 576px) {  
+					text-align:center;
+				}
 			}
 		}
 		@media all and (max-width: 1025px) { 
 			grid-template-columns: repeat(1, 1fr);
 			gap: 0;
-		 }
-
+		}
+	}
+	.trigger {
+		cursor: pointer;
+		font-size: 1.2rem;
+		input[type="checkbox"] {
+			& + span {
+				visibility: hidden;
+				display: none;
+				transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+			}
+			&:checked + span {
+				visibility: visible;
+				display: block;
+				transition-delay: 0s;
+			}
+		}
+		.checkbox {
+			position: relative;
+			width: 1rem;
+			height: 1rem;
+			margin-right: 0.75rem;
+			cursor: pointer;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			outline: 0;
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 1;
+				width: 100%;
+				height: 100%;
+				border: 2px solid $color-green-8a9;
+				border-top-style: none;
+				border-right-style: none;
+				transform: rotate(-45deg);
+				margin-top: -1px;
+				transition: all 0.3s ease-in-out;
+			}
+			&:checked {
+				&:before {
+					transform: rotate(-227deg);
+					border: 2px solid $color-green-8a9;
+					border-top-style: none;
+					border-right-style: none;
+					margin-top: 3px;
+				}
+			}
+		}
 	}
 }

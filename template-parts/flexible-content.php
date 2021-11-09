@@ -210,9 +210,12 @@ $cores_cc = get_sub_field('cores_cc'); ?>
                     <p class="member-function" style="color:<?php echo $cores_cc['cargo_formacao']; ?>;">
                         <?php echo $c['cargo_colaborador'] ?> - <?php echo $c['formacao_colaborador'] ?>
                     </p>
-                    <div class="descricao-colaborador">
+                   <label class="trigger">
+                    <input type="checkbox" class="checkbox"/> Biografia
+                    <span class="descricao-colaborador">
                         <?php echo $c['descricao']; ?>
-                    </div>
+                    </span>
+                    </label>
                 </div>
             </div>
             <?php } //end foreach               
