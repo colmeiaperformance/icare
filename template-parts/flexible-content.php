@@ -337,8 +337,8 @@ elseif ( get_row_layout() == 'area_texto' ) :
                     <?php if ( get_sub_field('titulo_c2') ) : ?> 
                         <h3><?php the_sub_field('titulo_c2'); ?></h3>
                     <?php endif; ?>    
-                    <?php if ( get_sub_field('icone_c2') ) : ?>
-                        <p><?php the_sub_field('icone_c2'); ?></p>
+                    <?php if ( get_sub_field('descricao_c2') ) : ?>
+                        <p><?php the_sub_field('descricao_c2'); ?></p>
                     <?php endif; ?>      
                     <div class="seta"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></div>
                     <div class="item-double_container">
