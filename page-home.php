@@ -8,7 +8,7 @@
                     style="background-image: url('<?php echo get_template_directory_uri() . '/images/header.png' ?>');background-position: center;background-repeat: no-repeat; background-size: cover;">
                 </div>
                 <div class="item-media swiper-slide-img-home-mobile"
-                    style="background-image: url('<?php echo get_template_directory_uri() . '/images/header-mobile.png' ?>');background-position: center;background-repeat: no-repeat; background-size: cover;">
+                    style="background-image: url('<?php echo get_template_directory_uri() . '/images/header-mobile.jpg' ?>');background-position: center;background-repeat: no-repeat; background-size: cover;">
                 </div>
                 <div class="item-content ica-the the-highlight">
                     <h1 class="item-title"><span>Consultoria</span> especializada em estratégia e inovação do <span>meio
@@ -22,7 +22,7 @@
                     style="background-image: url('<?php echo get_template_directory_uri() . '/images/header.png' ?>');background-position: center;background-repeat: no-repeat; background-size: cover;">
                 </div>
                 <div class="item-media swiper-slide-img-home-mobile"
-                    style="background-image: url('<?php echo get_template_directory_uri() . '/images/header-mobile.png' ?>');background-position: center;background-repeat: no-repeat; background-size: cover;">
+                    style="background-image: url('<?php echo get_template_directory_uri() . '/images/header-mobile.jpg' ?>');background-position: center;background-repeat: no-repeat; background-size: cover;">
                 </div>
                 <div class="item-content ica-the the-highlight">
                     <h1 class="item-title"><span>Assessoria</span> especializada em estratégia e inovação da

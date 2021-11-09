@@ -624,10 +624,11 @@ a:focus .ica-but {
 
 @media all and (max-width: 992px) {
   .ica-com.com-carousel.com-home .com-item .item-content {
-    top: 310px;
+    top: 280px;
     width: 100%;
     max-width: 100%;
     text-align: center;
+    padding: 0 4rem;
   }
 }
 

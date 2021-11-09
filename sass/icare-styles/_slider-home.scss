@@ -78,10 +78,11 @@
 					width: 65vw;
 					max-width: 900px;
 					@media all and (max-width: 992px) {  
-						top: 310px;
+						top: 280px;
 						width: 100%;
 						max-width: 100%;
 						text-align: center;
+						padding: 0 4rem;
 					}
 					span {
 						padding: 0;
