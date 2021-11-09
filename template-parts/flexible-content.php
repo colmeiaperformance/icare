@@ -182,7 +182,7 @@ $colaborador = get_sub_field('colaborador');
 $cores_cc = get_sub_field('cores_cc'); ?>
 <section class="ica-sec sec-equipe" style="background-color:<?php echo $cores_cc['fundo']; ?>;">
     <div class="ica-wrapper">
-        <?php if ( get_sub_field('texto_secundario_tl') ) : ?>
+        <?php if ( get_sub_field('descricao_equipe') ) : ?>
             <div class="sec-description">
                 <?php the_sub_field('descricao_equipe'); ?>
             </div>
