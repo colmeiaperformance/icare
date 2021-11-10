@@ -180,30 +180,22 @@ $cores_cc = get_sub_field('cores_cc'); ?>
             if (is_array($colaborador) || is_object($colaborador)) {
             foreach ($colaborador as $c) { ?>
             <div class="member">
-                <?php if ( get_sub_field('foto_colaborador') ) : ?>
                     <div class="member-media">
                         <img src="<?php if (!empty( $c['foto_colaborador'] )) : echo $c['foto_colaborador']; endif ?>"
                             alt="Imagem de <?php echo $c['nome_colaborador'] ?>">
                     </div>
-                <?php endif; ?>    
                 <div class="member-description">
-                    <?php if ( get_sub_field('nome_colaborador') ) : ?>
                         <h2 class="member-name" style="color:<?php echo $cores_cc['nome']; ?>;">
                             <?php echo $c['nome_colaborador'] ?></h2>
-                    <?php endif; ?>
-                    <?php if ( get_sub_field('formacao_colaborador') ) : ?>
                         <p class="member-function" style="color:<?php echo $cores_cc['cargo_formacao']; ?>;">
                             <?php echo $c['cargo_colaborador'] ?> - <?php echo $c['formacao_colaborador'] ?>
                         </p>
-                    <?php endif; ?>   
-                    <?php if ( get_sub_field('descricao') ) : ?> 
                         <label class="trigger">
                             <input type="checkbox" class="checkbox"/> Biografia
                                 <span class="descricao-colaborador">
                                     <?php echo $c['descricao']; ?>
                                 </span>
                         </label>
-                     <?php endif; ?>      
                 </div>
             </div>
             <?php } //end foreach               
