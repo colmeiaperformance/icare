@@ -67,8 +67,6 @@ jQuery(document).ready(function () {
       },
     },
   });
-
-  
 });
 
 //Menu scrolling class
@@ -103,4 +101,24 @@ jQuery(document).ready(function () {
       jQuery(window).scrollTop() >= 150 ? "addClass" : "removeClass"
     ]("scrolling");
   });
+});
+
+
+//Mapa
+jQuery("#vmap").vectorMap({
+  map: "world_en",
+  backgroundColor: "transparent",
+  borderColor: "#E8E8E8",
+  borderOpacity: 0.7,
+  borderWidth: 0,
+  color: "#E8E8E8",
+  hoverColor: "#006491",
+  hoverOpacity: 0.7,
+  normalizeFunction: "linear",
+  scaleColors: ["#F68A1B", "#EA286C"],
+  selectedColor: "#555555",
+  enableZoom: true,
+  showTooltip: false,
+  values: sample_data,
+  normalizeFunction: "polynomial",
 });

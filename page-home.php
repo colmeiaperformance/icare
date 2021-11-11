@@ -35,7 +35,8 @@
     </div>
 
     <?php get_template_part( 'template-parts/flexible-content' ) ?>
-
+    <?php get_template_part( 'template-parts/mapa' ) ?>
+      
     <section class="ica-sec sec-notice" id="notice">
         <div class="ica-wrapper">
             <div class="sec-itens">

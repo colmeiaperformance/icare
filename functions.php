@@ -4,6 +4,7 @@
 function loading_styles(){
     wp_enqueue_style( 'swiper-css', get_template_directory_uri() . '/vendor/swiper-js/swiper-bundle.min.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
     wp_enqueue_style( 'opensans-font', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap', array(), wp_get_theme()->get( 'Version' ), 'all' );
+    wp_enqueue_style( 'map-css', get_template_directory_uri() . '/vendor/jqvmap/jqvmap.min.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
     wp_enqueue_style( 'style-css', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
   
 }
@@ -11,9 +12,15 @@ function loading_styles(){
 //Scripts
 function loading_scripts(){
     wp_register_script( 'swiper-js', get_template_directory_uri() . '/vendor/swiper-js/swiper-bundle.min.js', array( 'jquery-core' ), wp_get_theme()->get( 'Version' ), true  );
+    wp_register_script( 'map-js', get_template_directory_uri() . '/vendor/jqvmap/jquery.vmap.min.js', array( 'jquery-core' ), wp_get_theme()->get( 'Version' ), true  );
+    wp_register_script( 'map-world-js', get_template_directory_uri() . '/vendor/jqvmap/jquery.vmap.world.js', array( 'map-js' ), wp_get_theme()->get( 'Version' ), true  );
+    wp_register_script( 'map-sampledata-js', get_template_directory_uri() . '/vendor/jqvmap/jquery.vmap.sampledata.js', array( 'map-world-js' ), wp_get_theme()->get( 'Version' ), true  );
     wp_register_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery-core' ), wp_get_theme()->get( 'Version' ), true  );
   
     wp_enqueue_script( 'swiper-js');
+    wp_enqueue_script( 'map-js');
+    wp_enqueue_script( 'map-world-js');
+    wp_enqueue_script( 'map-sampledata-js');
     wp_enqueue_script( 'main-js');
   
 

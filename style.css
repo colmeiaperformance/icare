@@ -3944,6 +3944,103 @@ h6 {
   width: 90%;
 }
 
+.sec-map #vmap {
+  width: 100%;
+  height: 350px;
+}
+
+.sec-map .map-caption {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sec-map .map-caption .caption-item {
+  width: 100%;
+}
+
+.sec-map .map-caption .caption-item p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #13857f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec-map .map-caption .caption-item p span {
+  margin-right: 5px;
+  width: 3px;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.sec-map .map-caption .caption-item p span.caption-item-pink {
+  border: 3px solid #EA286C;
+  background-color: #EA286C;
+}
+
+.sec-map .map-caption .caption-item p span.caption-item-orange {
+  border: 3px solid #F68A1B;
+  background-color: #F68A1B;
+}
+
+.sec-map .jqvmap-zoomin,
+.sec-map .jqvmap-zoomout {
+  width: 30px;
+  height: 20px;
+  font-size: 2rem;
+}
+
+.sec-map .jqvmap-zoomin:hover,
+.sec-map .jqvmap-zoomout:hover {
+  background-color: #666;
+}
+
+.sec-map .jqvmap-zoomout {
+  top: 54%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.sec-map .jqvmap-zoomin {
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+@media all and (min-width: 1200px) {
+  .sec-map {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .sec-map #vmap {
+    height: 650px;
+  }
+  .sec-map .map-caption .caption-item {
+    width: 15vw;
+    display: block;
+  }
+  .sec-map .map-caption .caption-item p {
+    font-size: 1.35rem;
+  }
+  .sec-map .map-caption .caption-item p span {
+    margin-right: 10px;
+    padding: 2rem;
+  }
+}
+
 .ica-sec.sec-motivation .sec-content {
   text-align: center;
 }
