@@ -286,9 +286,7 @@ elseif ( get_row_layout() == 'area_texto' ) :
         <div class="sec-content">
             <div class="sec-item">
                 <div class="item-media">
-                    <?php if ( get_sub_field('icone_c1') ) : ?>  
-                         <img src="<?php the_sub_field('icone_c1'); ?>" alt="Entenda">
-                    <?php endif; ?>    
+                 <img src="<?php the_sub_field('icone_c1'); ?>" alt="Entenda">
                     <?php if ( get_sub_field('titulo_c1') ) : ?>    
                         <h3><?php the_sub_field('titulo_c1'); ?></h3>
                     <?php endif; ?>
