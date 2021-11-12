@@ -253,14 +253,12 @@ elseif ( get_row_layout() == 'area_texto' ) :
         <?php
         if (is_array($textos_cts) || is_object($textos_cts)) {        
             foreach ($textos_cts as $t_cts) { ?>
-        <?php if ( get_sub_field('texto_cts') ) : ?>
             <div class="item-service" style="border-color:<?php echo $cores_cts['cor_borda_cts'] ?>;">
                 <h3 style="color:<?php echo $cores_cts['cor_texto_cts'] ?>;">
                     <?php echo $t_cts['texto_cts']; ?>
                 </h3>
             </div>
-        <?php endif; ?>     
-        <?php }
+       <?php }
         }
             ?>
     </div>
