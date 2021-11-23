@@ -49,7 +49,7 @@ if( have_rows('conteudo') ):
             foreach ($imagem_gi as $igi) { ?>
             <?php if ( get_sub_field('imagem_gi') ) : ?>
                 <div class="item-media">
-                    <img src="<?php echo $igi['imagem']['url'] ?>">
+                    <img src="<?php echo $igi['imagem']['url'] ?>" alt="">
                 </div>
             <?php endif; ?>    
             <?php }
@@ -291,7 +291,7 @@ elseif ( get_row_layout() == 'area_texto' ) :
                     <?php if ( get_sub_field('descricao_c1') ) : ?>
                         <p><?php the_sub_field('descricao_c1'); ?></p>
                     <?php endif; ?>
-                    <div class="seta"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt="seta"></div>
+                    <div class="seta"><img src="<?php echo get_template_directory_uri() . '/images/seta-baixo.png' ?>" alt=""></div>
                     <ul class="whatwedo-list">
                         <?php 
                             $lista_c1 = get_sub_field('lista_c1');
