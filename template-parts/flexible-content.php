@@ -377,7 +377,7 @@ elseif ( get_row_layout() == 'area_texto' ) :
                 if (is_array($imagens_si) || is_object($imagens_si)) {
                     foreach ($imagens_si as $isi) { ?>
                     <div class="item-media swiper-slide">
-                        <img src="<?php echo $isi['imagem_si']['url']; ?>">
+                        <img src="<?php echo $isi['imagem_si']['url']; ?>" alt="">
                     </div> 
                 <?php 
                     }
