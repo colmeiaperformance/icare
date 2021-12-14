@@ -2,9 +2,6 @@
     <div class="swiper-wrapper">
 
         <?php
-        // $banner_home = get_field('banner_home');
-        // if (is_array($banner_home) || is_object($banner_home)) {
-        // foreach ($banner_home as $bh) { 
           
           if( have_rows('banner_home') ):
             while( have_rows('banner_home') ): the_row();

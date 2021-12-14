@@ -13,7 +13,7 @@
   <section class="ica-sec sec-notice ica-the the-white" id="notice">
     <div class="ica-wrapper">
       <div class="sec-header">
-        <h3 class="sec-title ica-the the-white">Últimas notícias</h3>
+        <h3 class="sec-title ica-the the-white"><?php _e('Latest news', 'icare-domain'); ?></h3>
       </div>
       <div class="sec-itens">
         <?php $query = new WP_Query( 'posts_per_page=3' ); ?>
@@ -31,7 +31,7 @@
             <p><?php the_excerpt(); ?></p>
           </div>
           <div class="media-footer">
-            <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark" class="ica-but but-conversion">Leia Mais</a>
+            <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark" class="ica-but but-conversion"><?php _e('Read more', 'icare-domain'); ?></a>
           </div>
         </div>
         <?php endwhile; wp_reset_postdata();?>

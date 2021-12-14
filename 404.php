@@ -7,13 +7,13 @@
 				404
 			</h1>
 			<h2>
-				Página não encontrada :(
+				<?php _e('Page not found', 'icare-domain'); ?> :(
 			</h2>
 			<p>
-				Desculpe, a página que você está procurando não existe.
+				<?php _e('Sorry, the page you are looking for doesn\'t exist.', 'icare-domain'); ?>
 			</p>
 			<a href="<?php echo home_url(); ?>" class="ica-but but-conversion">
-				Voltar para Home
+				<?php _e('Return to home', 'icare-domain'); ?>
 			</a>
 		</div>
 	</section>

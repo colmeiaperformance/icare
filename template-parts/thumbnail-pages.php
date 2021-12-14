@@ -23,7 +23,7 @@
     wp_reset_postdata(); 
             else: ?>
     <div class="blog-alert">
-        <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+        <?php _e( 'Sorry, no posts matched your criteria.', 'icare-domain' ); ?>
     </div>
     <?php endif;  ?>
 

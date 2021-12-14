@@ -9,7 +9,7 @@
     <dl class="footer-item">
         <?php
         if ( function_exists('wpp_get_mostpopular') ) { ?>
-            <dt>Mais Lidas</dt>
+            <dt><?php _e('Popular posts', 'icare-domain'); ?></dt>
             <?php
             /* Get up to the top 5 commented posts from the last 7 days */
             wpp_get_mostpopular(array(
@@ -20,7 +20,7 @@
         ?>
     </dl>
     <dl class="footer-item">
-        <dt>Categorias</dt>
+        <dt><?php _e('Categories', 'icare-domain'); ?></dt>
 
         <?php wp_list_categories( array(
             'title_li'    => '',
@@ -30,7 +30,7 @@
 
     </dl>
     <dl class="footer-item">
-        <dt>Assine nossa newsletter</dt>
+        <dt><?php _e('Sign up our newsletter', 'icare-domain'); ?></dt>
         <form action="" class="form-news">
             <input type="text" placeholder="Nome" class="input-news">
             <input type="text" placeholder="E-mail" class="input-news">

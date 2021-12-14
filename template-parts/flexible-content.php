@@ -191,7 +191,7 @@ $cores_cc = get_sub_field('cores_cc'); ?>
                             <?php echo $c['cargo_colaborador'] ?> - <?php echo $c['formacao_colaborador'] ?>
                         </p>
                         <label class="trigger">
-                            <input type="checkbox" class="checkbox"/> Biografia
+                            <input type="checkbox" class="checkbox"/> <?php _e('Biography', 'icare-domain'); ?>
                                 <span class="descricao-colaborador">
                                     <?php echo $c['descricao']; ?>
                                 </span>

@@ -28,13 +28,13 @@
 
                     <!-- Add the pagination functions here. -->
                     <div class="pagination">
-                        <?php next_post_link( '%link', 'Próximo Artigo' ); ?> 
-                        <?php previous_post_link( '%link', 'Artigo Anterior'); ?>
+                        <?php next_post_link( '%link', _e('Next post', 'icare-domain') ); ?> 
+                        <?php previous_post_link( '%link', _e('Previous post', 'icare-domain') ); ?>
                     </div>
 
                     <?php else: ?>
                     <div class="blog-alert">
-                        <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+                        <?php _e( 'Sorry, no posts matched your criteria.', 'icare-domain' ); ?>
                     </div>
                     <?php 
                     wp_reset_postdata();     

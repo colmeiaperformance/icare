@@ -129,26 +129,6 @@ $vagas = get_field('vagas', 'option');
 
         ?>
 
-            <!-- <div class="nav-itens">
-                <div class="nav-item">
-                    <a href="#">Créditos</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#">Legal</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#">Privacidade</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#">Aviso de Privacidade</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#">Política de Cookies</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#">Preferências de Cookies</a>
-                </div>
-            </div> -->
         </div>
     </div>
 </footer>

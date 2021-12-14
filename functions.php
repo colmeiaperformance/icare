@@ -33,7 +33,7 @@ add_action( 'wp_enqueue_scripts', 'loading_scripts' );
 function base_setup() {
 
     //Tradução
-	//load_theme_textdomain( 'base_language', get_template_directory() . '/languages' );
+	//load_theme_textdomain( 'icare-domain', get_template_directory() . '/languages' );
 
     //Wordpress gerencia o título
     add_theme_support( 'title-tag' );
@@ -52,9 +52,9 @@ function base_setup() {
     // register a new menu
     register_nav_menus(
         array(
-        'main-menu'=> __('Main menu'),
-        'secondary-menu'=> __('Secondary menu'),
-        'footer-menu'=> __('Footer menu')
+        'main-menu'=> _e('Main menu', 'icare-domain' ),
+        'secondary-menu'=> _e('Secondary menu', 'icare-domain' ),
+        'footer-menu'=> _e('Footer menu', 'icare-domain' )
         )
     );
 
@@ -149,15 +149,15 @@ function my_acf_op_init() {
 
         // Add parent.
         $parent = acf_add_options_page(array(
-            'page_title'  => __('Opções Gerais'),
-            'menu_title'  => __('Opções Gerais'),
+            'page_title'  => _e('General option', 'icare-domain' ),
+            'menu_title'  => _e('General options', 'icare-domain' ),
             'redirect'    => false,
         ));
 
         // Add sub page.
         $child = acf_add_options_page(array(
-            'page_title'  => __('Rodapé'),
-            'menu_title'  => __('Rodapé'),
+            'page_title'  => _e('Footer', 'icare-domain' ),
+            'menu_title'  => _e('Footer', 'icare-domain' ),
             'parent_slug' => $parent['menu_slug'],
         ));
     }
@@ -188,7 +188,7 @@ function get_breadcrumb() {
       'seperator'   =>  '&#187;',
       'id'          =>  'items-breadcrumb',
       'classes'     =>  'items-breadcrumb',
-      'home_title'  =>  esc_html__( 'Home', '' )
+      'home_title'  =>  esc_html__( 'Home', 'icare-domain' )
     );
   
     $sep  = esc_html( $defaults['seperator'] );
@@ -390,12 +390,12 @@ function get_breadcrumb() {
     } else if ( is_search() ) {
   
       // Search results page
-      echo '<span class="breadcrumb-item">' . _e(' Search results for:', 'I Care') . get_search_query() .'</span>';
+      echo '<span class="breadcrumb-item">' . _e(' Search results for:', 'icare-domain') . get_search_query() .'</span>';
   
     } else if ( is_404() ) {
   
       // 404 page
-      echo '<span class="breadcrumb-item">' . _e('Error 404', 'I Care') . '</span>';
+      echo '<span class="breadcrumb-item">' . _e('Error 404', 'icare-domain') . '</span>';
   
     }
   

@@ -36,7 +36,7 @@
               <p><?php the_excerpt(); ?></p>
             </div>
             <div class="media-footer">
-              <a href="<?php the_permalink(); ?>" class="ica-but but-conversion">Leia mais</a>
+              <a href="<?php the_permalink(); ?>" class="ica-but but-conversion"><?php _e('Read more', 'icare-domain'); ?></a>
             </div>
           </div>
           <?php endwhile; ?>
@@ -52,8 +52,8 @@
                   'end_size'     => 2,
                   'mid_size'     => 1,
                   'prev_next'    => false,
-                  'prev_text'    => sprintf( '<i></i> %1$s', __( 'Newer Posts', 'text-domain' ) ),
-                  'next_text'    => sprintf( '%1$s <i></i>', __( 'Older Posts', 'text-domain' ) ),
+                  'prev_text'    => sprintf( '<i></i> %1$s', __( 'Newer Posts', 'icare-domain' ) ),
+                  'next_text'    => sprintf( '%1$s <i></i>', __( 'Older Posts', 'icare-domain' ) ),
                   'add_args'     => false,
                   'add_fragment' => '',
               ) );
@@ -61,7 +61,7 @@
           </div>
           <?php else : ?>
           <div class="blog-alert">
-            <?php _e( 'Desculpe, nenhum post foi encontrado.' ); ?>
+            <?php _e( 'Sorry, no post was found.', 'icare-domain' ); ?>
           </div>
           <?php endif; ?>
         </div>

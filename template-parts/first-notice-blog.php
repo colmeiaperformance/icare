@@ -26,7 +26,7 @@ if ( $header_query->have_posts() ) :
             </p>
         </div>
         <div class="notice-footer">
-            <a href="<?php the_permalink(); ?>" class="ica-but but-conversion">Leia Mais</a>
+            <a href="<?php the_permalink(); ?>" class="ica-but but-conversion"><?php _e('Read more', 'icare-domain'); ?></a>
         </div>
     </div>
 </div>
@@ -34,7 +34,7 @@ if ( $header_query->have_posts() ) :
 <?php endwhile; 
 else: ?>
 <div class="blog-alert">
-    <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+    <?php _e( 'Sorry, no posts matched your criteria.', 'icare-domain' ); ?>
 </div>
 <?php endif;
 

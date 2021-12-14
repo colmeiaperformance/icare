@@ -18,7 +18,7 @@
             <h1 class="item-title">
                 <?php the_title(); ?>
             </h1>
-            <a href="<?php the_permalink(); ?>" class="ica-but but-light">Leia Mais</a>
+            <a href="<?php the_permalink(); ?>" class="ica-but but-light"><?php _e('Read more', 'icare-domain'); ?></a>
         </div>
     </div>
 
@@ -28,7 +28,7 @@
 wp_reset_postdata(); 
             else: ?>
 <div class="blog-alert">
-    <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+    <?php _e( 'Sorry, no posts matched your criteria.', 'icare-domain' ); ?>
 </div>
 <?php endif; 
             
