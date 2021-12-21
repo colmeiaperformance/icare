@@ -191,7 +191,7 @@ $cores_cc = get_sub_field('cores_cc'); ?>
                             <?php echo $c['cargo_colaborador'] ?> - <?php echo $c['formacao_colaborador'] ?>
                         </p>
                         <label class="trigger">
-                            <input type="checkbox" class="checkbox"/> <?php _e('Biography', 'icare-domain'); ?>
+                            <input type="checkbox" class="checkbox"/> <?php _e('Biografia', 'icare-domain'); ?>
                                 <span class="descricao-colaborador">
                                     <?php echo $c['descricao']; ?>
                                 </span>
@@ -257,6 +257,7 @@ elseif ( get_row_layout() == 'area_texto' ) :
                 <h3 style="color:<?php echo $cores_cts['cor_texto_cts'] ?>;">
                     <?php echo $t_cts['texto_cts']; ?>
                 </h3>
+                <p><?php echo $t_cts['descricao_texto']; ?></p>
             </div>
       <?php }
         }
