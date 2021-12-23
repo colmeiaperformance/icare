@@ -1,8 +1,5 @@
 .ica-sec.sec-gallery {
 	background-color: $color-white;
-	.swiper-wrapper {
-	   align-items: center;
-	}
 	.swiper {
 		width: 100%;
 		height: 100%;
@@ -27,6 +24,9 @@
 			-ms-flex-align: center;
 			-webkit-align-items: center;
 			align-items: center;
+			.swiper-wrapper {
+			   align-items: center;
+			}
 		}
 	}
 
