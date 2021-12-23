@@ -52,9 +52,9 @@ function base_setup() {
     // register a new menu
     register_nav_menus(
         array(
-        'main-menu'=> _e('Main menu', 'icare-domain' ),
-        'secondary-menu'=> _e('Secondary menu', 'icare-domain' ),
-        'footer-menu'=> _e('Footer menu', 'icare-domain' )
+        'main-menu'=> __('Main menu', 'icare-domain' ),
+        'secondary-menu'=> __('Secondary menu', 'icare-domain' ),
+        'footer-menu'=> __('Footer menu', 'icare-domain' )
         )
     );
 
@@ -149,15 +149,15 @@ function my_acf_op_init() {
 
         // Add parent.
         $parent = acf_add_options_page(array(
-            'page_title'  => _e('General option', 'icare-domain' ),
-            'menu_title'  => _e('General options', 'icare-domain' ),
+            'page_title'  => __('General option', 'icare-domain' ),
+            'menu_title'  => __('General options', 'icare-domain' ),
             'redirect'    => false,
         ));
 
         // Add sub page.
         $child = acf_add_options_page(array(
-            'page_title'  => _e('Footer', 'icare-domain' ),
-            'menu_title'  => _e('Footer', 'icare-domain' ),
+            'page_title'  => __('Footer', 'icare-domain' ),
+            'menu_title'  => __('Footer', 'icare-domain' ),
             'parent_slug' => $parent['menu_slug'],
         ));
     }
