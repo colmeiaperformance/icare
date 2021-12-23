@@ -50,13 +50,13 @@ function base_setup() {
     );
 
     // register a new menu
-    register_nav_menus(
-        array(
-        'main-menu'=> _e('Main menu', 'icare-domain' ),
-        'secondary-menu'=> _e('Secondary menu', 'icare-domain' ),
-        'footer-menu'=> _e('Footer menu', 'icare-domain' )
-        )
-    );
+//     register_nav_menus(
+//         array(
+//         'main-menu'=> _e('Main menu', 'icare-domain' ),
+//         'secondary-menu'=> _e('Secondary menu', 'icare-domain' ),
+//         'footer-menu'=> _e('Footer menu', 'icare-domain' )
+//         )
+//     );
 
     //Thumbnails ou miniaturas
     add_theme_support( 'post-thumbnails' );
