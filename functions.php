@@ -140,28 +140,28 @@ function add_additional_class_on_li($classes, $item, $args) {
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
-/* Criação das páginas de opções do ACF */
-add_action('acf/init', 'my_acf_op_init');
-function my_acf_op_init() {
+// /* Criação das páginas de opções do ACF */
+// add_action('acf/init', 'my_acf_op_init');
+// function my_acf_op_init() {
 
-    // Check function exists.
-    if( function_exists('acf_add_options_page') ) {
+//     // Check function exists.
+//     if( function_exists('acf_add_options_page') ) {
 
-        // Add parent.
-        $parent = acf_add_options_page(array(
-            'page_title'  => _e('General option', 'icare-domain' ),
-            'menu_title'  => _e('General options', 'icare-domain' ),
-            'redirect'    => false,
-        ));
+//         // Add parent.
+//         $parent = acf_add_options_page(array(
+//             'page_title'  => _e('General option', 'icare-domain' ),
+//             'menu_title'  => _e('General options', 'icare-domain' ),
+//             'redirect'    => false,
+//         ));
 
-        // Add sub page.
-        $child = acf_add_options_page(array(
-            'page_title'  => _e('Footer', 'icare-domain' ),
-            'menu_title'  => _e('Footer', 'icare-domain' ),
-            'parent_slug' => $parent['menu_slug'],
-        ));
-    }
-}
+//         // Add sub page.
+//         $child = acf_add_options_page(array(
+//             'page_title'  => _e('Footer', 'icare-domain' ),
+//             'menu_title'  => _e('Footer', 'icare-domain' ),
+//             'parent_slug' => $parent['menu_slug'],
+//         ));
+//     }
+// }
 
 /* Remoção do editor do WP */
 add_action('init', 'remove_guttenberg_from_pages', 10);
