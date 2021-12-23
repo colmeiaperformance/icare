@@ -1,5 +1,8 @@
 .ica-sec.sec-gallery {
 	background-color: $color-white;
+	.swiper-wrapper {
+	   align-items: center;
+	}
 	.swiper {
 		width: 100%;
 		height: 100%;
