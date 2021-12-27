@@ -32,8 +32,8 @@ add_action( 'wp_enqueue_scripts', 'loading_scripts' );
 
 function base_setup() {
 
-    //Tradução
-	//load_theme_textdomain( 'icare-domain', get_template_directory() . '/languages' );
+    // Tradução
+	load_theme_textdomain( 'icare-domain', get_template_directory() . '/languages' );
 
     //Wordpress gerencia o título
     add_theme_support( 'title-tag' );

@@ -1,0 +1,127 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: I Care\n"
+"POT-Creation-Date: 2021-12-27 16:24-0300\n"
+"PO-Revision-Date: 2021-12-27 16:25-0300\n"
+"Last-Translator: Becky Marques <becky.marques@colmeiaperformance.com.br>\n"
+"Language-Team: Colmeia Performance\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:10
+msgid "Page not found"
+msgstr ""
+
+#: 404.php:13
+msgid "Sorry, the page you are looking for doesn't exist."
+msgstr ""
+
+#: 404.php:16
+msgid "Return to home"
+msgstr ""
+
+#: archive.php:39 atuacao-template.php:34 page-blog.php:47 search.php:39
+#: template-parts/carousel-blog.php:21 template-parts/first-notice-blog.php:29
+msgid "Read more"
+msgstr ""
+
+#: archive.php:55 page-blog.php:65 search.php:55
+msgid "Newer Posts"
+msgstr ""
+
+#: archive.php:56 page-blog.php:66 search.php:56
+msgid "Older Posts"
+msgstr ""
+
+#: archive.php:64 search.php:64
+msgid "Sorry, no post was found."
+msgstr ""
+
+#: atuacao-template.php:16
+msgid "Latest news"
+msgstr ""
+
+#: functions.php:55
+msgid "Main menu"
+msgstr ""
+
+#: functions.php:56
+msgid "Secondary menu"
+msgstr ""
+
+#: functions.php:57
+msgid "Footer menu"
+msgstr ""
+
+#: functions.php:152
+msgid "General option"
+msgstr ""
+
+#: functions.php:153
+msgid "General options"
+msgstr ""
+
+#: functions.php:159 functions.php:160
+msgid "Footer"
+msgstr ""
+
+#: functions.php:191
+msgid "Home"
+msgstr ""
+
+#: functions.php:393
+msgid " Search results for:"
+msgstr ""
+
+#: functions.php:398
+msgid "Error 404"
+msgstr ""
+
+#: page-blog.php:76 single.php:37 template-parts/carousel-blog.php:31
+#: template-parts/first-notice-blog.php:37
+#: template-parts/thumbnail-pages.php:26
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: search.php:13
+msgid "Search results"
+msgstr ""
+
+#: single.php:31
+msgid "Next post"
+msgstr ""
+
+#: single.php:32
+msgid "Previous post"
+msgstr ""
+
+#: template-parts/aside-blog.php:12
+msgid "Popular posts"
+msgstr ""
+
+#: template-parts/aside-blog.php:23
+msgid "Categories"
+msgstr ""
+
+#: template-parts/aside-blog.php:33
+msgid "Sign up our newsletter"
+msgstr ""
+
+#: template-parts/flexible-content.php:194
+msgid "Biography"
+msgstr ""
+
+#: template-parts/mapa.php:11
+msgid "Offices"
+msgstr ""
+
+#: template-parts/mapa.php:14
+msgid "Ongoing projects"
+msgstr ""
