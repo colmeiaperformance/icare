@@ -1,0 +1,22 @@
+.cli-style-v2 .cli-bar-message {
+    width: 100%;
+    display: block;
+    margin-bottom: 0;
+}
+
+#cookie-law-info-bar span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+}
+
+.cli-bar-btn_container {
+    display: contents;
+}
+
+@media (max-width: 1040px) {	
+.cli-style-v2 .cli-bar-message {
+    margin-bottom: 20px;
+}
+}

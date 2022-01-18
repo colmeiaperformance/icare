@@ -5349,6 +5349,12 @@ h6 {
   align-items: center;
 }
 
+.ica-sec.sec-gallery .swiper .swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .ica-sec.sec-gallery .ica-wrapper {
   padding: 4rem 0;
 }
@@ -5406,6 +5412,35 @@ h6 {
   .ica-sec.sec-gallery .item-media img {
     height: auto;
     max-height: 100%;
+  }
+}
+
+.cli-style-v2 .cli-bar-message {
+  width: 100%;
+  display: block;
+  margin-bottom: 0;
+}
+
+#cookie-law-info-bar span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #777;
+}
+
+.cli-bar-btn_container {
+  display: contents;
+}
+
+@media (max-width: 1040px) {
+  .cli-style-v2 .cli-bar-message {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
