@@ -94,11 +94,11 @@ msgstr "Desculpe, nenhum post corresponde aos seus critérios."
 msgid "Search results"
 msgstr "Resultados de busca"
 
-#: single.php:31
+#: single.php:32
 msgid "Next post"
 msgstr "Próximo post"
 
-#: single.php:32
+#: single.php:31
 msgid "Previous post"
 msgstr "Post anterior"
 
