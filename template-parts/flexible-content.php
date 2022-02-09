@@ -406,17 +406,19 @@ elseif ( get_row_layout() == 'area_texto' ) :
             if (is_array($card_ch) || is_object($card_ch)) {
             foreach ($card_ch as $cch) { ?>
             <div class="flip-box">
-                <div class="flip-box-inner">
-                        <div class="content-image">
-                            <img src="<?php echo $cch['imagem_ch']; ?>" alt="">
+                <a href="<?php if ($cch['destino_ch']) { echo $cch['destino_ch']; } ?>">
+                    <div class="flip-box-inner">
+                            <div class="content-image">
+                                <img src="<?php echo $cch['imagem_ch']; ?>" alt="">
+                            </div>
+                        <div class="content-details fadeIn-bottom"><h2 class="content-title"><?php echo $cch['titulo_ch'] ?></h2></div>
+                        <div class="content-details fadeIn-top">
+                            <h2 class="content-title"><?php echo $cch['item1_ch'] ?></h2>
+                            <h2 class="content-title"><?php echo $cch['item2_ch'] ?></h2>
+                            <h2 class="content-title"><?php echo $cch['item3_ch'] ?></h2>
                         </div>
-                    <div class="content-details fadeIn-bottom"><h2 class="content-title"><?php echo $cch['titulo_ch'] ?></h2></div>
-                    <div class="content-details fadeIn-top">
-                        <h2 class="content-title"><?php echo $cch['item1_ch'] ?></h2>
-                        <h2 class="content-title"><?php echo $cch['item2_ch'] ?></h2>
-                        <h2 class="content-title"><?php echo $cch['item3_ch'] ?></h2>
                     </div>
-                </div>
+                </a>
             </div>
             <?php }
         } ?>
