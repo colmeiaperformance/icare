@@ -52,8 +52,8 @@
                   'end_size'     => 2,
                   'mid_size'     => 1,
                   'prev_next'    => false,
-                  'prev_text'    => sprintf( '<i></i> %1$s', __( 'Newer Posts', 'icare-domain' ) ),
-                  'next_text'    => sprintf( '%1$s <i></i>', __( 'Older Posts', 'icare-domain' ) ),
+                  'prev_text'    => sprintf( '<i></i> %1$s' ),
+                  'next_text'    => sprintf( '%1$s <i></i>' ),
                   'add_args'     => false,
                   'add_fragment' => '',
               ) );
