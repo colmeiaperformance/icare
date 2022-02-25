@@ -23,38 +23,10 @@
     .sec-item {
         position: relative;
         background: $default-color;
-        border: 1px solid $color-default-green;
         @media all and (max-width: 1120px) { 
             width: 100%!important;
             margin: 20px 0!important;
         }
-    }
-    .sec-item:after,
-    .sec-item:before {
-        left: 100%;
-        top: 50%;
-        border: solid transparent;
-        content: "";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none;
-        @media all and (max-width: 1120px) {
-            display: none;
-        }
-    }
-    
-    .sec-item:after {
-        border-color: rgba(232, 232, 232, 0);
-        border-left-color: $default-color;
-        border-width: 30px;
-        margin-top: -149px;
-    }
-    .sec-item:before {
-        border-color: rgba(19, 133, 127, 0);
-        border-left-color: $color-default-green;
-        border-width: 31px;
-        margin-top: -150px;
     }
     .sec-description {
         p  {
@@ -616,16 +588,7 @@
             justify-content: center;
         }
         .sec-item {
-            border: 1px solid $color-default-green;
             padding: 2rem;
-            &:last-child { 
-                &::before {
-                    display: none;
-                }
-                &::after {
-                    display: none;
-                }
-            }
             ul {
                 text-align: left;
             }
@@ -654,47 +617,6 @@
                 }
                 h3 {
                     margin-bottom: 5px;
-                }
-            }
-            .setinha {
-                &::before {
-                    border-left: 0;
-                    border: solid transparent;
-                    height: 0;
-                    width: 0;
-                    border-bottom: 0;
-                    content: "";
-                    pointer-events: none;
-                    border-color: transparent;
-                    border-top-color: $color-gray-e8e;
-                    border-width: 42px;
-                    position: absolute;
-                    margin-left: -23px;
-                    left: 0;
-                    top: 104px;
-                    z-index: 999;
-                    transform: rotate( -90deg);
-                }
-                &::after {
-                    border-left: 0;
-                    border: solid transparent;
-                    height: 0;
-                    width: 0;
-                    border-bottom: 0;
-                    content: "";
-                    pointer-events: none;
-                    border-color: rgba(19, 133, 127, 0);
-                    border-top-color: $color-default-green;
-                    border-width: 42px;
-                    position: absolute;
-                    margin-left: -22px;
-                    left: 0;
-                    top: 104px;
-                    z-index: 1;
-                    transform: rotate(-90deg);
-                }
-                @media all and (max-width: 1120px) {
-                    display: none;
                 }
             }
             .item-media {
