@@ -304,9 +304,11 @@ elseif ( get_row_layout() == 'area_texto' ) :
             $lista_c1 = get_sub_field('lista_c1');
             if (is_array($lista_c1) || is_object($lista_c1)) {        
                 foreach ($lista_c1 as $l_c1) { ?>
-            <?php if ($l_c1['link_c1']) : '<a href="' . $l_c1['link_c1'] . '">'; endif; ?>
-                <li class="whatwedo-list-item"><?php echo $l_c1['item_c1']; ?></li>
-            <?php if ($l_c1['link_c1']) : '</a>'; endif; ?>
+            <li class="whatwedo-list-item">
+              <?php if ( !empty($l_c1['link_c1']) ) { echo '<a href="' . $l_c1['link_c1'] . '">'; }; ?>
+              <?php echo $l_c1['item_c1']; ?>
+              <?php if ( !empty($l_c1['link_c1']) ) { echo '</a>'; }; ?>
+            </li>
             <?php } 
             }?>
           </ul>
@@ -327,9 +329,9 @@ elseif ( get_row_layout() == 'area_texto' ) :
                 $lista_1_c2 = get_sub_field('lista_1_c2');
                 if (is_array($lista_1_c2) || is_object($lista_1_c2)) {        
                 foreach ($lista_1_c2 as $le) { ?>
-                <?php if ($le['link_c2e']) : '<a href="' . $le['link_c2e'] . '">'; endif; ?>
-                    <li class="whatwedo-list-item"><?php echo $le['item_c2e']; ?></li>
-                <?php if ($le['link_c2e']) : '</a>'; endif; ?>
+                <?php if ( !empty($le['link_c2e']) ) { echo '<a href="' . $le['link_c2e'] . '">'; }; ?>
+                <li class="whatwedo-list-item"><?php echo $le['item_c2e']; ?></li>
+                <?php if ( !empty($le['link_c2e']) ) { echo '</a>'; }; ?>
                 <?php } 
                                 }?>
               </ul>
@@ -341,9 +343,9 @@ elseif ( get_row_layout() == 'area_texto' ) :
                 $lista_2_c2 = get_sub_field('lista_2_c2');
                 if (is_array($lista_2_c2) || is_object($lista_2_c2)) {        
                 foreach ($lista_2_c2 as $ld) { ?>
-                <?php if ($ld['link_c2d']) : '<a href="' . $ld['link_c2d'] . '">'; endif; ?>
-                    <li class="whatwedo-list-item"><?php echo $ld['item_c2d']; ?></li>
-                <?php if ($ld['link_c2d']) : '</a>'; endif; ?>
+                <?php if ( !empty($ld['link_c2d']) ) { echo '<a href="' . $ld['link_c2d'] . '">'; }; ?>
+                <li class="whatwedo-list-item"><?php echo $ld['item_c2d']; ?></li>
+                <?php if ( !empty($ld['link_c2d']) ) { echo '</a>'; }; ?>
                 <?php }
                                 } ?>
               </ul>
@@ -364,9 +366,9 @@ elseif ( get_row_layout() == 'area_texto' ) :
             $lista_c3 = get_sub_field('lista_c3');
             if (is_array($lista_c3) || is_object($lista_c3)) {        
             foreach ($lista_c3 as $l_c3) { ?>
-            <?php if ($l_c3['link_c3']) : '<a href="' . $l_c3['link_c3'] . '">'; endif; ?>
-                <li class="whatwedo-list-item"><?php echo $l_c3['item_c3']; ?></li>
-            <?php if ($l_c3['link_c3']) : '</a>'; endif; ?>
+            <?php if ( !empty($l_c3['link_c3']) ) { echo '<a href="' . $l_c3['link_c3'] . '">'; }; ?>
+            <li class="whatwedo-list-item"><?php echo $l_c3['item_c3']; ?></li>
+            <?php if ( !empty($l_c3['link_c3']) ) { echo '</a>'; }; ?>
             <?php }
                         } ?>
           </ul>
