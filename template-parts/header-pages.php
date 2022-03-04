@@ -25,8 +25,3 @@
     </div>
 </header>
 <?php get_template_part('template-parts/breadcrumb'); ?>
-<?php
- if ( is_page() ) {
-    get_template_part('template-parts/thumbnail-pages');
-}
-?>

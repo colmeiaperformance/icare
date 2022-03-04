@@ -716,6 +716,7 @@ body {
   text-align: center;
   font-size: 10px;
   font-family: "Open Sans", sans-serif;
+  overflow-X: hidden;
 }
 
 .ica-header {
