@@ -98,7 +98,7 @@ jQuery(document).ready(function () {
 
   jQuery(window).scroll(function (e) {
     jQuery(".navbar-white")[
-      jQuery(window).scrollTop() >= 150 ? "addClass" : "removeClass"
+      jQuery(window).scrollTop() >= 1 ? "addClass" : "removeClass"
     ]("scrolling");
   });
 });
