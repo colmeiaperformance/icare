@@ -1479,6 +1479,17 @@ a:focus .ica-but {
 .img-pages {
   position: relative;
   height: 35vh;
+  z-index: 50;
+}
+
+.img-pages .img-pages-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
 }
 
 .img-pages .img-pages-content {
@@ -1490,6 +1501,7 @@ a:focus .ica-but {
   -ms-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+  z-index: 150;
 }
 
 .img-pages .img-pages-content .img-pages-content-title {

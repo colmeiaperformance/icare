@@ -12,6 +12,7 @@
                 else { 
                     echo get_template_directory_uri() . '/images/banner-sobre.jpg';
                     } ?>');background-position: center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;">
+        <div class="img-pages-overlay"></div>
         <div class="img-pages-content">
             <h1 class="img-pages-content-title">
                 <?php echo get_the_title(); ?>
