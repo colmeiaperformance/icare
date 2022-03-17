@@ -48,6 +48,7 @@
 #navbar {
     a {
         color: $color-white;
+        transition: none!important;
     }
     a:focus,
     a:hover,

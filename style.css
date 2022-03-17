@@ -675,9 +675,6 @@ li {
 
 img {
   max-width: 100%;
-  -webkit-transition: all 0.3s ease !important;
-  transition: all 0.3s ease !important;
-  -moz-transition: all 0.3s ease !important;
 }
 
 hr {
@@ -1333,6 +1330,8 @@ a:focus .ica-but {
 
 #navbar a {
   color: #fff;
+  -webkit-transition: none !important;
+  transition: none !important;
 }
 
 #navbar a:focus,
