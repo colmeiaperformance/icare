@@ -5,12 +5,15 @@
 */
 
 /*/////
-	LINK//
-	///*/
+LINK//
+///*/
 
 a {
 	color: $color-gray-70;
 	text-decoration: none;
+	-webkit-transition: all .3s ease!important;
+	transition: all .3s ease!important;
+	-moz-transition: all 0.3s ease!important;
 	&:hover {
 		color: $color-default-green;
 		text-decoration: none;
@@ -36,8 +39,8 @@ a {
 }
 
 /*/////
-	TEXT//
-	///*/
+TEXT//
+///*/
 
 p,
 li,
@@ -75,8 +78,8 @@ strong {
 }
 
 /*///////
-	HEADER//
-	/////*/
+HEADER//
+/////*/
 
 h1,
 h2,

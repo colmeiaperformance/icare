@@ -72,4 +72,13 @@ body {
 
 button {
 	cursor: pointer;
+	-webkit-transition: all .3s ease!important;
+	transition: all .3s ease!important;
+	-moz-transition: all 0.3s ease!important;
+}
+
+a {
+	-webkit-transition: all .3s ease!important;
+	transition: all .3s ease!important;
+	-moz-transition: all 0.3s ease!important;
 }

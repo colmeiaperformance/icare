@@ -79,6 +79,15 @@ body {
 
 button {
   cursor: pointer;
+  -webkit-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
+}
+
+a {
+  -webkit-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
 }
 
 /************************************/
@@ -666,6 +675,9 @@ li {
 
 img {
   max-width: 100%;
+  -webkit-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
 }
 
 hr {
@@ -784,6 +796,9 @@ body {
 
 #ica-footer a {
   color: #fff;
+  -webkit-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
 }
 
 #ica-footer a:hover {
@@ -818,6 +833,9 @@ body {
 }
 
 #ica-footer .footer-item dd a img {
+  -webkit-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
   margin-right: 0.8rem;
 }
 
@@ -837,6 +855,9 @@ body {
 }
 
 #ica-footer .footer-item .footer-icons a {
+  -webkit-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
   margin-right: 1.6rem;
 }
 
@@ -960,6 +981,9 @@ body {
     font-size: 1.2rem !important;
     padding: 0.5rem 0;
     font-weight: 300 !important;
+    -webkit-transition: all 0.3s ease !important;
+    transition: all 0.3s ease !important;
+    -moz-transition: all 0.3s ease !important;
   }
   .sub-menu a::after {
     display: none;
@@ -1009,6 +1033,9 @@ body {
     margin-right: 0;
   }
   #ica-navigation:target .navigation-item a {
+    -webkit-transition: all 0.3s ease !important;
+    transition: all 0.3s ease !important;
+    -moz-transition: all 0.3s ease !important;
     display: block;
   }
   #ica-navigation:target ~ .ica-com.com-jumper.jumper-top {
@@ -4257,11 +4284,14 @@ span {
 ///////////////
 */
 /*/////
-	LINK//
-	///*/
+LINK//
+///*/
 a {
   color: #707070;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
 }
 
 a:hover {
@@ -4293,8 +4323,8 @@ a:active {
 }
 
 /*/////
-	TEXT//
-	///*/
+TEXT//
+///*/
 p,
 li,
 dd,
@@ -4337,8 +4367,8 @@ strong {
 }
 
 /*///////
-	HEADER//
-	/////*/
+HEADER//
+/////*/
 h1,
 h2,
 h3,
