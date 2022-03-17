@@ -4,17 +4,17 @@
 //////////////
 */
 
-@media all and (min-width: 1024px) {
-	* {
-		transition: all cubic-bezier(0, 0.67, 0.33, 1) 300ms;
-		&:before {
-			transition: all cubic-bezier(0, 0.67, 0.33, 1) 300ms;
-		}
-		&:after {
-			transition: all cubic-bezier(0, 0.67, 0.33, 1) 300ms;
-		}
-	}
-}
+// @media all and (min-width: 1024px) {
+// 	* {
+// 		transition: all cubic-bezier(0, 0.67, 0.33, 1) 300ms;
+// 		&:before {
+// 			transition: all cubic-bezier(0, 0.67, 0.33, 1) 300ms;
+// 		}
+// 		&:after {
+// 			transition: all cubic-bezier(0, 0.67, 0.33, 1) 300ms;
+// 		}
+// 	}
+// }
 [hidden] {
 	display: block;
 	position: absolute;
