@@ -833,9 +833,6 @@ body {
 }
 
 #ica-footer .footer-item dd a img {
-  -webkit-transition: all 0.3s ease !important;
-  transition: all 0.3s ease !important;
-  -moz-transition: all 0.3s ease !important;
   margin-right: 0.8rem;
 }
 
